@@ -1,0 +1,195 @@
+{
+  "version": 1,
+  "framework": "idea-to-production@2",
+  "contentHashMethod": "sha256 over sorted (relative path + NUL + file bytes + NUL) for every file in the skill directory",
+  "skills": [
+    {
+      "id": "research",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/engineering/research",
+      "contentSha256": "75b7f9bbd7ccff6755a006f8b25d319a46ecbf6bd4b4c3323965ed9cb65e78ff",
+      "invocationClass": "model"
+    },
+    {
+      "id": "grilling",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/productivity/grilling",
+      "contentSha256": "0ca4cfe5105d79c6ef6755491492e056c43e88b82666376d8ecd7fac695d96e6",
+      "invocationClass": "model"
+    },
+    {
+      "id": "domain-modeling",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/engineering/domain-modeling",
+      "contentSha256": "2bc3bb0a64ea9c6f5c3bcf78fc17f0fcdc7c062edc547ef006441de0b576d248",
+      "invocationClass": "model"
+    },
+    {
+      "id": "codebase-design",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/engineering/codebase-design",
+      "contentSha256": "9f457cc65ef2d70eb5b8a44a4dae2b139840078b6596a67ee8c4e95f5a0e6f5c",
+      "invocationClass": "model"
+    },
+    {
+      "id": "prototype",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/engineering/prototype",
+      "contentSha256": "492e4433fcd9cf88c0854aba063829ee248b208849e5827a45da8424199fd10f",
+      "invocationClass": "model"
+    },
+    {
+      "id": "tdd",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/engineering/tdd",
+      "contentSha256": "28b5e430968370f51b03b88b4b4a046286192733d2f45bd5b8049e16f45fd234",
+      "invocationClass": "model"
+    },
+    {
+      "id": "diagnosing-bugs",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/engineering/diagnosing-bugs",
+      "contentSha256": "bcdaec9e1033901c396437fcb102161d8ad3cd87632007aaf270b19e03e70117",
+      "invocationClass": "model"
+    },
+    {
+      "id": "code-review",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/engineering/code-review",
+      "contentSha256": "12daafb9c4f77deb3c3303dc2e6f8a3c2a0ff7928fc004af959ba18b8bd38068",
+      "invocationClass": "model"
+    },
+    {
+      "id": "resolving-merge-conflicts",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/engineering/resolving-merge-conflicts",
+      "contentSha256": "310fa72a34cddd1dd1a9790f9ebc17bf2c83caeae5cdf87e2485be8b1abec90e",
+      "invocationClass": "model"
+    },
+    {
+      "id": "wizard",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/engineering/wizard",
+      "contentSha256": "518a4d148ef366cde28bd3b5f3eefc54ac7ddeeb670cd96eaff07cf4d2ce30f0",
+      "invocationClass": "model"
+    },
+    {
+      "id": "writing-for-agents",
+      "repo": "mattpocock/skills",
+      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "path": "skills/productivity/writing-for-agents",
+      "contentSha256": "0071124a923559493bc8924a90fb87bceb048d31ad2ce785fa4281d7c506bfa7",
+      "invocationClass": "model"
+    },
+    {
+      "id": "verification-before-completion",
+      "repo": "obra/superpowers",
+      "commit": "b36e0829c6d0140e93cfef2ca599b1b07d4a7797",
+      "path": "skills/verification-before-completion",
+      "contentSha256": "d8a53168f152b6163bd3447f7d4c20b6b4cddf6bd907f9aa5856b514c032db0e",
+      "invocationClass": "model",
+      "vendored": true
+    },
+    {
+      "id": "frontend-design",
+      "repo": "anthropics/skills",
+      "commit": "34040c9c568585f6929bedeaad110ad08f079624",
+      "path": "skills/frontend-design",
+      "contentSha256": "7e9c2af00fd5b3144f49ce6fb1b16037b392ab9c2f049423b0b6114d99381ba2",
+      "invocationClass": "model"
+    },
+    {
+      "id": "webapp-testing",
+      "repo": "anthropics/skills",
+      "commit": "34040c9c568585f6929bedeaad110ad08f079624",
+      "path": "skills/webapp-testing",
+      "contentSha256": "cfb23ef0c399c36e9247142a7ab5ac0e03c03e1c9f047b0f7502232a2c50b564",
+      "invocationClass": "model"
+    },
+    {
+      "id": "differential-review",
+      "repo": "trailofbits/skills",
+      "commit": "027bc47a69a276c340717bafdc3708263094b9a4",
+      "path": "plugins/differential-review/skills/differential-review",
+      "contentSha256": "22e4ad0c1fa2557417c1c81ca9e9c6bd7117cfa3b5c2102d247b8f762048889d",
+      "invocationClass": "model"
+    },
+    {
+      "id": "agentic-actions-auditor",
+      "repo": "trailofbits/skills",
+      "commit": "027bc47a69a276c340717bafdc3708263094b9a4",
+      "path": "plugins/agentic-actions-auditor/skills/agentic-actions-auditor",
+      "contentSha256": "027ab65b8f88f133dcfd3a7170cb1d57456f07bc89c6ecbdb3488b2b20dec961",
+      "invocationClass": "model"
+    },
+    {
+      "id": "react-best-practices",
+      "repo": "vercel-labs/agent-skills",
+      "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
+      "path": "skills/react-best-practices",
+      "contentSha256": "0777af9f667e54e68171824e88d6564e7d50932b503ab68d80c932a2eb43cc05",
+      "invocationClass": "model",
+      "note": "frontmatter name normalized from upstream vercel-react-best-practices to match its directory"
+    },
+    {
+      "id": "poka-yoke",
+      "repo": "github/awesome-copilot",
+      "commit": "fb4eb04fcbd30de50052b1155d81167393dfb5aa",
+      "path": "skills/poka-yoke",
+      "contentSha256": "e1c1c4d8b60369ec6dc22dbb8f6865fa804d3146e4d863301e54836d2b3bb204",
+      "invocationClass": "model"
+    },
+    {
+      "id": "postgresql-code-review",
+      "repo": "github/awesome-copilot",
+      "commit": "fb4eb04fcbd30de50052b1155d81167393dfb5aa",
+      "path": "skills/postgresql-code-review",
+      "contentSha256": "7f38a16ab6622ced603495d3bb4c12dd1f5ce4a8fdb1d65dfea9ea8b5612bdbb",
+      "invocationClass": "model"
+    },
+    {
+      "id": "playwright-generate-test",
+      "repo": "github/awesome-copilot",
+      "commit": "fb4eb04fcbd30de50052b1155d81167393dfb5aa",
+      "path": "skills/playwright-generate-test",
+      "contentSha256": "908cc5567cc7a71a9f3a3267aa3ac11d1bc78fbddfc78389347d86bdd9a9b12e",
+      "invocationClass": "model"
+    },
+    {
+      "id": "agentic-eval",
+      "repo": "github/awesome-copilot",
+      "commit": "fb4eb04fcbd30de50052b1155d81167393dfb5aa",
+      "path": "skills/agentic-eval",
+      "contentSha256": "d62b8922e4a613196377af053173b8fcd7b2c353069dbd37a2bd482ab04e0216",
+      "invocationClass": "model"
+    },
+    {
+      "id": "agent-owasp-compliance",
+      "repo": "github/awesome-copilot",
+      "commit": "fb4eb04fcbd30de50052b1155d81167393dfb5aa",
+      "path": "skills/agent-owasp-compliance",
+      "contentSha256": "d69ee506ffa7256cd615bda65cb297e3dfd96ada54f4dcda8dba695eae0cb19e",
+      "invocationClass": "model"
+    },
+    {
+      "id": "web-design-guidelines",
+      "repo": "vercel-labs/web-interface-guidelines",
+      "commit": "e3d624baaf29dc1fc645aff3e38f03e564d2d6b1",
+      "path": ".agents/skills/web-design-guidelines",
+      "contentSha256": "a01f81a48a86ad509dacdc63a3ef392db1b317a7924827bf63f70f2658dd40c0",
+      "invocationClass": "model",
+      "vendored": true,
+      "note": "pinned local adapter; snapshot command.md is the locked content"
+    }
+  ]
+}
