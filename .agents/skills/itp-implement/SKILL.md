@@ -22,7 +22,7 @@ adapter_contract:
   phase: implementation
   consumes: [slice, acceptance-criteria, relevant-design-context]
   required_children: [tdd]
-  conditional_children: [codebase-design, diagnosing-bugs, react-best-practices, frontend-design, webapp-testing, playwright-generate-test, resolving-merge-conflicts]
+  conditional_children: [codebase-design, diagnosing-bugs, vercel-react-best-practices, frontend-design, webapp-testing, playwright-generate-test, resolving-merge-conflicts]
   produces: [implementation-diff, validation-evidence, unresolved-findings]
   exits: [completed, blocked, needs-human, needs-review]
 ```
@@ -42,7 +42,7 @@ TDD methodology.
 - `diagnosing-bugs` only when a failure is not understood: require a concrete diagnosis and a
   regression case, then resume `tdd`. Bound this loop (max 2); same failure without new
   evidence -> `needs-human`.
-- `react-best-practices` for React/Next.js work.
+- `vercel-react-best-practices` for React/Next.js work.
 - `frontend-design` for new UI or visual redesign.
 - `webapp-testing` when a browser flow must be exercised; `playwright-generate-test` when a
   durable Playwright test is required.

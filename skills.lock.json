@@ -133,13 +133,12 @@
       "invocationClass": "model"
     },
     {
-      "id": "react-best-practices",
+      "id": "vercel-react-best-practices",
       "repo": "vercel-labs/agent-skills",
       "commit": "063bee94c3f4df8453406c830b0a7df0f2860278",
       "path": "skills/react-best-practices",
-      "contentSha256": "0777af9f667e54e68171824e88d6564e7d50932b503ab68d80c932a2eb43cc05",
-      "invocationClass": "model",
-      "note": "frontmatter name normalized from upstream vercel-react-best-practices to match its directory"
+      "contentSha256": "ca7b0c0c6e5f2750043f7f0cd72d16ac4e2abc48f9b5500d047a4b77a2506212",
+      "invocationClass": "model"
     },
     {
       "id": "poka-yoke",

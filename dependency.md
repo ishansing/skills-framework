@@ -48,7 +48,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | frontend-design | anthropics/skills | model | installed-global | itp-implement |
 | differential-review | trailofbits/skills | model | installed-global | itp-review, itp-incident |
 | postgresql-code-review | github/awesome-copilot | model | installed-global | itp-review |
-| react-best-practices | vercel-labs/agent-skills | model | installed-global | itp-implement |
+| vercel-react-best-practices | vercel-labs/agent-skills | model | installed-global | itp-implement |
 | webapp-testing | anthropics/skills | model | installed-global | itp-implement |
 | playwright-generate-test | github/awesome-copilot | model | installed-global | itp-implement |
 | web-design-guidelines | vercel-labs/web-interface-guidelines (pinned local adapter) | model | vendored-pinned | itp-review |
@@ -103,14 +103,12 @@ If a user-entry workflow is preferable, return `needs-human` with
   `959a8e9f...`, Anthropic `34040c9c...`, Trail of Bits `027bc47a...`, Vercel
   `063bee94...`, awesome-copilot `fb4eb04f...`, obra `b36e0829...`.
 - Runtime adaptations (deliberate deviations from verbatim upstream):
-  - `react-best-practices`: frontmatter name normalized from upstream
-    `vercel-react-best-practices` so the skill ID matches its directory.
   - `differential-review` delegates high-risk analysis to the
     `differential-review:adversarial-modeler` subagent. An OpenCode subagent
-    `adversarial-modeler` is registered at
-    `~/.config/opencode/agent/adversarial-modeler.md`, converted from
-    `plugins/differential-review/agents/adversarial-modeler.md`. If no such subagent is
-    available at runtime, stop with `needs-human`; do not improvise the adversarial phase.
+    `adversarial-modeler` is vendored at `.opencode/agents/adversarial-modeler.md`
+    (converted from `plugins/differential-review/agents/adversarial-modeler.md`) and
+    installed per repo by `install.sh`. If no such subagent is available at runtime, stop
+    with `needs-human`; do not improvise the adversarial phase.
   - `web-design-guidelines` is a local pinned adapter (`.agents/skills/web-design-guidelines/`)
     over the vendored `command.md` snapshot; never fetch upstream `main`.
 - Do not let a running skill modify `skills.lock.json` or this file.

@@ -17,6 +17,7 @@ artifacts let it skip phases.
 | `SKILL-FRAMEWORK.md` | The specification (this repo implements it) |
 | `dependency.md` | Authoritative registry: approved skills, invocation classes, statuses |
 | `skills.lock.json` | Pinned upstream content (repo, commit, content hash) |
+| `install.sh` | One-command installer for any project |
 | `tests/skills/` | Behavioral validation cases + static contract check |
 
 Status: **Stage 1 framework validation**. There is no runtime enforcement harness yet
@@ -41,115 +42,82 @@ Status: **Stage 1 framework validation**. There is no runtime enforcement harnes
 | `web-design-guidelines` | Pinned local adapter over a vendored guidelines snapshot |
 
 Upstream skills (Matt Pocock core, Trail of Bits, Vercel, Anthropic, awesome-copilot) are
-listed with status and provenance in `dependency.md` and `skills.lock.json`.
+listed with status and provenance in `dependency.md` and `skills.lock.json`. They live
+machine-global in `~/.agents/skills/`; the framework itself is installed per repo so each
+project pins its version.
 
-## Requirements
-
-- An Agent-Skills-compatible runtime with on-demand skill loading (validated on
-  **OpenCode**; see `SKILL-FRAMEWORK.md` section 3.4 for porting checks).
-- Upstream skills installed **before** a run. A running skill never installs, upgrades, or
-  substitutes dependencies; a missing one produces a `needs-human` handoff instead.
-- Git, and the target project's own test/build tooling.
-
-## Use it in a real repository
-
-### 1. Copy the framework into the target repo
+## Install
 
 ```sh
-FS=/path/to/I2P            # this framework repo
+bash /path/to/I2P/install.sh /path/to/your/repo      # existing project
+bash /path/to/I2P/install.sh --init ~/code/new-proj  # new project (creates dir + git init)
+```
+
+Re-run the same command to upgrade; the installer is idempotent.
+
+| Option | Effect |
+|---|---|
+| `--init` | Create the target directory and `git init` if it does not exist |
+| `--dry-run` | Print every action; change nothing |
+| `--refresh-upstream` | Reinstall upstream skills that fail the lockfile hash check |
+
+What it does:
+
+1. **Upstream skills** — installs each pinned skill into `~/.agents/skills/` once per
+   machine, fetching missing ones at their locked commit into
+   `~/.cache/idea-to-production/`, and verifies every content hash against
+   `skills.lock.json`. Existing skills with mismatched content are left alone and warned
+   about unless `--refresh-upstream` is passed.
+2. **Framework skills** — copies `.agents/skills/{idea-to-production,itp-*,verification-before-completion,web-design-guidelines}`
+   into `<repo>/.agents/skills/`, plus `dependency.md` and `skills.lock.json` into the repo
+   root.
+3. **Subagent** — copies `adversarial-modeler` into `<repo>/.opencode/agents/` (used by
+   `differential-review` for high-risk changes).
+4. **AGENTS.md** — inserts the framework rules between
+   `<!-- idea-to-production:begin/end -->` markers, creating the file if absent and
+   replacing the block on re-run, so rules never duplicate.
+5. **Verification** — runs the contract check against the installed copy and reports the
+   result.
+
+Requirements: `git` (only to fetch missing upstream skills) and `node` (lockfile parsing,
+hash checks, verification). No network is needed when the upstream skills are already
+installed and verified. The installer never touches unrelated skills or files.
+
+Afterwards:
+
+1. Restart your agent session so the new skills are discovered.
+2. Optional once per repo: run Matt's `setup-matt-pocock-skills`, which configures the
+   issue tracker that `code-review` uses. Without it, `itp-review` hands off and asks for
+   it.
+3. Start a lifecycle:
+
+   ```text
+   Load the `idea-to-production` skill. Goal: <what you want built>.
+   ```
+
+### Manual install (offline / no script)
+
+```sh
+FS=/path/to/I2P
 TARGET=/path/to/your/repo
 
 mkdir -p "$TARGET/.agents/skills"
-cp -r "$FS/.agents/skills/idea-to-production"      "$TARGET/.agents/skills/"
-cp -r "$FS"/.agents/skills/itp-*                   "$TARGET/.agents/skills/"
-cp -r "$FS/.agents/skills/verification-before-completion" "$TARGET/.agents/skills/"
-cp -r "$FS/.agents/skills/web-design-guidelines"   "$TARGET/.agents/skills/"
-cp "$FS/dependency.md" "$FS/skills.lock.json"      "$TARGET/"
-```
-
-`web-design-guidelines` reads `command.md` from its own directory and
-`verification-before-completion` is vendored, so both travel with the copy. Keep them
-project-local if you want the framework versioned with the repo.
-
-Prefer one global install for every repo instead? Copy those same four entries into
-`~/.agents/skills/` once and skip the per-repo skill copies. You still copy `dependency.md`
-and `skills.lock.json` into each target repo (the root reads them from the repo root).
-
-OpenCode discovers project skills from `.agents/skills/<name>/SKILL.md` (also
-`.opencode/skills/` and `.claude/skills/`). Restart the session after copying.
-
-### 2. Make the upstream dependencies discoverable
-
-On this machine they are already installed in `~/.agents/skills/`. On a new machine,
-install each skill from `skills.lock.json` (never `latest`):
-
-```sh
-# example: install one skill at its locked commit
-git clone https://github.com/mattpocock/skills /tmp/matt-skills
-git -C /tmp/matt-skills checkout 959a8e9f1edc3adbe2f7e3054bb6fbefa6696260
-cp -r /tmp/matt-skills/skills/engineering/tdd ~/.agents/skills/tdd
-```
-
-Each lock entry has `repo`, `commit`, and `path`; copy that `path` to
-`<skills-root>/<id>/`. Sources: `mattpocock/skills`, `anthropics/skills`,
-`trailofbits/skills`, `vercel-labs/agent-skills`, `github/awesome-copilot`,
-`obra/superpowers` (vendored, already in step 1), and
-`vercel-labs/web-interface-guidelines` (vendored, already in step 1).
-
-For `differential-review`'s high-risk phase, also install the subagent (project-local
-`.opencode/agents/` or global `~/.config/opencode/agents/`):
-
-```sh
+cp -r "$FS/.agents/skills/idea-to-production" "$FS"/.agents/skills/itp-* \
+      "$FS/.agents/skills/verification-before-completion" \
+      "$FS/.agents/skills/web-design-guidelines" "$TARGET/.agents/skills/"
+cp "$FS/dependency.md" "$FS/skills.lock.json" "$TARGET/"
 mkdir -p "$TARGET/.opencode/agents"
-cp ~/.config/opencode/agents/adversarial-modeler.md "$TARGET/.opencode/agents/"
+cp "$FS/.opencode/agents/adversarial-modeler.md" "$TARGET/.opencode/agents/"
 ```
 
-### 3. Add the framework rules to the target repo's `AGENTS.md`
-
-```markdown
-- The lifecycle root is `idea-to-production`. Invoke it explicitly; it is not auto-invoked.
-- Use framework adapters (`itp-*`) rather than reproducing their procedures manually.
-- Use only pre-installed skills listed in `dependency.md` / `skills.lock.json`.
-- Do not install, upgrade, search for, or substitute skills during a run.
-- Prefer Matt Pocock skills for primary engineering process.
-- Add specialist skills only when their documented trigger applies.
-- Never recursively invoke skills classified as user entry points.
-- If the same failure recurs without new evidence, stop and ask the user.
-- Do not claim completion until `itp-verify` runs with fresh evidence.
-```
-
-### 4. One-time target-repo setup
-
-Run Matt's `setup-matt-pocock-skills` in the target repo once (user-entry, invoke
-explicitly). It configures the issue tracker that `code-review` uses. Without it,
-`itp-review` hands off to `needs-human` and tells you to run it.
-
-### 5. Verify the install
-
-- Start a new session in the target repo and ask the agent to list its available skills:
-  you should see `idea-to-production`, the nine `itp-*` adapters, and
-  `verification-before-completion`.
-- From the framework repo (or the copy), run the static graph check:
-
-  ```sh
-  node tests/skills/check-contracts.mjs
-  ```
-
-  It verifies every child skill ID resolves in `dependency.md`, required children are
-  pinned, no user-entry skill is loaded recursively, and the lockfile covers every
-  installed skill. It checks the graph, not behavior.
+Install upstream skills from `skills.lock.json` (each entry has `repo`, `commit`,
+`path`): clone every repository, check out the pinned commit, and copy that `path` to
+`~/.agents/skills/<id>/`. Append the rules block from `install.sh` (between the
+`idea-to-production` markers) to the target `AGENTS.md`.
 
 ## Running the lifecycle
 
-Invoke the root explicitly; it is not selected automatically:
-
-```text
-Load the `idea-to-production` skill.
-Goal: <what you want built>.
-Existing artifacts: <paths, or "none">.
-```
-
-Examples:
+Invoke the root explicitly; it is not selected automatically.
 
 | Situation | What to prompt | Expected route |
 |---|---|---|
@@ -175,17 +143,19 @@ questions; do not re-implement an adapter's procedure by hand.
 
 ## Maintaining an install
 
+- **Upgrade a repo:** re-run `install.sh` against it.
+- **Repair a machine:** re-run with `--refresh-upstream`.
 - **Upstream moved?** Re-pin deliberately: check out the new commit, copy the skill,
   recompute the content hash, update `dependency.md` / `skills.lock.json`, rerun
   `check-contracts.mjs`, and re-run the relevant behavioral cases.
-- **Adding or removing specialist?** Update `dependency.md` status, the adapter's
+- **Adding or removing a specialist?** Update `dependency.md` status, the adapter's
   `conditional_children`, and the lockfile together; the checker enforces consistency.
 - **Keep runs reproducible:** never edit `dependency.md` or `skills.lock.json` during a
   lifecycle run.
 
 ## Testing the framework itself
 
-- Static: `node tests/skills/check-contracts.mjs`
+- Static: `node tests/skills/check-contracts.mjs [TARGET]` (defaults to this repo).
 - Behavioral: cases in `tests/skills/{isolation,composition,recursion,failure,golden}/`
   run manually, one per fresh session, per `tests/skills/README.md`. Record outcomes in each
   case's `Result:` line. Model behavior is nondeterministic: treat these as regression
@@ -197,8 +167,10 @@ questions; do not re-implement an adapter's procedure by hand.
 |---|---|
 | Skills missing from the session | Restart the session; confirm `.agents/skills/<name>/SKILL.md` or `~/.agents/skills/<name>/SKILL.md`; names must be unique across locations |
 | Duplicate skill names | Remove or rename one copy (project vs global) |
+| Installer warns a skill has different content | Something else owns that global skill; run `install.sh --refresh-upstream` to restore the locked version, or remove the local copy |
+| Installer warns the content hash differs after fetching | The pin or cache is stale; delete `~/.cache/idea-to-production/` and re-run with `--refresh-upstream` |
+| No network on a fresh machine | Pre-populate `~/.agents/skills/` from any verified copy, or use the manual install; the installer skips fetching when hashes already match |
 | Adapter returns `needs-human` citing a missing skill | Install it from `skills.lock.json`; this is by design, not a bug |
 | `itp-review` says the issue tracker is unconfigured | Run `setup-matt-pocock-skills` in the target repo once |
 | `playwright-generate-test` / `webapp-testing` fail | They need Playwright MCP / a browser+Python environment; configure it or expect a `needs-human` handoff |
 | Verification refuses to pass | That is the gate working: run the named checks, or route back to `itp-implement` |
-| Framework skill edits made mid-run | Don't; contracts and pins are curation changes |

@@ -3,10 +3,11 @@
 // Behavioral tests live in the sibling fixture files; this only checks the graph is coherent.
 
 import { readFileSync, readdirSync, existsSync } from "node:fs";
-import { join } from "node:path";
+import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 
-const root = fileURLToPath(new URL("../../", import.meta.url));
+const defaultRoot = fileURLToPath(new URL("../../", import.meta.url));
+const root = process.argv[2] ? resolve(process.argv[2]) : defaultRoot;
 const skillsDir = join(root, ".agents", "skills");
 const failures = [];
 const checks = [];
