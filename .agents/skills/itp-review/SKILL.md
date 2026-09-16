@@ -42,7 +42,9 @@ Standards + Spec axes.
 
 ## Conditional children (load only on trigger)
 
-- `differential-review` for medium/high-risk or security-sensitive diffs.
+- `differential-review` for medium/high-risk or security-sensitive diffs; pass the changed-file
+  list and ask for proportionate depth (stop when no high-risk files remain, cap the report to
+  findings).
 - `postgresql-code-review` when PostgreSQL behavior or schema changed.
 - `web-design-guidelines` when UI changed (use the pinned adapter when available).
 - `agentic-eval` when agent/harness behavior changed.
@@ -50,7 +52,8 @@ Standards + Spec axes.
 - `agentic-actions-auditor` when an AI GitHub Actions workflow changed.
 
 `code-review` is not the only bug or security signal; a triggered specialist is additional,
-not optional.
+not optional. In `scale: small`, load specialists only on hard triggers; if one fires, raise
+the scale to at least `standard` in `.itp/run.md` and record why.
 
 ## Procedure
 

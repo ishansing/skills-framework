@@ -147,6 +147,20 @@ During a run, expect:
 Approve the skill-load prompts your runtime shows. To steer, answer the adapter's
 questions; do not re-implement an adapter's procedure by hand.
 
+## Right-sizing
+
+The root classifies each run once and records `scale` in `.itp/run.md`; when unsure it uses
+`standard`:
+
+| Scale | Use | Effect |
+|---|---|---|
+| `small` | one module, no new interface or boundary, no security/data/destructive/migration surface, clear requirements | align only if a decision is open (no interview otherwise), one-page spec with acceptance criteria in the ISSUE, no architecture unless a boundary moves, code-review only, verification scoped to those criteria |
+| `standard` | default; multi-module or new interface, some ambiguity | full lifecycle and artifact set |
+| `full` | cross-cutting, security-critical, migrations, domain ambiguity | standard plus every applicable specialist |
+
+Review and verify always run. A security or migration surface upgrades a small run to standard
+automatically; scale can rise mid-run but never drops without a recorded reason.
+
 ## Maintaining an install
 
 - **Upgrade a repo:** re-run `install.sh` against it.
@@ -209,3 +223,4 @@ pulling this repo and re-running `install.sh` against each installed project.
 | `itp-review` says the issue tracker is unconfigured | Run `setup-matt-pocock-skills` in the target repo once |
 | `playwright-generate-test` / `webapp-testing` fail | They need Playwright MCP / a browser+Python environment; configure it or expect a `needs-human` handoff |
 | Verification refuses to pass | That is the gate working: run the named checks, or route back to `itp-implement` |
+| Validation session slow or skill output garbled | Output-compressing plugins (for example caveman) can mangle `skill`/`task` tool results; exclude those tools from compression or disable the plugin during lifecycle runs |

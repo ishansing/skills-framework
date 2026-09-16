@@ -29,8 +29,8 @@ adapter_contract:
 
 ## Inputs
 
-The implementation diff and tests, `docs/product/acceptance-criteria.md`, and
-`docs/work/review.md`.
+The implementation diff and tests, the acceptance criteria (`docs/product/acceptance-criteria.md`,
+or the slice's acceptance criteria list when `scale: small`), and `docs/work/review.md`.
 
 ## Required child
 
@@ -39,8 +39,9 @@ fresh verification evidence produced in this session.
 
 ## Procedure
 
-1. Run the checks now, and capture the commands with their observed output: tests, build,
-   typecheck, lint, browser checks, migration checks, as applicable to the diff.
+1. Run the checks now, and capture the commands with their observed output: the
+   acceptance-criteria tests plus the project's suite; add build, typecheck, lint, browser, or
+   migration checks only when the diff touches them.
 2. Confirm each acceptance criterion is actually satisfied by the evidence, not by assertion.
 3. Confirm triggered specialist reviews completed and blocking findings are resolved or
    explicitly handed off.

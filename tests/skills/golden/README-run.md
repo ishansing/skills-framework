@@ -1,25 +1,24 @@
-# Golden Case - How To Run
+# Golden Cases - How To Run
 
-The golden case (`add-collaborator-invitations.md`) needs a repository with real code and
-tests, plus a human to answer the alignment interview. `install.sh` prepares one.
+Both golden cases need a repository with real code and tests; the standard one also needs a
+human to answer the alignment interview.
 
-## Sandbox
+## Sandboxes
 
-`~/itp-golden-app` is a tiny Node app with the framework installed: `src/members.js` (direct
-membership only), `test/members.test.js`, `AGENTS.md`, and the framework skills. No invitation
-feature exists yet.
-
-To recreate it from scratch:
+Create or recreate either sandbox (outside the framework repo):
 
 ```sh
-bash /path/to/I2P/install.sh --init ~/itp-golden-app --strict
+bash tests/skills/golden/setup-sandbox.sh /path/to/I2P ~/itp-golden-app
+bash tests/skills/golden/setup-sandbox.sh /path/to/I2P ~/itp-small-app
 ```
 
-## Run
+Each is a tiny Node app (`src/members.js`, `test/members.test.js`) with the framework
+installed and one passing test.
 
-1. `cd ~/itp-golden-app && git status` - should be clean, on `master`.
-2. Start a fresh agent session in that directory.
-3. Paste exactly this prompt:
+## Standard case (`add-collaborator-invitations.md`)
+
+1. `cd ~/itp-golden-app && git status` - clean, on `master`.
+2. Start a fresh agent session in that directory and paste:
 
    ```text
    Load the `idea-to-production` skill. Goal: owners can invite a collaborator by email; the
@@ -27,20 +26,24 @@ bash /path/to/I2P/install.sh --init ~/itp-golden-app --strict
    become a member. Build this end to end.
    ```
 
-4. Answer the alignment/grilling questions as the product owner. Otherwise do not add
-   instructions.
+3. Answer the alignment/grilling questions as the product owner.
+
+## Small case (`small-localized-change.md`)
+
+1. `cd ~/itp-small-app && git status` - clean, on `master`.
+2. Start a fresh session there and paste:
+
+   ```text
+   Load the `idea-to-production` skill. Goal: normalize emails in src/members.js - trim and
+   lowercase on add and lookup, and reject non-string input.
+   ```
+
+3. No interview is expected; the run should skip align's grilling and architecture per the
+   small tier.
 
 ## What to record
 
-Score the run against `add-collaborator-invitations.md`:
-
-- required adapters and children actually loaded, in order
-- conditional triggers evaluated (`differential-review` should fire on invitation tokens; it
-  is installed)
-- artifacts produced under `docs/product/`, `docs/architecture/`, `docs/work/`, `.itp/run.md`
-- whether `itp-verify` ran commands in that session before any completion claim
-- anything forbidden that happened (runtime skill install, recursive `to-spec`)
-- the final `git log` / `git diff` in the sandbox
-
-Then record the outcome in `tests/skills/results/` with the date. The sandbox is a separate
-repository outside the framework repo; keep or delete it afterwards.
+Score each run against its fixture and record it in `tests/skills/results/` with the date,
+including the metrics from `.agents/skills/idea-to-production/references/artifacts.md`: scale,
+phases completed, skills loaded, artifacts written, code lines changed, doc-to-code ratio, and
+approximate duration.

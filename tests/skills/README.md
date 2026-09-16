@@ -20,6 +20,9 @@ Recorded outcomes live in `results/` (one file per campaign).
 2. Give the session the case prompt and load the named skill.
 3. Follow the adapter without adding outside instructions.
 4. Record pass/fail and the observed trace in the case's `Result` line, or in a dated note.
+   Include the run's scale and the metrics from
+   `.agents/skills/idea-to-production/references/artifacts.md` (phases, skills loaded,
+   artifacts, code lines, doc-to-code ratio).
 
 ## Static check
 

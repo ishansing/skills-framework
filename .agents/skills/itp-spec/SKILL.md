@@ -47,7 +47,8 @@ Load `writing-for-agents` and write `docs/product/spec.md` for an agent reader.
 
 1. Give requirements stable IDs (`REQ-<n>`) in `spec.md`; keep scope and non-goals explicit.
 2. Write testable acceptance criteria in `docs/product/acceptance-criteria.md`, each linked to
-   its requirement ID.
+   its requirement ID. When `scale: small`, keep the spec to one page and put the acceptance
+   criteria in the slice (`docs/work/ISSUE-<n>.md`) instead of a separate file.
 3. Mark assumptions and open questions rather than silently choosing.
 
 ## Output

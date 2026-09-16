@@ -4,6 +4,7 @@ End-to-end regression signal. Rerun periodically; expect some variance across mo
 
 ```yaml
 case: add-collaborator-invitations
+scale: standard   # access-control surface keeps this out of the small tier despite the size
 goal: "An owner can invite a collaborator by email; the invitee accepts and becomes a member."
 expected_required:
   - itp-align

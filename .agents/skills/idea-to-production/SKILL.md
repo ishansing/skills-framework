@@ -35,14 +35,17 @@ Read before starting:
 1. Inspect the user's goal and existing artifacts (`.itp/run.md`, `docs/`).
 2. Determine the earliest incomplete lifecycle phase. This is a router, not a waterfall:
    skip phases whose artifacts exist and are not stale (see routing shortcuts).
-3. Load exactly one adapter by ID with the runtime's skill tool.
-4. Require the adapter's structured `skill_result` (see `references/artifacts.md`).
-5. Validate `recommended_next` against `dependency.md`. Follow, skip, or loop back only with
+3. Classify the run's scale (`small`, `standard`, `full`) with the right-sizing rule in
+   `references/lifecycle.md`; when unsure, use `standard`. Record `scale` in `.itp/run.md`.
+4. Load exactly one adapter by ID with the runtime's skill tool; pass `scale` in the child
+   request context.
+5. Require the adapter's structured `skill_result` (see `references/artifacts.md`).
+6. Validate `recommended_next` against `dependency.md`. Follow, skip, or loop back only with
    a stated reason.
-6. Continue to the next adapter, or stop for the human (`needs-human`).
-7. Update `.itp/run.md` (create it from the template in `references/artifacts.md`); set
+7. Continue to the next adapter, or stop for the human (`needs-human`).
+8. Update `.itp/run.md` (create it from the template in `references/artifacts.md`); set
    `next_phase` to where a fresh session should resume.
-8. Before claiming completion: load `itp-verify`. No completion claim without its fresh
+9. Before claiming completion: load `itp-verify`. No completion claim without its fresh
    evidence.
 
 ## Hard rules
@@ -53,6 +56,9 @@ Read before starting:
   return `needs-human` with `recommended_user_skill`, reason, and `resume_with`.
 - Recursion bounds: framework depth 5, same skill max 2 loads, children per adapter max 6.
   The same failure without new evidence stops the loop and asks the human.
+- Scale guardrails: review and verify always run; a security, data, destructive, or migration
+  surface upgrades a `small` run to at least `standard` (record why). Scale may rise mid-run;
+  it never drops without a recorded reason.
 - Pass the smallest useful context to each adapter: artifact paths, target slice/requirement,
   current diff, reproduction, or specific question. Do not replay the conversation when
   artifacts exist.

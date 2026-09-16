@@ -36,7 +36,9 @@ exist.
 ## Required child
 
 Load `grilling` to pressure-test the high-impact decisions until each branch is resolved or
-explicitly deferred.
+explicitly deferred. Skip it when no high-impact decision is open (common in `scale: small`
+with clear requirements) and record `grilling: skipped - no open high-impact decisions`; do
+not skip when a decision has no defensible default.
 
 ## Conditional child
 

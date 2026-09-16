@@ -19,6 +19,24 @@
 | implementation | code diff + tests |
 | run ledger | `.itp/run.md` |
 
+## Artifact minimums by scale
+
+| Scale | Minimum artifacts |
+|---|---|
+| small | `docs/product/spec.md` (one page, stable `REQ-` IDs), `docs/work/ISSUE-<n>.md` (testable acceptance criteria inline), `docs/work/review.md`, `docs/work/verification.md`, `.itp/run.md` |
+| standard | the artifact table above |
+| full | standard plus each triggered specialist's report |
+
+Omit files that would be empty: no `decisions.md` when no decisions were made, no ADR without
+a real decision with alternatives, no `architecture.md` for a small change that moves no
+boundary.
+
+## Metrics to record per run
+
+In the results log or the ledger evidence: scale, phases completed, skills loaded, artifacts
+written, code lines changed, doc-to-code line ratio, and approximate duration. Small runs
+should land near or below a 1:1 doc-to-code ratio.
+
 ## Artifact rules
 
 Artifacts must be readable without hidden conversation context. They distinguish facts,
@@ -74,6 +92,7 @@ handoff:
 ```yaml
 run:
   goal: "Add collaborator invitations"
+  scale: standard
   next_phase: verify
   completed: [research, align, spec, architecture, slice, implement]
   artifacts:

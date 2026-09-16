@@ -50,6 +50,9 @@ Load `codebase-design` for module, interface, seam, and depth vocabulary. The ad
 3. Write `docs/architecture/architecture.md`: structure, boundaries, key interfaces,
    trade-offs, rejected alternatives, and links to the ADRs.
 4. Keep it traceable to requirement IDs from the spec.
+5. When `scale: small` and no module boundary or interface changes, complete with `no
+   architectural change` recorded and skip both the ADRs and `architecture.md`; escalate to
+   `standard` if a boundary is actually moving.
 
 ## Output
 

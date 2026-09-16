@@ -30,6 +30,28 @@ The root skips phases when their output already exists and is not stale:
 - Research-only question -> itp-research, then stop.
 - Incident/regression with unknown cause -> itp-incident.
 
+## Right-sizing
+
+Classify every run once, at the start, and record `scale` in `.itp/run.md`. When unsure, use
+`standard`.
+
+| | `small` | `standard` (default) | `full` |
+|---|---|---|---|
+| When | one module, no new interface or module boundary, no security/data/destructive/migration surface, requirements clear | multi-module or new interface, some ambiguity | cross-cutting, security-critical, migrations, domain ambiguity, or the user asks for the full process |
+| Phases | align only if a decision is open; spec-lite; architecture only if a boundary changes; slice; implement; review (code-review only); verify | all applicable phases with full artifacts | standard plus every applicable specialist |
+| Artifacts | `spec.md`, `ISSUE-<n>.md` (acceptance criteria inline), `review.md`, `verification.md`, `.itp/run.md` | see `artifacts.md` | standard plus specialist reports |
+
+Hard guardrails:
+
+- review and verify always run, at every scale;
+- a security, data, destructive, or migration surface upgrades `small` to at least
+  `standard`, with the reason recorded;
+- scale may rise mid-run; it never drops without a recorded reason.
+
+Budget for `small`: target one session and at most four adapter loads (slice, implement,
+review, verify; align/spec only when genuinely needed). If the run exceeds that, stop and
+report instead of adding ceremony.
+
 ## Definition of Ready (framework phase)
 
 A phase is ready when its required context exists:

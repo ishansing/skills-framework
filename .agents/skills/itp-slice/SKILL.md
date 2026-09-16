@@ -43,6 +43,8 @@ adapter_contract:
 3. Order slices so dependencies come first; keep each small enough for one implement cycle.
 4. Consult `codebase-design` when slice boundaries are unclear; load `poka-yoke` for
    high-consequence slices.
+5. When `scale: small`, produce one terse ISSUE; its acceptance criteria list is the
+   authoritative source `itp-verify` reads.
 
 ## Output
 
