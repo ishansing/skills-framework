@@ -41,4 +41,4 @@ artifacts_expected:
 - Conditional `differential-review` is evaluated (invitation tokens are security-sensitive)
   and triggered; its findings appear in the review report.
 - No phase duplicates another phase's procedure.
-Result:
+Result: pass - see results/2026-09-16-golden.md

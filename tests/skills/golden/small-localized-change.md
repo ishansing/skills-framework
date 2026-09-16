@@ -43,4 +43,4 @@ artifacts_expected:
   `verification.md`.
 - Budget: one session, at most four adapter loads (slice, implement, review, verify);
   spec-lite authored by the root; the doc-to-code ratio is advisory for tiny diffs.
-Result:
+Result: pass - see results/2026-09-16-small-golden.md
