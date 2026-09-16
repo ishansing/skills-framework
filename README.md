@@ -145,6 +145,12 @@ During a run, expect:
   workflow, or missing skill blocks progress;
 - no completion claim until `itp-verify` has run commands in that session.
 
+Want to review progress phase by phase? Ask for checkpoints ("stop after each phase and tell me
+what's implemented and what's next"). The root records `checkpoints: true` in `.itp/run.md`,
+pauses after every phase with a summary - what was produced, open questions, the next phase,
+and the resume point - and waits for your go-ahead. Say "turn checkpoints off" to resume
+auto-advance.
+
 Approve the skill-load prompts your runtime shows. To steer, answer the adapter's
 questions; do not re-implement an adapter's procedure by hand.
 

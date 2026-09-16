@@ -75,6 +75,21 @@ skill_result:
   handoff: {}                  # required when status is needs-human
 ```
 
+## Phase checkpoint
+
+When `checkpoints: true` is in `.itp/run.md`, or the user asks to review each phase, the root
+stops after every adapter and reports:
+
+- scale and the phase just completed;
+- what exists now: artifacts written or updated, and the implementation state (files and
+  tests, when code changed);
+- open questions and unresolved findings;
+- the recommended next phase and what it will do;
+- the resume point (`next_phase`).
+
+Then wait for the user's go-ahead before loading the next adapter. The user can turn checkpoints
+on or off at any time; record the change in the ledger.
+
 ## Human handoff
 
 ```yaml
@@ -94,6 +109,7 @@ handoff:
 run:
   goal: "Add collaborator invitations"
   scale: standard
+  checkpoints: false
   next_phase: verify
   completed: [research, align, spec, architecture, slice, implement]
   artifacts:

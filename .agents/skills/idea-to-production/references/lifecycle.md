@@ -67,6 +67,13 @@ boundaries, so classify it `standard` or `full` until structure and tooling exis
   with a smoke test that runs green. Feature slices follow.
 - Scale may drop to `small` only after structure and tooling exist.
 
+## Checkpoints
+
+By default the root advances through phases without stopping except for `needs-human`. When
+`checkpoints: true` is recorded in `.itp/run.md` (because the user asked to review each phase),
+the root reports the phase checkpoint defined in `artifacts.md` after every adapter and waits
+for a go-ahead before loading the next one.
+
 ## Definition of Ready (framework phase)
 
 A phase is ready when its required context exists:

@@ -42,7 +42,10 @@ Read before starting:
 5. Require the adapter's structured `skill_result` (see `references/artifacts.md`).
 6. Validate `recommended_next` against `dependency.md`. Follow, skip, or loop back only with
    a stated reason.
-7. Continue to the next adapter, or stop for the human (`needs-human`).
+7. Continue to the next adapter, or stop for the human (`needs-human`). If `checkpoints: true`
+   is recorded in `.itp/run.md` (or the user asked to review each phase), report a **phase
+   checkpoint** (see `references/artifacts.md`) and wait for the user's go-ahead before loading
+   the next adapter.
 8. Update `.itp/run.md` (create it from the template in `references/artifacts.md`); set
    `next_phase` to where a fresh session should resume.
 9. Before claiming completion: load `itp-verify`. No completion claim without its fresh
@@ -59,6 +62,8 @@ Read before starting:
 - Scale guardrails: review and verify always run; a security, data, destructive, or migration
   surface upgrades a `small` run to at least `standard` (record why). Scale may rise mid-run;
   it never drops without a recorded reason.
+- Checkpoints: when the user asks to review phase by phase, set `checkpoints: true` in
+  `.itp/run.md` and report a phase checkpoint after every adapter until they turn it off.
 - Pass the smallest useful context to each adapter: artifact paths, target slice/requirement,
   current diff, reproduction, or specific question. Do not replay the conversation when
   artifacts exist.
