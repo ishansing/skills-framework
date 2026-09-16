@@ -34,8 +34,9 @@ boundary.
 ## Metrics to record per run
 
 In the results log or the ledger evidence: scale, phases completed, skills loaded, artifacts
-written, code lines changed, doc-to-code line ratio, and approximate duration. Small runs
-should land near or below a 1:1 doc-to-code ratio.
+written, code lines changed, doc-to-code line ratio, and approximate duration. Use artifact
+count and adapter loads as the budget controls; the ratio is advisory, since review artifacts
+dominate tiny diffs.
 
 ## Artifact rules
 

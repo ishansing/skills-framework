@@ -41,5 +41,6 @@ artifacts_expected:
 - Review loads `code-review` only (no specialist triggers on this diff).
 - `itp-verify` reads the acceptance criteria from the ISSUE, runs the suite fresh, and writes
   `verification.md`.
-- Budget: one session, at most four adapter loads, doc-to-code ratio near or below 1.
+- Budget: one session, at most four adapter loads (slice, implement, review, verify);
+  spec-lite authored by the root; the doc-to-code ratio is advisory for tiny diffs.
 Result:

@@ -49,8 +49,9 @@ Hard guardrails:
 - scale may rise mid-run; it never drops without a recorded reason.
 
 Budget for `small`: target one session and at most four adapter loads (slice, implement,
-review, verify; align/spec only when genuinely needed). If the run exceeds that, stop and
-report instead of adding ceremony.
+review, verify). The root may author the small `spec-lite` directly - one short file with
+stable `REQ-` IDs and the acceptance criteria in the slice - so `itp-spec` is not loaded for
+small runs. If the run exceeds the budget, stop and report instead of adding ceremony.
 
 ## Greenfield projects
 
