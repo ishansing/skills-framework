@@ -21,11 +21,12 @@ artifacts let it skip phases.
 | `tests/skills/` | Behavioral validation cases + static contract check |
 
 Status: **Stage 1 framework validation, in progress**. Campaign 1 (routing, fresh-session
-resume, user-entry recursion, runtime-install refusal, verification gate) passed; see
-`tests/skills/results/`. Remaining gate items: broader routing and adapter isolation,
-composition, recursion bounds, review routing, TDD loop termination, and the golden
-end-to-end case. There is no runtime enforcement harness yet (`CUSTOM-HARNESS.md` is
-deliberately not built until the readiness gate in `SKILL-FRAMEWORK.md` section 25 is met).
+resume, user-entry recursion, runtime-install refusal, verification gate, review routing) and
+the golden end-to-end case passed; see `tests/skills/results/`. Remaining gate items: broader
+adapter isolation outside the golden path, composition chains, recursion bounds, missing-skill
+handoff, and repeat golden runs. There is no runtime enforcement harness yet
+(`CUSTOM-HARNESS.md` is deliberately not built until the readiness gate in
+`SKILL-FRAMEWORK.md` section 25 is met).
 
 ## What is in the framework
 
