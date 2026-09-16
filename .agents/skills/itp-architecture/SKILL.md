@@ -53,6 +53,9 @@ Load `codebase-design` for module, interface, seam, and depth vocabulary. The ad
 5. When `scale: small` and no module boundary or interface changes, complete with `no
    architectural change` recorded and skip both the ADRs and `architecture.md`; escalate to
    `standard` if a boundary is actually moving.
+6. For a greenfield repo, design the initial structure instead of anchoring on existing
+   modules: boundaries for the intended design, the testing/tooling strategy, and stack
+   choices recorded as ADRs.
 
 ## Output
 

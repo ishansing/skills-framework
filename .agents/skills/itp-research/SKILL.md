@@ -33,7 +33,9 @@ The user goal, current repo context, and any existing `docs/product/` artifacts.
 
 ## Procedure
 
-1. Separate what the repo already answers from what needs outside evidence.
+1. Separate what the repo already answers from what needs outside evidence. In a greenfield
+   repo, whole classes of questions (stack, libraries, testing tooling) have no repo answer:
+   research them with primary sources before stack decisions are made.
 2. If outside evidence is needed, load `research` with: the specific question(s), the target
    artifact `docs/product/research.md`, and the requirement to cite primary sources.
 3. Record, never invent: assumptions in `docs/product/assumptions.md`, open unknowns in

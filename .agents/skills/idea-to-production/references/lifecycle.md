@@ -52,6 +52,20 @@ Budget for `small`: target one session and at most four adapter loads (slice, im
 review, verify; align/spec only when genuinely needed). If the run exceeds that, stop and
 report instead of adding ceremony.
 
+## Greenfield projects
+
+A repo with no application code yet is never `small`: greenfield work creates interfaces and
+boundaries, so classify it `standard` or `full` until structure and tooling exist.
+
+- Research may cover stack and library options with provenance before align.
+- Align resolves stack, scope, and tooling decisions and records them in
+  `docs/product/decisions.md`.
+- Architecture decides the initial structure, module boundaries for the intended design, the
+  testing/tooling strategy, and records stack choices as ADRs.
+- The first slice is the bootstrap slice: chosen runtime tooling, test runner, linter, and CI,
+  with a smoke test that runs green. Feature slices follow.
+- Scale may drop to `small` only after structure and tooling exist.
+
 ## Definition of Ready (framework phase)
 
 A phase is ready when its required context exists:

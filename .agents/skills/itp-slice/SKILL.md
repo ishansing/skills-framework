@@ -45,6 +45,9 @@ adapter_contract:
    high-consequence slices.
 5. When `scale: small`, produce one terse ISSUE; its acceptance criteria list is the
    authoritative source `itp-verify` reads.
+6. When no test runner or build exists yet, the first slice is `project bootstrap`: install
+   the chosen tooling and CI, with one smoke test as its validation strategy. Feature slices
+   follow.
 
 ## Output
 

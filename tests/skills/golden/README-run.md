@@ -41,6 +41,24 @@ installed and one passing test.
 3. No interview is expected; the run should skip align's grilling and architecture per the
    small tier.
 
+## Greenfield case (`greenfield-bootstrap.md`)
+
+1. Create the sandbox (framework installed, no application code):
+
+   ```sh
+   bash tests/skills/golden/setup-sandbox.sh /path/to/I2P ~/itp-greenfield-app --empty
+   ```
+
+2. `cd ~/itp-greenfield-app && git status` - clean, one `framework install` commit.
+3. Start a fresh session there and paste:
+
+   ```text
+   Load the `idea-to-production` skill. Goal: build a small CLI that records expenses and
+   reports totals by category, from scratch.
+   ```
+
+4. Answer the alignment questions (stack, scope).
+
 ## What to record
 
 Score each run against its fixture and record it in `tests/skills/results/` with the date,

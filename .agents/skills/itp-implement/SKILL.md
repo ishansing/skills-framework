@@ -50,7 +50,8 @@ TDD methodology.
 
 ## Procedure
 
-1. Work one vertical slice at a time.
+1. Work one vertical slice at a time. A bootstrap slice may add the test runner and tooling
+   first; once a runner exists, the normal red -> green loop applies.
 2. Run the project's checks after each cycle (tests, typecheck, lint, build as applicable).
 3. Record the exact commands and observed results as evidence.
 4. List any unresolved findings explicitly; do not silently widen scope.
