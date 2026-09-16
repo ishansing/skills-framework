@@ -23,6 +23,7 @@ Options:
   --dry-run            print every action; change nothing
   --refresh-upstream   reinstall upstream skills that fail the lockfile hash check
   --strict             exit non-zero if any warning was reported
+  --check-version      compare the framework version with the latest release, then exit
   -h, --help           show this help
 EOF
 }
@@ -42,6 +43,7 @@ run() {
 
 while [ $# -gt 0 ]; do
   case "$1" in
+    --check-version) node "$FS/scripts/check-framework-version.mjs" "$(cat "$FS/VERSION")"; exit $? ;;
     --init) INIT=1 ;;
     --dry-run) DRY_RUN=1 ;;
     --refresh-upstream) REFRESH=1 ;;
@@ -64,6 +66,7 @@ command -v node >/dev/null 2>&1 && HAS_NODE=1
 
 step "Idea-to-Production installer"
 note "framework: $FS"
+note "version:   v$(cat "$FS/VERSION")"
 note "target:    $TARGET"
 [ "$DRY_RUN" = 1 ] && note "mode:      dry-run"
 
@@ -146,6 +149,15 @@ for src in "$FS"/.agents/skills/*/; do
   run cp -r "$src" "$dest"
   note "$name"
 done
+
+step "Framework version"
+if [ "$FS" -ef "$TARGET" ]; then
+  note "skipped: target is the framework repo itself"
+else
+  run mkdir -p "$TARGET/.agents/skills/idea-to-production"
+  run cp "$FS/VERSION" "$TARGET/.agents/skills/idea-to-production/VERSION"
+  note "v$(cat "$FS/VERSION")"
+fi
 
 step "Registry"
 for f in dependency.md skills.lock.json; do

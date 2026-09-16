@@ -1,0 +1,56 @@
+name: CI
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+
+permissions:
+  contents: read
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  checks:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@11d5960a326750d5838078e36cf38b85af677262 # v4.4.0
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: 20
+
+      - name: Shell and script syntax
+        run: |
+          bash -n install.sh
+          for f in scripts/*.mjs tests/skills/*.mjs; do node --check "$f"; done
+
+      - name: Contract check
+        run: node tests/skills/check-contracts.mjs
+
+      - name: Script regression tests
+        run: node --test tests/scripts/*.test.mjs
+
+      - name: Lint workflows
+        run: |
+          curl -sSfL -o actionlint.tar.gz \
+            https://github.com/rhysd/actionlint/releases/download/v1.7.12/actionlint_1.7.12_linux_amd64.tar.gz
+          tar xzf actionlint.tar.gz actionlint
+          ./actionlint -color
+
+      - name: Cache skill clones
+        uses: actions/cache@0057852bfaa89a56745cba8c7296529d2fc39830 # v4.3.0
+        with:
+          path: ${{ runner.temp }}/itp-cache
+          key: itp-skills-${{ hashFiles('skills.lock.json') }}
+
+      - name: Fresh install smoke
+        env:
+          XDG_CACHE_HOME: ${{ runner.temp }}/itp-cache
+        run: |
+          target="$(mktemp -d)"
+          home="$(mktemp -d)"
+          HOME="$home" bash install.sh --init "$target" --strict
+          node tests/skills/check-contracts.mjs "$target"

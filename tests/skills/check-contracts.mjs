@@ -5,6 +5,7 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
+import { dirHash } from "../../scripts/skill-hash.mjs";
 
 const defaultRoot = fileURLToPath(new URL("../../", import.meta.url));
 const root = process.argv[2] ? resolve(process.argv[2]) : defaultRoot;
@@ -113,6 +114,17 @@ for (const [id, entry] of deps) {
   if (!pinned && locked.has(id)) fail(`dependency "${id}" is ${entry.status} but has a lock entry`);
 }
 ok(`lockfile: ${lock.skills.length} pinned skills consistent with dependency.md`);
+
+for (const [id, lockEntry] of locked) {
+  if (!lockEntry.vendored) continue;
+  const dir = join(root, ".agents", "skills", id);
+  if (!existsSync(dir)) fail(`vendored "${id}" missing at ${dir}`);
+  else if (dirHash(dir) !== lockEntry.contentSha256) {
+    fail(`vendored "${id}" content hash differs from skills.lock.json`);
+  } else {
+    ok(`vendored "${id}" hash verified`);
+  }
+}
 
 const rootSkill = readFileSync(join(skillsDir, "idea-to-production", "SKILL.md"), "utf8");
 if (!/invocation-class:\s*user/.test(frontmatter(rootSkill))) fail("root skill is not invocation-class: user");

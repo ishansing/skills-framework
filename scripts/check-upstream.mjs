@@ -42,9 +42,9 @@ async function api(path) {
 
 const branches = new Map();
 
-async function defaultBranch(repo) {
+async function defaultBranch(repo, apiFetch) {
   if (!branches.has(repo)) {
-    const info = await api(`/repos/${repo}`);
+    const info = await apiFetch(`/repos/${repo}`);
     branches.set(repo, info.default_branch);
   }
   return branches.get(repo);
@@ -58,12 +58,12 @@ function encodePath(path) {
   return path.split("/").map(encodeURIComponent).join("/");
 }
 
-export async function checkEntry(entry) {
+export async function checkEntry(entry, apiFetch = api) {
   const base = { id: entry.id, repo: entry.repo, pinned: entry.commit, latest: null };
   try {
-    const branch = await defaultBranch(entry.repo);
+    const branch = await defaultBranch(entry.repo, apiFetch);
     const path = sourcePath(entry);
-    const commits = await api(
+    const commits = await apiFetch(
       `/repos/${entry.repo}/commits?path=${encodeURIComponent(path)}&sha=${branch}&per_page=1`
     );
     if (!Array.isArray(commits)) throw new Error(`unexpected commits response for ${entry.id}`);
@@ -74,7 +74,7 @@ export async function checkEntry(entry) {
     }
     if (latest === entry.commit) return { ...base, status: "current" };
 
-    const compare = await api(`/repos/${entry.repo}/compare/${entry.commit}...${latest}`);
+    const compare = await apiFetch(`/repos/${entry.repo}/compare/${entry.commit}...${latest}`);
     if (compare.notFound) {
       return { ...base, status: "unverifiable", note: "pinned commit not found upstream (history rewrite?)" };
     }
@@ -84,7 +84,7 @@ export async function checkEntry(entry) {
       // repo-wide commit), so the skill content is current.
       return { ...base, status: "current", note: "pin already contains the latest path change" };
     }
-    const contents = await api(`/repos/${entry.repo}/contents/${encodePath(path)}?ref=${branch}`);
+    const contents = await apiFetch(`/repos/${entry.repo}/contents/${encodePath(path)}?ref=${branch}`);
     if (contents.notFound) {
       return { ...base, status: "drift", note: "path missing at HEAD (renamed or removed)" };
     }
@@ -101,10 +101,10 @@ export async function checkEntry(entry) {
   }
 }
 
-export async function checkAll(root = ROOT) {
+export async function checkAll(root = ROOT, apiFetch = api) {
   const lock = loadLock(root);
   const results = [];
-  for (const entry of lock.skills) results.push(await checkEntry(entry));
+  for (const entry of lock.skills) results.push(await checkEntry(entry, apiFetch));
   return results;
 }
 
@@ -123,7 +123,7 @@ function markdown(results) {
   return lines.join("\n");
 }
 
-function exitCode(results) {
+export function exitCode(results) {
   if (results.some((r) => r.status === "error")) return 1;
   return results.every((r) => r.status === "current") ? 0 : 3;
 }

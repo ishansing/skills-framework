@@ -61,6 +61,7 @@ Re-run the same command to upgrade; the installer is idempotent.
 | `--dry-run` | Print every action; change nothing |
 | `--refresh-upstream` | Reinstall upstream skills that fail the lockfile hash check |
 | `--strict` | Exit non-zero if any warning was reported (used by CI) |
+| `--check-version` | Compare the framework version with the latest release, then exit |
 
 What it does:
 
@@ -153,6 +154,14 @@ questions; do not re-implement an adapter's procedure by hand.
   lifecycle run.
 
 ## Updating the framework
+
+Installed projects record the framework version at
+`.agents/skills/idea-to-production/VERSION`. To check whether this framework checkout is
+behind:
+
+```sh
+bash install.sh --check-version
+```
 
 Upstream pins are checked automatically on the first of each month by
 `.github/workflows/upstream-check.yml` (also runnable via `workflow_dispatch`):

@@ -58,6 +58,17 @@ function statuses(root) {
   return map;
 }
 
+export function assertSkillIdentity(entry, source) {
+  if (entry.updateMode === "vendor-file") {
+    if (!existsSync(source)) throw new Error(`${entry.id}: source has no ${entry.sourcePath}`);
+    return;
+  }
+  const name = readSkillName(join(source, "SKILL.md"));
+  if (name !== entry.id) {
+    throw new Error(`${entry.id}: upstream skill name is "${name}"; rename/adaptation needed`);
+  }
+}
+
 function stage(entry, commit) {
   const cacheDir = fetchSkill(entry.repo, commit);
   const source = entry.updateMode === "vendor-file"
@@ -67,14 +78,7 @@ function stage(entry, commit) {
     const what = entry.updateMode === "vendor-file" ? entry.sourcePath : entry.path;
     throw new Error(`${entry.id}: ${entry.repo}@${commit.slice(0, 12)} has no ${what}`);
   }
-  if (entry.updateMode !== "vendor-file") {
-    const name = readSkillName(join(source, "SKILL.md"));
-    if (name !== entry.id) {
-      throw new Error(
-        `${entry.id}: upstream skill name is "${name}" at ${entry.repo}@${commit.slice(0, 12)}; rename/adaptation needed`
-      );
-    }
-  }
+  assertSkillIdentity(entry, source);
   return source;
 }
 
