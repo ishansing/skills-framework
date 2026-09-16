@@ -1,38 +1,46 @@
 # Golden Case - How To Run
 
 The golden case (`add-collaborator-invitations.md`) needs a repository with real code and
-tests, so it runs in `sandbox/golden-app` (untracked; see the framework repo `.gitignore`).
+tests, plus a human to answer the alignment interview. `install.sh` prepares one.
 
-## Setup
+## Sandbox
+
+`~/itp-golden-app` is a tiny Node app with the framework installed: `src/members.js` (direct
+membership only), `test/members.test.js`, `AGENTS.md`, and the framework skills. No invitation
+feature exists yet.
+
+To recreate it from scratch:
 
 ```sh
-cd sandbox/golden-app
-git status          # a tiny Node app with one passing test suite
+bash /path/to/I2P/install.sh --init ~/itp-golden-app --strict
 ```
 
 ## Run
 
-Start a fresh OpenCode session with `sandbox/golden-app` as the working directory, then use
-exactly this prompt:
+1. `cd ~/itp-golden-app && git status` - should be clean, on `master`.
+2. Start a fresh agent session in that directory.
+3. Paste exactly this prompt:
 
-```text
-Load the `idea-to-production` skill. Goal: an owner can invite a collaborator by email, and
-the invitee can accept the invitation to become a member. The app is the invitation store in
-src/invites.js with tests in test/invites.test.js. Build this end to end.
-```
+   ```text
+   Load the `idea-to-production` skill. Goal: owners can invite a collaborator by email; the
+   invitee accepts the invitation and becomes a member; an email that was not invited cannot
+   become a member. Build this end to end.
+   ```
 
-During the run, answer the phase questions like a product owner (alignment will interview
-you). Do not add instructions beyond the answers.
+4. Answer the alignment/grilling questions as the product owner. Otherwise do not add
+   instructions.
 
 ## What to record
 
-Copy `add-collaborator-invitations.md` expectations and fill in:
+Score the run against `add-collaborator-invitations.md`:
 
 - required adapters and children actually loaded, in order
-- conditional triggers evaluated (differential-review should trigger on invitation tokens)
+- conditional triggers evaluated (`differential-review` should fire on invitation tokens; it
+  is installed)
 - artifacts produced under `docs/product/`, `docs/architecture/`, `docs/work/`, `.itp/run.md`
 - whether `itp-verify` ran commands in that session before any completion claim
 - anything forbidden that happened (runtime skill install, recursive `to-spec`)
+- the final `git log` / `git diff` in the sandbox
 
-Then record the outcome in `tests/skills/results/` with the date. The sandbox stays local and
-is never committed.
+Then record the outcome in `tests/skills/results/` with the date. The sandbox is a separate
+repository outside the framework repo; keep or delete it afterwards.
