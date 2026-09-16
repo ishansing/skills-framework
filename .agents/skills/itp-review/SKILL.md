@@ -29,9 +29,11 @@ adapter_contract:
 
 ## Inputs
 
-The current diff, its fixed point, `docs/product/spec.md` +
-`docs/product/acceptance-criteria.md`, the slice, and project rules. Read the diff fresh; do
-not accept the implementation narrative.
+The diff under review is `<fixed-point>...<branch-or-commit-under-review>`, the linked
+`docs/product/spec.md` + `docs/product/acceptance-criteria.md`, the slice, and project rules.
+Read the diff fresh; do not accept the implementation narrative. If the branch under review is
+not checked out, check it out or pass that explicit range to `code-review`; never silently
+review `master...HEAD`.
 
 ## Required child
 
