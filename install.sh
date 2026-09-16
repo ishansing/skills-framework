@@ -8,8 +8,9 @@ TARGET=""
 INIT=0
 DRY_RUN=0
 REFRESH=0
+STRICT=0
+WARNINGS=0
 GLOBAL_SKILLS="${HOME}/.agents/skills"
-CACHE="${XDG_CACHE_HOME:-${HOME}/.cache}/idea-to-production"
 
 usage() {
   cat <<'EOF'
@@ -21,6 +22,7 @@ Options:
   --init               create TARGET (and git init) if it does not exist
   --dry-run            print every action; change nothing
   --refresh-upstream   reinstall upstream skills that fail the lockfile hash check
+  --strict             exit non-zero if any warning was reported
   -h, --help           show this help
 EOF
 }
@@ -28,7 +30,7 @@ EOF
 die() { printf 'error: %s\n' "$*" >&2; exit 1; }
 note() { printf '  %s\n' "$*"; }
 step() { printf '\n%s\n' "$*"; }
-warn() { printf 'warning: %s\n' "$*" >&2; }
+warn() { WARNINGS=$((WARNINGS + 1)); printf 'warning: %s\n' "$*" >&2; }
 
 run() {
   if [ "$DRY_RUN" = 1 ]; then
@@ -43,6 +45,7 @@ while [ $# -gt 0 ]; do
     --init) INIT=1 ;;
     --dry-run) DRY_RUN=1 ;;
     --refresh-upstream) REFRESH=1 ;;
+    --strict) STRICT=1 ;;
     -h|--help) usage; exit 0 ;;
     --*) die "unknown option: $1" ;;
     *) [ -z "$TARGET" ] || die "unexpected argument: $1"; TARGET="$1" ;;
@@ -74,28 +77,7 @@ if [ ! -d "$TARGET" ]; then
 fi
 
 hash_dir() {
-  node -e '
-    const fs = require("fs");
-    const path = require("path");
-    const crypto = require("crypto");
-    const dir = process.argv[1];
-    const files = [];
-    (function walk(d) {
-      for (const e of fs.readdirSync(d, { withFileTypes: true })) {
-        const p = path.join(d, e.name);
-        e.isDirectory() ? walk(p) : files.push(p);
-      }
-    })(dir);
-    files.sort((a, b) => path.relative(dir, a).localeCompare(path.relative(dir, b)));
-    const h = crypto.createHash("sha256");
-    for (const f of files) {
-      h.update(path.relative(dir, f));
-      h.update("\0");
-      h.update(fs.readFileSync(f));
-      h.update("\0");
-    }
-    process.stdout.write(h.digest("hex"));
-  ' "$1"
+  node "$FS/scripts/skill-hash.mjs" "$1"
 }
 
 # --- upstream skills ---------------------------------------------------------
@@ -115,17 +97,9 @@ fi
 
 install_upstream() { # id repo commit path
   local id="$1" repo="$2" commit="$3" path="$4"
-  local cache_dir="$CACHE/${repo//\//__}@${commit}"
-  local dest="$GLOBAL_SKILLS/$id"
-  if [ ! -d "$cache_dir/.git" ]; then
-    mkdir -p "$cache_dir"
-    git -C "$cache_dir" init -q
-    git -C "$cache_dir" remote add origin "https://github.com/$repo"
-    git -C "$cache_dir" config remote.origin.promisor true
-    git -C "$cache_dir" config remote.origin.partialclonefilter blob:none
-  fi
-  git -C "$cache_dir" fetch -q --depth 1 --filter=blob:none origin "$commit"
-  git -C "$cache_dir" checkout -q --force FETCH_HEAD
+  local dest="$GLOBAL_SKILLS/$id" cache_dir
+  cache_dir="$(node "$FS/scripts/fetch-skill.mjs" "$repo" "$commit")" ||
+    die "failed to fetch $repo@$commit"
   [ -d "$cache_dir/$path" ] || die "$repo@$commit has no path $path"
   printf '  fetching %s from %s@%s\n' "$id" "$repo" "${commit:0:12}"
   rm -rf "$dest.tmp.$$"
@@ -258,3 +232,8 @@ cat <<EOF
   3. Start a lifecycle:
      Load the \`idea-to-production\` skill. Goal: <what you want built>.
 EOF
+
+if [ "$STRICT" = 1 ] && [ "$WARNINGS" -gt 0 ]; then
+  printf '\nerror: %s warning(s) in --strict mode\n' "$WARNINGS" >&2
+  exit 1
+fi

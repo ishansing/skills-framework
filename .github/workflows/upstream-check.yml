@@ -1,0 +1,111 @@
+name: Upstream skill check
+
+on:
+  schedule:
+    - cron: "0 6 1 * *"
+  workflow_dispatch:
+
+permissions:
+  contents: write
+  pull-requests: write
+  issues: write
+
+jobs:
+  upstream:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Check upstream pins
+        id: check
+        run: |
+          set +e
+          node scripts/check-upstream.mjs --report-dir "$RUNNER_TEMP"
+          code=$?
+          set -e
+          cat "$RUNNER_TEMP/report.md" >> "$GITHUB_STEP_SUMMARY"
+          if [ "$code" -eq 1 ]; then
+            echo "Fatal error while checking upstream." >&2
+            exit 1
+          fi
+          if [ "$code" -eq 0 ]; then
+            echo "updates=false" >> "$GITHUB_OUTPUT"
+          else
+            echo "updates=true" >> "$GITHUB_OUTPUT"
+          fi
+
+      - name: Re-pin clean updates
+        if: steps.check.outputs.updates == 'true'
+        id: repin
+        run: |
+          set +e
+          node scripts/repin.mjs --all
+          code=$?
+          set -e
+          if [ "$code" -ne 0 ]; then
+            echo "drift=true" >> "$GITHUB_OUTPUT"
+            exit 0
+          fi
+          node tests/skills/check-contracts.mjs
+          HOME="$RUNNER_TEMP/home" bash install.sh --init "$RUNNER_TEMP/target" --strict
+          node tests/skills/check-contracts.mjs "$RUNNER_TEMP/target"
+
+      - name: Open or update pull request
+        if: steps.check.outputs.updates == 'true' && steps.repin.outputs.drift != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B automation/upstream
+          git add -A
+          if git diff --cached --quiet; then
+            echo "No file changes after re-pin."
+            exit 0
+          fi
+          git commit -m "chore(upstream): monthly skill re-pin"
+          git push -f origin automation/upstream
+          {
+            echo "Automated upstream re-pin for the pinned skills in \`skills.lock.json\`."
+            echo
+            cat "$RUNNER_TEMP/report.md"
+            echo
+            echo "### Validation"
+            echo
+            echo "- [x] \`node tests/skills/check-contracts.mjs\`"
+            echo "- [x] fresh install smoke (\`install.sh --strict\`, all hashes verified)"
+            echo "- [ ] behavioral: golden case (\`tests/skills/golden/\`)"
+            echo "- [ ] behavioral: affected capability cases"
+            echo "- model / session date:"
+          } > "$RUNNER_TEMP/pr-body.md"
+          num="$(gh pr list --head automation/upstream --state open --json number --jq '.[0].number')"
+          if [ -n "$num" ]; then
+            gh pr edit "$num" --body-file "$RUNNER_TEMP/pr-body.md"
+          else
+            gh pr create --base master --head automation/upstream \
+              --title "chore(upstream): monthly skill re-pin" \
+              --body-file "$RUNNER_TEMP/pr-body.md"
+          fi
+
+      - name: Open or update drift issue
+        if: steps.repin.outputs.drift == 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          {
+            echo "Automated re-pin stopped: upstream drift needs manual adaptation (renamed, deleted, or rewritten history)."
+            echo
+            cat "$RUNNER_TEMP/report.md"
+          } > "$RUNNER_TEMP/issue-body.md"
+          num="$(gh issue list --state open --search 'Upstream skill drift in:title' --json number --jq '.[0].number')"
+          if [ -n "$num" ]; then
+            gh issue comment "$num" --body-file "$RUNNER_TEMP/issue-body.md"
+          else
+            gh issue create --title "Upstream skill drift needs manual adaptation" \
+              --body-file "$RUNNER_TEMP/issue-body.md"
+          fi

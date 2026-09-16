@@ -29,3 +29,10 @@ Checks the skill graph: every child ID resolves in `dependency.md`, required chi
 pinned, no user-entry skill is a recursive child, adapter IDs match directory names, and the
 lockfile covers every installed or vendored skill. Run after changing any adapter, the
 dependency map, or the lockfile.
+
+## Automated upstream re-pins
+
+`.github/workflows/upstream-check.yml` runs monthly (and on demand). Clean re-pins are
+validated by the contract check and a strict fresh install before a PR is opened; renamed or
+deleted upstream paths open a drift issue instead. Behavioral cases stay manual: run the
+affected cases before merging a re-pin PR (see `.github/PULL_REQUEST_TEMPLATE.md`).

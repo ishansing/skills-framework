@@ -188,6 +188,8 @@
       "contentSha256": "a01f81a48a86ad509dacdc63a3ef392db1b317a7924827bf63f70f2658dd40c0",
       "invocationClass": "model",
       "vendored": true,
+      "updateMode": "vendor-file",
+      "sourcePath": "command.md",
       "note": "pinned local adapter; snapshot command.md is the locked content"
     }
   ]

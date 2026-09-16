@@ -60,6 +60,7 @@ Re-run the same command to upgrade; the installer is idempotent.
 | `--init` | Create the target directory and `git init` if it does not exist |
 | `--dry-run` | Print every action; change nothing |
 | `--refresh-upstream` | Reinstall upstream skills that fail the lockfile hash check |
+| `--strict` | Exit non-zero if any warning was reported (used by CI) |
 
 What it does:
 
@@ -145,13 +146,34 @@ questions; do not re-implement an adapter's procedure by hand.
 
 - **Upgrade a repo:** re-run `install.sh` against it.
 - **Repair a machine:** re-run with `--refresh-upstream`.
-- **Upstream moved?** Re-pin deliberately: check out the new commit, copy the skill,
-  recompute the content hash, update `dependency.md` / `skills.lock.json`, rerun
-  `check-contracts.mjs`, and re-run the relevant behavioral cases.
+- **Upstream moved?** See "Updating the framework" below.
 - **Adding or removing a specialist?** Update `dependency.md` status, the adapter's
   `conditional_children`, and the lockfile together; the checker enforces consistency.
 - **Keep runs reproducible:** never edit `dependency.md` or `skills.lock.json` during a
   lifecycle run.
+
+## Updating the framework
+
+Upstream pins are checked automatically on the first of each month by
+`.github/workflows/upstream-check.yml` (also runnable via `workflow_dispatch`):
+
+- clean updates are re-pinned on the `automation/upstream` branch, verified (contract check +
+  fresh install with hash verification), and proposed as a PR with a validation checklist;
+- renamed, deleted, or history-rewritten pins open an `upstream-drift` issue instead;
+- nothing is auto-merged.
+
+Locally:
+
+```sh
+node scripts/check-upstream.mjs      # report: current / updated / drift (exit 3 when not all current)
+node scripts/repin.mjs --all         # re-pin clean updates; refuses renames, writes skills.lock.json
+bash install.sh --refresh-upstream   # materialize the new pins on this machine
+```
+
+To cut a release, run the `Release` workflow with a version (semver: MAJOR = contract or
+lifecycle change, MINOR = upstream re-pin or adaptation, PATCH = fix). It bumps `VERSION`,
+tags `vX.Y.Z`, and publishes release notes with the pinned-commit table. Consumers upgrade by
+pulling this repo and re-running `install.sh` against each installed project.
 
 ## Testing the framework itself
 

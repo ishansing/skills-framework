@@ -99,9 +99,9 @@ If a user-entry workflow is preferable, return `needs-human` with
 - Specialists apply only on their trigger; see the table above.
 - `verification-before-completion` is vendored at `.agents/skills/verification-before-completion/`
   from `obra/superpowers@b36e0829c6d0140e93cfef2ca599b1b07d4a7797` (MIT).
-- Upstream content is pinned in `skills.lock.json` (repo, commit, content hash): Matt Pocock
-  `959a8e9f...`, Anthropic `34040c9c...`, Trail of Bits `027bc47a...`, Vercel
-  `063bee94...`, awesome-copilot `fb4eb04f...`, obra `b36e0829...`.
+- Upstream content is pinned in `skills.lock.json` (repo, commit, content hash); that file is
+  the only place pinned commits are recorded. The monthly `upstream-check` workflow keeps it
+  current; see README, "Updating the framework".
 - Runtime adaptations (deliberate deviations from verbatim upstream):
   - `differential-review` delegates high-risk analysis to the
     `differential-review:adversarial-modeler` subagent. An OpenCode subagent
