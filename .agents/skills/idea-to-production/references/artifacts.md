@@ -74,7 +74,7 @@ handoff:
 ```yaml
 run:
   goal: "Add collaborator invitations"
-  current_phase: review
+  next_phase: verify
   completed: [research, align, spec, architecture, slice, implement]
   artifacts:
     research: docs/product/research.md
@@ -85,4 +85,6 @@ run:
   open_questions: []
 ```
 
-The ledger is a coordination aid, not a production state database.
+`next_phase` is where a fresh session resumes; update it whenever the run stops (use
+`complete` when everything is done). The ledger is a coordination aid, not a production state
+database.

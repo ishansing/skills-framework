@@ -10,7 +10,9 @@ deterministic, so treat outcomes as regression signals, not proofs.
 | `composition/` | pair and short-chain composition (19.2) |
 | `recursion/` | bounded recursion terminates with new evidence (19.3) |
 | `failure/` | missing/ambiguous/failing scenarios produce fallback or `needs-human` (19.4) |
-| `golden/` | representative end-to-end trace expectations (19.6) |
+| `golden/` | representative end-to-end trace expectations (19.6); run it per `golden/README-run.md` |
+
+Recorded outcomes live in `results/` (one file per campaign).
 
 ## Running a case
 

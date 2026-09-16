@@ -40,7 +40,8 @@ Read before starting:
 5. Validate `recommended_next` against `dependency.md`. Follow, skip, or loop back only with
    a stated reason.
 6. Continue to the next adapter, or stop for the human (`needs-human`).
-7. Update `.itp/run.md` (create it from the template in `references/artifacts.md`).
+7. Update `.itp/run.md` (create it from the template in `references/artifacts.md`); set
+   `next_phase` to where a fresh session should resume.
 8. Before claiming completion: load `itp-verify`. No completion claim without its fresh
    evidence.
 
