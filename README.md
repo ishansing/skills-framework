@@ -157,18 +157,22 @@ phase, ask for checkpoints:
 Use checkpoint mode: stop after each phase and tell me what's implemented and what's next.
 ```
 
-The root records `checkpoints: true` in `.itp/run.md` and, after every adapter, stops and
-reports:
+The root records `checkpoints: true` in `.itp/run.md` and stops at every phase boundary with a
+report:
 
 - the phase completed and the run's scale;
 - what exists now - artifacts written or updated, and code and tests changed;
+- phases skipped or completed as no-ops, with the reason;
+- documentation-impact status and any recorded waivers;
 - open questions and unresolved findings;
 - the next phase and what it will do;
 - the resume point (`next_phase`).
 
-It then waits for your go-ahead: say `continue` to advance exactly one phase, or `turn
-checkpoints off` to resume auto-advance. Because checkpoint state lives in the ledger, it
-survives session restarts - a fresh session can continue from the same stop.
+While paused the ledger shows `awaiting: user`. If a phase also needs a human decision, you get
+one merged report - the handoff takes precedence and includes the checkpoint summary. Say
+`continue` to advance exactly one phase, or `turn checkpoints off` to resume auto-advance.
+Because checkpoint state lives in the ledger, it survives session restarts - a fresh session
+can continue from the same stop.
 
 ### Documentation
 

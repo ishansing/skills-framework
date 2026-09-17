@@ -38,18 +38,21 @@ Read before starting:
 3. Classify the run's scale (`small`, `standard`, `full`) with the right-sizing rule in
    `references/lifecycle.md`; when unsure, use `standard`. Record `scale` in `.itp/run.md`.
 4. Load exactly one adapter by ID with the runtime's skill tool; pass `scale` in the child
-   request context.
+   request context. In small runs the root authors `spec-lite` directly.
 5. Require the adapter's structured `skill_result` (see `references/artifacts.md`).
 6. Validate `recommended_next` against `dependency.md`. Follow, skip, or loop back only with
    a stated reason.
-7. Continue to the next adapter, or stop for the human (`needs-human`). If `checkpoints: true`
-   is recorded in `.itp/run.md` (or the user asked to review each phase), report a **phase
-   checkpoint** (see `references/artifacts.md`) and wait for the user's go-ahead before loading
-   the next adapter.
-8. Update `.itp/run.md` (create it from the template in `references/artifacts.md`); set
+7. Update `.itp/run.md` (create it from the template in `references/artifacts.md`); set
    `next_phase` to where a fresh session should resume.
-9. Before claiming completion: load `itp-verify`. No completion claim without its fresh
-   evidence.
+8. Continue to the next phase, or stop for the human (`needs-human`). When `checkpoints: true`
+   is recorded (or the user asked to review each phase), report a **phase checkpoint** (see
+   `references/artifacts.md`) at every phase boundary - including root-authored `spec-lite` and
+   phases completed as no-ops - then set `awaiting: user` and wait. A `needs-human` stop takes
+   precedence: emit one merged report (handoff plus what exists and the next phase).
+9. On the user's go-ahead, clear `awaiting` and continue. On "turn checkpoints off", set
+   `checkpoints: false`, clear `awaiting`, and resume auto-advance.
+10. Before claiming completion: load `itp-verify`. No completion claim without its fresh
+    evidence.
 
 ## Hard rules
 
@@ -63,7 +66,8 @@ Read before starting:
   surface upgrades a `small` run to at least `standard` (record why). Scale may rise mid-run;
   it never drops without a recorded reason.
 - Checkpoints: when the user asks to review phase by phase, set `checkpoints: true` in
-  `.itp/run.md` and report a phase checkpoint after every adapter until they turn it off.
+  `.itp/run.md`. Record a checkpoint at every phase boundary (set `awaiting: user`), clear it
+  on the user's go-ahead, and honor "turn checkpoints off" by clearing the flag.
 - Pass the smallest useful context to each adapter: artifact paths, target slice/requirement,
   current diff, reproduction, or specific question. Do not replay the conversation when
   artifacts exist.

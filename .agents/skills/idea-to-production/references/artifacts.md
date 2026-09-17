@@ -91,17 +91,23 @@ skill_result:
 ## Phase checkpoint
 
 When `checkpoints: true` is in `.itp/run.md`, or the user asks to review each phase, the root
-stops after every adapter and reports:
+stops at every phase boundary - including root-authored `spec-lite` and phases completed as
+no-ops - and reports:
 
 - scale and the phase just completed;
 - what exists now: artifacts written or updated, and the implementation state (files and
   tests, when code changed);
-- open questions and unresolved findings;
+- phases skipped or completed as no-ops, with the reason;
+- waivers recorded (for example a documentation-impact waiver);
+- documentation-impact status (updated, waived, or `none`);
+- open questions and unresolved findings carried forward;
 - the recommended next phase and what it will do;
 - the resume point (`next_phase`).
 
-Then wait for the user's go-ahead before loading the next adapter. The user can turn checkpoints
-on or off at any time; record the change in the ledger.
+Set `awaiting: user` in the ledger while paused and clear it on the user's go-ahead. A
+`needs-human` stop takes precedence over a checkpoint: emit one merged report containing the
+handoff (status, reason, options, `resume_with`) plus what exists and the next phase. The user
+can turn checkpoints on or off at any time; record the change in the ledger.
 
 ## Human handoff
 
@@ -123,6 +129,7 @@ run:
   goal: "Add collaborator invitations"
   scale: standard
   checkpoints: false
+  # awaiting: user          # set only while paused at a checkpoint
   next_phase: verify
   completed: [research, align, spec, architecture, slice, implement]
   artifacts:
