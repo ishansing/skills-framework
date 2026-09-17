@@ -169,10 +169,12 @@ report:
 - the resume point (`next_phase`).
 
 While paused the ledger shows `awaiting: user`. If a phase also needs a human decision, you get
-one merged report - the handoff takes precedence and includes the checkpoint summary. Say
-`continue` to advance exactly one phase, or `turn checkpoints off` to resume auto-advance.
-Because checkpoint state lives in the ledger, it survives session restarts - a fresh session
-can continue from the same stop.
+one merged report - the handoff takes precedence and includes the checkpoint summary. At a
+checkpoint you can say `continue`, describe changes you want (what and where), or `turn
+checkpoints off`. Requested changes route back to the phase that owns the artifact, which re-runs
+with your feedback (at most twice per phase); the ledger records the amendment and the run stays
+paused until you say continue. Because checkpoint state lives in the ledger, it survives session
+restarts - a fresh session can continue from the same stop.
 
 ### Documentation
 

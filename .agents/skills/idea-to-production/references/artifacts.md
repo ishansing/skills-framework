@@ -104,10 +104,16 @@ no-ops - and reports:
 - the recommended next phase and what it will do;
 - the resume point (`next_phase`).
 
-Set `awaiting: user` in the ledger while paused and clear it on the user's go-ahead. A
-`needs-human` stop takes precedence over a checkpoint: emit one merged report containing the
-handoff (status, reason, options, `resume_with`) plus what exists and the next phase. The user
-can turn checkpoints on or off at any time; record the change in the ledger.
+Set `awaiting: user` in the ledger while paused and clear it on the user's go-ahead. End the
+report with the options: `continue`, describe changes (what and where), or `turn checkpoints
+off`. Requested changes route to the phase that owns the artifact - `spec` -> `itp-spec` (or
+root `spec-lite`), `architecture` -> `itp-architecture`, `slice` -> `itp-slice`, code ->
+`itp-implement` - which re-runs with the feedback as context, records the amendment in the
+ledger, and re-checkpoints the amended phase (at most two re-runs per phase). `awaiting: user`
+stays set until the go-ahead or toggle-off. A `needs-human` stop takes precedence over a
+checkpoint: emit one merged report containing the handoff (status, reason, options,
+`resume_with`) plus what exists and the next phase. The user can turn checkpoints on or off at
+any time; record the change in the ledger.
 
 ## Human handoff
 
@@ -139,6 +145,7 @@ run:
     slice: docs/work/ISSUE-014.md
   loaded_skills: [research, grilling, domain-modeling, tdd, code-review]
   open_questions: []
+  # amendments: [{ phase: slice, reason: "checkpoint feedback" }]
 ```
 
 `next_phase` is where a fresh session resumes; update it whenever the run stops (use

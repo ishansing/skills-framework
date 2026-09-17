@@ -49,8 +49,13 @@ Read before starting:
    `references/artifacts.md`) at every phase boundary - including root-authored `spec-lite` and
    phases completed as no-ops - then set `awaiting: user` and wait. A `needs-human` stop takes
    precedence: emit one merged report (handoff plus what exists and the next phase).
-9. On the user's go-ahead, clear `awaiting` and continue. On "turn checkpoints off", set
-   `checkpoints: false`, clear `awaiting`, and resume auto-advance.
+9. At a checkpoint the user may `continue`, describe changes, or `turn checkpoints off`. For
+   requested changes, route the feedback to the phase that owns the artifact (`spec` -> `itp-spec`
+   or root `spec-lite`, `architecture` -> `itp-architecture`, `slice` -> `itp-slice`, code ->
+   `itp-implement`), re-run that adapter with the feedback as context, record the amendment in
+   `.itp/run.md`, and re-checkpoint the amended phase (at most two re-runs per phase; a third
+   request stops for the human). On the go-ahead, clear `awaiting` and continue. On "turn
+   checkpoints off", set `checkpoints: false`, clear `awaiting`, and resume auto-advance.
 10. Before claiming completion: load `itp-verify`. No completion claim without its fresh
     evidence.
 

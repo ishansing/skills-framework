@@ -53,3 +53,19 @@ Deferred to the Stage 2 harness: asserting the exact stop count is a determinist
 state-machine check; do not retry this as a behavioral case.
 
 Result:
+
+### CHKPT-05 request changes at a checkpoint
+
+Setup: a run paused at a checkpoint (`awaiting: user`).
+
+1. Reply with a change request targeting a completed artifact, for example: "the spec should
+   name the accessor `memberEmails()`; update the spec and the slice accordingly."
+2. Expect: the run routes to the owning phase (spec -> `itp-spec` or root `spec-lite`,
+   slice -> `itp-slice`), re-runs it with the feedback as context, updates the artifact,
+   records the amendment in `.itp/run.md`, and re-checkpoints the amended phase with
+   `awaiting: user` still set.
+3. Reply `continue` and expect the next phase to use the amended artifact.
+
+Bound: at most two re-runs per phase; a third request stops for the human.
+
+Result:

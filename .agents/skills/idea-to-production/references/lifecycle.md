@@ -74,6 +74,10 @@ By default the root advances through phases without stopping except for `needs-h
 the root reports the phase checkpoint defined in `artifacts.md` at every phase boundary - not
 just adapter loads - and waits for a go-ahead before starting the next phase. While paused it
 sets `awaiting: user`; a `needs-human` stop takes precedence and merges into the same report.
+At a checkpoint the user can continue, describe changes, or turn checkpoints off. Requested
+changes route to the owning phase's adapter, which re-runs with the feedback as context (at
+most two re-runs per phase); the ledger records the amendment and `awaiting: user` stays set
+until the go-ahead.
 
 ## Definition of Ready (framework phase)
 
