@@ -16,9 +16,11 @@ fresh-context subagent sessions in `sandbox-chkpt2`.
 The `awaiting: user` field makes the paused state visible on disk, so resume evidence no longer
 depends on the model's prose (which the compression plugin still garbles).
 
-## Not covered
+## Deferred to the Stage 2 harness
 
 - `CHKPT-02` (checkpoints across a review -> implement -> re-review loop) and `CHKPT-04`
-  (standard-scale seven-stop count) remain fixtures; neither was deterministically forced in
-  this pass - the run's review approved first time and the change classified `small`.
+  (standard-scale seven-stop count) are deterministic state-transition tests: the harness can
+  stage a failing check or force `changes-requested` and assert the checkpoint and `awaiting`
+  transitions mechanically. They are not retried as behavioral cases (this run's review
+  approved first time and the change classified `small`).
 - The exact checkpoint prose could not be captured; ledger and artifact state are the evidence.

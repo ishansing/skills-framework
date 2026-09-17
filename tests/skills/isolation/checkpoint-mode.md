@@ -26,6 +26,9 @@ Setup: a run whose review returns `changes-requested`.
 Expect: checkpoints after the fixes (implement) and again after the re-review - one stop per
 phase boundary, including loop-backs.
 
+Deferred to the Stage 2 harness: forcing `changes-requested` deterministically is a
+state-injection test, not a behavioral one. Do not retry this as a behavioral case.
+
 Result:
 
 ### CHKPT-03 turn checkpoints off
@@ -45,5 +48,8 @@ stops: align, spec, architecture, slice, implement, review, verify).
 
 Expect: one stop per phase, `awaiting: user` each time, and a merged report whenever a phase
 also needs a human decision.
+
+Deferred to the Stage 2 harness: asserting the exact stop count is a deterministic
+state-machine check; do not retry this as a behavioral case.
 
 Result:
