@@ -170,6 +170,14 @@ It then waits for your go-ahead: say `continue` to advance exactly one phase, or
 checkpoints off` to resume auto-advance. Because checkpoint state lives in the ledger, it
 survives session restarts - a fresh session can continue from the same stop.
 
+### Documentation
+
+Every slice declares its **documentation impact** - which user-facing docs change (README, API
+docs, usage guide, examples, changelog), or `none` for invisible changes. `itp-implement` makes
+those updates with the code, `itp-review` checks the declaration against the diff, and
+`itp-verify` counts them as evidence. Docs follow your project's existing layout; if there are
+none, the minimum is a README usage section.
+
 ## Right-sizing
 
 The root classifies each run once and records `scale` in `.itp/run.md`; when unsure it uses

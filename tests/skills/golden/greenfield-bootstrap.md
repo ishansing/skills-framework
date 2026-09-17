@@ -44,4 +44,6 @@ artifacts_expected:
   does.
 - Review and verify run; verify exercises the bootstrap acceptance criteria and the smoke test
   fresh.
+- Slices declare documentation impact; the README usage section is created or updated as
+  declared.
 Result: pass - see results/2026-09-16-greenfield-golden.md

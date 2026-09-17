@@ -39,6 +39,8 @@ adapter_contract:
    - dependencies on other slices;
    - out-of-scope behavior;
    - validation strategy;
+   - documentation impact: the user-facing docs that change (file + what), or `none` for
+     invisible changes; follow the project's existing docs layout, README fallback;
    - conditional specialist triggers.
 3. Order slices so dependencies come first; keep each small enough for one implement cycle.
 4. Consult `codebase-design` when slice boundaries are unclear; load `poka-yoke` for

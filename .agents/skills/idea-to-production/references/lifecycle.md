@@ -92,6 +92,7 @@ Complete a work item only when:
 - relevant tests/checks were actually run;
 - `code-review` completed, plus any triggered specialist reviews;
 - `itp-verify` produced fresh `verification-before-completion` evidence;
+- declared documentation impact is satisfied or explicitly waived;
 - unresolved findings are fixed or explicitly handed off;
 - final artifacts describe what changed and any follow-up.
 

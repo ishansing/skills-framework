@@ -43,10 +43,12 @@ fresh verification evidence produced in this session.
    acceptance-criteria tests plus the project's suite; add build, typecheck, lint, browser, or
    migration checks only when the diff touches them.
 2. Confirm each acceptance criterion is actually satisfied by the evidence, not by assertion.
-3. Confirm triggered specialist reviews completed and blocking findings are resolved or
+3. Confirm the declared documentation impact is satisfied (each item updated or explicitly
+   waived) and that updated docs do not contradict the verified behavior.
+4. Confirm triggered specialist reviews completed and blocking findings are resolved or
    explicitly handed off.
-4. Write `docs/work/verification.md` with the evidence and the verdict.
-5. `pass` only when every criterion has fresh evidence. Otherwise `fail` with the missing or
+5. Write `docs/work/verification.md` with the evidence and the verdict.
+6. `pass` only when every criterion has fresh evidence. Otherwise `fail` with the missing or
    failing evidence named.
 
 ## Output

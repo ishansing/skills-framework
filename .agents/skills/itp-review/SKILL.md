@@ -59,9 +59,12 @@ the scale to at least `standard` in `.itp/run.md` and record why.
 
 1. If `code-review` reports the issue tracker is unconfigured, return `needs-human` with
    `recommended_user_skill: setup-matt-pocock-skills` and the spec/slice as resume context.
-2. Group findings by source skill; separate blocking from non-blocking.
-3. Write `docs/work/review.md` with verdict, spec/acceptance coverage, and findings.
-4. Do not fix findings here; route them to `itp-implement`.
+2. Check the slice's declared documentation impact against the diff: every declared item is
+   updated or explicitly waived, and updated docs match the implemented behavior. Flag missing
+   or stale docs as findings.
+3. Group findings by source skill; separate blocking from non-blocking.
+4. Write `docs/work/review.md` with verdict, spec/acceptance coverage, and findings.
+5. Do not fix findings here; route them to `itp-implement`.
 
 ## Output
 

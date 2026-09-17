@@ -55,6 +55,9 @@ TDD methodology.
 2. Run the project's checks after each cycle (tests, typecheck, lint, build as applicable).
 3. Record the exact commands and observed results as evidence.
 4. List any unresolved findings explicitly; do not silently widen scope.
+5. Make the slice's declared documentation impact part of the deliverable: update the named
+   docs with the behavior change, or record a waiver with a reason. Count a docs build or lint
+   in the evidence when the project has one.
 
 ## Output
 

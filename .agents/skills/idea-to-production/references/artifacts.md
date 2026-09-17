@@ -31,6 +31,19 @@ Omit files that would be empty: no `decisions.md` when no decisions were made, n
 a real decision with alternatives, no `architecture.md` for a small change that moves no
 boundary.
 
+## Documentation impact
+
+Every slice declares its user-facing documentation impact: for each item, the file plus what
+changes, or `none` when the change is invisible to users. The framework never mandates a docs
+layout - adapters follow the project's existing docs (README, API docs, usage guide, examples,
+changelog when present); if none exists, the minimum is a README usage section.
+
+- `itp-implement` makes the declared updates as part of the slice, or records a waiver with a
+  reason;
+- `itp-review` checks the declaration against the diff and flags missing or stale docs;
+- `itp-verify` treats declared items as acceptance evidence and spot-checks that updated docs
+  do not contradict the verified behavior.
+
 ## Metrics to record per run
 
 In the results log or the ledger evidence: scale, phases completed, skills loaded, artifacts

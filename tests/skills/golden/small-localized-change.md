@@ -41,6 +41,8 @@ artifacts_expected:
 - Review loads `code-review` only (no specialist triggers on this diff).
 - `itp-verify` reads the acceptance criteria from the ISSUE, runs the suite fresh, and writes
   `verification.md`.
+- The slice declares the documentation impact (a README usage line, or `none` with a reason);
+  implement, review, and verify honor the declaration.
 - Budget: one session, at most four adapter loads (slice, implement, review, verify);
   spec-lite authored by the root; the doc-to-code ratio is advisory for tiny diffs.
 Result: pass - see results/2026-09-16-small-golden.md
