@@ -168,6 +168,10 @@ report:
 - the next phase and what it will do;
 - the resume point (`next_phase`).
 
+`checkpoints` accepts `false`, `phase` (one stop per phase boundary), or `slice` (also one stop
+after each implementation slice, only when its tests are green). Ask to "stop after each slice"
+for the latter - recommended for large or greenfield work, never automatic.
+
 While paused the ledger shows `awaiting: user`. If a phase also needs a human decision, you get
 one merged report - the handoff takes precedence and includes the checkpoint summary. At a
 checkpoint you can say `continue`, describe changes you want (what and where), or `turn

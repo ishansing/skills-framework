@@ -69,15 +69,20 @@ boundaries, so classify it `standard` or `full` until structure and tooling exis
 
 ## Checkpoints
 
-By default the root advances through phases without stopping except for `needs-human`. When
-`checkpoints: true` is recorded in `.itp/run.md` (because the user asked to review each phase),
-the root reports the phase checkpoint defined in `artifacts.md` at every phase boundary - not
-just adapter loads - and waits for a go-ahead before starting the next phase. While paused it
-sets `awaiting: user`; a `needs-human` stop takes precedence and merges into the same report.
-At a checkpoint the user can continue, describe changes, or turn checkpoints off. Requested
-changes route to the owning phase's adapter, which re-runs with the feedback as context (at
-most two re-runs per phase); the ledger records the amendment and `awaiting: user` stays set
-until the go-ahead.
+By default the root advances without stopping except for `needs-human`. `checkpoints` accepts
+`false` (default), `phase`, or `slice` (legacy `true` means `phase`; ask without specifying and
+you get `phase`):
+
+- `phase` - one stop at every phase boundary, not just adapter loads;
+- `slice` - additionally one stop after each implementation slice, only once that slice's
+  tests are green (never mid-cycle); `slice: n/m` is recorded in the ledger.
+
+`slice` suits `full`-scale work and greenfield bootstrap; it is never automatic. While paused
+the root sets `awaiting: user`; a `needs-human` stop takes precedence and merges into the same
+report. At a checkpoint the user can continue, describe changes, or turn checkpoints off.
+Requested changes route to the owning phase's adapter (for a slice, back to `itp-implement` for
+that slice), which re-runs with the feedback as context (at most two re-runs per phase or per
+slice); the ledger records the amendment and `awaiting: user` stays set until the go-ahead.
 
 ## Definition of Ready (framework phase)
 

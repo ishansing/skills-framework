@@ -90,11 +90,17 @@ skill_result:
 
 ## Phase checkpoint
 
-When `checkpoints: true` is in `.itp/run.md`, or the user asks to review each phase, the root
-stops at every phase boundary - including root-authored `spec-lite` and phases completed as
-no-ops - and reports:
+`checkpoints` is `false` (default), `phase`, or `slice` (legacy `true` means `phase`). When it
+is enabled - or the user asks to review - the root stops at every phase boundary, including
+root-authored `spec-lite` and phases completed as no-ops. With `slice`, it also stops after
+each implementation slice once that slice's tests are green; never pause mid-cycle, and let a
+failing slice follow the normal diagnosis or `needs-human` path first.
+
+The report contains:
 
 - scale and the phase just completed;
+- with slice granularity: the slice index and total (`slice: 2/4`), that slice's acceptance
+  criteria status, and its documentation impact;
 - what exists now: artifacts written or updated, and the implementation state (files and
   tests, when code changed);
 - phases skipped or completed as no-ops, with the reason;
@@ -134,7 +140,8 @@ handoff:
 run:
   goal: "Add collaborator invitations"
   scale: standard
-  checkpoints: false
+  checkpoints: phase      # false | phase | slice; legacy true means phase
+  # slice: 2/4             # current implementation slice (slice granularity; clear it when the implementation phase ends)
   # awaiting: user          # set only while paused at a checkpoint
   next_phase: verify
   completed: [research, align, spec, architecture, slice, implement]

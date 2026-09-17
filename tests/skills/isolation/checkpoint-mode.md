@@ -69,3 +69,21 @@ Setup: a run paused at a checkpoint (`awaiting: user`).
 Bound: at most two re-runs per phase; a third request stops for the human.
 
 Result:
+
+### CHKPT-06 slice granularity
+
+Setup: a run with `checkpoints: slice` and a goal that yields at least two slices (for example
+"add `listMembers()` and `removeMember()` accessors to `src/members.js`")
+
+1. Expect: after slice 1 completes with green tests, the run stops with `slice: 1/<total>`
+   recorded in the ledger, `awaiting: user` set, and that slice's acceptance-criteria and
+   documentation-impact status in the report. No stop happens mid-cycle - a failing slice
+   follows the normal diagnosis path first.
+2. Say `continue`; expect slice 2 to run and stop at its checkpoint, or complete if it was the
+   last slice.
+3. A change request at a slice checkpoint routes back to `itp-implement` for that slice and
+   records an amendment.
+
+Deferred to the Stage 2 harness: deterministic slice-count and two-re-run bound assertions.
+
+Result:

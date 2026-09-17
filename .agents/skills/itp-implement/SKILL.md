@@ -58,6 +58,9 @@ TDD methodology.
 5. Make the slice's declared documentation impact part of the deliverable: update the named
    docs with the behavior change, or record a waiver with a reason. Count a docs build or lint
    in the evidence when the project has one.
+6. When checkpoints use `slice` granularity, complete exactly one slice per invocation and
+   return control to the root after it, only when its tests are green; include `slice: n/m` in
+   the result and do not start the next slice until the run resumes. Never pause mid-cycle.
 
 ## Output
 

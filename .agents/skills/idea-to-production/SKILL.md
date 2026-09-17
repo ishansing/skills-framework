@@ -44,11 +44,13 @@ Read before starting:
    a stated reason.
 7. Update `.itp/run.md` (create it from the template in `references/artifacts.md`); set
    `next_phase` to where a fresh session should resume.
-8. Continue to the next phase, or stop for the human (`needs-human`). When `checkpoints: true`
-   is recorded (or the user asked to review each phase), report a **phase checkpoint** (see
-   `references/artifacts.md`) at every phase boundary - including root-authored `spec-lite` and
-   phases completed as no-ops - then set `awaiting: user` and wait. A `needs-human` stop takes
-   precedence: emit one merged report (handoff plus what exists and the next phase).
+8. Continue to the next phase, or stop for the human (`needs-human`). When checkpoints are
+   enabled (`phase` or `slice` in `.itp/run.md`, or the user asked), report a **phase
+   checkpoint** (see `references/artifacts.md`) at every phase boundary - including
+   root-authored `spec-lite` and phases completed as no-ops. With `checkpoints: slice`, also
+   stop after each implementation slice once its tests are green; never pause mid-cycle. Then
+   set `awaiting: user` and wait. A `needs-human` stop takes precedence: emit one merged report
+   (handoff plus what exists and the next phase).
 9. At a checkpoint the user may `continue`, describe changes, or `turn checkpoints off`. For
    requested changes, route the feedback to the phase that owns the artifact (`spec` -> `itp-spec`
    or root `spec-lite`, `architecture` -> `itp-architecture`, `slice` -> `itp-slice`, code ->
@@ -70,9 +72,11 @@ Read before starting:
 - Scale guardrails: review and verify always run; a security, data, destructive, or migration
   surface upgrades a `small` run to at least `standard` (record why). Scale may rise mid-run;
   it never drops without a recorded reason.
-- Checkpoints: when the user asks to review phase by phase, set `checkpoints: true` in
-  `.itp/run.md`. Record a checkpoint at every phase boundary (set `awaiting: user`), clear it
-  on the user's go-ahead, and honor "turn checkpoints off" by clearing the flag.
+- Checkpoints: `checkpoints: false | phase | slice` (legacy `true` means `phase`; ask without
+  specifying and you get `phase`). Record a checkpoint at every phase boundary, and with
+  `slice` after each green implementation slice (set `awaiting: user`), clear it on the user's
+  go-ahead, and honor "turn checkpoints off" by clearing the flag. Record granularity changes
+  mid-run.
 - Pass the smallest useful context to each adapter: artifact paths, target slice/requirement,
   current diff, reproduction, or specific question. Do not replay the conversation when
   artifacts exist.
