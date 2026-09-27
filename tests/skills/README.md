@@ -11,6 +11,7 @@ deterministic, so treat outcomes as regression signals, not proofs.
 | `recursion/` | bounded recursion terminates with new evidence (19.3) |
 | `failure/` | missing/ambiguous/failing scenarios produce fallback or `needs-human` (19.4) |
 | `golden/` | representative end-to-end trace expectations (19.6); run it per `golden/README-run.md` |
+| `e2e/` | full-matrix run exercising every skill and their composition; human-run per `e2e/FULL-MATRIX.md` |
 
 Recorded outcomes live in `results/` (one file per campaign). Cases that need a human in a
 fresh session are listed in `HUMAN-RUNS.md`.

@@ -31,6 +31,13 @@ Expect: `domain-modeling` triggers on the terms and records them; record the tri
 - For each: compare scale, phases, skills, artifacts, and metrics against the recorded runs;
   note variance, not just pass/fail.
 
+## Full-matrix e2e (all skills, one lifecycle)
+
+- Fresh `~/itp-e2e-app` via `tests/skills/e2e/setup-e2e.sh`, runbook in
+  `tests/skills/e2e/FULL-MATRIX.md`. Needs a human throughout (interviews, wizard steps,
+  setup skill, one merge-conflict injection). Record per the scoring rubric in
+  `tests/skills/results/`.
+
 ## Environment-gated
 
 - FAIL-07 UI without browser: only meaningful where a browser/Playwright runtime exists;
