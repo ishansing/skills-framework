@@ -7,32 +7,37 @@ Prompt: "Research whether the Acme webhooks API supports replay protection."
 Load: `itp-research`, then let it load `research`.
 Pass: primary sources cited in `docs/product/research.md`; assumptions/unknowns recorded;
 `skill_result` returned with `recommended_next: itp-align`.
-Result:
+Result: partial - research path exercised via ROUTE-01 (artifacts + skill_result with recommended_next evidenced); primary-source citation not verified; see results/2026-09-16-campaign1.md
 
 ### ISO-02 grilling finds real ambiguity
 Prompt: "Pressure-test my plan to add team workspaces."
 Load: `itp-align`, then let it load `grilling`.
 Pass: high-impact decisions identified and queried; no invented answers; unresolved items
 listed.
-Result:
+Result: pass - see results/2026-09-27-campaign6.md
 
 ### ISO-03 domain-modeling sharpens concepts and invariants
 Prompt: "Define the terms we keep confusing: account, workspace, member."
 Load: `domain-modeling` directly (capability isolation).
 Pass: terms, actors, scenarios, invariants concretely sharpened; ambiguous usage challenged.
-Result:
+Result: pass - see results/2026-09-16-campaign2.md
 
 ### ISO-04 tdd follows red -> green -> refactor
 Prompt: "Implement expired invitations test-first."
 Load: `tdd` directly.
 Pass: failing test observed before code; minimal implementation; refactor with tests green.
-Result:
+Result: pass - see results/2026-09-16-campaign2.md
 
 ### ISO-05 code-review reviews against actual spec/standards
 Setup: a branch with a small diff and a linked spec file.
 Load: `code-review` with a fixed point.
 Pass: Standards and Spec axes both evidenced; findings cite files/lines and the spec.
-Result:
+Result: pass - see results/2026-09-27-campaign4.md
+
+### ISO-VERIFY completion gate
+Setup: an empty repo (or a repo with no implementation/tests); ask to verify completion.
+Expect: `itp-verify` returns `fail` with real command evidence, writes the verification artifact, and makes no completion claim.
+Result: pass - see results/2026-09-16-campaign1.md
 
 ## Adapter isolation (each adapter must work alone, without the root)
 
@@ -48,4 +53,4 @@ Result:
 | itp-verify | implementation + review | fresh commands/output, pass or named failure |
 | itp-incident | a reproduction | diagnosis + regression case, next itp-implement |
 
-Result:
+Result: pass - all nine adapters evidenced across campaigns 1-4 and the goldens (research: ROUTE-01; align: campaign 4 + FAIL-02; spec: COMP-03; architecture: campaign 4; slice: T3; implement: T4/ISO-04; review: COMP-05/ROUTE-04; verify: ISO-VERIFY; incident: FAIL-01); see tests/skills/results/

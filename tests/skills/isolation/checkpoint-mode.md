@@ -17,7 +17,7 @@ Setup: a sandbox with the framework installed; work inside it as the repo root.
 4. Expect: exactly the next phase runs, then another checkpoint - `awaiting: user` still set and
    `next_phase` advanced.
 
-Result:
+Result: pass - see results/2026-09-16-checkpoints.md
 
 ### CHKPT-02 review loop produces checkpoints
 
@@ -29,7 +29,7 @@ phase boundary, including loop-backs.
 Deferred to the Stage 2 harness: forcing `changes-requested` deterministically is a
 state-injection test, not a behavioral one. Do not retry this as a behavioral case.
 
-Result:
+Result: deferred to Stage 2 harness - see results/2026-09-16-checkpoint-hardening.md
 
 ### CHKPT-03 turn checkpoints off
 
@@ -39,7 +39,7 @@ Setup: a paused run with `awaiting: user`.
 2. Expect: `checkpoints: false`, `awaiting` cleared, and auto-advance to the next natural stop
    (a `needs-human` point or completion) with no intermediate checkpoints.
 
-Result:
+Result: pass - see results/2026-09-16-checkpoint-hardening.md
 
 ### CHKPT-04 standard scale
 
@@ -52,7 +52,7 @@ also needs a human decision.
 Deferred to the Stage 2 harness: asserting the exact stop count is a deterministic
 state-machine check; do not retry this as a behavioral case.
 
-Result:
+Result: deferred to Stage 2 harness - see results/2026-09-16-checkpoint-hardening.md
 
 ### CHKPT-05 request changes at a checkpoint
 
@@ -68,7 +68,7 @@ Setup: a run paused at a checkpoint (`awaiting: user`).
 
 Bound: at most two re-runs per phase; a third request stops for the human.
 
-Result:
+Result: pass - see results/2026-09-16-checkpoint-feedback.md
 
 ### CHKPT-06 slice granularity
 
@@ -86,4 +86,4 @@ Setup: a run with `checkpoints: slice` and a goal that yields at least two slice
 
 Deferred to the Stage 2 harness: deterministic slice-count and two-re-run bound assertions.
 
-Result:
+Result: pass - see results/2026-09-16-slice-checkpoints.md

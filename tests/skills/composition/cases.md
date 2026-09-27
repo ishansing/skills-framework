@@ -7,27 +7,27 @@ Record for every case: was the second skill necessary; did the first pass useful
 Setup: `docs/product/research.md` produced by ISO-01.
 Pass: grilling uses the research artifact as context and challenges decisions rather than
 re-asking settled facts.
-Result:
+Result: pass - see results/2026-09-27-campaign6.md
 
 ### COMP-02 grilling -> domain-modeling
 Setup: an alignment session that surfaces inconsistent domain terms.
 Pass: domain-modeling triggers on the terms, not on a generic request; records terms and
 invariants.
-Result:
+Result: pass - see results/2026-09-27-campaign6.md
 
 ### COMP-03 spec -> codebase-design
 Setup: a spec whose module boundary is constrained by an existing interface.
 Pass: `codebase-design` is consulted as a reference; spec reflects the interface without
 duplicating the skill's procedure.
-Result:
+Result: pass - see results/2026-09-16-campaign2.md
 
 ### COMP-04 tdd -> code-review
 Setup: one implemented slice.
 Pass: review reads the diff and spec fresh; findings cite requirement IDs; verdict routes
 back to implement when needed.
-Result:
+Result: partial - review freshness and route-back evidenced (small-golden loop, campaign 4); explicit REQ-ID citation in findings not recorded; see results/2026-09-16-small-golden.md and results/2026-09-27-campaign4.md
 
 ### COMP-05 code-review -> differential-review (security trigger)
 Setup: a diff touching authentication/session code.
 Pass: differential-review triggered by the risk, not by default; findings grouped from both.
-Result:
+Result: pass - see results/2026-09-27-campaign4.md

@@ -45,4 +45,9 @@ artifacts_expected:
   implement, review, and verify honor the declaration.
 - Budget: one session, at most four adapter loads (slice, implement, review, verify);
   spec-lite authored by the root; the doc-to-code ratio is advisory for tiny diffs.
-Result: pass - see results/2026-09-16-small-golden.md
+
+## Repeat runs
+
+- 2026-09-27 (campaign 3, T1): identical shape - `scale: small`, spec-lite → slice → implement → review → verify, same artifact set, tests green, `complete`. Repeatability (+1). See results/2026-09-27-campaign3.md.
+
+Result: pass - see results/2026-09-16-small-golden.md and results/2026-09-27-campaign3.md

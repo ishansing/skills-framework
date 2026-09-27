@@ -16,4 +16,4 @@ README.
 4. Negative: rerun with an undeclared behavior change (no doc update, `none` without a
    reason); expect review or verify to flag it (`FAIL-10`).
 
-Result:
+Result: pass - see results/2026-09-16-docs-impact.md
