@@ -91,7 +91,24 @@ jobs:
         run: |
           version="${{ inputs.version }}"
           num="${{ steps.pr.outputs.pr }}"
-          gh pr checks "$num" --watch --fail-fast --interval 20
+          for i in $(seq 1 40); do
+            rollup="$(gh pr view "$num" --json statusCheckRollup --jq '.statusCheckRollup // []')"
+            total="$(printf '%s' "$rollup" | jq 'length')"
+            pending="$(printf '%s' "$rollup" | jq '[.[] | select(.status != "COMPLETED")] | length')"
+            failed="$(printf '%s' "$rollup" | jq '[.[] | select(.conclusion == "FAILURE" or .conclusion == "TIMED_OUT" or .conclusion == "CANCELLED" or .conclusion == "ACTION_REQUIRED")] | length')"
+            if [ "$failed" != "0" ]; then
+              echo "required checks failed" >&2
+              exit 1
+            fi
+            if [ "$total" != "0" ] && [ "$pending" = "0" ]; then
+              break
+            fi
+            sleep 30
+          done
+          if [ "$pending" != "0" ] || [ "$total" = "0" ]; then
+            echo "checks did not complete in time" >&2
+            exit 1
+          fi
           gh pr merge "$num" --squash
           git fetch -q origin master
           git tag "v$version" origin/master
