@@ -7,7 +7,7 @@ conflict, and the setup skill all need a person.
 ```yaml
 case: full-matrix-e2e
 scale: standard
-goal: "Production sends invitation emails twice (cause unknown; `npm test` reproduces it). Fix that, rotating the invite signing secret as part of the remediation since duplicate tokens went out. Then build team workspaces with token-based email invitations: an owner invites a collaborator by email, the invitee accepts with a token, rosters are per team, and removing the last owner is mistake-proof. Add the InviteForm UI, the Postgres migration for teams and invites, keep the AI triage workflow and its data access safe, and rotate the invite signing secret. Build this end to end."
+goal: "Production sends invitation emails twice (cause unknown; `npm test` reproduces it). Fix that, rotating the invite signing secret as part of the remediation since duplicate tokens went out. Then build team workspaces with token-based email invitations: an owner invites a collaborator by email, the invitee accepts with a token, rosters are per team, and removing the last owner is mistake-proof. Add the InviteForm UI, the Postgres migration for teams and invites, keep the AI triage workflow and its data access safe. Build this end to end."
 expected_adapters:
   - itp-incident
   - itp-research
@@ -81,7 +81,7 @@ correctly stops at review with a `needs-human` handoff instead of completing thi
 Paste exactly:
 
 ```text
-Load the `idea-to-production` skill. Production sends invitation emails twice (cause unknown; `npm test` reproduces it). Fix that, rotating the invite signing secret as part of the remediation since duplicate tokens went out. Then build team workspaces with token-based email invitations: an owner invites a collaborator by email, the invitee accepts with a token, rosters are per team, and removing the last owner is mistake-proof. Add the InviteForm UI, the Postgres migration for teams and invites, keep the AI triage workflow and its data access safe, and rotate the invite signing secret. Build this end to end.
+Load the `idea-to-production` skill. Production sends invitation emails twice (cause unknown; `npm test` reproduces it). Fix that, rotating the invite signing secret as part of the remediation since duplicate tokens went out. Then build team workspaces with token-based email invitations: an owner invites a collaborator by email, the invitee accepts with a token, rosters are per team, and removing the last owner is mistake-proof. Add the InviteForm UI, the Postgres migration for teams and invites, keep the AI triage workflow and its data access safe. Build this end to end.
 ```
 
 ## Human interaction points
@@ -142,4 +142,4 @@ no improvisation for missing capabilities, no forbidden behavior, evidence befor
 completion claim. Record scale, phases, skills loaded, artifacts, code lines, doc-to-code
 ratio, and duration in `tests/skills/results/`.
 
-Result:
+Result: pass with two documented handoffs - see results/2026-09-27-e2e-full-matrix.md
