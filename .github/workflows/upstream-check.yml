@@ -21,6 +21,16 @@ jobs:
         with:
           node-version: 20
 
+      - name: Use latest gh CLI
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="$(gh api repos/cli/cli/releases/latest --jq .tag_name)"
+          curl -sSfL -o gh.tar.gz "https://github.com/cli/cli/releases/download/${tag}/gh_${tag#v}_linux_amd64.tar.gz"
+          rm -rf "$RUNNER_TEMP/gh-cli" && mkdir -p "$RUNNER_TEMP/gh-cli"
+          tar xzf gh.tar.gz -C "$RUNNER_TEMP/gh-cli"
+          echo "$RUNNER_TEMP/gh-cli/gh_${tag#v}_linux_amd64/bin" >> "$GITHUB_PATH"
+
       - name: Check upstream pins
         id: check
         run: |
@@ -90,7 +100,9 @@ jobs:
             gh pr create --base master --head automation/upstream \
               --title "chore(upstream): monthly skill re-pin" \
               --body-file "$RUNNER_TEMP/pr-body.md"
+            num="$(gh pr list --head automation/upstream --state open --json number --jq '.[0].number')"
           fi
+          echo "pr=$num" >> "$GITHUB_OUTPUT"
 
       - name: Open or update drift issue
         if: steps.repin.outputs.drift == 'true'

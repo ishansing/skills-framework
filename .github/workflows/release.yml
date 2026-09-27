@@ -23,6 +23,16 @@ jobs:
         with:
           node-version: 20
 
+      - name: Use latest gh CLI
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          tag="$(gh api repos/cli/cli/releases/latest --jq .tag_name)"
+          curl -sSfL -o gh.tar.gz "https://github.com/cli/cli/releases/download/${tag}/gh_${tag#v}_linux_amd64.tar.gz"
+          rm -rf "$RUNNER_TEMP/gh-cli" && mkdir -p "$RUNNER_TEMP/gh-cli"
+          tar xzf gh.tar.gz -C "$RUNNER_TEMP/gh-cli"
+          echo "$RUNNER_TEMP/gh-cli/gh_${tag#v}_linux_amd64/bin" >> "$GITHUB_PATH"
+
       - name: Validate
         run: |
           version="${{ inputs.version }}"
@@ -69,9 +79,9 @@ jobs:
           if [ -n "$num" ]; then
             gh pr edit "$num" --body-file "$RUNNER_TEMP/pr-body.md"
           else
-            num="$(gh pr create --base master --head "release/v$version" \
-              --title "release v$version" --body-file "$RUNNER_TEMP/pr-body.md" \
-              --json number --jq '.number')"
+            gh pr create --base master --head "release/v$version" \
+              --title "release v$version" --body-file "$RUNNER_TEMP/pr-body.md"
+            num="$(gh pr list --head "release/v$version" --state open --json number --jq '.[0].number')"
           fi
           echo "pr=$num" >> "$GITHUB_OUTPUT"
 
