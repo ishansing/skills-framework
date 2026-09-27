@@ -23,9 +23,10 @@ artifacts let it skip phases.
 Status: **Stage 1 framework validation, in progress**. Campaign 1 (routing, fresh-session
 resume, user-entry recursion, runtime-install refusal, verification gate, review routing), the
 standard golden, the small-tier golden (review -> implement -> re-review), and the greenfield
-golden (same loop) all passed; see `tests/skills/results/`. Remaining gate items: broader
-adapter isolation outside the golden path, composition chains, recursion bounds, missing-skill
-handoff, and repeat golden runs. There is no runtime enforcement harness yet
+golden (same loop), and campaign 2 (tdd/domain-modeling isolation, spec -> design
+composition, conditional recovery, conflict resolution, missing-skill handoff) all passed; see
+`tests/skills/results/`. Remaining gate items: broader adapter isolation outside the golden
+path, remaining composition chains, full recursion loops, and repeat golden runs. There is no runtime enforcement harness yet
 (`CUSTOM-HARNESS.md` is deliberately not built until the readiness gate in
 `SKILL-FRAMEWORK.md` section 25 is met).
 
