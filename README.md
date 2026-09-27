@@ -29,9 +29,10 @@ composition, conditional recovery, conflict resolution, missing-skill handoff), 
 handoff) all passed, as did campaign 4 (review composition, ambiguous-requirement
 handling, architecture and align isolation) and campaign 5 (full recovery loop,
 repeat-failure stop), and campaign 6 (grilling question quality, artifact use,
-domain-modeling trigger); see `tests/skills/results/`. Human-run cases (full grilling
-interviews, repeat goldens, browser-gated UI) are listed in `tests/skills/HUMAN-RUNS.md`.
-Remaining gate items: the REC-02 repeat-after-attempt variant and any human-run outcomes. There is no runtime enforcement harness yet
+domain-modeling trigger), and campaign 7 (spec-first routing, repeat-after-attempt bound);
+see `tests/skills/results/`. Human-run cases (full grilling interviews, repeat goldens,
+browser-gated UI) are listed in `tests/skills/HUMAN-RUNS.md`. Remaining gate items: any
+human-run outcomes. There is no runtime enforcement harness yet
 (`CUSTOM-HARNESS.md` is deliberately not built until the readiness gate in
 `SKILL-FRAMEWORK.md` section 25 is met).
 
