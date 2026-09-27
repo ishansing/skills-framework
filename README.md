@@ -28,10 +28,10 @@ composition, conditional recovery, conflict resolution, missing-skill handoff), 
 (small-golden repeat, bug-fix routing, slice and implement isolation, slice -> implement
 handoff) all passed, as did campaign 4 (review composition, ambiguous-requirement
 handling, architecture and align isolation) and campaign 5 (full recovery loop,
-repeat-failure stop); see `tests/skills/results/`. Human-run cases (grilling-driven,
-repeat goldens, browser-gated UI) are listed in `tests/skills/HUMAN-RUNS.md`. Remaining
-gate items: remaining grilling-pair compositions, the REC-02 repeat-after-attempt variant,
-and any human-run outcomes. There is no runtime enforcement harness yet
+repeat-failure stop), and campaign 6 (grilling question quality, artifact use,
+domain-modeling trigger); see `tests/skills/results/`. Human-run cases (full grilling
+interviews, repeat goldens, browser-gated UI) are listed in `tests/skills/HUMAN-RUNS.md`.
+Remaining gate items: the REC-02 repeat-after-attempt variant and any human-run outcomes. There is no runtime enforcement harness yet
 (`CUSTOM-HARNESS.md` is deliberately not built until the readiness gate in
 `SKILL-FRAMEWORK.md` section 25 is met).
 
