@@ -26,9 +26,10 @@ standard golden, the small-tier golden (review -> implement -> re-review), and t
 golden (same loop), and campaign 2 (tdd/domain-modeling isolation, spec -> design
 composition, conditional recovery, conflict resolution, missing-skill handoff), campaign 3
 (small-golden repeat, bug-fix routing, slice and implement isolation, slice -> implement
-handoff) all passed; see `tests/skills/results/`. Remaining gate items: remaining composition
-chains, full recursion loops with the repeat-failure stop, adapter isolation of the remaining
-phases, and interactive (grilling-driven) cases, which need a human in a fresh session. There is no runtime enforcement harness yet
+handoff) all passed, as did campaign 4 (review composition, ambiguous-requirement
+handling, architecture and align isolation); see `tests/skills/results/`. Remaining gate items:
+remaining composition chains, full recursion loops with the repeat-failure stop, and
+interactive (grilling-driven) cases, which need a human in a fresh session. There is no runtime enforcement harness yet
 (`CUSTOM-HARNESS.md` is deliberately not built until the readiness gate in
 `SKILL-FRAMEWORK.md` section 25 is met).
 
