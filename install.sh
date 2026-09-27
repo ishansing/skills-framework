@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # Idea-to-Production framework installer.
-# Usage: install.sh [TARGET] [--init] [--dry-run] [--refresh-upstream]
+# Usage: install.sh [TARGET] [--init] [--dry-run] [--refresh-upstream] [--strict] [--check-version]
 set -euo pipefail
 
 FS="$(cd "$(dirname "${BASH_SOURCE[0]}")" && pwd)"
