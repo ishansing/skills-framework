@@ -49,5 +49,6 @@ artifacts_expected:
 ## Repeat runs
 
 - 2026-09-27 (campaign 3, T1): identical shape - `scale: small`, spec-lite → slice → implement → review → verify, same artifact set, tests green, `complete`. Repeatability (+1). See results/2026-09-27-campaign3.md.
+- 2026-09-27 (R3): identical shape again - `scale: small`, spec-lite → slice → implement → review → verify, same five artifacts, tests 3/3, review approved clean (zero findings, vs the changes-requested loop in earlier runs - normal model variance), verification pass with fresh evidence. Repeatability (+2). See results/2026-09-27-r3-repeat.md.
 
-Result: pass - see results/2026-09-16-small-golden.md and results/2026-09-27-campaign3.md
+Result: pass - see results/2026-09-16-small-golden.md, results/2026-09-27-campaign3.md, and results/2026-09-27-r3-repeat.md
