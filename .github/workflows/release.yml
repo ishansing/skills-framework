@@ -10,6 +10,7 @@ on:
 
 permissions:
   contents: write
+  pull-requests: write
 
 jobs:
   release:
@@ -37,20 +38,53 @@ jobs:
           fi
           node tests/skills/check-contracts.mjs
 
-      - name: Tag and publish
+      - name: Prepare release pull request
+        id: pr
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
           version="${{ inputs.version }}"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -B "release/v$version" origin/master
           echo "$version" > VERSION
-          if ! git diff --quiet VERSION; then
-            git add VERSION
+          git add VERSION
+          if ! git diff --cached --quiet; then
             git commit -m "release v$version"
-            git push origin HEAD:master
           fi
-          git tag "v$version"
+          git push -f origin "release/v$version"
+          node scripts/release-notes.mjs "$version" > "$RUNNER_TEMP/notes.md"
+          {
+            echo "Release v$version. Merging publishes the tag and the release below."
+            echo
+            cat "$RUNNER_TEMP/notes.md"
+            echo
+            echo "### Validation"
+            echo
+            echo "- [x] version format valid; tag v$version does not exist"
+            echo "- [x] \`node tests/skills/check-contracts.mjs\` on this branch"
+            echo "- CI below must pass before merge; it gates the merge via branch protection"
+          } > "$RUNNER_TEMP/pr-body.md"
+          num="$(gh pr list --head "release/v$version" --state open --json number --jq '.[0].number')"
+          if [ -n "$num" ]; then
+            gh pr edit "$num" --body-file "$RUNNER_TEMP/pr-body.md"
+          else
+            num="$(gh pr create --base master --head "release/v$version" \
+              --title "release v$version" --body-file "$RUNNER_TEMP/pr-body.md" \
+              --json number --jq '.number')"
+          fi
+          echo "pr=$num" >> "$GITHUB_OUTPUT"
+
+      - name: Merge, tag, publish
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          version="${{ inputs.version }}"
+          num="${{ steps.pr.outputs.pr }}"
+          gh pr checks "$num" --watch --fail-fast --interval 20
+          gh pr merge "$num" --squash
+          git fetch -q origin master
+          git tag "v$version" origin/master
           git push origin "v$version"
-          node scripts/release-notes.mjs > "$RUNNER_TEMP/notes.md"
+          node scripts/release-notes.mjs "$version" > "$RUNNER_TEMP/notes.md"
           gh release create "v$version" --title "v$version" --notes-file "$RUNNER_TEMP/notes.md"

@@ -7,7 +7,7 @@ import { fileURLToPath } from "node:url";
 
 const ROOT = fileURLToPath(new URL("..", import.meta.url));
 const lock = JSON.parse(readFileSync(join(ROOT, "skills.lock.json"), "utf8"));
-const version = readFileSync(join(ROOT, "VERSION"), "utf8").trim();
+const version = (process.argv[2] || readFileSync(join(ROOT, "VERSION"), "utf8")).trim();
 
 console.log(`Idea-to-Production framework v${version}`);
 console.log("");

@@ -239,9 +239,11 @@ bash install.sh --refresh-upstream   # materialize the new pins on this machine
 ```
 
 To cut a release, run the `Release` workflow with a version (semver: MAJOR = contract or
-lifecycle change, MINOR = upstream re-pin or adaptation, PATCH = fix). It bumps `VERSION`,
-tags `vX.Y.Z`, and publishes release notes with the pinned-commit table. Consumers upgrade by
-pulling this repo and re-running `install.sh` against each installed project.
+lifecycle change, MINOR = upstream re-pin or adaptation, PATCH = fix). It opens a
+`release/x.y.z` pull request with the `VERSION` bump, waits for CI, merges, tags `vX.Y.Z`,
+and publishes release notes with the pinned-commit table. Never tag or release manually.
+Consumers upgrade by pulling this repo and re-running `install.sh` against each installed
+project.
 
 ## Testing the framework itself
 
