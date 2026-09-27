@@ -32,7 +32,9 @@ repeat-failure stop), and campaign 6 (grilling question quality, artifact use,
 domain-modeling trigger), and campaign 7 (spec-first routing, repeat-after-attempt bound);
 see `tests/skills/results/`. Human-run cases (full grilling interviews, repeat goldens,
 browser-gated UI) are listed in `tests/skills/HUMAN-RUNS.md`. Remaining gate items: any
-human-run outcomes. There is no runtime enforcement harness yet
+human-run outcomes. The full bullet-by-bullet judgment is in
+`tests/skills/results/2026-09-27-readiness-gate.md` (READY conditional on those runs).
+There is no runtime enforcement harness yet
 (`CUSTOM-HARNESS.md` is deliberately not built until the readiness gate in
 `SKILL-FRAMEWORK.md` section 25 is met).
 
