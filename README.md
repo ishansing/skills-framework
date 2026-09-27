@@ -27,9 +27,11 @@ golden (same loop), and campaign 2 (tdd/domain-modeling isolation, spec -> desig
 composition, conditional recovery, conflict resolution, missing-skill handoff), campaign 3
 (small-golden repeat, bug-fix routing, slice and implement isolation, slice -> implement
 handoff) all passed, as did campaign 4 (review composition, ambiguous-requirement
-handling, architecture and align isolation); see `tests/skills/results/`. Remaining gate items:
-remaining composition chains, full recursion loops with the repeat-failure stop, and
-interactive (grilling-driven) cases, which need a human in a fresh session. There is no runtime enforcement harness yet
+handling, architecture and align isolation) and campaign 5 (full recovery loop,
+repeat-failure stop); see `tests/skills/results/`. Human-run cases (grilling-driven,
+repeat goldens, browser-gated UI) are listed in `tests/skills/HUMAN-RUNS.md`. Remaining
+gate items: remaining grilling-pair compositions, the REC-02 repeat-after-attempt variant,
+and any human-run outcomes. There is no runtime enforcement harness yet
 (`CUSTOM-HARNESS.md` is deliberately not built until the readiness gate in
 `SKILL-FRAMEWORK.md` section 25 is met).
 
