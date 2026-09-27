@@ -24,9 +24,11 @@ Status: **Stage 1 framework validation, in progress**. Campaign 1 (routing, fres
 resume, user-entry recursion, runtime-install refusal, verification gate, review routing), the
 standard golden, the small-tier golden (review -> implement -> re-review), and the greenfield
 golden (same loop), and campaign 2 (tdd/domain-modeling isolation, spec -> design
-composition, conditional recovery, conflict resolution, missing-skill handoff) all passed; see
-`tests/skills/results/`. Remaining gate items: broader adapter isolation outside the golden
-path, remaining composition chains, full recursion loops, and repeat golden runs. There is no runtime enforcement harness yet
+composition, conditional recovery, conflict resolution, missing-skill handoff), campaign 3
+(small-golden repeat, bug-fix routing, slice and implement isolation, slice -> implement
+handoff) all passed; see `tests/skills/results/`. Remaining gate items: remaining composition
+chains, full recursion loops with the repeat-failure stop, adapter isolation of the remaining
+phases, and interactive (grilling-driven) cases, which need a human in a fresh session. There is no runtime enforcement harness yet
 (`CUSTOM-HARNESS.md` is deliberately not built until the readiness gate in
 `SKILL-FRAMEWORK.md` section 25 is met).
 
