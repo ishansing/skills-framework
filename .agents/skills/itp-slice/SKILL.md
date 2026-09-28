@@ -43,6 +43,8 @@ adapter_contract:
    - documentation impact: the user-facing docs that change (file + what), or `none` for
      invisible changes; follow the project's existing docs layout, README fallback;
    - conditional specialist triggers.
+   - merge gate: the exact condition allowing integration (tests green + review verdict, or
+     named human approval for risky slices).
 3. Order slices so dependencies come first; keep each small enough for one implement cycle.
 4. Consult `codebase-design` when slice boundaries are unclear; load `poka-yoke` for
    high-consequence slices.

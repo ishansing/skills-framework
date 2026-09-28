@@ -90,6 +90,11 @@ for (const dir of skillDirs) {
   }
   if (!/^description:/m.test(fm)) fail(`${dir}: frontmatter missing description`);
 
+  const lines = text.split("\n").length;
+  const LIMIT = 150; // ~25% headroom over the current max; raise deliberately, not by drift
+  if (lines > LIMIT) fail(`${dir}: SKILL.md is ${lines} lines (budget ${LIMIT})`);
+  else ok(`${dir}: size ${lines} lines (budget ${LIMIT})`);
+
   if (!dir.startsWith("itp-")) continue;
 
   const contract = text.match(/adapter_contract:[\s\S]*?```/);

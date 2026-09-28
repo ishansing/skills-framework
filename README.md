@@ -247,6 +247,17 @@ node scripts/repin.mjs --all         # re-pin clean updates; refuses renames, wr
 bash install.sh --refresh-upstream   # materialize the new pins on this machine
 ```
 
+### Periodic skill stocktake
+
+Audit installed skills on a cadence (monthly with the upstream check, or before each
+release), Quick Scan vs Full:
+
+- Quick Scan (changed skills only): `node tests/skills/check-contracts.mjs` enforces the
+  150-line SKILL.md budget; trim or split anything over budget before merge.
+- Full (all skills): a size report via `wc -l .agents/skills/*/SKILL.md`, plus a review of
+  `dependency.md` triggers for stale or overlapping entries. Scanned paths, stated up front:
+  `~/.agents/skills/` (global) and `.agents/skills/` (project).
+
 To cut a release, run the `Release` workflow with a version (semver: MAJOR = contract or
 lifecycle change, MINOR = upstream re-pin or adaptation, PATCH = fix). It opens a
 `release/x.y.z` pull request with the `VERSION` bump, waits for CI, merges, tags `vX.Y.Z`,

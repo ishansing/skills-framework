@@ -65,17 +65,20 @@ must be pinned before Phase 5 validation; curation debt), `not-installed`.
 
 | Skill | Load when |
 |---|---|
-| differential-review | medium/high-risk or security-sensitive diff; security regression |
+| differential-review | medium/high-risk or security-sensitive diff; security regression; do not trigger for low-risk diffs (typos, formatting, message text) with no security surface |
 | postgresql-code-review | PostgreSQL schema, query, or migration behavior changed |
 | react-best-practices | React/Next.js code is written or reviewed |
 | frontend-design | new UI or visual redesign |
 | webapp-testing | a browser-based flow must be exercised |
 | playwright-generate-test | a durable Playwright test is required |
 | web-design-guidelines | UI review against the pinned Web Interface Guidelines |
-| poka-yoke | high-consequence design where a mistake is costly |
-| agentic-eval | agent or harness behavior changed |
+| poka-yoke | high-consequence design where a mistake is costly; do not trigger for reversible, low-stakes choices |
+| agentic-eval | agent/harness behavior changed; not for trust-boundary changes (that's agent-owasp-compliance) |
 | agent-owasp-compliance | agent/tool/prompt trust boundary changed |
 | agentic-actions-auditor | AI GitHub Actions workflow changed |
+
+Trigger rows state positive conditions; when ambiguous, do not load - record as
+considered-not-triggered.
 
 ## User-entry skills (never load recursively)
 

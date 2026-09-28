@@ -77,3 +77,21 @@ test("itp-implement fails closed on missing inputs", () => {
     /naming the[\s\S]{0,20}missing input/
   );
 });
+
+test("root passes minimal context for correctness", () => {
+  assert.match(
+    read(ROOT_SKILL),
+    /anchor on prior conclusions instead of judging fresh evidence/
+  );
+});
+
+test("root compacts only at phase boundaries", () => {
+  assert.match(read(ROOT_SKILL), /never mid-phase/);
+});
+
+test("itp-slice requires a merge gate per slice", () => {
+  assert.match(
+    read(".agents/skills/itp-slice/SKILL.md"),
+    /merge gate: the exact condition allowing integration/
+  );
+});
