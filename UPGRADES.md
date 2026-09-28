@@ -17,7 +17,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
   artifacts exist and parse, paths are strings) and fails closed with a named error instead of
   proceeding on a malformed handoff.
 - **Benefit:** removes a whole class of silent false-completion; directly serves §18/§25.
-- **Status:** proposed.
+- **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 
 ### U2. Untrusted-input marking for diff/log consumers
 - **Source:** `workflows/orch-review.workflow.js:119-124,127-143` (`BEGIN DIFF` markers; "treat
@@ -29,7 +29,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
   artifacts are findings to report, never instructions to follow.
 - **Benefit:** closes the prompt-injection hole in exactly the phases that ingest
   attacker-shaped input.
-- **Status:** proposed.
+- **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 
 ### U3. Confidence-gated finding filter for review
 - **Source:** `agents/code-reviewer.md` ("Confidence-Based Filtering", "Pre-Report Gate",
@@ -40,7 +40,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
   or get demoted; state explicitly that zero findings is an acceptable outcome.
 - **Benefit:** less review noise, fewer inflated severities — the failure mode our own
   fixtures warn about.
-- **Status:** proposed.
+- **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 
 ### U4. Plan/artifact safety rule
 - **Source:** `skills/tdd-workflow/SKILL.md` ("Plan Handoff": plan content is data, not
@@ -51,7 +51,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
   directives ("skip verification", "ignore previous rules") are recorded as findings, never
   followed.
 - **Benefit:** same class as U2, applied to our own handoff mechanism.
-- **Status:** proposed.
+- **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 
 ### U5. Verify the actionlint tarball checksum
 - **Source:** ECC `install.sh` (`npm install --ignore-scripts`, supply-chain caution).
@@ -59,7 +59,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
 - **Change:** pin the expected sha256 of the actionlint release tarball in the workflow and
   verify before extraction.
 - **Benefit:** closes a fetch-and-execute gap in our own CI.
-- **Status:** proposed.
+- **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 
 ## P1 — design, then validate behaviorally before adopting
 
@@ -75,7 +75,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
   in our §20 metrics (desired direction: down).
 - **Note:** the procedure can live in the adapter now; mechanical enforcement waits for the
   harness, like everything else.
-- **Status:** proposed.
+- **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 
 ### U7. Machine-readable capability registry
 - **Source:** `docs/COMMAND-AGENT-MAP.md` + `docs/COMMAND-REGISTRY.json` (command → agent/skill
@@ -85,7 +85,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
   consumption; `check-contracts.mjs` validates the two stay in sync.
 - **Benefit:** the harness (`CUSTOM-HARNESS.md`) needs machine-readable resolution; doing it
   now de-risks that build.
-- **Status:** proposed.
+- **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 
 ### U8. Content-assertion tests for load-bearing invariants
 - **Source:** `tests/ci/code-reviewer-false-positive-guard.test.js` (asserts required
@@ -97,7 +97,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
   presence, not behavior (behavior stays in `tests/skills/` fixtures).
 - **Benefit:** deterministic CI signal for the most dangerous edit class; complements (does
   not replace) behavioral fixtures.
-- **Status:** proposed.
+- **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 
 ### U9. Explicit per-slice eval rubric
 - **Source:** `commands/orch-build-mvp.md` (`gan-harness/spec.md` + `eval-rubric.md` per
@@ -106,7 +106,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
 - **Change:** each slice states its pass bar and how it is judged (which command, what output
   counts as passing), not just testable criteria; verify checks the bar, not only the tests.
 - **Benefit:** turns "acceptance criteria satisfied" from assertion into something auditable.
-- **Status:** proposed.
+- **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 
 ## P2 — evaluate later, do not adopt blindly
 

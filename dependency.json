@@ -1,0 +1,289 @@
+{
+  "framework": "idea-to-production@2",
+  "generated_from": "dependency.md",
+  "capabilities": {
+    "UI guidance and review": [
+      "frontend-design",
+      "web-design-guidelines"
+    ],
+    "agent behavior evaluation": [
+      "agentic-eval"
+    ],
+    "agent trust-boundary review": [
+      "agent-owasp-compliance",
+      "agentic-actions-auditor"
+    ],
+    "agent-readable specs": [
+      "writing-for-agents"
+    ],
+    "ambiguity discovery": [
+      "grilling"
+    ],
+    "browser/end-to-end verification": [
+      "webapp-testing",
+      "playwright-generate-test"
+    ],
+    "completion evidence": [
+      "verification-before-completion"
+    ],
+    "conflict intent resolution": [
+      "resolving-merge-conflicts"
+    ],
+    "consequence proofing": [
+      "poka-yoke"
+    ],
+    "database review": [
+      "postgresql-code-review"
+    ],
+    "domain modeling": [
+      "domain-modeling"
+    ],
+    "feasibility experiment": [
+      "prototype"
+    ],
+    "human-performed operations": [
+      "wizard"
+    ],
+    "module / interface design": [
+      "codebase-design"
+    ],
+    "provenance-backed research": [
+      "research"
+    ],
+    "security differential review": [
+      "differential-review"
+    ],
+    "standards + spec review": [
+      "code-review"
+    ],
+    "test-driven implementation": [
+      "tdd",
+      "diagnosing-bugs"
+    ]
+  },
+  "skills": {
+    "agent-owasp-compliance": {
+      "source": "github/awesome-copilot",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-review"
+      ]
+    },
+    "agentic-actions-auditor": {
+      "source": "trailofbits/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-review",
+        "itp-incident"
+      ]
+    },
+    "agentic-eval": {
+      "source": "github/awesome-copilot",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-review"
+      ]
+    },
+    "code-review": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-review"
+      ]
+    },
+    "codebase-design": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-spec",
+        "itp-architecture",
+        "itp-slice",
+        "itp-implement"
+      ]
+    },
+    "diagnosing-bugs": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-implement",
+        "itp-incident"
+      ]
+    },
+    "differential-review": {
+      "source": "trailofbits/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-review",
+        "itp-incident"
+      ]
+    },
+    "domain-modeling": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-align",
+        "itp-spec",
+        "itp-architecture"
+      ]
+    },
+    "frontend-design": {
+      "source": "anthropics/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-implement"
+      ]
+    },
+    "grilling": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-align",
+        "itp-architecture"
+      ]
+    },
+    "playwright-generate-test": {
+      "source": "github/awesome-copilot",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-implement"
+      ]
+    },
+    "poka-yoke": {
+      "source": "github/awesome-copilot",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-architecture",
+        "itp-slice"
+      ]
+    },
+    "postgresql-code-review": {
+      "source": "github/awesome-copilot",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-review"
+      ]
+    },
+    "prototype": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-spec"
+      ]
+    },
+    "research": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-research"
+      ]
+    },
+    "resolving-merge-conflicts": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-implement"
+      ]
+    },
+    "tdd": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-implement"
+      ]
+    },
+    "vercel-react-best-practices": {
+      "source": "vercel-labs/agent-skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-implement"
+      ]
+    },
+    "verification-before-completion": {
+      "source": "obra/superpowers",
+      "invocation_class": "model",
+      "status": "vendored-pinned",
+      "used_by": [
+        "itp-verify"
+      ]
+    },
+    "web-design-guidelines": {
+      "source": "vercel-labs/web-interface-guidelines (pinned local adapter)",
+      "invocation_class": "model",
+      "status": "vendored-pinned",
+      "used_by": [
+        "itp-review"
+      ]
+    },
+    "webapp-testing": {
+      "source": "anthropics/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-implement"
+      ]
+    },
+    "wizard": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-incident"
+      ]
+    },
+    "writing-for-agents": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-spec"
+      ]
+    }
+  },
+  "triggers": {
+    "agent-owasp-compliance": "agent/tool/prompt trust boundary changed",
+    "agentic-actions-auditor": "AI GitHub Actions workflow changed",
+    "agentic-eval": "agent or harness behavior changed",
+    "differential-review": "medium/high-risk or security-sensitive diff; security regression",
+    "frontend-design": "new UI or visual redesign",
+    "playwright-generate-test": "a durable Playwright test is required",
+    "poka-yoke": "high-consequence design where a mistake is costly",
+    "postgresql-code-review": "PostgreSQL schema, query, or migration behavior changed",
+    "react-best-practices": "React/Next.js code is written or reviewed",
+    "web-design-guidelines": "UI review against the pinned Web Interface Guidelines",
+    "webapp-testing": "a browser-based flow must be exercised"
+  },
+  "user_entry": [
+    "grill-with-docs",
+    "grill-me",
+    "to-spec",
+    "to-tickets",
+    "implement",
+    "triage",
+    "improve-codebase-architecture",
+    "setup-matt-pocock-skills",
+    "ask-matt",
+    "wayfinder",
+    "handoff",
+    "teach",
+    "to-questionnaire",
+    "wait-what"
+  ]
+}

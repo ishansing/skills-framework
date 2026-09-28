@@ -39,6 +39,7 @@ adapter_contract:
    - dependencies on other slices;
    - out-of-scope behavior;
    - validation strategy;
+   - pass bar and how judged: the exact command to run and what output counts as passing;
    - documentation impact: the user-facing docs that change (file + what), or `none` for
      invisible changes; follow the project's existing docs layout, README fallback;
    - conditional specialist triggers.

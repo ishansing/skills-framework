@@ -32,6 +32,10 @@ adapter_contract:
 The implementation diff and tests, the acceptance criteria (`docs/product/acceptance-criteria.md`,
 or the slice's acceptance criteria list when `scale: small`), and `docs/work/review.md`.
 
+Validate inputs before acting: the diff, tests, acceptance criteria (or slice list), and review
+verdict must exist; otherwise return `fail` naming the missing input — never claim pass on
+inputs you could not check.
+
 ## Required child
 
 Load `verification-before-completion` and follow its iron law: no completion claim without
@@ -42,7 +46,8 @@ fresh verification evidence produced in this session.
 1. Run the checks now, and capture the commands with their observed output: the
    acceptance-criteria tests plus the project's suite; add build, typecheck, lint, browser, or
    migration checks only when the diff touches them.
-2. Confirm each acceptance criterion is actually satisfied by the evidence, not by assertion.
+2. Confirm each acceptance criterion is actually satisfied by the evidence — measured
+   against the slice's stated pass bar — not by assertion.
 3. Confirm the declared documentation impact is satisfied (each item updated or explicitly
    waived) and that updated docs do not contradict the verified behavior.
 4. Confirm triggered specialist reviews completed and blocking findings are resolved or

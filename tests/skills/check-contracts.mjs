@@ -6,6 +6,7 @@ import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
 import { dirHash } from "../../scripts/skill-hash.mjs";
+import { buildRegistry } from "../../scripts/generate-dependency-json.mjs";
 
 const defaultRoot = fileURLToPath(new URL("../../", import.meta.url));
 const root = process.argv[2] ? resolve(process.argv[2]) : defaultRoot;
@@ -37,6 +38,34 @@ function inventory() {
 
 const deps = inventory();
 if (deps.size === 0) fail("dependency.md inventory table parsed empty");
+
+function deepEqual(a, b) {
+  if (a === b) return true;
+  if (typeof a !== typeof b || a === null || b === null) return false;
+  if (Array.isArray(a) !== Array.isArray(b)) return false;
+  if (Array.isArray(a)) {
+    return a.length === b.length && a.every((v, i) => deepEqual(v, b[i]));
+  }
+  if (typeof a !== "object") return false;
+  const ka = Object.keys(a);
+  const kb = Object.keys(b);
+  return ka.length === kb.length && ka.every((k) => deepEqual(a[k], b[k]));
+}
+
+let committedJson;
+try {
+  committedJson = JSON.parse(readFileSync(join(root, "dependency.json"), "utf8"));
+} catch {
+  fail("dependency.json missing or invalid; run scripts/generate-dependency-json.mjs");
+}
+if (committedJson) {
+  const depText = readFileSync(join(root, "dependency.md"), "utf8");
+  if (deepEqual(buildRegistry(depText), committedJson)) {
+    ok("dependency.json in sync with dependency.md");
+  } else {
+    fail("dependency.json out of sync with dependency.md; run scripts/generate-dependency-json.mjs");
+  }
+}
 
 const skillDirs = readdirSync(skillsDir, { withFileTypes: true })
   .filter((e) => e.isDirectory())

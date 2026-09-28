@@ -31,6 +31,10 @@ adapter_contract:
 
 The slice (`docs/work/ISSUE-<n>.md`), its acceptance criteria, and relevant architecture/ADRs.
 
+Validate inputs before acting: the slice file must exist with acceptance criteria; referenced
+design context must exist. Otherwise stop with `blocked` (or `needs-human`), naming the
+missing input.
+
 ## Required child
 
 Load `tdd` and follow its red -> green -> refactor loop for the slice. Do not load a second

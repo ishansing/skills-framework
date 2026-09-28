@@ -58,6 +58,7 @@ TARGET="${TARGET:-$PWD}"
 
 # --- preflight ---------------------------------------------------------------
 [ -f "$FS/dependency.md" ] || die "missing $FS/dependency.md"
+[ -f "$FS/dependency.json" ] || die "missing $FS/dependency.json (run scripts/generate-dependency-json.mjs)"
 [ -f "$FS/skills.lock.json" ] || die "missing $FS/skills.lock.json"
 [ -f "$FS/.agents/skills/idea-to-production/SKILL.md" ] || die "missing framework skills in $FS/.agents/skills"
 
@@ -160,7 +161,7 @@ else
 fi
 
 step "Registry"
-for f in dependency.md skills.lock.json; do
+for f in dependency.md dependency.json skills.lock.json; do
   if [ -e "$TARGET/$f" ] && [ "$FS/$f" -ef "$TARGET/$f" ]; then
     note "ok $f (already in place)"
   else
