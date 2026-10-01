@@ -20,7 +20,7 @@ artifacts let it skip phases.
 | `install.sh` | One-command installer for any project |
 | `tests/skills/` | Behavioral validation cases + static contract check |
 
-Status: **Stage 1 framework validation, in progress**. Campaign 1 (routing, fresh-session
+Status: **Stage 1 framework validation, complete**. Campaign 1 (routing, fresh-session
 resume, user-entry recursion, runtime-install refusal, verification gate, review routing), the
 standard golden, the small-tier golden (review -> implement -> re-review), and the greenfield
 golden (same loop), and campaign 2 (tdd/domain-modeling isolation, spec -> design
@@ -30,13 +30,14 @@ handoff) all passed, as did campaign 4 (review composition, ambiguous-requiremen
 handling, architecture and align isolation) and campaign 5 (full recovery loop,
 repeat-failure stop), and campaign 6 (grilling question quality, artifact use,
 domain-modeling trigger), and campaign 7 (spec-first routing, repeat-after-attempt bound);
-see `tests/skills/results/`. Human-run cases (full grilling interviews, repeat goldens,
-browser-gated UI) are listed in `tests/skills/HUMAN-RUNS.md`. Remaining gate items: any
-human-run outcomes. The full bullet-by-bullet judgment is in
-`tests/skills/results/2026-09-27-readiness-gate.md` (READY conditional on those runs).
+see `tests/skills/results/`. The §25 human-run conditions were closed 2026-10-01
+(standard repeat, greenfield repeat, full grilling interview, FAIL-07 both paths);
+the bullet-by-bullet judgment is in
+`tests/skills/results/2026-09-27-readiness-gate.md` with closure recorded in
+`tests/skills/results/2026-10-01-readiness-gate-closed.md` (**GATE MET**).
 There is no runtime enforcement harness yet
-(`CUSTOM-HARNESS.md` is deliberately not built until the readiness gate in
-`SKILL-FRAMEWORK.md` section 25 is met).
+(`CUSTOM-HARNESS.md` is deliberately unbuilt; the harness build order is now open
+per `SKILL-FRAMEWORK.md` sections 25 and 27).
 
 ## What is in the framework
 
