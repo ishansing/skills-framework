@@ -224,6 +224,24 @@ automatically; scale can rise mid-run but never drops without a recorded reason.
 
 ## Updating the framework
 
+### Matt v1.3 compatibility
+
+The current lockfile targets the reviewed v1.3.0 release for existing Matt dependencies.
+The retired `resolving-merge-conflicts` skill is no longer installed or invoked by this
+framework; `itp-implement` resolves conflicts directly by spec and change intent.
+An older global copy may remain on your machine: the installer does not delete skills
+it no longer owns.
+
+Domain glossaries now use `GLOSSARY.md` / `GLOSSARY-MAP.md`. When upgrading a project,
+rename an existing domain glossary and update its links and agent-doc pointers. Check
+the contents first: a `CONTEXT.md` containing a session handoff or implementation notes
+is not a domain glossary and should not be renamed automatically. Historical framework
+results retain the filenames used in their original runs.
+
+This is the compatibility stage only. The new `pr`, `implement-spec`, and `retro`
+capabilities are not yet registered or installed by the framework. Changed behavioral
+contracts require targeted revalidation; prior §25 results describe the previous baseline.
+
 Installed projects record the framework version at
 `.agents/skills/idea-to-production/VERSION`. To check whether this framework checkout is
 behind:

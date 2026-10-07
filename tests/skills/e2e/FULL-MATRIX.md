@@ -40,7 +40,6 @@ expected_conditional_children:
   - agentic-eval
   - agent-owasp-compliance
   - agentic-actions-auditor
-  - resolving-merge-conflicts
   - wizard
 expected_skips_with_reason:
   - prototype
@@ -122,12 +121,12 @@ Then tell the session to continue. Branches may be deleted after the run.
 | diagnosing-bugs | cause not obvious from `expected 1, got 2` | red loop, minimize, hypothesize, instrument; concrete diagnosis (dual handler registration) |
 | tdd (incident fix) | red mailer test | red → green → refactor; regression kept |
 | itp-research | token format/lifetime + Postgres RLS are external unknowns | `research` with primary sources; assumptions/unknowns recorded |
-| itp-align | team model, token lifetime, owner rules | `grilling` interviews the human; `domain-modeling` records team/workspace/member/invitee/token in `CONTEXT.md` |
+| itp-align | team model, token lifetime, owner rules | `grilling` interviews the human; `domain-modeling` records team/workspace/member/invitee/token in `GLOSSARY.md` |
 | itp-spec | approved direction | `writing-for-agents` writes `spec.md` with REQ IDs + testable acceptance criteria |
 | itp-architecture | module boundaries for teams | `codebase-design` for the seam; `poka-yoke` for mistake-proof last-owner removal; `architecture.md` + ADRs |
 | itp-slice | spec + architecture | independently testable slices with validation strategy, doc impact, specialist triggers |
 | itp-implement | slices | `tdd` loop; `vercel-react-best-practices` for the React code; `frontend-design` for UI guidance; `webapp-testing` → `needs-human` (no browser); `playwright-generate-test` writes the durable test file with a note it was not executed |
-| resolving-merge-conflicts | injected TTL conflict | intent-based resolution of the TTL line, never `--abort`; merge finished |
+| itp-implement (conflict recovery) | injected TTL conflict | direct intent-based resolution of the TTL line, never `--abort`; checks green and merge finished; no dedicated skill loaded |
 | wizard | secret rotation is human-only incident remediation (duplicate tokens went out) | `itp-incident` loads `wizard`; human performs the generated steps against the local `.env`; recorded |
 | itp-review | feature diff on `variant-ttl-a` since `master` | `code-review` (Standards + Spec); `differential-review` fires on the token-auth diff; `postgresql-code-review` fires on the migration; `web-design-guidelines` reviews the UI against the pinned snapshot; `agentic-eval` fires on the changed triage prompt; `agent-owasp-compliance` fires on the tightened PII trust boundary; `agentic-actions-auditor` fires on the AI workflow |
 | itp-verify | implementation + review | `verification-before-completion` with fresh evidence for every criterion; no completion claim without it |

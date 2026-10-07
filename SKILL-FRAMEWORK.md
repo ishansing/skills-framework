@@ -443,7 +443,6 @@ prototype
 tdd
 diagnosing-bugs
 code-review
-resolving-merge-conflicts
 wizard
 writing-for-agents
 ```
@@ -460,9 +459,13 @@ Framework usage:
 | `tdd` | implementation loop |
 | `diagnosing-bugs` | confirmed failure/regression diagnosis |
 | `code-review` | Standards + Spec review |
-| `resolving-merge-conflicts` | intent-aware conflicts |
 | `wizard` | human-performed operational steps |
 | `writing-for-agents` | agent-readable specs/context/instructions |
+
+With Matt v1.3, conflicts are resolved directly by `itp-implement` using spec and
+change intent, with checks before finishing the merge/rebase. No conflict skill is
+required. Domain vocabulary uses `GLOSSARY.md` / `GLOSSARY-MAP.md`; session handoffs
+remain separate artifacts.
 
 ### 7.2 Matt user-entry workflows
 

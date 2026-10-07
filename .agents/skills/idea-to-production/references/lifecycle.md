@@ -16,7 +16,7 @@ itp-research  itp-align  itp-spec  itp-architecture  itp-slice  itp-implement  i
 | itp-spec | itp-architecture, or itp-slice when architecture is already decided | itp-align |
 | itp-architecture | itp-slice | itp-spec |
 | itp-slice | itp-implement | itp-architecture |
-| itp-implement | itp-review | diagnosing-bugs then resume tdd; resolving-merge-conflicts on conflicts |
+| itp-implement | itp-review | diagnosing-bugs then resume tdd; intent-based conflict resolution in itp-implement |
 | itp-review | itp-verify when approved | itp-implement on changes-requested |
 | itp-verify | complete | itp-implement or itp-incident on fail |
 

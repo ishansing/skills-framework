@@ -30,7 +30,7 @@ adapter_contract:
 ## Inputs
 
 `docs/product/spec.md` and `docs/product/acceptance-criteria.md`, plus the relevant existing
-code and `CONTEXT.md`/ADRs when present.
+code and `GLOSSARY.md` (or `GLOSSARY-MAP.md`)/ADRs when present.
 
 ## Required child
 

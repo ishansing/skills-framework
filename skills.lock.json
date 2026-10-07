@@ -6,7 +6,7 @@
     {
       "id": "research",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/engineering/research",
       "contentSha256": "75b7f9bbd7ccff6755a006f8b25d319a46ecbf6bd4b4c3323965ed9cb65e78ff",
       "invocationClass": "model"
@@ -14,7 +14,7 @@
     {
       "id": "grilling",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/productivity/grilling",
       "contentSha256": "0ca4cfe5105d79c6ef6755491492e056c43e88b82666376d8ecd7fac695d96e6",
       "invocationClass": "model"
@@ -22,23 +22,23 @@
     {
       "id": "domain-modeling",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/engineering/domain-modeling",
-      "contentSha256": "2bc3bb0a64ea9c6f5c3bcf78fc17f0fcdc7c062edc547ef006441de0b576d248",
+      "contentSha256": "a94465b3818001677bed9e51205fcbea48b35b1938215ab2f42459029e805f51",
       "invocationClass": "model"
     },
     {
       "id": "codebase-design",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/engineering/codebase-design",
-      "contentSha256": "9f457cc65ef2d70eb5b8a44a4dae2b139840078b6596a67ee8c4e95f5a0e6f5c",
+      "contentSha256": "7383fac1ae3869fe7c6e195c9f3e1ea61039be47e8e10b70702fb90ee076d913",
       "invocationClass": "model"
     },
     {
       "id": "prototype",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/engineering/prototype",
       "contentSha256": "492e4433fcd9cf88c0854aba063829ee248b208849e5827a45da8424199fd10f",
       "invocationClass": "model"
@@ -46,39 +46,31 @@
     {
       "id": "tdd",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/engineering/tdd",
-      "contentSha256": "28b5e430968370f51b03b88b4b4a046286192733d2f45bd5b8049e16f45fd234",
+      "contentSha256": "dc17f0fd4eb735cef8810d1a9e025cb3cd291f8f6551cf0adec1c93b5ea1ebd2",
       "invocationClass": "model"
     },
     {
       "id": "diagnosing-bugs",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/engineering/diagnosing-bugs",
-      "contentSha256": "bcdaec9e1033901c396437fcb102161d8ad3cd87632007aaf270b19e03e70117",
+      "contentSha256": "797393d3767d1fcfa35472cf0d6c99b475e2e0726829f402a2e0a62f940d9ea4",
       "invocationClass": "model"
     },
     {
       "id": "code-review",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/engineering/code-review",
       "contentSha256": "12daafb9c4f77deb3c3303dc2e6f8a3c2a0ff7928fc004af959ba18b8bd38068",
       "invocationClass": "model"
     },
     {
-      "id": "resolving-merge-conflicts",
-      "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
-      "path": "skills/engineering/resolving-merge-conflicts",
-      "contentSha256": "310fa72a34cddd1dd1a9790f9ebc17bf2c83caeae5cdf87e2485be8b1abec90e",
-      "invocationClass": "model"
-    },
-    {
       "id": "wizard",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/engineering/wizard",
       "contentSha256": "518a4d148ef366cde28bd3b5f3eefc54ac7ddeeb670cd96eaff07cf4d2ce30f0",
       "invocationClass": "model"
@@ -86,7 +78,7 @@
     {
       "id": "writing-for-agents",
       "repo": "mattpocock/skills",
-      "commit": "959a8e9f1edc3adbe2f7e3054bb6fbefa6696260",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
       "path": "skills/productivity/writing-for-agents",
       "contentSha256": "0071124a923559493bc8924a90fb87bceb048d31ad2ce785fa4281d7c506bfa7",
       "invocationClass": "model"

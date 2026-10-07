@@ -22,7 +22,7 @@ adapter_contract:
   phase: implementation
   consumes: [slice, acceptance-criteria, relevant-design-context]
   required_children: [tdd]
-  conditional_children: [codebase-design, diagnosing-bugs, vercel-react-best-practices, frontend-design, webapp-testing, playwright-generate-test, resolving-merge-conflicts]
+  conditional_children: [codebase-design, diagnosing-bugs, vercel-react-best-practices, frontend-design, webapp-testing, playwright-generate-test]
   produces: [implementation-diff, validation-evidence, unresolved-findings]
   exits: [completed, blocked, needs-human, needs-review]
 ```
@@ -50,7 +50,11 @@ TDD methodology.
 - `frontend-design` for new UI or visual redesign.
 - `webapp-testing` when a browser flow must be exercised; `playwright-generate-test` when a
   durable Playwright test is required.
-- `resolving-merge-conflicts` for an in-progress conflict; resolve by intent, never `--abort`.
+
+For an in-progress merge/rebase conflict, resolve each side by spec and change intent,
+run the relevant checks, and finish the operation. If intent is unclear, return
+`needs-human` with the conflicting paths and decision needed; do not use `--abort`
+as a resolution. No dedicated conflict skill is required in Matt v1.3.
 
 ## Procedure
 

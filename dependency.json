@@ -26,9 +26,6 @@
     "completion evidence": [
       "verification-before-completion"
     ],
-    "conflict intent resolution": [
-      "resolving-merge-conflicts"
-    ],
     "consequence proofing": [
       "poka-yoke"
     ],
@@ -192,14 +189,6 @@
         "itp-research"
       ]
     },
-    "resolving-merge-conflicts": {
-      "source": "mattpocock/skills",
-      "invocation_class": "model",
-      "status": "installed-global",
-      "used_by": [
-        "itp-implement"
-      ]
-    },
     "tdd": {
       "source": "mattpocock/skills",
       "invocation_class": "model",
@@ -266,7 +255,7 @@
     "playwright-generate-test": "a durable Playwright test is required",
     "poka-yoke": "high-consequence design where a mistake is costly; do not trigger for reversible, low-stakes choices",
     "postgresql-code-review": "PostgreSQL schema, query, or migration behavior changed",
-    "react-best-practices": "React/Next.js code is written or reviewed",
+    "vercel-react-best-practices": "React/Next.js code is written or reviewed",
     "web-design-guidelines": "UI review against the pinned Web Interface Guidelines",
     "webapp-testing": "a browser-based flow must be exercised"
   },

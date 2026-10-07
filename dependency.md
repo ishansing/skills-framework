@@ -17,7 +17,6 @@ upstream skills, their invocation classes, and installation status; adapters and
 | feasibility experiment | `prototype` |
 | test-driven implementation | `tdd`, `diagnosing-bugs` |
 | agent-readable specs | `writing-for-agents` |
-| conflict intent resolution | `resolving-merge-conflicts` |
 | human-performed operations | `wizard` |
 | standards + spec review | `code-review` |
 | security differential review | `differential-review` |
@@ -41,7 +40,6 @@ upstream skills, their invocation classes, and installation status; adapters and
 | tdd | mattpocock/skills | model | installed-global | itp-implement |
 | diagnosing-bugs | mattpocock/skills | model | installed-global | itp-implement, itp-incident |
 | code-review | mattpocock/skills | model | installed-global | itp-review |
-| resolving-merge-conflicts | mattpocock/skills | model | installed-global | itp-implement |
 | wizard | mattpocock/skills | model | installed-global | itp-incident |
 | writing-for-agents | mattpocock/skills | model | installed-global | itp-spec |
 | verification-before-completion | obra/superpowers | model | vendored-pinned | itp-verify |
@@ -67,7 +65,7 @@ must be pinned before Phase 5 validation; curation debt), `not-installed`.
 |---|---|
 | differential-review | medium/high-risk or security-sensitive diff; security regression; do not trigger for low-risk diffs (typos, formatting, message text) with no security surface |
 | postgresql-code-review | PostgreSQL schema, query, or migration behavior changed |
-| react-best-practices | React/Next.js code is written or reviewed |
+| vercel-react-best-practices | React/Next.js code is written or reviewed |
 | frontend-design | new UI or visual redesign |
 | webapp-testing | a browser-based flow must be exercised |
 | playwright-generate-test | a durable Playwright test is required |

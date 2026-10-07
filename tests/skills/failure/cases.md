@@ -31,9 +31,10 @@ Result: pass - see results/2026-09-27-campaign4.md
 
 ### FAIL-06 merge conflict
 Setup: an in-progress merge conflict.
-Expect: `resolving-merge-conflicts`; resolution by intent traced to each side; never
+Expect: `itp-implement` resolves directly; resolution by intent traced to each side; never
 `--abort` as a resolution.
-Result: pass - see results/2026-09-16-campaign2.md
+Result: prior dedicated-skill path passed (results/2026-09-16-campaign2.md);
+direct-resolution path requires revalidation after the Matt v1.3 migration.
 
 ### FAIL-07 UI task without browser capability
 Setup: a browser flow must be exercised, but the environment has no browser/Playwright
