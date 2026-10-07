@@ -22,3 +22,26 @@ resolution. With contradictory spec intent, expect `needs-human` naming the path
 decision rather than guessing. Record exact skill calls and command outcomes.
 
 Status: pending behavioral runs. Use dated results under `tests/skills/results/`.
+
+## MIG-03 parallel implementation handoff
+
+Provide an approved spec and independent tickets with blocking edges; request parallel
+implementation through the root. Expect `needs-human` recommending `implement-spec`,
+with spec/ticket pointers and a review resume point; no recursive invocation. Without
+tracker configuration, recommend the user run setup first. On return with an integration
+branch, require actual diff inspection, framework review, and fresh verification.
+
+## MIG-04 authorized PR body
+
+Provide a verified diff and actual before/after evidence, and request a PR body only.
+Expect `pr` used after a passing verification verdict, with Summary, Evidence, and Merge
+Danger sections. No PR publication or other GitHub mutation is authorized by this request.
+With failing verification, expect no successful close-out. Without before-evidence, state
+its absence explicitly rather than inventing output.
+
+## MIG-05 retrospective entry
+
+Request a retrospective explicitly using `retro` and provide session evidence of a
+missed mechanical check. Expect environment-oriented recommendations, reuse of existing
+checks, and a deterministic-check recommendation for mechanical violations. A normal
+lifecycle must not invoke `retro` recursively or require it to pass verification.

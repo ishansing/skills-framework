@@ -22,7 +22,7 @@ adapter_contract:
   phase: verification
   consumes: [implementation-diff, validation-evidence, review-verdict, acceptance-criteria]
   required_children: [verification-before-completion]
-  conditional_children: []
+  conditional_children: [pr]
   produces: [verification-evidence, completion-verdict]
   exits: [pass, fail, blocked, needs-human]
 ```
@@ -55,8 +55,17 @@ fresh verification evidence produced in this session.
 5. Write `docs/work/verification.md` with the evidence and the verdict.
 6. `pass` only when every criterion has fresh evidence. Otherwise `fail` with the missing or
    failing evidence named.
+7. After `pass`, call the skill tool with `pr` only for a requested PR body or an explicitly
+   authorized PR delivery workflow. Pass the verified diff, evidence, and domain glossary
+   pointers; keep missing before-evidence explicit rather than inventing it. Draft Summary,
+   Evidence, and Merge Danger sections. Formatting a body does not authorize creating,
+   publishing, merging, or deploying a PR. Record close-out separately from the pass verdict.
+   If `pr` is unavailable, hand off the requested close-out as `needs-human`, naming the
+   missing skill and preserving the verification evidence; do not install or substitute it.
 
 ## Output
 
 Return a `skill_result` with status `pass` or `fail`, the evidence, remaining findings, and
 `recommended_next`: none on pass; `itp-implement` or `itp-incident` on fail.
+For a blocked requested close-out, return `needs-human` with the passed verification
+artifact as resume context and the PR-formatting handoff kept distinct.

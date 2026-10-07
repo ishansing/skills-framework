@@ -76,6 +76,30 @@
       "invocationClass": "model"
     },
     {
+      "id": "pr",
+      "repo": "mattpocock/skills",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
+      "path": "skills/engineering/pr",
+      "contentSha256": "556671c9cfe315c003b3e05bb8c58ad0a75fcde32c67e8cf82a9069c80a92854",
+      "invocationClass": "model"
+    },
+    {
+      "id": "implement-spec",
+      "repo": "mattpocock/skills",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
+      "path": "skills/engineering/implement-spec",
+      "contentSha256": "cf8e1a5cc76d042e3ada41826352b35e523c49261e319d0b85a00ca701d1b189",
+      "invocationClass": "user"
+    },
+    {
+      "id": "retro",
+      "repo": "mattpocock/skills",
+      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
+      "path": "skills/engineering/retro",
+      "contentSha256": "33e50d2e1b6da392645e0dee2f5ac3b1ca03b3d1c3aa39e9d25269656b4d4714",
+      "invocationClass": "user"
+    },
+    {
       "id": "writing-for-agents",
       "repo": "mattpocock/skills",
       "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",

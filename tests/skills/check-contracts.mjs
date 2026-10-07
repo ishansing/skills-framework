@@ -141,6 +141,9 @@ for (const s of lock.skills) {
   if (!/^[0-9a-f]{40}$/.test(s.commit)) fail(`lock: ${s.id} commit is not a 40-char sha`);
   if (!/^[0-9a-f]{64}$/.test(s.contentSha256)) fail(`lock: ${s.id} contentSha256 is not sha256`);
   if (!deps.has(s.id)) fail(`lock: ${s.id} not in dependency.md inventory`);
+  else if (s.invocationClass !== deps.get(s.id).invocationClass) {
+    fail(`lock: ${s.id} invocation class differs from dependency.md`);
+  }
 }
 for (const [id, entry] of deps) {
   const pinned = entry.status === "installed-global" || entry.status === "vendored-pinned";

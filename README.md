@@ -238,9 +238,19 @@ the contents first: a `CONTEXT.md` containing a session handoff or implementatio
 is not a domain glossary and should not be renamed automatically. Historical framework
 results retain the filenames used in their original runs.
 
-This is the compatibility stage only. The new `pr`, `implement-spec`, and `retro`
-capabilities are not yet registered or installed by the framework. Changed behavioral
-contracts require targeted revalidation; prior §25 results describe the previous baseline.
+Three new capabilities are pinned and installed with the framework:
+
+- `pr` formats a PR body after verification passes, when requested or authorized by the
+  delivery workflow. It does not grant permission to publish, merge, or deploy.
+- `implement-spec` is a user-invoked parallel alternative for an approved spec with a
+  ticket dependency graph. The root hands off rather than calling it recursively; its
+  integration branch returns through framework review and fresh verification.
+- `retro` is a user-invoked session retrospective focused on the agent environment.
+  It is optional, outside the completion gate.
+
+Sequential implementation remains the default. Changed behavioral contracts require
+targeted revalidation; prior §25 results describe the previous baseline. Use the regular
+maintenance installer to materialize new pins, then restart the agent session for discovery.
 
 Installed projects record the framework version at
 `.agents/skills/idea-to-production/VERSION`. To check whether this framework checkout is

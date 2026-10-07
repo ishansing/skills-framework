@@ -27,6 +27,9 @@ upstream skills, their invocation classes, and installation status; adapters and
 | agent behavior evaluation | `agentic-eval` |
 | agent trust-boundary review | `agent-owasp-compliance`, `agentic-actions-auditor` |
 | completion evidence | `verification-before-completion` |
+| authorized PR-body close-out | `pr` |
+| whole-spec parallel implementation (user handoff) | `implement-spec` |
+| session retrospective (user entry) | `retro` |
 
 ## Upstream inventory
 
@@ -42,6 +45,9 @@ upstream skills, their invocation classes, and installation status; adapters and
 | code-review | mattpocock/skills | model | installed-global | itp-review |
 | wizard | mattpocock/skills | model | installed-global | itp-incident |
 | writing-for-agents | mattpocock/skills | model | installed-global | itp-spec |
+| pr | mattpocock/skills | model | installed-global | itp-verify (authorized close-out only) |
+| implement-spec | mattpocock/skills | user | installed-global | user handoff only |
+| retro | mattpocock/skills | user | installed-global | user entry only |
 | verification-before-completion | obra/superpowers | model | vendored-pinned | itp-verify |
 | frontend-design | anthropics/skills | model | installed-global | itp-implement |
 | differential-review | trailofbits/skills | model | installed-global | itp-review, itp-incident |
@@ -74,6 +80,7 @@ must be pinned before Phase 5 validation; curation debt), `not-installed`.
 | agentic-eval | agent/harness behavior changed; not for trust-boundary changes (that's agent-owasp-compliance) |
 | agent-owasp-compliance | agent/tool/prompt trust boundary changed |
 | agentic-actions-auditor | AI GitHub Actions workflow changed |
+| pr | after verification passes, when a PR body is requested or an explicitly authorized delivery workflow requires one; never create or publish a PR without authorization |
 
 Trigger rows state positive conditions; when ambiguous, do not load - record as
 considered-not-triggered.
@@ -82,7 +89,12 @@ considered-not-triggered.
 
 `grill-with-docs`, `grill-me`, `to-spec`, `to-tickets`, `implement`, `triage`,
 `improve-codebase-architecture`, `setup-matt-pocock-skills`, `ask-matt`, `wayfinder`,
-`handoff`, `teach`, `to-questionnaire`, `wait-what`.
+`handoff`, `teach`, `to-questionnaire`, `wait-what`, `implement-spec`, `retro`.
+
+The `implement-spec` workflow is an optional parallel alternative for an approved spec with a ticket
+dependency graph. Return a user handoff, not a child invocation. Its integration branch
+must return through `itp-review` and fresh `itp-verify` before framework completion.
+`retro` is optional post-session work on the agent environment, not a completion gate.
 
 If a user-entry workflow is preferable, return `needs-human` with
 `recommended_user_skill`, a reason, and `resume_with` (artifact or next step).

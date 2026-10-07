@@ -53,6 +53,24 @@ review, verify). The root may author the small `spec-lite` directly - one short 
 stable `REQ-` IDs and the acceptance criteria in the slice - so `itp-spec` is not loaded for
 small runs. If the run exceeds the budget, stop and report instead of adding ceremony.
 
+## Optional user-entry alternatives
+
+Sequential `itp-implement` remains the default. If the user requests whole-spec parallel
+implementation and an approved spec plus tickets with blocking edges exist, return
+`needs-human` recommending `implement-spec`, with those artifact paths and a resume point.
+Never invoke it as a child. If its required tracker is unconfigured, recommend that the
+user run `setup-matt-pocock-skills` first. Do not infer ticket edges or authorize branch
+resets from this handoff.
+
+When the user returns with the integration branch, inspect the actual diff and ticket
+outcomes, route to `itp-review`, then fresh `itp-verify`. Upstream close-out alone is not
+framework completion; worktree concurrency is not evidence of Loom enforcement.
+
+For a requested session retrospective, recommend the user-entry `retro`; pass session
+evidence pointers. It suggests environment improvements and is not a new lifecycle phase
+or prerequisite to completion. Recurring environment friction may justify suggesting it,
+but it is never loaded recursively.
+
 ## Greenfield projects
 
 A repo with no application code yet is never `small`: greenfield work creates interfaces and

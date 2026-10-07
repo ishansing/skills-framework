@@ -38,7 +38,9 @@ Read before starting:
 3. Classify the run's scale (`small`, `standard`, `full`) with the right-sizing rule in
    `references/lifecycle.md`; when unsure, use `standard`. Record `scale` in `.itp/run.md`.
 4. Load exactly one adapter by ID with the runtime's skill tool; pass `scale` in the child
-   request context. In small runs the root authors `spec-lite` directly.
+   request context. In small runs the root authors `spec-lite` directly. For a requested
+   parallel-spec build or session retrospective, follow the optional user-entry handoffs
+   in `references/lifecycle.md` instead of recursively invoking those workflows.
 5. Require the adapter's structured `skill_result` (see `references/artifacts.md`).
 6. Validate `recommended_next` against `dependency.md`. Follow, skip, or loop back only with
    a stated reason.

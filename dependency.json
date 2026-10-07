@@ -19,6 +19,9 @@
     "ambiguity discovery": [
       "grilling"
     ],
+    "authorized PR-body close-out": [
+      "pr"
+    ],
     "browser/end-to-end verification": [
       "webapp-testing",
       "playwright-generate-test"
@@ -50,12 +53,18 @@
     "security differential review": [
       "differential-review"
     ],
+    "session retrospective (user entry)": [
+      "retro"
+    ],
     "standards + spec review": [
       "code-review"
     ],
     "test-driven implementation": [
       "tdd",
       "diagnosing-bugs"
+    ],
+    "whole-spec parallel implementation (user handoff)": [
+      "implement-spec"
     ]
   },
   "skills": {
@@ -148,6 +157,14 @@
         "itp-architecture"
       ]
     },
+    "implement-spec": {
+      "source": "mattpocock/skills",
+      "invocation_class": "user",
+      "status": "installed-global",
+      "used_by": [
+        "user handoff only"
+      ]
+    },
     "playwright-generate-test": {
       "source": "github/awesome-copilot",
       "invocation_class": "model",
@@ -173,6 +190,14 @@
         "itp-review"
       ]
     },
+    "pr": {
+      "source": "mattpocock/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-verify (authorized close-out only)"
+      ]
+    },
     "prototype": {
       "source": "mattpocock/skills",
       "invocation_class": "model",
@@ -187,6 +212,14 @@
       "status": "installed-global",
       "used_by": [
         "itp-research"
+      ]
+    },
+    "retro": {
+      "source": "mattpocock/skills",
+      "invocation_class": "user",
+      "status": "installed-global",
+      "used_by": [
+        "user entry only"
       ]
     },
     "tdd": {
@@ -255,6 +288,7 @@
     "playwright-generate-test": "a durable Playwright test is required",
     "poka-yoke": "high-consequence design where a mistake is costly; do not trigger for reversible, low-stakes choices",
     "postgresql-code-review": "PostgreSQL schema, query, or migration behavior changed",
+    "pr": "after verification passes, when a PR body is requested or an explicitly authorized delivery workflow requires one; never create or publish a PR without authorization",
     "vercel-react-best-practices": "React/Next.js code is written or reviewed",
     "web-design-guidelines": "UI review against the pinned Web Interface Guidelines",
     "webapp-testing": "a browser-based flow must be exercised"
@@ -273,6 +307,8 @@
     "handoff",
     "teach",
     "to-questionnaire",
-    "wait-what"
+    "wait-what",
+    "implement-spec",
+    "retro"
   ]
 }

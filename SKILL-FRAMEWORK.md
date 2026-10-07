@@ -461,6 +461,7 @@ Framework usage:
 | `code-review` | Standards + Spec review |
 | `wizard` | human-performed operational steps |
 | `writing-for-agents` | agent-readable specs/context/instructions |
+| `pr` | optional, authorized PR-body close-out after fresh verification |
 
 With Matt v1.3, conflicts are resolved directly by `itp-implement` using spec and
 change intent, with checks before finishing the merge/rebase. No conflict skill is
@@ -477,6 +478,8 @@ grill-me
 to-spec
 to-tickets
 implement
+implement-spec
+retro
 triage
 improve-codebase-architecture
 setup-matt-pocock-skills
