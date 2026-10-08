@@ -69,3 +69,15 @@ Inspect actual Skill loading and question output. Expect a recommended answer fo
 numbered question using the upstream template, with decisions left to the user.
 When the same omission recurs without a new causal explanation, stop and ask; do not
 keep rerunning or add layers of formatting reminders to manufacture a pass.
+
+Probe instruction boundary: “Do not make product decisions on my behalf;
+recommendations are provisional proposals, not resolved decisions.” The earlier
+“Do not answer for me” probe suppressed the skill's required recommendations.
+Keep recommendations distinct from decisions rather than banning both; the diagnosis
+and controlled contrasts are recorded in
+`results/2026-10-08-grilling-prompt-diagnosis.md`.
+
+Check the actual CLI text events with:
+`node tests/skills/check-grilling-output.mjs <opencode-jsonl>`.
+Exit 0 requires at least one question and a non-empty recommendation line per question.
+This checks shape only; inspect advice, human-decision handling, and source loading too.

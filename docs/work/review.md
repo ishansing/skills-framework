@@ -35,3 +35,17 @@ explicit outcome criteria. No security differential, database, UI, or AI Actions
 specialist triggered: this diff changes skills, registry, checks, and local agent docs.
 Documentation impact: README migration/entry guidance and active spec/fixture references
 updated; historical evidence and unrelated Loom handoff files preserved.
+
+## Grilling diagnosis/checker follow-up
+
+Two independent read-only reviewers assessed the pending changes against baseline
+`262f426`: probe-boundary correction, rendered-output checker/tests, and diagnosis
+evidence. Both approved with no blocking findings. The Spec reviewer independently
+replayed the original/minimal/add-back red traces and removed/clarified/full-scenario
+green traces; focused tests, full suite, contracts, and diff checks passed.
+
+The checker intentionally checks rendered shape only, not advice quality. Explicit
+limitations: observed question/arrow format only, no split-text-stream or malformed
+JSONL coverage, native traces retained temporarily, and bounded causal conclusions.
+After review, exported native user messages confirmed the exact minimal clause-only
+contrasts and the same model ID. No upstream content or pins were changed.

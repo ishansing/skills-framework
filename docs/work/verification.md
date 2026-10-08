@@ -60,3 +60,22 @@ ancestry checks, independent review and 7/7 fresh tests. That integration gap is
 for the constrained protocol. The grilling-format omission recurred despite correct
 Skill loading; that criterion remains failed. Stop retries and obtain the user's
 decision on diagnosis versus explicit deviation acceptance before release readiness.
+
+## Grilling diagnosis follow-up
+
+The user authorized diagnosis rather than a deviation waiver. Controlled native
+contrasts in `docs/work/INCIDENT-GRILLING-FORMAT.md` isolate a conflicting validation
+prompt clause. MIG-07 now distinguishes provisional recommendations from product
+decisions; the original full scenario produced four recommendation-bearing questions
+and waited for the user. Historical failed traces remain failed. No upstream patch
+or global configuration change was needed. This closes the observed prompt-conflict
+probe defect, without asserting a general model reliability or release-readiness result.
+
+Fresh diagnosis/checker checks: 62 contract checks, 32 script tests, and
+`git diff --check` passed. Replaying all six frozen traces with the retained checker
+produced the expected verdicts: original/minimal/add-back exit 1; removed-clause,
+clarified-minimal, and clarified-original exit 0. Two independent review axes approved
+the checker, probe correction, and evidence. An empty recommendation followed by a
+separator was first shown to fail the checker unit test, then fixed using horizontal
+whitespace matching; focused tests subsequently passed 2/2. No historical failure was
+waived, upstream skill modified, or configuration changed to produce the green probes.
