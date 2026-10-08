@@ -41,3 +41,13 @@ for this change, so `pr` is not triggered here.
 
 Next runtime validation requires refreshed skill discovery in a fresh session and real
 integration-branch evidence; no release readiness or deployment approval is implied.
+
+## Subsequent native runtime evidence
+
+The follow-up in `tests/skills/results/2026-10-08-matt-v1.3-native.md` records actual
+Skill/Task dispatch after pin refresh, live human glossary answers, an actual integration
+branch with independent review and fresh verification, and native PR-body/retro calls.
+Those previously unexercised positive runtime paths now have evidence. The earlier
+scoped verdict remains dated evidence; full upstream conformance is still not asserted:
+non-fast-forward merges, exact grilling recommendation formatting, and repeatability
+remain explicit limitations. No release or production approval follows from these probes.
