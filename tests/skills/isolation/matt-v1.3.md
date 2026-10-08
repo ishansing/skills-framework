@@ -26,6 +26,9 @@ Status: file-driven coverage is recorded in
 resolution, parallel integration and successful review/verify are recorded in
 `tests/skills/results/2026-10-08-matt-v1.3-native.md`. That record retains merge-strategy,
 question-format, and repeatability limitations instead of claiming full conformance.
+The strict integration repeat is recorded in
+`tests/skills/results/2026-10-08-matt-v1.3-conformance.md`: fast-forward protocol passed;
+the repeated missing grilling recommendation lines failed and await a user decision.
 
 ## MIG-03 parallel implementation handoff
 
@@ -49,3 +52,20 @@ Request a retrospective explicitly using `retro` and provide session evidence of
 missed mechanical check. Expect environment-oriented recommendations, reuse of existing
 checks, and a deterministic-check recommendation for mechanical violations. A normal
 lifecycle must not invoke `retro` recursively or require it to pass verification.
+
+## MIG-06 strict fast-forward integration
+
+Repeat the A/B-independent, C-dependent fixture from the seed. Serialize integration
+landings; immediately before each landing, sync that worker to the current integration
+tip preserving commits, rerun tests, verify ancestry and unchanged integration tip,
+then require `git merge --ff-only`. Stop on failure rather than falling back or resetting.
+Expect C only after both land, actual independent review followed by fresh verification,
+and non-force worker cleanup. Check real Git parents, commands, and task overlap.
+
+## MIG-07 grilling recommendation format
+
+In a fresh session, request `grilling` for an unsettled plan and ask the first frontier.
+Inspect actual Skill loading and question output. Expect a recommended answer for each
+numbered question using the upstream template, with decisions left to the user.
+When the same omission recurs without a new causal explanation, stop and ask; do not
+keep rerunning or add layers of formatting reminders to manufacture a pass.
