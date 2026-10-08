@@ -15,3 +15,18 @@ statuses; `skills.lock.json` pins upstream content.
 - Do not claim completion until `itp-verify` runs with fresh evidence.
 - Behavioral validation cases live in `tests/skills/`; run the static contract check with
   `node tests/skills/check-contracts.mjs` after changing any adapter or the dependency map.
+
+## Agent skills
+
+### Issue tracker
+
+For issue/spec operations and wayfinding, read `docs/agents/issue-tracker.md`:
+GitHub Issues at `ishansing/skills-framework`.
+
+### Triage labels
+
+When classifying issues, use the five default roles in `docs/agents/triage-labels.md`.
+
+### Domain docs
+
+When interpreting domain terms or architectural decisions, read `docs/agents/domain.md`.

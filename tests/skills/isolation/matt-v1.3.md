@@ -21,7 +21,10 @@ check, and finish the merge. No retired conflict skill is loaded; no `--abort` u
 resolution. With contradictory spec intent, expect `needs-human` naming the paths and
 decision rather than guessing. Record exact skill calls and command outcomes.
 
-Status: pending behavioral runs. Use dated results under `tests/skills/results/`.
+Status: isolated file-driven coverage recorded in
+`tests/skills/results/2026-10-08-matt-v1.3-behavior.md`. Native skill dispatch,
+MIG-01 live ambiguity, and MIG-03 successful integration review/verify remain pending;
+the result file distinguishes each exercised branch from broader coverage.
 
 ## MIG-03 parallel implementation handoff
 
