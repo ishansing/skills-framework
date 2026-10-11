@@ -15,7 +15,7 @@ export function loadLock(root = ROOT) {
   return JSON.parse(readFileSync(join(root, "skills.lock.json"), "utf8"));
 }
 
-function githubToken() {
+export function githubToken() {
   for (const key of ["GITHUB_TOKEN", "GH_TOKEN"]) {
     if (process.env[key]) return process.env[key];
   }
@@ -40,9 +40,11 @@ async function api(path) {
   return res.json();
 }
 
-const branches = new Map();
+const branchCaches = new WeakMap();
 
 async function defaultBranch(repo, apiFetch) {
+  if (!branchCaches.has(apiFetch)) branchCaches.set(apiFetch, new Map());
+  const branches = branchCaches.get(apiFetch);
   if (!branches.has(repo)) {
     const info = await apiFetch(`/repos/${repo}`);
     branches.set(repo, info.default_branch);

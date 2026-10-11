@@ -37,6 +37,17 @@ test("current when the pinned commit is the latest path commit", async () => {
   assert.equal(result.status, "current");
 });
 
+test("branch caches do not leak between API clients or scan revisions", async () => {
+  for (const branch of ["first", "second"]) {
+    const result = await checkEntry(entry({ repo: "cache/probe" }), async (path) => {
+      if (path === "/repos/cache/probe") return { default_branch: branch };
+      assert.ok(path.includes(`sha=${branch}`));
+      return [{ sha: PIN }];
+    });
+    assert.equal(result.status, "current");
+  }
+});
+
 test("current when the pin already contains the latest path change", async () => {
   // Regression: compare reports ahead_by 0 when the pin is a newer repo-wide commit.
   const result = await checkEntry(

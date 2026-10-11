@@ -1,0 +1,12 @@
+{
+  "publication": { "enabled": false, "repository": "ishansing/skills-framework", "publisherLogin": "github-actions[bot]", "stateBranch": "automation/skill-watch", "issueTitle": "Skill Watch — updates and candidates" },
+  "queries": ["review", "testing", "debugging", "architecture", "security", "agents", "CI", "database", "frontend", "research"],
+  "limits": { "pagesPerSite": 10, "leadsPerSite": 60, "candidateVerifications": 50, "upstreamMetadata": 10, "httpRequests": 500, "responseBytes": 4000000, "cacheBytes": 250000, "snapshotEntries": 500, "historyEntries": 5000, "pendingEvents": 500 },
+  "sources": [
+    { "kind": "awesomeskill", "enabled": true, "url": "https://awesomeskill.ai/" },
+    { "kind": "skills-sh", "enabled": true, "pages": ["https://skills.sh/trending", "https://skills.sh/hot"] },
+    { "kind": "skillsmp", "enabled": true, "url": "https://skillsmp.com/search" },
+    { "kind": "voltagent", "enabled": true, "url": "https://github.com/VoltAgent/awesome-agent-skills" }
+  ],
+  "dispositions": {}
+}

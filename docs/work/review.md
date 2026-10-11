@@ -1,51 +1,92 @@
-# Matt v1.3 integration review
+# Review — Skill Watch feature branch (pre-commit)
 
-Fixed point approved by user: `4fe0869`. Reviewed committed range
-`git diff 4fe0869...ed7c6eb`, plus approved pending `AGENTS.md` and
-`docs/agents/*.md` setup. Spec sources: `SKILL-FRAMEWORK.md`, migration cases in
-`tests/skills/isolation/matt-v1.3.md`, and the user-approved integration scope.
+Fixed point: `6230ad0`. Range: working tree (`git add -N` intent-added, 16 files,
++1278/−2, no branch commits yet). Spec: `docs/work/ISSUE-SKILL-WATCH.md` (AC-1..AC-5)
+and `SKILL-WATCH-PLAN.md`. Tracker: `docs/agents/issue-tracker.md` present (no issue
+refs in messages; spec passed explicitly). Subagents: Standards
+`ses_ee397b9c6ffe4QA8nbFEeyog09`, Spec `ses_ee397b8c8ffenq05Lua4p6aAUo`,
+adversarial `ses_ee397b7bdffeC5aYr3nta3BawN` — all read-only, parallel.
 
 ## Standards
 
-Initial review found an ADR discovery-path mismatch and weak context-pointer triggers.
-Both corrected: `docs/agents/domain.md` uses `docs/architecture/ADR/`, and AGENTS
-pointers state issue/spec, triage, and terminology/decision loading conditions.
-The independent Standards reviewer re-read the corrections and returned **approve**,
-with no remaining findings. It did not claim behavioral execution.
+Hard: docs triplication — budgets/queries/rollout/four-sources repeated across
+README.md, SKILL-WATCH-PLAN.md, docs/work/ISSUE-SKILL-WATCH.md vs writing-for-agents
+single-source-of-truth. Fix by trimming README to pointer + essentials.
+Judgement-only (5, minor): extractor `if(kind…)` chains; duplicated href/heading
+lookup lines; string identity keys; `safe` name; workflow inline `node -p`.
+`check-upstream.mjs` WeakMap fix is a root-cause fix, endorsed, not a smell.
+
+Summary: 1 hard + 5 minor; worst is docs triplication.
 
 ## Spec
 
-Initial review independently found the same ADR-path mismatch. Re-review confirmed
-resolution and accepted the contracts: exact release pins, retired conflict dependency,
-glossary/handoff separation, authorized PR body, user-only parallel/retro entry points,
-and framework review/verify on integration return. No additional contract defect.
+(a) Missing/partial (5): SkillsMP categories + timeline never collected; AwesomeSkill
+`sort=latest&limit=50` hardcoded while plan requires validated sort/pagination (also
+silently drops the 10th default query); no move detection or linked-reference reading;
+`validateConfig` + hardcoded `HOSTS` block config-only source extension; disposition
+keys (`lead:<sha256>`, numeric repo IDs) are unauthorable, defeating reviewed
+dispositions in AC-1/§6.
+(b) Scope creep (2): `check-upstream.mjs` WeakMap fix (beneficial root-cause fix —
+keep with justification); publisher batch/cap/budget constants (defensible hardening —
+keep, document in plan).
+(c) Wrong (1): `robotPolicy` matcher `"skillwatch".includes(a)` is reversed — selects
+crawler groups whose name is a substring of "skillwatch"; against AC-3.
 
-The independent Spec reviewer inspected the five file-driven reports and confirmed
-their evidence boundaries. It explicitly kept native dispatch, full scheduler execution,
-MIG-01 live ambiguity, and successful integration review/verify outside their coverage.
+Summary: 8 findings; worst is unauthorable disposition keys.
+
+## Security (differential, triggered: outbound fetch + publication)
+
+3 LOWs: YAML alias expansion relies on library default (harden `maxAliasCount` +
+`schema:'core'`); concurrent-publisher duplicate-notify/last-writer-wins state
+(HARD exploitability, LOW severity); `writeApi` path guard prefix-only if reused
+(no current exploit — all call sites validated). Verified CLEAN with tests:
+cross-host redirect auth boundary, private-repo ingress, forged issue/comment
+markers, Markdown/mention injection, allowlist/robots. Blast radius: collectors
+and publisher called only from `main()` scan/publish paths. Coverage gaps noted:
+no private-repo/YAML-bomb/race tests.
+
+## Other specialists
+
+postgresql-code-review, web-design-guidelines, agentic-eval, agent-owasp-compliance:
+not triggered (no DB/UI/agent-behavior/trust-boundary changes). agentic-actions-auditor:
+new workflow invokes no AI agents — considered, not triggered.
+
+## Documentation impact
+
+README Skill Watch section present and behavior-accurate; trim overlap per Standards
+finding rather than adding content.
 
 ## Verdict
 
-**Approve the contract changes and setup.** This is a two-axis code/document review,
-not a full lifecycle or runtime-acceptance verdict. Remaining validation is recorded in
-`tests/skills/results/2026-10-08-matt-v1.3-behavior.md`.
+**changes-requested** — fix list for `itp-implement`: (1) `robotPolicy` reversed
+matcher; (2) human-authorable disposition keys; (3) README trim to pointer;
+(4) YAML `maxAliasCount` hardening; (5) SkillsMP categories/timeline + AwesomeSkill
+sort/pagination validation, or explicitly waive with recorded limitation;
+(6) move detection + config-source extension, or explicitly waive with follow-up.
+Keep: WeakMap fix, publisher bounds (document the latter in plan).
+`recommended_next: itp-implement`.
 
-Triggered agent-behavior evaluation was performed using bounded isolated cases and
-explicit outcome criteria. No security differential, database, UI, or AI Actions
-specialist triggered: this diff changes skills, registry, checks, and local agent docs.
-Documentation impact: README migration/entry guidance and active spec/fixture references
-updated; historical evidence and unrelated Loom handoff files preserved.
+## Final re-review — 2026-10-11
 
-## Grilling diagnosis/checker follow-up
+Working-tree review against the user-approved same baseline, before commit. Initial
+verdict above is retained as dated history, not the current disposition.
 
-Two independent read-only reviewers assessed the pending changes against baseline
-`262f426`: probe-boundary correction, rendered-output checker/tests, and diagnosis
-evidence. Both approved with no blocking findings. The Spec reviewer independently
-replayed the original/minimal/add-back red traces and removed/clarified/full-scenario
-green traces; focused tests, full suite, contracts, and diff checks passed.
+- Standards: `ses_ed4128262ffevaR5D2zx9x264p` approves. Shared disposition resolution
+  now covers rendering/status and alerts; documentation points to the plan. No blocker.
+- Spec: `ses_ed4128102ffeCrV5EVgzWFzDTr` approves. Reconstructed compacted identities,
+  stable lead aliases, unambiguous moves with retained approved impact, weekly markers,
+  and bounded issue bodies resolve its five concrete findings. CLI mode conflicts are
+  also guarded. SkillsMP category/timeline and code-reviewed source extension are explicit
+  scope limits, not silently claimed functionality.
+- Differential/adversarial: `ses_ed4127fb4ffesLp5LQ3cjGatFH` approves after local payload
+  rechecks. Authenticated redirect/cache and publisher ownership boundaries are intact.
+  Robots ReDoS, oversized headings, and repeated-card state inflation are closed with
+  runnable regressions. No verified HIGH/MEDIUM blocker remains in the reviewed scope.
 
-The checker intentionally checks rendered shape only, not advice quality. Explicit
-limitations: observed question/arrow format only, no split-text-stream or malformed
-JSONL coverage, native traces retained temporarily, and bounded causal conclusions.
-After review, exported native user messages confirmed the exact minimal clause-only
-contrasts and the same model ID. No upstream content or pins were changed.
+Both original functional/availability regressions and subsequent duplicate-card payload
+were shown red before fixes and green afterward. Optional speculative nits are not
+escalated into blockers. Detailed security coverage: `docs/work/skill-watch-security.md`.
+
+**Current verdict: approve for implementation commit.** Publication remains disabled;
+approval does not constitute a real GitHub publication proof or remote CI success.
+`recommended_next: itp-verify`.

@@ -1,0 +1,7 @@
+{
+  "name": "idea-to-production-framework",
+  "private": true,
+  "type": "module",
+  "scripts": { "test": "node --test tests/scripts/*.test.mjs" },
+  "dependencies": { "parse5": "8.0.1", "yaml": "2.9.1" }
+}
