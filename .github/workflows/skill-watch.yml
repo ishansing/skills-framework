@@ -1,0 +1,69 @@
+name: Skill Watch
+
+on:
+  schedule:
+    - cron: "0 6 * * *"
+  workflow_dispatch:
+    inputs:
+      publish:
+        description: "Publish digest and state (requires publication.enabled in config)"
+        type: boolean
+        default: false
+
+permissions:
+  contents: write
+  issues: write
+
+concurrency:
+  group: skill-watch
+  cancel-in-progress: false
+
+jobs:
+  watch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
+      - uses: actions/setup-node@820762786026740c76f36085b0efc47a31fe5020 # v7.0.0
+        with:
+          node-version: 20
+          cache: npm
+      - name: Install parsers
+        run: npm ci --ignore-scripts
+      - name: Rollout mode
+        id: mode
+        env:
+          EVENT: ${{ github.event_name }}
+          REQUEST_PUBLISH: ${{ inputs.publish || false }}
+        run: |
+          enabled="$(node scripts/skill-watch.mjs --config-get publication.enabled)"
+          if [ "$EVENT" = schedule ] && [ "$enabled" != true ]; then
+            echo "skip=true" >> "$GITHUB_OUTPUT"
+            echo "Skill Watch schedule is paused until an authorized publication proof and rollout." >> "$GITHUB_STEP_SUMMARY"
+          fi
+          if [ "$EVENT" = schedule ] || [ "$REQUEST_PUBLISH" = true ]; then
+            echo "publish=true" >> "$GITHUB_OUTPUT"
+          fi
+      - name: Scan and optionally publish
+        if: steps.mode.outputs.skip != 'true'
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          PUBLISH: ${{ steps.mode.outputs.publish }}
+        run: |
+          args=(--remote-state --output "$RUNNER_TEMP/skill-watch")
+          if [ "$PUBLISH" = true ]; then args+=(--publish); fi
+          node scripts/skill-watch.mjs "${args[@]}"
+      - name: Summary
+        if: always() && steps.mode.outputs.skip != 'true'
+        run: |
+          if [ -f "$RUNNER_TEMP/skill-watch/report.md" ]; then
+            cat "$RUNNER_TEMP/skill-watch/report.md" >> "$GITHUB_STEP_SUMMARY"
+          fi
+      - name: Reports
+        if: always() && steps.mode.outputs.skip != 'true'
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: skill-watch-reports
+          path: ${{ runner.temp }}/skill-watch/
+          if-no-files-found: warn
+          retention-days: 30

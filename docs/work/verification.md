@@ -79,3 +79,53 @@ the checker, probe correction, and evidence. An empty recommendation followed by
 separator was first shown to fail the checker unit test, then fixed using horizontal
 whitespace matching; focused tests subsequently passed 2/2. No historical failure was
 waived, upstream skill modified, or configuration changed to produce the green probes.
+
+## Skill Watch feature verification — 2026-10-11
+
+Scope: `SKILL-WATCH-PLAN.md` and AC-1–AC-5 in `docs/work/ISSUE-SKILL-WATCH.md`;
+user-approved working-tree baseline `6230ad0` on `feature/skill-watch`. Final Standards,
+Spec and differential-security verdicts approve after blockers were fixed (review record
+and `docs/work/skill-watch-security.md`). `itp-verify` and its required verification child
+were loaded before the following fresh checks.
+
+### Fresh evidence
+
+- `npm ci --ignore-scripts`: reproducible install, 0 reported vulnerabilities.
+- `npm test`: 61 tests pass, 0 failures.
+- `node tests/skills/check-contracts.mjs`: 62 checks pass.
+- `bash -n install.sh`, script syntax checks, and `git diff --check`: exit 0.
+- Pinned actionlint v1.7.12 tarball SHA-256 verified against the CI pin; actionlint
+  completed with exit 0 after downloading the missing temporary binary.
+- `node scripts/skill-watch.mjs --dry-run --output /tmp/opencode/skill-watch/final-review`:
+  exit 0; usable scan, 8 pending pin updates, one unavailable source. All seven approved
+  upstream repositories plus AwesomeSkill, Skills.sh, and VoltAgent were collected.
+  SkillsMP returned `fetch failed` and was explicitly reported unavailable rather than
+  presented as an empty successful inventory. Earlier live runs covered all four sites;
+  captured SkillsMP fields and fake-HTTP tests remain runnable.
+
+### Acceptance mapping
+
+- AC-1: baseline, source failure, incomplete inventory, recent identity history, moved
+  paths, simultaneous contracts and human dispositions covered by passing scan/comparison
+  tests. Pin checker reused with a tested per-client branch-cache correction.
+- AC-2: four extractors tested; captured public card fields exercised; primary identity,
+  exact revision/hash, ambiguous leads and bounded verification explicit. Latest live
+  source failure is visible; marketplace/query coverage is partial, not comprehensive.
+- AC-3: host/authentication boundaries, private redirects, robots rules, bounded wildcard
+  processing, YAML aliases/fields, oversized headings and duplicate observations tested.
+  External report text is escaped. No discovered skill or source script executed.
+- AC-4: fake GitHub tests cover publisher ownership, forged markers, stale state, state
+  failure/retry deduplication, one weekly digest, continued high-priority alerts, and
+  GitHub issue-body limits. No live issue or state branch was created during validation.
+- AC-5: daily/manual workflow lint passes; CLI mode guards and config inspection tested;
+  docs and read-only scan verified. Publication remains disabled and scheduled collection
+  paused as requested, pending an authorized live publication proof.
+
+### Verdict
+
+**Pass for implementation/pre-commit acceptance.** No remaining blocking reviewed defect.
+This is not approval to enable publication or proof of remote CI. SkillsMP category breadth,
+unsupported new source adapters, semantic reference analysis, bounded recent history and
+multiple independent CLI publisher concurrency are recorded limitations. Tests do not
+claim complete catalogs or cross-process atomic delivery. No PR body requested; `pr` is
+not triggered. Next: commit the intended feature files, then separately authorize rollout.

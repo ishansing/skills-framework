@@ -296,11 +296,33 @@ project.
 
 ## Testing the framework itself
 
+Install the script parsers first with `npm ci --ignore-scripts`. Run `npm test` for the
+script regression suite. The skill installer itself remains independent of npm packages.
+
 - Static: `node tests/skills/check-contracts.mjs [TARGET]` (defaults to this repo).
 - Behavioral: cases in `tests/skills/{isolation,composition,recursion,failure,golden}/`
   run manually, one per fresh session, per `tests/skills/README.md`. Record outcomes in each
   case's `Result:` line. Model behavior is nondeterministic: treat these as regression
   signals, not proofs.
+
+## Skill Watch
+
+Skill Watch is maintenance/discovery automation, separate from the lifecycle and monthly
+re-pin workflow. It monitors approved upstream repositories and samples four discovery
+sources (AwesomeSkill API, Skills.sh trending, SkillsMP public search, VoltAgent catalog),
+verifying candidates against primary `SKILL.md` files. It never installs or invokes a
+discovered skill. Design, source coverage, limits, and rollout: `SKILL-WATCH-PLAN.md`.
+
+```sh
+npm ci --ignore-scripts
+node scripts/skill-watch.mjs --dry-run
+```
+
+Dry runs write reports under `.skill-watch/` (gitignored) and change nothing remotely.
+Human candidate dispositions use human-readable keys (`owner/repo:path`, or
+`lead:owner/repo:name` for unverified leads); see the plan for the full contract.
+Publication is opt-in (`publication.enabled: false` by default) and persists state only
+after successful issue updates — enable it solely through the reviewed rollout proof.
 
 ## Troubleshooting
 
