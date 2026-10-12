@@ -291,8 +291,9 @@ test("same-repo renames pair into possible-move instead of new plus removed", ()
 });
 
 test("config-get exposes validated configuration without scanning", () => {
+  const expected = JSON.parse(readFileSync(join(ROOT, "skill-watch.json"), "utf8")).publication.enabled;
   const out = execFileSync(process.execPath, ["scripts/skill-watch.mjs", "--config-get", "publication.enabled"], { encoding: "utf8", cwd: ROOT });
-  assert.equal(out.trim(), "false");
+  assert.equal(out.trim(), JSON.stringify(expected));
   assert.throws(() => execFileSync(process.execPath, ["scripts/skill-watch.mjs", "--config-get", "publication.missing"], { encoding: "utf8", cwd: ROOT, stdio: "pipe" }));
 });
 
