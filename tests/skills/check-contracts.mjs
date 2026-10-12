@@ -5,7 +5,7 @@
 import { readFileSync, readdirSync, existsSync } from "node:fs";
 import { join, resolve } from "node:path";
 import { fileURLToPath } from "node:url";
-import { dirHash } from "../../scripts/skill-hash.mjs";
+import { dirHash, skillName } from "../../scripts/skill-hash.mjs";
 import { buildRegistry } from "../../scripts/generate-dependency-json.mjs";
 
 const defaultRoot = fileURLToPath(new URL("../../", import.meta.url));
@@ -18,7 +18,7 @@ const ok = (msg) => checks.push(`ok   ${msg}`);
 const fail = (msg) => failures.push(`FAIL ${msg}`);
 
 function frontmatter(text) {
-  const m = text.match(/^---\n([\s\S]*?)\n---/);
+   const m = text.match(/^---\r?\n([\s\S]*?)\r?\n---/);
   return m ? m[1] : "";
 }
 
@@ -80,7 +80,7 @@ for (const dir of skillDirs) {
   }
   const text = readFileSync(file, "utf8");
   const fm = frontmatter(text);
-  const name = fm.match(/^name:\s*(.+)$/m)?.[1]?.trim();
+  const name = skillName(text);
   if (!name) fail(`${dir}: frontmatter missing name`);
   else if (name !== dir) fail(`${dir}: frontmatter name "${name}" != directory name`);
   else ok(`${dir}: name matches directory`);
@@ -92,8 +92,12 @@ for (const dir of skillDirs) {
 
   const lines = text.split("\n").length;
   const LIMIT = 150; // ~25% headroom over the current max; raise deliberately, not by drift
-  if (lines > LIMIT) fail(`${dir}: SKILL.md is ${lines} lines (budget ${LIMIT})`);
-  else ok(`${dir}: size ${lines} lines (budget ${LIMIT})`);
+  // The budget owns framework-authored adapters/vendored references, not upstream
+  // skills copied locally unchanged (some pinned specialist files exceed 150 lines).
+  if (!deps.has(dir) || deps.get(dir).status === "vendored-pinned") {
+    if (lines > LIMIT) fail(`${dir}: SKILL.md is ${lines} lines (budget ${LIMIT})`);
+    else ok(`${dir}: size ${lines} lines (budget ${LIMIT})`);
+  }
 
   if (!dir.startsWith("itp-")) continue;
 
@@ -161,7 +165,7 @@ for (const [id, entry] of deps) {
     fail(`installed-local "${id}" missing at ${join(".agents", "skills", id)}`);
     continue;
   }
-  const name = frontmatter(readFileSync(file, "utf8")).match(/^name:\s*(.+)$/m)?.[1]?.trim();
+  const name = skillName(readFileSync(file, "utf8"));
   if (name !== id) fail(`installed-local "${id}" SKILL.md name "${name ?? "(missing)"}" != directory name`);
   else ok(`installed-local "${id}" present with matching name`);
 }

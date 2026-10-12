@@ -29,6 +29,7 @@ jobs:
       - name: Shell and script syntax
         run: |
           bash -n install.sh
+          bash -n bootstrap.sh
           for f in scripts/*.mjs tests/skills/*.mjs; do node --check "$f"; done
 
       - name: Contract check
@@ -59,3 +60,19 @@ jobs:
           home="$(mktemp -d)"
           HOME="$home" bash install.sh --init "$target" --strict
           node tests/skills/check-contracts.mjs "$target"
+
+      - name: Release bundle smoke (no client clones)
+        env:
+          XDG_CACHE_HOME: ${{ runner.temp }}/itp-cache
+        run: |
+          assets="$RUNNER_TEMP/install-assets"
+          node scripts/build-install-bundle.mjs "$assets"
+          (cd "$assets" && sha256sum -c SHA256SUMS)
+          bundle="$(mktemp -d)"
+          tar xzf "$assets/idea-to-production-v$(cat VERSION).tar.gz" -C "$bundle"
+          for scope in global repo; do
+            target="$(mktemp -d)"
+            home="$(mktemp -d)"
+            HOME="$home" bash "$bundle/idea-to-production/install.sh" "$target" --skills-scope "$scope" --checkpoints phase --strict
+            node tests/skills/check-contracts.mjs "$target"
+          done

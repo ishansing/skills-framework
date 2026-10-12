@@ -15,6 +15,8 @@ permissions:
 jobs:
   release:
     runs-on: ubuntu-latest
+    env:
+      RELEASE_VERSION: ${{ inputs.version }}
     steps:
       - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7.0.1
         with:
@@ -35,13 +37,11 @@ jobs:
 
       - name: Validate
         run: |
-          version="${{ inputs.version }}"
-          case "$version" in
-            "" | *[!0-9.]*)
-              echo "invalid version: $version" >&2
-              exit 1
-              ;;
-          esac
+          version="$RELEASE_VERSION"
+          if ! [[ "$version" =~ ^[0-9]+\.[0-9]+\.[0-9]+$ ]]; then
+            echo "invalid version: $version" >&2
+            exit 1
+          fi
           if git rev-parse -q --verify "refs/tags/v$version" >/dev/null; then
             echo "tag v$version already exists" >&2
             exit 1
@@ -53,7 +53,7 @@ jobs:
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          version="${{ inputs.version }}"
+          version="$RELEASE_VERSION"
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
           git checkout -B "release/v$version" origin/master
@@ -85,11 +85,10 @@ jobs:
           fi
           echo "pr=$num" >> "$GITHUB_OUTPUT"
 
-      - name: Merge, tag, publish
+      - name: Merge checked release pull request
         env:
           GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         run: |
-          version="${{ inputs.version }}"
           num="${{ steps.pr.outputs.pr }}"
           for _ in $(seq 1 40); do
             rollup="$(gh pr view "$num" --json statusCheckRollup --jq '.statusCheckRollup // []')"
@@ -111,7 +110,32 @@ jobs:
           fi
           gh pr merge "$num" --squash
           git fetch -q origin master
-          git tag "v$version" origin/master
+          merge_commit="$(gh pr view "$num" --json mergeCommit --jq .mergeCommit.oid)"
+          git checkout --detach "$merge_commit"
+          test "$(cat VERSION)" = "$RELEASE_VERSION"
+
+      - name: Build and verify install assets from the merged release commit
+        run: |
+          assets="$RUNNER_TEMP/install-assets"
+          node scripts/build-install-bundle.mjs "$assets"
+          (cd "$assets" && sha256sum -c SHA256SUMS)
+          bundle="$(mktemp -d)"
+          tar xzf "$assets/idea-to-production-v$RELEASE_VERSION.tar.gz" -C "$bundle"
+          for scope in global repo; do
+            target="$(mktemp -d)"
+            home="$(mktemp -d)"
+            HOME="$home" bash "$bundle/idea-to-production/install.sh" "$target" --skills-scope "$scope" --strict
+            node tests/skills/check-contracts.mjs "$target"
+          done
+
+      - name: Tag and publish verified install assets
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          version="$RELEASE_VERSION"
+          git tag "v$version"
           git push origin "v$version"
           node scripts/release-notes.mjs "$version" > "$RUNNER_TEMP/notes.md"
-          gh release create "v$version" --title "v$version" --notes-file "$RUNNER_TEMP/notes.md"
+          gh release create "v$version" --title "v$version" --notes-file "$RUNNER_TEMP/notes.md" \
+            "$RUNNER_TEMP/install-assets/idea-to-production-v$version.tar.gz" \
+            "$RUNNER_TEMP/install-assets/bootstrap.sh" "$RUNNER_TEMP/install-assets/SHA256SUMS"
