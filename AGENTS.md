@@ -30,3 +30,7 @@ When classifying issues, use the five default roles in `docs/agents/triage-label
 ### Domain docs
 
 When interpreting domain terms or architectural decisions, read `docs/agents/domain.md`.
+
+### Plans and handoffs
+
+For active implementation plans or task handoffs, read `agent-work/INDEX.md`.

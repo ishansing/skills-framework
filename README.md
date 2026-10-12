@@ -36,7 +36,7 @@ the bullet-by-bullet judgment is in
 `tests/skills/results/2026-09-27-readiness-gate.md` with closure recorded in
 `tests/skills/results/2026-10-01-readiness-gate-closed.md` (**GATE MET**).
 There is no runtime enforcement harness yet
-(`CUSTOM-HARNESS.md` is deliberately unbuilt; the harness build order is now open
+(`agent-work/plans/CUSTOM-HARNESS.md` is deliberately unbuilt; the harness build order is now open
 per `SKILL-FRAMEWORK.md` sections 25 and 27).
 
 ## What is in the framework
@@ -311,7 +311,7 @@ Skill Watch is maintenance/discovery automation, separate from the lifecycle and
 re-pin workflow. It monitors approved upstream repositories and samples four discovery
 sources (AwesomeSkill API, Skills.sh trending, SkillsMP public search, VoltAgent catalog),
 verifying candidates against primary `SKILL.md` files. It never installs or invokes a
-discovered skill. Design, source coverage, limits, and rollout: `SKILL-WATCH-PLAN.md`.
+discovered skill. Design, source coverage, limits, and rollout: `agent-work/plans/SKILL-WATCH-PLAN.md`.
 
 ```sh
 npm ci --ignore-scripts
@@ -323,6 +323,43 @@ Human candidate dispositions use human-readable keys (`owner/repo:path`, or
 `lead:owner/repo:name` for unverified leads); see the plan for the full contract.
 Publication is opt-in (`publication.enabled: false` by default) and persists state only
 after successful issue updates — enable it solely through the reviewed rollout proof.
+
+## Adoption preview (integration milestone 1)
+
+Agent-facing plans/context/prompts are indexed in `agent-work/INDEX.md`; the integration
+plan is `agent-work/plans/SKILL-INTEGRATION-PLAN.md`. The maintenance CLI prepares inspection
+data, not approval or installation:
+
+```sh
+node scripts/adopt-skill.mjs --help
+node scripts/adopt-skill.mjs --state .skill-watch/next-state.json \
+  --candidate '<repository-id>:<directory>/SKILL.md'
+```
+
+Default output is gitignored `agent-work/previews/<id>-<commit-prefix>/`, containing
+`preview.md` and `manifest.json`. Existing artifacts are not overwritten; use a fresh
+`--output DIR` for another preview. An optional `--proposal JSON` supplies capability,
+role (`primary`, `specialist`, `user-entry`), owning adapter, triggers, required child IDs,
+and dependency/license review acknowledgments. Those are user-provided inputs, not proof
+of approval; absent policy stays unresolved. Root-level bundles require a packaging review.
+
+```sh
+node scripts/adopt-skill.mjs --state .skill-watch/next-state.json \
+  --candidate '<repository-id>:<directory>/SKILL.md' --proposal proposal.json \
+  --check-preview <manifest.json> --expected-binding <reviewed-binding>
+```
+
+Revalidation needs the original snapshot/proposal and unchanged source/framework inputs.
+The reviewed digest detects stale or edited previews; it is not a signature or authorization
+to adopt. The CLI reads public GitHub metadata and committed source data with a dedicated
+inspection cache (`--cache DIR` can override it), rejecting cache edits/extra files, local
+Git filters, symlinks and unsafe bundle paths. Source scripts/hooks are not executed;
+registry, pins, adapters and global skill installations are untouched.
+
+Full-directory lock hashing uses the existing method, not the watchlist's individual-file
+hash. Reference scanning covers inline Markdown file links only; manual bundle/dependency
+and packaging review remains necessary. Native skill validation and real adoption are
+later milestones, with separate execution isolation and authorization.
 
 ## Troubleshooting
 
