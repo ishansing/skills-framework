@@ -28,9 +28,15 @@ export function dirHash(dir) {
   return h.digest("hex");
 }
 
+export function skillName(text) {
+  const fm = text.match(/^---\r?\n([\s\S]*?)\r?\n---(?:\r?\n|$)/)?.[1] || "";
+  const value = fm.match(/^name:\s*(.+)$/m)?.[1]?.trim();
+  if (!value) return null;
+  if (value.startsWith('"') && value.endsWith('"') || value.startsWith("'") && value.endsWith("'")) return value.slice(1, -1);
+  return value.replace(/\s+#.*$/, "").trim();
+}
 export function readSkillName(skillFile) {
-  const text = readFileSync(skillFile, "utf8");
-  return text.match(/^name:\s*(.+)$/m)?.[1]?.trim() ?? null;
+  return skillName(readFileSync(skillFile, "utf8"));
 }
 
 if (process.argv[1] && import.meta.url === pathToFileURL(process.argv[1]).href) {

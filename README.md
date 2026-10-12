@@ -57,21 +57,60 @@ per `SKILL-FRAMEWORK.md` sections 25 and 27).
 | `web-design-guidelines` | Pinned local adapter over a vendored guidelines snapshot |
 
 Upstream skills (Matt Pocock core, Trail of Bits, Vercel, Anthropic, awesome-copilot) are
-listed with status and provenance in `dependency.md` and `skills.lock.json`. They live
-machine-global in `~/.agents/skills/`; the framework itself is installed per repo so each
-project pins its version.
+listed with status and provenance in `dependency.md` and `skills.lock.json`. Install them
+machine-global in `~/.agents/skills/` (shared) or repo-local in `.agents/skills/`
+(self-contained); the framework itself is always installed per repo.
 
 ## Install
+
+Once an **asset-bearing release** is published, install without cloning:
+
+```sh
+curl -fsSL https://github.com/ishansing/skills-framework/releases/latest/download/bootstrap.sh | bash
+```
+
+The menu selects an existing/new project, global/repo-local upstream skills, checkpoint
+defaults, refresh and strict mode, then offers install, dry-run preview or cancellation.
+The curl pipe reads answers from `/dev/tty`. An existing `.itp/run.md` is preserved;
+otherwise `--checkpoints off|phase|slice` seeds the preference (`off` writes `false`).
+
+For scripts, pass a target and flags; pin the bootstrap URL **and** archive version for
+reproducibility (replace `X.Y.Z` with an asset-bearing release):
+
+```sh
+curl -fsSL https://github.com/ishansing/skills-framework/releases/download/vX.Y.Z/bootstrap.sh |
+  bash -s -- --version X.Y.Z /path/to/repo --skills-scope repo --checkpoints phase --strict
+```
+
+`--version` overrides `$ITP_VERSION`; otherwise bootstrap resolves the latest release.
+Older releases have no installation assets; these URLs will not work until the first
+asset-bearing release ships. Bootstrap fails clearly rather than falling back to a source zip.
+Downloads follow HTTPS redirects (including GitHub's asset CDN); SHA-256 checks detect
+corruption, **not independent publisher authenticity**. There are no signatures. For
+inspection, download `bootstrap.sh` first and run it with `--dry-run`; the pipe executes
+the bootstrap immediately. `ITP_RELEASE_BASE_URL` overrides the HTTPS release origin for
+controlled fixtures or mirrors; setting it trusts that origin and its checksums.
+
+From an existing framework checkout or extracted release bundle:
 
 ```sh
 bash /path/to/I2P/install.sh /path/to/your/repo      # existing project
 bash /path/to/I2P/install.sh --init ~/code/new-proj  # new project (creates dir + git init)
+bash /path/to/I2P/install.sh --menu                 # interactive choices
 ```
 
-Re-run the same command to upgrade; the installer is idempotent.
+Re-run the same command to upgrade. The installer records managed hashes in
+`.itp/install.json`; unexpected edits to managed registries or subagents stop the install.
+Unchanged managed repo-local skills can upgrade automatically; conflicting shared global
+skills always require explicit refresh. Review skill conflicts before using refresh.
+Older installs without ownership records may require backing up conflicting files first.
 
 | Option | Effect |
 |---|---|
+| `--menu` | Force the menu; accepts scripted answers on stdin |
+| `--yes` | Skip final menu confirmation, retaining the option prompts |
+| `--skills-scope global\|repo` | Choose upstream location (default global); ITP stays per-project |
+| `--checkpoints off\|phase\|slice` | Seed a missing ledger; never overwrite an existing one |
 | `--init` | Create the target directory and `git init` if it does not exist |
 | `--dry-run` | Print every action; change nothing |
 | `--refresh-upstream` | Reinstall upstream skills that fail the lockfile hash check |
@@ -80,11 +119,14 @@ Re-run the same command to upgrade; the installer is idempotent.
 
 What it does:
 
-1. **Upstream skills** — installs each pinned skill into `~/.agents/skills/` once per
-   machine, fetching missing ones at their locked commit into
-   `~/.cache/idea-to-production/`, and verifies every content hash against
-   `skills.lock.json`. Existing skills with mismatched content are left alone and warned
-   about unless `--refresh-upstream` is passed.
+1. **Upstream skills** — installs verified pinned bytes into the selected location.
+   Release bundles include these bytes and need no client clones. A source checkout
+   fetches missing bytes at the locked commit into `~/.cache/idea-to-production/`.
+   Conflicts stop without overwriting unless explicitly refreshed. Repo-local registries
+   use `installed-local`; global registries use `installed-global`. Switching repo to
+   global removes only unchanged, recorded local copies after global copies are verified.
+   Repo-local installs leave shared global copies alone; ensure your harness resolves
+   duplicate names appropriately if both locations already contain a skill.
 2. **Framework skills** — copies `.agents/skills/{idea-to-production,itp-*,verification-before-completion,web-design-guidelines}`
    into `<repo>/.agents/skills/`, plus `dependency.md` and `skills.lock.json` into the repo
    root.
@@ -96,9 +138,12 @@ What it does:
 5. **Verification** — runs the contract check against the installed copy and reports the
    result.
 
-Requirements: `git` (only to fetch missing upstream skills) and `node` (lockfile parsing,
-hash checks, verification). No network is needed when the upstream skills are already
-installed and verified. The installer never touches unrelated skills or files.
+Requirements: Bash and **Node 20+**; bootstrap also requires curl, tar and `sha256sum` or
+`shasum`. Git is needed for `--init` and for fetching missing upstream bytes from a
+source checkout, not for installing an extracted release into an existing project.
+Release bundles include the standalone contract verifier, but not behavioral suites or
+workflows. After downloading, bundle installs work offline. Unrelated files and skills
+are preserved; installation paths containing symlinks are rejected.
 
 Afterwards:
 
@@ -367,9 +412,11 @@ later milestones, with separate execution isolation and authorization.
 |---|---|
 | Skills missing from the session | Restart the session; confirm `.agents/skills/<name>/SKILL.md` or `~/.agents/skills/<name>/SKILL.md`; names must be unique across locations |
 | Duplicate skill names | Remove or rename one copy (project vs global) |
-| Installer warns a skill has different content | Something else owns that global skill; run `install.sh --refresh-upstream` to restore the locked version, or remove the local copy |
+| Archive checksum mismatch | Installation aborted before extraction; discard the download and retry from a trusted release origin |
+| Version not found / release has no install assets | Choose an asset-bearing release; older releases contain notes only |
+| Installer reports different managed content | Back up and review edits; skill refresh is explicit, while registry/subagent conflicts require resolving the file first |
 | Installer warns the content hash differs after fetching | The pin or cache is stale; delete `~/.cache/idea-to-production/` and re-run with `--refresh-upstream` |
-| No network on a fresh machine | Pre-populate `~/.agents/skills/` from any verified copy, or use the manual install; the installer skips fetching when hashes already match |
+| No network on a fresh machine | Transfer a verified release bundle and run its `install.sh` offline, or use the manual install |
 | Adapter returns `needs-human` citing a missing skill | Install it from `skills.lock.json`; this is by design, not a bug |
 | `itp-review` says the issue tracker is unconfigured | Run `setup-matt-pocock-skills` in the target repo once |
 | `playwright-generate-test` / `webapp-testing` fail | They need Playwright MCP / a browser+Python environment; configure it or expect a `needs-human` handoff |

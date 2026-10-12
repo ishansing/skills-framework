@@ -1,6 +1,8 @@
 # Install Plan — curl bootstrap + CLI menu
 
-Status: proposed, not implemented. Scope: one-line install with no clone, plus an
+Status: implementation verified locally; first asset-bearing release not published.
+Evidence: `docs/work/verification.md` (curl installation section, 2026-10-12).
+Scope: one-line install with no clone, plus an
 interactive menu replacing flag-memorization. Flags keep working (CI depends on them);
 the menu is additive.
 
@@ -15,21 +17,23 @@ fetch. Add a build step before `gh release create`:
 
 - `idea-to-production-vX.Y.Z.tar.gz` — `install.sh`, `scripts/`, `.agents/skills/`,
   `dependency.md/json`, `skills.lock.json`, `VERSION`, `LICENSE`, `README.md`.
-  No tests, no workflows.
-- `SHA256SUMS` covering the tarball. Upload both as release assets.
+  Includes pinned upstream directories under `upstream/` and the standalone contract
+  verifier/helpers. No behavioral suites or workflows.
+- `bootstrap.sh` and `SHA256SUMS` covering the tarball and bootstrap. Upload all three.
 
 Until the first asset-bearing release ships, bootstrap resolves `latest` and fails
 clearly on older versions. No silent fallback to source zips — different layout,
 different trust story. Trust is HTTPS-only; no signatures. State that in the README,
 not as a guarantee.
 
-## 2. `bootstrap.sh` (~60 lines, bash + curl + tar + sha256sum only)
+## 2. `bootstrap.sh` (Bash + curl + tar + Node 20+ + SHA-256 utility)
 
 1. Resolve version: CLI arg, then `$ITP_VERSION`, else follow `/releases/latest`.
 2. Download tarball + `SHA256SUMS` to a temp dir, verify the hash, extract.
-3. `exec` the extracted `install.sh`, passing through all args
+3. Call the extracted `install.sh`, passing through all args; do not `exec`, so the
+   bootstrap's EXIT trap cleans the extraction directory
    (`bash -s -- <target>` works through the pipe).
-4. No network beyond github.com; temp dir cleaned on exit; `--dry-run` passes
+4. HTTPS-only downloads and redirects (GitHub asset CDN included); temp dir cleaned on exit; `--dry-run` passes
    straight through for inspection before trusting it.
 
 ## 3. Menu in `install.sh` (new `--menu` + auto-menu)
@@ -42,7 +46,7 @@ scripts never see it. `--menu` forces it. Every choice maps to existing code pat
    i.e. today's `--init`).
 2. **Skills location** — global `~/.agents/skills` (default, shared) vs
    project-local `TARGET/.agents/skills` (self-contained; sets `GLOBAL_SKILLS`
-   override). See §6: ships marked experimental until the status wording is resolved.
+   override). See §6: the status wording is resolved with `installed-local`.
 3. **Checkpoints** — seed `.itp/run.md` with `off` / `phase` / `slice` (new projects;
    offered on existing repos only if no ledger exists).
 4. **Refresh + strict** — yes/no prompts mapping to `--refresh-upstream` / `--strict`.
@@ -52,8 +56,11 @@ scripts never see it. `--menu` forces it. Every choice maps to existing code pat
 
 Bash menu stays thin (prompt → variables → existing paths). Test by piping answers
 into `--menu --dry-run` and asserting the echoed actions — runnable in CI with zero
-new tooling. `bash -n` coverage extends to `bootstrap.sh`. One live end-to-end (temp
-HOME, tarball from a draft pre-release) before merging.
+new runtime dependencies. `bash -n` coverage extends to `bootstrap.sh`. The approved
+test seam replaces a draft release with a controlled HTTPS fixture: real curl,
+latest/pinned versions, corrupt checksums, unsafe archives, PTY pipe/menu, isolated
+HOME and projects. Test tooling uses OpenSSL and Python (present in Ubuntu CI).
+Live release publication remains a separate authorized rollout step.
 
 ## 5. Docs
 
@@ -86,8 +93,8 @@ Resolution, in order of preference:
   is supported, not experimental. **Implemented:** `installed-local` is a pinned
   status; the checker requires `<root>/.agents/skills/<id>/SKILL.md` with a matching
   frontmatter name, with red→green fixture coverage in
-  `tests/scripts/check-contracts.test.mjs`. End-to-end project-local installs
-  (installer/menu support) remain follow-up work.
+   `tests/scripts/check-contracts.test.mjs`. Installer/menu support and isolated
+   end-to-end coverage are in `tests/scripts/install-distribution.test.mjs`.
 - (b) Until (a) exists, the menu offers project-local marked **experimental**, with
   the wording gap stated in the menu text itself.
 
@@ -96,12 +103,13 @@ meaning what it claims.
 
 ## Acceptance
 
-- [ ] Fresh machine, no clone: curl pipe installs to new and existing targets.
-- [ ] Menu walkthrough test green; flags-only paths unchanged (existing CI).
-- [ ] Checksum mismatch aborts before extraction.
-- [ ] Contract checker passes on both skills-location modes (or project-local ships
-      flagged experimental per §6).
-- [ ] Release workflow publishes tarball + checksums; bootstrap resolves latest and
-      pinned versions.
+- [x] Isolated homes/projects, no clone: real HTTPS curl fixture installs to new and existing targets.
+- [x] Menu walkthrough test green; flags-only source install smoke passes locally.
+- [x] Checksum mismatch aborts before extraction.
+- [x] Contract checker passes on both skills-location modes (or project-local ships
+       flagged experimental per §6).
+- [x] Release workflow asset build/upload wired and linted; bootstrap resolves latest and
+       pinned versions against the controlled HTTPS fixture.
+- [ ] Authorized live asset-bearing release published and public curl URL verified.
 
 Suggested slice order: release assets → bootstrap → menu → tests/docs.

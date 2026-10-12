@@ -129,3 +129,63 @@ unsupported new source adapters, semantic reference analysis, bounded recent his
 multiple independent CLI publisher concurrency are recorded limitations. Tests do not
 claim complete catalogs or cross-process atomic delivery. No PR body requested; `pr` is
 not triggered. Next: commit the intended feature files, then separately authorize rollout.
+
+## Curl installation verification — 2026-10-12
+
+Scope: AC-1–AC-6 in `docs/work/ISSUE-CURL-INSTALL.md`, baseline `86750bc`, uncommitted
+`feature/curl-install-menu` work. Approved refinements use a controlled HTTPS fixture
+instead of publishing a draft release. Independent Standards, Spec and differential
+security re-reviews approve; findings and limits are recorded in the review/security
+artifacts. `itp-verify` and `verification-before-completion` loaded before fresh checks.
+
+### Fresh evidence
+
+- `node --test tests/scripts/*.test.mjs`: **89 pass, 0 fail**, exit 0, including eight
+  distribution tests and real HTTPS/PTY subprocesses.
+- `node tests/skills/check-contracts.mjs`: **63 checks pass**, 26 consistent pins.
+- `bash -n install.sh bootstrap.sh`; `node --check` for `scripts/*.mjs` and
+  `tests/skills/*.mjs`; `git diff --check`: exit 0.
+- actionlint v1.7.12: downloaded archive SHA-256 matched pinned
+  `8aca8db96f1b94770f1b0d72b6dddcb1ebb8123cb3712530b08cc387b349a3d8`;
+  `/tmp/opencode/actionlint -color`: exit 0.
+- `XDG_CACHE_HOME=/tmp/opencode/install-cache node scripts/build-install-bundle.mjs
+  /tmp/opencode/install-assets-final`: exit 0, v3.0.0 local smoke bundle, 26 pinned
+  entries (24 upstream directories, two vendored). This is not a published v3 release.
+- `sha256sum -c SHA256SUMS` in that output directory: archive and bootstrap **OK**.
+- Extracted full bundle, installed into separate temporary homes/projects using
+  `--skills-scope global|repo --checkpoints phase --strict`: exit 0; target checker
+  reports **63 global / 111 repo checks**. Independent reviewer repeated these with
+  Git blocked and verified source/asset integrity.
+- Source-checkout `install.sh --init <temporary target> --strict` with isolated HOME
+  and cache: exit 0; **63 target checks**. Existing scripted source install remains usable.
+
+### Acceptance mapping
+
+- AC-1: actual curl against local trusted HTTPS fixture resolves latest/pinned releases,
+  rejects wrong checksums and checksum-valid unsafe archives, reports missing assets,
+  and cleans temporary directories on success/failure.
+- AC-2: production lock build verifies every directory; offline bundle fixture disables
+  Git and still installs. Git runs only for explicit new-project initialization or source
+  fetching, not normal extracted-bundle installation.
+- AC-3: real controlling-terminal curl pipes cover automatic and explicit `--menu`;
+  scripted menu cancellation/dry-run mapping and flags-only installs pass.
+- AC-4: both target scopes pass; quoted/large upstream skill frontmatter accepted;
+  tampered distributions and unsafe destination paths rejected before activation.
+- AC-5: existing ledger/AGENTS/unrelated skills preserved; repeat installs, managed local
+  upgrades, scope cleanup, edited skill/subagent/registry refusal and forged global
+  ownership records tested. New-project PTY install creates Git and seeds phase mode;
+  off/false and slice seeding, preserving an existing slice ledger, invalid menu input,
+  `--yes`, and replacing a CRLF managed AGENTS block are also covered.
+- AC-6: release workflow builds and uploads all three assets from the exact merged
+  commit; workflows lint, full production bundle builds, both scope smokes and suite pass
+  locally. GitHub publication/remote CI are explicitly outside this authorized pass bar.
+- Documentation impact: README usage/requirements/troubleshooting, plan refinements,
+  agent-work index and review/verification artifacts updated.
+
+### Verdict
+
+**Pass for local implementation acceptance.** No blocking reviewed defect remains.
+Changes remain uncommitted. Public one-line install needs a separately authorized first
+asset-bearing release; no live release/remote CI success is claimed. Operational limits
+are documented in `docs/work/curl-install-security.md`. No PR body requested; `pr` not
+triggered. `recommended_next: none` for implementation; rollout requires authorization.

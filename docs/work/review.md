@@ -90,3 +90,49 @@ escalated into blockers. Detailed security coverage: `docs/work/skill-watch-secu
 **Current verdict: approve for implementation commit.** Publication remains disabled;
 approval does not constitute a real GitHub publication proof or remote CI success.
 `recommended_next: itp-verify`.
+
+## Curl installation review — 2026-10-12
+
+Scope: `docs/work/ISSUE-CURL-INSTALL.md`, AC-1–AC-6 and approved plan refinements.
+Fixed point: `86750bcf7bdd5c87b843435d7f4617c8b100ebd0`; current uncommitted
+working tree on `feature/curl-install-menu`. HEAD equals the baseline, so reviewers
+used `git diff 86750bc` plus explicit reads of untracked implementation/test files;
+an empty three-dot committed range was not presented as the implementation diff.
+
+### Standards
+
+Independent read-only reviewer `ses_ed00849c9fferBoXW8CqKwY30i`: no hard violations,
+two advisory duplication findings (filesystem traversal predicates and workflow smoke
+commands). Kept explicit small procedures; neither finding blocks correctness.
+
+### Spec
+
+Independent reviewer `ses_ed0084892ffe412O2NXIA8ttAQ` initially found explicit
+`curl ... | bash -s -- --menu` inherited the exhausted pipe. Bootstrap now selects
+`/dev/tty` for menus in stdin-executed scripts; file-based scripted answers retain
+stdin. Both pipe forms have real HTTPS/PTY coverage. Fix-only re-review approves.
+An additional red→green test found CRLF managed AGENTS markers were not updated by
+awk; comparison-only normalization now replaces the block and preserves outside user
+lines. The same independent reviewer approved this final incremental fix.
+
+### Differential security
+
+Independent adversarial reviewer `ses_ed008475fffehk2KEJn7Ay6YEU` reproduced a
+MEDIUM ownership-confusion issue: project `.itp/install.json` could authorize
+overwriting a conflicting shared global skill without refresh. Global destinations
+now ignore project ownership for replacement authorization; explicit refresh is
+required. Tests cover forged records declaring either scope. The reviewer independently
+reproduced the boundary fix, removed the guard in memory to reproduce the original
+attack, and verified legitimate local upgrades and explicit global refresh.
+Final security verdict: no remaining concrete blocker in the focused review.
+Detailed findings/coverage: `docs/work/curl-install-security.md`.
+
+### Documentation and verdict
+
+README, installation plan and agent-work index match the implementation; public
+installation remains pending release publication. No DB, web UI, AI Actions workflow,
+or agent-runtime behavior change triggers another specialist.
+
+**Current verdict for curl installation: approve for local implementation acceptance.**
+Tests and release wiring do not establish remote workflow execution or published assets.
+`recommended_next: itp-verify`.
