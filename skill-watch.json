@@ -8,5 +8,10 @@
     { "kind": "skillsmp", "enabled": true, "url": "https://skillsmp.com/search" },
     { "kind": "voltagent", "enabled": true, "url": "https://github.com/VoltAgent/awesome-agent-skills" }
   ],
-  "dispositions": {}
+  "dispositions": {
+    "openai/skills:skills/.curated/security-threat-model/SKILL.md": {
+      "status": "adopted",
+      "reason": "Adopted as itp-architecture conditional specialist via PR #10 (openai/skills @ 49f948faa9258a0c61caceaf225e179651397431); proposal docs/work/ISSUE-security-threat-model-adoption.md, evidence tests/skills/results/2026-10-12-threat-model-adoption.md"
+    }
+  }
 }
