@@ -125,7 +125,7 @@ for (const dir of skillDirs) {
         fail(`${dir}: ${key} entry "${child}" is user-entry and must never load recursively`);
         continue;
       }
-      const pinned = entry.status === "installed-global" || entry.status === "vendored-pinned";
+      const pinned = entry.status === "installed-global" || entry.status === "installed-local" || entry.status === "vendored-pinned";
       if (required && !pinned) {
         fail(`${dir}: required child "${child}" is ${entry.status}`);
       } else {
@@ -146,11 +146,25 @@ for (const s of lock.skills) {
   }
 }
 for (const [id, entry] of deps) {
-  const pinned = entry.status === "installed-global" || entry.status === "vendored-pinned";
+  const pinned = entry.status === "installed-global" || entry.status === "installed-local" || entry.status === "vendored-pinned";
   if (pinned && !locked.has(id)) fail(`dependency "${id}" is ${entry.status} but not in skills.lock.json`);
   if (!pinned && locked.has(id)) fail(`dependency "${id}" is ${entry.status} but has a lock entry`);
 }
 ok(`lockfile: ${lock.skills.length} pinned skills consistent with dependency.md`);
+
+// installed-local means "in this repo's .agents/skills", so unlike installed-global
+// the checker can and must verify the location. A passing check must keep meaning it.
+for (const [id, entry] of deps) {
+  if (entry.status !== "installed-local") continue;
+  const file = join(skillsDir, id, "SKILL.md");
+  if (!existsSync(file)) {
+    fail(`installed-local "${id}" missing at ${join(".agents", "skills", id)}`);
+    continue;
+  }
+  const name = frontmatter(readFileSync(file, "utf8")).match(/^name:\s*(.+)$/m)?.[1]?.trim();
+  if (name !== id) fail(`installed-local "${id}" SKILL.md name "${name ?? "(missing)"}" != directory name`);
+  else ok(`installed-local "${id}" present with matching name`);
+}
 
 for (const [id, lockEntry] of locked) {
   if (!lockEntry.vendored) continue;

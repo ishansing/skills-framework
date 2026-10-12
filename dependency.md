@@ -63,7 +63,9 @@ upstream skills, their invocation classes, and installation status; adapters and
 | agentic-actions-auditor | trailofbits/skills | model | installed-global | itp-review, itp-incident |
 | security-threat-model | openai/skills | model | installed-global | itp-architecture |
 
-Status values: `installed-global` (discovered from a global skill source), `vendored-pinned`
+Status values: `installed-global` (discovered from a global skill source), `installed-local`
+(installed into the project's own `.agents/skills/`; self-contained, location verified by
+the contract checker), `vendored-pinned`
 (snapshot committed under `.agents/skills/` and locked), `installed-unpinned` (usable, but
 must be pinned before Phase 5 validation; curation debt), `not-installed`.
 
