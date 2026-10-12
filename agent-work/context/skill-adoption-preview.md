@@ -23,6 +23,21 @@ It remains needs-human: role/capability/owner, dependency and license review, an
 local references are outstanding. Candidate instructions were not invoked or installed.
 Temporary smoke files are under /tmp/opencode; their existence is not required to resume.
 
-Next: finish independent review and verification. Milestone 2 requires selecting a genuine
+## Independent review — done
+
+A differently-framed independent session (`ses_ed1020c8dffemn550bAAdpHZLP`,
+defensive verification wording after the adversarial worker tripped a content
+filter) verified all eight safety properties against exact lines plus /tmp-only
+exercises: occupied-cache preservation, Git config rejection + env isolation,
+pre-hash symlink/submodule/traversal/LFS rejection, committed bytes/modes
+comparison, output-path protection, manifest binding, pre-checkout budgets, and
+unaffected default fetch callers. All 18 preview tests pass. Verdict: **approve**,
+no blockers. Stated non-blocking notes: mode-only tamper has no dedicated test,
+bare `$HOME` itself is not blocked (only skill/cache subdirs), non-`.md`
+framework file modes don't alter the hash, and the count/mode API path is
+code-covered but unexercised. No network, installs, commits, or publications
+were performed.
+
+Next: finish verification (independent review done — see below). Milestone 2 requires selecting a genuine
 capability gap and approving a proposal; native execution needs separate isolation and
 authorization. This session does not merge/push the Skill Watch PR or refresh globals.
