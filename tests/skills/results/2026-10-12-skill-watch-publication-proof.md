@@ -35,11 +35,18 @@ per-run verification budget, plus live leaderboard churn and rank movement).
 1 — deduplication held; the new identities are per-design discovery behavior for
 a rolling feed, not a re-notification bug.
 
-## Rollout state after proof
+## Workflow-path proof (same day, temp branch)
 
-- Publisher mechanics proven: managed-issue ownership, per-event markers, stale
-  handling, state persistence, idempotent re-runs.
-- **Not yet proven**: the GitHub Actions workflow path (checkout/npm/scan/publish
-  under `github-actions[bot]`) — code path identical except token identity.
-- Committed rollout flag remains **off**; schedule stays paused. Enabling the
-  schedule is a separate decision.
+Proved the GitHub Actions path without touching `master`'s rollout flag: branch
+`proof/skill-watch-workflow` set `publication.enabled: true` only, was pushed,
+and the Skill Watch workflow was dispatched with `publish: true`
+([run 38229699276](https://github.com/ishansing/skills-framework/actions/runs/38229699276),
+job `watch`: success).
+
+- The bot ignored issue #8 (owned by `ishansing`, not the configured
+  `github-actions[bot]`) and created bot-owned issue **#9** with the managed
+  marker — ownership logic working as designed.
+- #9 received exactly 1 notification comment with the marker (Monday weekly
+  digest); state now `pending: 11`, `notified: 48`, `issueNumber: 9`.
+- Temp branch deleted after the run. Duplicate proof issue #8 closed with a
+  pointer to #9, which is the canonical bot-owned watchlist going forward.
