@@ -20,6 +20,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | human-performed operations | `wizard` |
 | standards + spec review | `code-review` |
 | security differential review | `differential-review` |
+| threat modeling | `security-threat-model` |
 | database review | `postgresql-code-review` |
 | UI guidance and review | `frontend-design`, `web-design-guidelines` |
 | browser/end-to-end verification | `webapp-testing`, `playwright-generate-test` |
@@ -60,6 +61,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | agentic-eval | github/awesome-copilot | model | installed-global | itp-review |
 | agent-owasp-compliance | github/awesome-copilot | model | installed-global | itp-review |
 | agentic-actions-auditor | trailofbits/skills | model | installed-global | itp-review, itp-incident |
+| security-threat-model | openai/skills | model | installed-global | itp-architecture |
 
 Status values: `installed-global` (discovered from a global skill source), `vendored-pinned`
 (snapshot committed under `.agents/skills/` and locked), `installed-unpinned` (usable, but
@@ -80,6 +82,7 @@ must be pinned before Phase 5 validation; curation debt), `not-installed`.
 | agentic-eval | agent/harness behavior changed; not for trust-boundary changes (that's agent-owasp-compliance) |
 | agent-owasp-compliance | agent/tool/prompt trust boundary changed |
 | agentic-actions-auditor | AI GitHub Actions workflow changed |
+| security-threat-model | architecture touches auth, credentials, PII, trust boundaries, or external exposure; not for general summaries, code review, or non-security design |
 | pr | after verification passes, when a PR body is requested or an explicitly authorized delivery workflow requires one; never create or publish a PR without authorization |
 
 Trigger rows state positive conditions; when ambiguous, do not load - record as

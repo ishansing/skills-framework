@@ -115,3 +115,21 @@ test("PR formatting is gated on verification and does not authorize publication"
   assert.match(text, /After `pass`, call the skill tool with `pr` only/);
   assert.match(text, /Formatting a body does not authorize creating,[\s\S]*publishing, merging, or deploying/);
 });
+
+test("threat modeling is a conditional architecture specialist with a precise trigger", () => {
+  const registry = JSON.parse(read("dependency.json"));
+  const lock = JSON.parse(read("skills.lock.json"));
+  assert.deepEqual(registry.capabilities["threat modeling"], ["security-threat-model"]);
+  assert.equal(registry.skills["security-threat-model"].invocation_class, "model");
+  assert.deepEqual(registry.skills["security-threat-model"].used_by, ["itp-architecture"]);
+  const pin = lock.skills.find((s) => s.id === "security-threat-model");
+  assert.equal(pin?.commit, "49f948faa9258a0c61caceaf225e179651397431");
+  assert.match(
+    read(".agents/skills/itp-architecture/SKILL.md"),
+    /security-threat-model.*auth, credentials, PII/
+  );
+  assert.match(
+    read("dependency.md"),
+    /\| security-threat-model \| architecture touches auth/
+  );
+});
