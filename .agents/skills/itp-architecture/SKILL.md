@@ -22,7 +22,7 @@ adapter_contract:
   phase: architecture
   consumes: [spec, acceptance-criteria]
   required_children: [codebase-design]
-  conditional_children: [domain-modeling, grilling, poka-yoke]
+  conditional_children: [domain-modeling, grilling, poka-yoke, security-threat-model]
   produces: [architecture-artifact, adrs]
   exits: [completed, blocked, needs-human]
 ```
@@ -42,6 +42,9 @@ Load `codebase-design` for module, interface, seam, and depth vocabulary. The ad
 - `domain-modeling` when bounded contexts or invariants shape the boundaries.
 - `grilling` when a high-impact architecture decision is unresolved.
 - `poka-yoke` when the design is high-consequence and mistakes are costly.
+- `security-threat-model` when the architecture touches auth, credentials, PII,
+  trust boundaries, or external exposure; record its threat model alongside the
+  architecture artifact. Not for general summaries or non-security design.
 
 ## Procedure
 

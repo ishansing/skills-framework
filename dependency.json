@@ -63,6 +63,9 @@
       "tdd",
       "diagnosing-bugs"
     ],
+    "threat modeling": [
+      "security-threat-model"
+    ],
     "whole-spec parallel implementation (user handoff)": [
       "implement-spec"
     ]
@@ -222,6 +225,14 @@
         "user entry only"
       ]
     },
+    "security-threat-model": {
+      "source": "openai/skills",
+      "invocation_class": "model",
+      "status": "installed-global",
+      "used_by": [
+        "itp-architecture"
+      ]
+    },
     "tdd": {
       "source": "mattpocock/skills",
       "invocation_class": "model",
@@ -289,6 +300,7 @@
     "poka-yoke": "high-consequence design where a mistake is costly; do not trigger for reversible, low-stakes choices",
     "postgresql-code-review": "PostgreSQL schema, query, or migration behavior changed",
     "pr": "after verification passes, when a PR body is requested or an explicitly authorized delivery workflow requires one; never create or publish a PR without authorization",
+    "security-threat-model": "architecture touches auth, credentials, PII, trust boundaries, or external exposure; not for general summaries, code review, or non-security design",
     "vercel-react-best-practices": "React/Next.js code is written or reviewed",
     "web-design-guidelines": "UI review against the pinned Web Interface Guidelines",
     "webapp-testing": "a browser-based flow must be exercised"
