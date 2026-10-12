@@ -1,4 +1,4 @@
-# Skill Watch — final implementation plan
+# Skill Watch — implementation plan
 
 Status: implemented on `feature/skill-watch`; publication and scheduled collection remain
 off pending an authorized live publication proof. No automatic adoption. Scope: monitor

@@ -2,7 +2,7 @@
 
 **Framework ID:** `idea-to-production`
 **Spec version:** `2.0.0` (skill-framework layer only)
-**Companion document:** `CUSTOM-HARNESS.md` — the future production harness that implements and enforces this framework mechanically. Do not begin that document's build order until this document's readiness gate (§25) is satisfied.
+**Companion document:** `agent-work/plans/CUSTOM-HARNESS.md` — the future production harness that implements and enforces this framework mechanically. Do not begin that document's build order until this document's readiness gate (§25) is satisfied.
 **Target runtimes:** any coding agent that supports the Agent Skills spec (a `SKILL.md` file with YAML frontmatter, discovered and loaded on demand). Primary validation runtime: **OpenCode**, which has native skill discovery and a built-in `skill` tool. Secondary validation targets: other Agent-Skills-compatible agents such as **Codex** and **Pi**, used to confirm that the framework's *composition and recursion behavior* — not just the `SKILL.md` file format — actually ports, since loading/recursion semantics differ by runtime.
 **Primary design:** Matt-Pocock-first, composable Agent Skills with thin lifecycle adapters
 
@@ -67,7 +67,7 @@ isolation + composition + recursion tests
 refine skill contracts
 ```
 
-Stage 2 — the production harness — is defined separately in `CUSTOM-HARNESS.md` and should only be started once §25's readiness gate is met. Building the harness before the framework is stable means encoding rules that are still going to change.
+Stage 2 — the production harness — is defined separately in `agent-work/plans/CUSTOM-HARNESS.md` and should only be started once §25's readiness gate is met. Building the harness before the framework is stable means encoding rules that are still going to change.
 
 ---
 
@@ -209,7 +209,7 @@ No Agent-Skills runtime tested here is expected to give formal guarantees of:
 - production deployment controls;
 - durable append-only audit logs.
 
-Those are harness concerns — see `CUSTOM-HARNESS.md`. During framework validation, these remain **framework conventions and test assertions**, not security boundaries, regardless of which runtime is used.
+Those are harness concerns — see `agent-work/plans/CUSTOM-HARNESS.md`. During framework validation, these remain **framework conventions and test assertions**, not security boundaries, regardless of which runtime is used.
 
 ### 3.3 Skill loading model
 
@@ -424,7 +424,7 @@ adapter_contract:
     - needs-review
 ```
 
-This metadata may live in `SKILL.md`, a reference file, or `dependency.md`. The runtime does not need to interpret every field automatically; the framework uses them as authoring and testing contracts. (The harness will interpret these mechanically — see `CUSTOM-HARNESS.md`.)
+This metadata may live in `SKILL.md`, a reference file, or `dependency.md`. The runtime does not need to interpret every field automatically; the framework uses them as authoring and testing contracts. (The harness will interpret these mechanically — see `agent-work/plans/CUSTOM-HARNESS.md`.)
 
 ---
 
@@ -719,7 +719,7 @@ MODEL-COMPOSABLE SKILL
   may be loaded by the root/adapters during execution
 ```
 
-For framework validation this is primarily a **framework convention**, represented with metadata and reinforced by the root/adapters — not a mechanically enforced boundary. Mechanical enforcement is a harness concern (`CUSTOM-HARNESS.md`).
+For framework validation this is primarily a **framework convention**, represented with metadata and reinforced by the root/adapters — not a mechanically enforced boundary. Mechanical enforcement is a harness concern (`agent-work/plans/CUSTOM-HARNESS.md`).
 
 Example:
 
@@ -795,7 +795,7 @@ The root/adapter remains responsible for deciding whether to follow a recommenda
 
 The goal is to validate useful composition without creating uncontrolled loops.
 
-These are **framework conventions** — enforced by asking the model to follow them, not by code. Treat every rule in this section as something to hand-verify during composition/recursion testing (§19), and as a candidate for early mechanical enforcement in the harness (`CUSTOM-HARNESS.md` §6 proposes enforcing exactly this section first, since it's cheap to encode and the most likely convention to be violated under context pressure).
+These are **framework conventions** — enforced by asking the model to follow them, not by code. Treat every rule in this section as something to hand-verify during composition/recursion testing (§19), and as a candidate for early mechanical enforcement in the harness (`agent-work/plans/CUSTOM-HARNESS.md` §6 proposes enforcing exactly this section first, since it's cheap to encode and the most likely convention to be violated under context pressure).
 
 ### 11.1 Default limits
 
@@ -918,7 +918,7 @@ This can initially live at:
 
 or `.itp/run.yaml` if the runtime reliably edits YAML.
 
-It is a coordination aid, not a production state database — the harness replaces it with atomic, persisted state (`CUSTOM-HARNESS.md` §4, State/Persistence).
+It is a coordination aid, not a production state database — the harness replaces it with atomic, persisted state (`agent-work/plans/CUSTOM-HARNESS.md` §4, State/Persistence).
 
 ---
 
@@ -1391,7 +1391,7 @@ The adapter coordinates. It does not reimplement each reviewer.
 
 ## 24. Framework Build Order
 
-Build the skill framework in this order. (Building the harness itself is a separate, later effort — see `CUSTOM-HARNESS.md`.)
+Build the skill framework in this order. (Building the harness itself is a separate, later effort — see `agent-work/plans/CUSTOM-HARNESS.md`.)
 
 ### Phase 1 — Skeleton
 
@@ -1478,7 +1478,7 @@ Freeze:
 - human-handoff schema;
 - golden tests.
 
-Once contracts are frozen here, they become the input to the harness's own build order — see `CUSTOM-HARNESS.md` §6. Do not start that build order before this phase is genuinely stable; the harness encodes these contracts in software, and software is far more expensive to re-cut than markdown.
+Once contracts are frozen here, they become the input to the harness's own build order — see `agent-work/plans/CUSTOM-HARNESS.md` §6. Do not start that build order before this phase is genuinely stable; the harness encodes these contracts in software, and software is far more expensive to re-cut than markdown.
 
 ---
 
@@ -1504,7 +1504,7 @@ The framework is ready when:
 ✓ skill IDs and contracts are stable enough to encode in software
 ```
 
-At that point, `CUSTOM-HARNESS.md` becomes an enforcement and scaling layer instead of an experiment in workflow design.
+At that point, `agent-work/plans/CUSTOM-HARNESS.md` becomes an enforcement and scaling layer instead of an experiment in workflow design.
 
 ---
 
@@ -1530,7 +1530,7 @@ Framework sources should be pinned in `skills.lock.json`. Human-readable upstrea
 This document defines *what* the system does and *how skills compose*. It deliberately does not define *how any of it gets mechanically enforced* — that's the harness's job, and premature enforcement code would just have to be rewritten as the framework above changes.
 
 ```text
-This document (Skill Framework)     CUSTOM-HARNESS.md
+This document (Skill Framework)     agent-work/plans/CUSTOM-HARNESS.md
 ────────────────────────────        ──────────────────
 what skill to use            →      resolve exact installed skill
 when to stop                 →      enforce state/approval rule

@@ -1,6 +1,6 @@
 # Skill Watch implementation
 
-Approved scope: `SKILL-WATCH-PLAN.md`. Branch: feature/skill-watch.
+Approved scope: `agent-work/plans/SKILL-WATCH-PLAN.md`. Branch: feature/skill-watch.
 Architecture: one collector/comparison module and a separate publication boundary;
 reuse upstream pin checker. HTML and YAML parsers handle external structured input;
 no discovered code is executed. State stays on automation/skill-watch, outside master.

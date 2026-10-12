@@ -1,4 +1,4 @@
-# Upgrades Sourced from ECC
+# ECC-sourced Upgrade Backlog
 
 Candidate improvements for this framework, mined from
 [affaan-m/ECC](https://github.com/affaan-m/ECC) (`e482e57`, 2026-09-24; v2.2.2) — a
@@ -83,7 +83,7 @@ Status values: `proposed` (not started), `accepted` (approved, not implemented),
 - **Maps to:** `dependency.md` (capability map today).
 - **Change:** add a generated `dependency.json` next to `dependency.md` for harness
   consumption; `check-contracts.mjs` validates the two stay in sync.
-- **Benefit:** the harness (`CUSTOM-HARNESS.md`) needs machine-readable resolution; doing it
+- **Benefit:** the harness (`agent-work/plans/CUSTOM-HARNESS.md`) needs machine-readable resolution; doing it
   now de-risks that build.
 - **Status:** implemented (2026-09-28; see tests/skills/results/2026-09-28-upgrades-validation.md).
 

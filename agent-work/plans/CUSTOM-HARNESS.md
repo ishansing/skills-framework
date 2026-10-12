@@ -1,4 +1,4 @@
-# Custom Harness — Design Inputs (STUB)
+# Custom Harness — Agent Design Inputs (STUB)
 
 **Status: inputs only. The build order for this harness is NOT started.**
 Per `SKILL-FRAMEWORK.md` §25, no enforcement code gets written until the framework's
@@ -58,7 +58,7 @@ not a reference implementation.
 - **Sandbox orchestration:** ECC's `docker/` is test/plugin packaging, not sandboxing; design
   from scratch at build time.
 - **Enforcement of skill contracts:** our `dependency.md` + `skills.lock.json` are the intended
-  source of truth to encode (see `UPGRADES.md` U7); resolution mechanics open.
+  source of truth to encode (see `agent-work/plans/UPGRADES.md` U7); resolution mechanics open.
 
 ## When this file becomes real
 
