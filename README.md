@@ -7,7 +7,7 @@ verification—with checkpoints, resumable artifacts and pinned skills.
 
 [![CI](https://github.com/ishansing/skills-framework/actions/workflows/ci.yml/badge.svg)](https://github.com/ishansing/skills-framework/actions/workflows/ci.yml) [![Latest release](https://img.shields.io/github/v/release/ishansing/skills-framework)](https://github.com/ishansing/skills-framework/releases/latest) [![License: MIT](https://img.shields.io/github/license/ishansing/skills-framework)](https://github.com/ishansing/skills-framework/blob/master/LICENSE)
 
-<img src="https://raw.githubusercontent.com/ishansing/skills-framework/master/docs/assets/lifecycle.svg" width="960" height="320" alt="Clarify the work with research and specifications, build in tested slices, then review and verify the result.">
+<img src="https://raw.githubusercontent.com/ishansing/skills-framework/master/docs/assets/social-preview.svg" width="1280" height="640" alt="Idea-to-Production: an engineering workflow for AI coding agents. Research, specify, build and verify, with pinned skills and resumable artifacts.">
 
 [Get started](#get-started) · [First task](#try-one-small-task) · [Documentation](#documentation) · [Contribute](#contributing)
 
