@@ -1,0 +1,40 @@
+name: Setup help or bug report
+description: Report installation, discovery, workflow or script behavior that did not match expectations.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: "Include a small reproduction. Remove secrets, private code and personal information before posting."
+  - type: input
+    id: environment
+    attributes:
+      label: Framework version and environment
+      description: Release/commit, OS, Node version, agent runtime/version and model where relevant.
+    validations:
+      required: true
+  - type: input
+    id: entrypoint
+    attributes:
+      label: Command or skill
+      description: Installer command, script or skill you invoked; include global/repo scope if relevant.
+    validations:
+      required: true
+  - type: textarea
+    id: reproduce
+    attributes:
+      label: Steps or minimal prompt
+      description: Starting state and the smallest steps that reproduce the problem.
+    validations:
+      required: true
+  - type: textarea
+    id: expected
+    attributes:
+      label: Expected and observed outcome
+      description: What should happen, what happened, and whether it repeats.
+    validations:
+      required: true
+  - type: textarea
+    id: evidence
+    attributes:
+      label: Redacted evidence
+      description: Relevant output, trace, screenshots or artifact excerpts. Include a failing check if available.

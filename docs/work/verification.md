@@ -189,3 +189,60 @@ Changes remain uncommitted. Public one-line install needs a separately authorize
 asset-bearing release; no live release/remote CI success is claimed. Operational limits
 are documented in `docs/work/curl-install-security.md`. No PR body requested; `pr` not
 triggered. `recommended_next: none` for implementation; rollout requires authorization.
+
+## GitHub presentation refresh verification
+
+Scope: `docs/work/ISSUE-GITHUB-PRESENTATION.md`, AC-1–AC-6; uncommitted presentation
+diff against `5b3c992` on `feature/github-presentation`. Independent Standards and Spec
+reviews approve after the mobile typography fix. `itp-verify` and its verification child
+were loaded before final checks. This slice changes documentation/assets/forms only.
+
+### Fresh evidence
+
+- `node /tmp/opencode/check-presentation.mjs`: **37 documentation links/anchors verified**
+  against local intended paths (including absolute repository URLs), **two issue forms
+  parsed and validated**, SVG accessibility/source checks passed, GitHub GFM API render
+  returned successfully. This is a one-off session check, not a new repository test runner.
+- The same check used installed Chromium via CDP to load rendered-Markdown previews at
+  **1200px, 390px and 320px**, in both light and dark themes: banner loaded, expected
+  content present and no page-level horizontal overflow in all six views.
+- Preview images: `/tmp/opencode/presentation-{light,dark}-{1200,390,320}.png`. Parent
+  inspected desktop light and mobile dark; the independent re-review inspected final
+  desktop/mobile images. Styling approximates GitHub Markdown; badges are labeled
+  stand-ins and the new SVG is loaded locally. No live GitHub screenshot is claimed.
+- Python XML parse and mobile font-floor check: exit 0. The original diagram failed
+  the floor before simplification; final minimum 42 × 280 / 960 = **12.25px** at the
+  narrowest preview's image width. Browser-measured SVG text stays within the viewBox.
+- `node --test tests/scripts/*.test.mjs`: **89 pass, zero fail**.
+- `node tests/skills/check-contracts.mjs`: **63 checks pass**.
+- `git diff --check`: exit 0. Changed/new documentation and forms also checked for whitespace.
+- `gh repo view ishansing/skills-framework --json description,repositoryTopics` confirms
+  the approved benefit-led description and eight relevant topics are live. No homepage,
+  repository name, release, runtime configuration or dependency pin changed.
+
+### Acceptance mapping
+
+- AC-1: short benefit-led README includes live install, first task, navigation and a
+  simplified diagram. Obsolete pre-v4 wording corrected in the preserved reference.
+- AC-2: original detailed guidance remains in `docs/reference.md`; getting-started and
+  validation pages add focused entry points. All checked document links/anchors exist
+  in the intended tree. New absolute public paths await merge, not a successful HTTP
+  check of unpublished docs. Bundle contents need no expansion.
+- AC-3: accessible SVG and rendered light/dark desktop/mobile previews inspected; mobile
+  readability defect fixed and independently re-reviewed. Live GitHub chrome not tested.
+- AC-4: OpenCode is the primary validated runtime; other support and enforcement limits
+  are explicit. First-task instructions are labeled illustrative. No fresh native demo
+  or arbitrary-project success claim is inferred from static/browser checks.
+- AC-5: contribution/feedback paths present; both issue forms validate; live About/topics
+  match approved positioning. Actual GitHub issue submission is not exercised pre-merge.
+- AC-6: scope-specific checks, full script suite, contracts and independent review pass;
+  evidence and remaining launch work recorded. No tests mirroring prose were introduced.
+
+### Verdict
+
+**Pass for local implementation of the first presentation slice.** Changes are not
+committed or merged; only the About/topics settings are already public. The marketing
+plan remains in progress: public-page recheck, first-time-user walkthrough, recorded
+native demo, custom social preview and organic outreach are follow-ups. No remote CI,
+first-run user study or full marketing-launch completion is claimed.
+`recommended_next: none` for this implementation slice; delivery requires authorization.
