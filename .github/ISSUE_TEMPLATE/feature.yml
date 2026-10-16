@@ -1,0 +1,25 @@
+name: Feature or workflow proposal
+description: Suggest an improvement with a concrete user problem and an observable outcome.
+title: "[Proposal]: "
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe your task, who encounters the problem, and the current workaround.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Proposed improvement
+      description: Describe the smallest useful change. For a skill, link its upstream source and intended trigger.
+    validations:
+      required: true
+  - type: textarea
+    id: acceptance
+    attributes:
+      label: How would we know it helped?
+      description: Give a concrete example or acceptance criteria, including your runtime where relevant.
+    validations:
+      required: true

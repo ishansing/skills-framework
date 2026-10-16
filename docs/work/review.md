@@ -136,3 +136,46 @@ or agent-runtime behavior change triggers another specialist.
 **Current verdict for curl installation: approve for local implementation acceptance.**
 Tests and release wiring do not establish remote workflow execution or published assets.
 `recommended_next: itp-verify`.
+
+## GitHub presentation refresh
+
+Scope: `docs/work/ISSUE-GITHUB-PRESENTATION.md`, AC-1–AC-6, and the approved marketing
+plan's first presentation slice. Baseline `5b3c992`; intentional uncommitted working-tree
+review on `feature/github-presentation`, including explicit reads of untracked files.
+No committed implementation range was substituted for this WIP diff.
+
+### Standards
+
+Independent read-only reviewer `ses_ebacf28b6fferCl4Zt3sYJ0typ`: no blocking standards
+findings. Existing technical guidance is preserved in `docs/reference.md`; absolute
+GitHub links keep release-bundle README documentation usable without bundling the docs.
+The reviewer noted small SVG type at mobile widths, addressed with the Spec finding.
+
+### Spec and visual review
+
+Independent reviewer `ses_ebacf2785ffeeRWvfpuT1B93PM` found one presentation defect:
+the original 15–18-unit SVG descriptions shrank to unreadable text on mobile. The
+visual now uses only a 48-unit headline, 52-unit stage labels and 42-unit footer,
+with detailed meaning retained in alt text and nearby prose. A font-floor check was
+shown red before the change and green afterward; all type remains at least 12px at
+a 280px image width in the 320px viewport preview.
+
+Fix-only re-review approved after inspecting 320px dark, 390px light and 1200px light
+screenshots. No remaining blocking finding. The previously pending review/verification
+records are supplied here and in the corresponding verification section.
+
+Pinned `web-design-guidelines` reviewed for applicable Markdown/SVG concerns: descriptive
+alt text, explicit banner dimensions, semantic headings/links, static media, contrast
+and mobile readability. No remaining finding in the final banner. GitHub owns page
+chrome, focus behavior and issue-form controls; this patch does not implement a custom UI.
+No runtime/agent contract, dependency, AI Actions, database or security boundary changed.
+
+### Verdict and limits
+
+**Approve for this local presentation slice.** Supporting docs, contribution guide,
+issue forms and GitHub metadata satisfy the declared scope. Preview screenshots use
+GitHub API-rendered Markdown with local preview CSS, badge stand-ins and local SVG;
+they are not screenshots of the live GitHub repository page. New public docs/image links
+become available after merge. A live-page recheck, fresh newcomer task, recorded native
+demo and custom social-preview upload remain launch follow-ups.
+`recommended_next: itp-verify`.
