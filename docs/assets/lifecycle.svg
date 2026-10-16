@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="320" viewBox="0 0 960 320" role="img" aria-labelledby="title description">
+  <title id="title">Idea-to-Production workflow</title>
+  <desc id="description">Clarify with research, alignment and specifications. Build with architecture, slices and implementation. Review and verify with fresh evidence. Checkpoints and repository artifacts keep work resumable.</desc>
+  <rect width="960" height="320" rx="20" fill="#101c2d"/>
+  <g font-family="system-ui, -apple-system, sans-serif">
+    <text x="36" y="72" fill="#f2f7ff" font-size="48" font-weight="700">From idea to evidence.</text>
+    <g fill="#182940" stroke="#45617d">
+      <rect x="36" y="122" width="276" height="108" rx="12"/>
+      <rect x="342" y="122" width="276" height="108" rx="12"/>
+      <rect x="648" y="122" width="276" height="108" rx="12"/>
+    </g>
+    <g fill="#7ce4d0" font-size="52" font-weight="650">
+      <text x="56" y="194">Clarify</text>
+      <text x="362" y="194">Build</text>
+      <text x="668" y="194">Verify</text>
+    </g>
+    <path d="M318 176h18m-6-6 6 6-6 6m294-6h18m-6-6 6 6-6 6" stroke="#7ce4d0" stroke-width="2" fill="none"/>
+    <text x="36" y="292" fill="#b9c9dd" font-size="42">Pinned skills. Resumable artifacts.</text>
+  </g>
+</svg>
