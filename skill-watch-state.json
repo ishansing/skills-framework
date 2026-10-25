@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-10-24T10:25:21.153Z",
+  "scannedAt": "2026-10-25T10:52:59.317Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10033,25 +10033,6 @@
   },
   "pending": [
     {
-      "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
-      "kind": "new",
-      "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "slack-cli",
-      "url": "https://skills.sh/paymog/slack-cli/slack-cli",
-      "observedAt": "2026-10-12T14:37:38.814Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "paymog/slack-cli",
-      "path": null,
-      "aliases": [
-        "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
-        "paymog/slack-cli:slack-cli",
-        "lead:paymog/slack-cli:slack-cli"
-      ]
-    },
-    {
       "id": "4be64a2f7da86815b55544ea1f92902de62321bd339ba4ac91b3e91e63f4e5c4",
       "kind": "content-changed",
       "key": "1000362065:.github/skills/code-review/SKILL.md",
@@ -10129,6 +10110,1136 @@
         "github/awesome-copilot:skills/rebase-current-branch/SKILL.md",
         "lead:github/awesome-copilot:rebase-current-branch",
         "lead:github/awesome-copilot:skills/rebase-current-branch/SKILL.md"
+      ]
+    },
+    {
+      "id": "15b20711b8071caf2bdffaa3e9949549180e72bbc295b108ffc7a85fb6cefd31",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "let-fate-decide",
+      "url": "https://github.com/trailofbits/skills/blob/8e54050ae63c2f62224c35b1616efe71865b4777/plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
+      "observedAt": "2026-10-14T11:20:54.886Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
+        "trailofbits/skills:plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
+        "lead:trailofbits/skills:let-fate-decide",
+        "lead:trailofbits/skills:plugins/let-fate-decide/skills/let-fate-decide/SKILL.md"
+      ]
+    },
+    {
+      "id": "72d3786e2df2658ad9092e9a8f500df8cc211da5c6f72975f79bf56cb3a7dfc1",
+      "kind": "content-changed",
+      "key": "1000362065:skills/java-mcp-server-generator/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "java-mcp-server-generator",
+      "url": "https://github.com/github/awesome-copilot/blob/f25421d3f1b8b3bb217f78a7c0567cf7ec117cd8/skills/java-mcp-server-generator/SKILL.md",
+      "observedAt": "2026-10-14T11:20:54.886Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-mcp-server-generator/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-mcp-server-generator/SKILL.md",
+        "github/awesome-copilot:skills/java-mcp-server-generator/SKILL.md",
+        "lead:github/awesome-copilot:java-mcp-server-generator",
+        "lead:github/awesome-copilot:skills/java-mcp-server-generator/SKILL.md"
+      ]
+    },
+    {
+      "id": "c7ca635a595486be55829c39862d6c901d92909f909fb6014ff6c3621d609902",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "dimensional-analysis",
+      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
+        "trailofbits/skills:plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
+        "lead:trailofbits/skills:dimensional-analysis",
+        "lead:trailofbits/skills:plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md"
+      ]
+    },
+    {
+      "id": "c427e3ed0364343d9e27a31afed147d95028e42092e92d79d13e6852f6bfb36d",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "firebase-apk-scanner",
+      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
+        "trailofbits/skills:plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
+        "lead:trailofbits/skills:firebase-apk-scanner",
+        "lead:trailofbits/skills:plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md"
+      ]
+    },
+    {
+      "id": "e09c1a426ee73a10c34dab82b7a3ee57cd4faef1b401c463fbb3c58df0f328c5",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/trailmark/skills/diagramming-code/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "diagramming-code",
+      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/trailmark/skills/diagramming-code/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/trailmark/skills/diagramming-code/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/trailmark/skills/diagramming-code/SKILL.md",
+        "trailofbits/skills:plugins/trailmark/skills/diagramming-code/SKILL.md",
+        "lead:trailofbits/skills:diagramming-code",
+        "lead:trailofbits/skills:plugins/trailmark/skills/diagramming-code/SKILL.md"
+      ]
+    },
+    {
+      "id": "6b17d86a78489916a81cc320a79863b53124975bbfe8ba5d7a0b3174329bc0cb",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "mermaid-to-proverif",
+      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
+        "trailofbits/skills:plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
+        "lead:trailofbits/skills:mermaid-to-proverif",
+        "lead:trailofbits/skills:plugins/trailmark/skills/mermaid-to-proverif/SKILL.md"
+      ]
+    },
+    {
+      "id": "8331c72d1583415a1ed1c5f24fe4f3734365c95137256a4d6c76f9a0cc1902e2",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "trailmark-finding-triage",
+      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
+        "trailofbits/skills:plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
+        "lead:trailofbits/skills:trailmark-finding-triage",
+        "lead:trailofbits/skills:plugins/trailmark/skills/trailmark-finding-triage/SKILL.md"
+      ]
+    },
+    {
+      "id": "72949c0b01bcd6b6253170d14b166c6d18242ceec29da8bcc8c0706a6868ce51",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/trailmark/skills/trailmark/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "trailmark",
+      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/trailmark/skills/trailmark/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/trailmark/skills/trailmark/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/trailmark/skills/trailmark/SKILL.md",
+        "trailofbits/skills:plugins/trailmark/skills/trailmark/SKILL.md",
+        "lead:trailofbits/skills:trailmark",
+        "lead:trailofbits/skills:plugins/trailmark/skills/trailmark/SKILL.md"
+      ]
+    },
+    {
+      "id": "74a6a2f4f694b4e8dc9fb1bb03516b8a0af1c08e343d3fd1da41b38c33df815b",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "yara-rule-authoring",
+      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
+        "trailofbits/skills:plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
+        "lead:trailofbits/skills:yara-rule-authoring",
+        "lead:trailofbits/skills:plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md"
+      ]
+    },
+    {
+      "id": "986b26090aefb0ae9d3834d8590b1c49fec08676d3285c7faf2757c2f5f60763",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "zeroize-audit",
+      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
+        "trailofbits/skills:plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
+        "lead:trailofbits/skills:zeroize-audit",
+        "lead:trailofbits/skills:plugins/zeroize-audit/skills/zeroize-audit/SKILL.md"
+      ]
+    },
+    {
+      "id": "019156b50f4e793ecc496bad0cd88cd149cfdb1ea7df279d77639e0457e774bf",
+      "kind": "content-changed",
+      "key": "1000362065:.github/skills/code-review/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "code-review",
+      "url": "https://github.com/github/awesome-copilot/blob/36e95dfda72140a68f577d5c894a551607606bd3/.github/skills/code-review/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": ".github/skills/code-review/SKILL.md",
+      "aliases": [
+        "1000362065:.github/skills/code-review/SKILL.md",
+        "github/awesome-copilot:.github/skills/code-review/SKILL.md",
+        "lead:github/awesome-copilot:code-review",
+        "lead:github/awesome-copilot:.github/skills/code-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "ebbf6d62eaad457203af410c213bb059be0332a4ab9936e652342a61e47b25f0",
+      "kind": "new",
+      "key": "1000362065:skills/batch-script-progress/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "batch-script-progress",
+      "url": "https://github.com/github/awesome-copilot/blob/36e95dfda72140a68f577d5c894a551607606bd3/skills/batch-script-progress/SKILL.md",
+      "observedAt": "2026-10-15T10:58:01.952Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/batch-script-progress/SKILL.md",
+      "aliases": [
+        "1000362065:skills/batch-script-progress/SKILL.md",
+        "github/awesome-copilot:skills/batch-script-progress/SKILL.md",
+        "lead:github/awesome-copilot:batch-script-progress",
+        "lead:github/awesome-copilot:skills/batch-script-progress/SKILL.md"
+      ]
+    },
+    {
+      "id": "d47604412db25e34ca9f1a765629e8492d4e70d4050e59862960da9b746dbd5d",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "entry-point-analyzer",
+      "url": "https://github.com/trailofbits/skills/blob/5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0/plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
+      "observedAt": "2026-10-16T10:51:46.157Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
+        "trailofbits/skills:plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
+        "lead:trailofbits/skills:entry-point-analyzer",
+        "lead:trailofbits/skills:plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md"
+      ]
+    },
+    {
+      "id": "1ca8a395f40c0739f548c13afa534f03327bbc706215147fa5241581c3235a30",
+      "kind": "new",
+      "key": "1000362065:skills/create-quarkus-project/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "create-quarkus-project",
+      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/create-quarkus-project/SKILL.md",
+      "observedAt": "2026-10-16T10:51:46.157Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/create-quarkus-project/SKILL.md",
+      "aliases": [
+        "1000362065:skills/create-quarkus-project/SKILL.md",
+        "github/awesome-copilot:skills/create-quarkus-project/SKILL.md",
+        "lead:github/awesome-copilot:create-quarkus-project",
+        "lead:github/awesome-copilot:skills/create-quarkus-project/SKILL.md"
+      ]
+    },
+    {
+      "id": "1e8a2a6260c73182596524791218fdd20105dbef3e59d80dc269ee52d4d93404",
+      "kind": "new",
+      "key": "1000362065:skills/java-upgrade/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "java-upgrade",
+      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/java-upgrade/SKILL.md",
+      "observedAt": "2026-10-16T10:51:46.157Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-upgrade/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-upgrade/SKILL.md",
+        "github/awesome-copilot:skills/java-upgrade/SKILL.md",
+        "lead:github/awesome-copilot:java-upgrade",
+        "lead:github/awesome-copilot:skills/java-upgrade/SKILL.md"
+      ]
+    },
+    {
+      "id": "64fd6aac0d202df3432606b7c2a6367e11f7e6d4274217b241c3698c21379f9f",
+      "kind": "content-changed",
+      "key": "1000362065:skills/javax-to-jakarta-migration/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "javax-to-jakarta-migration",
+      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/javax-to-jakarta-migration/SKILL.md",
+      "observedAt": "2026-10-16T10:51:46.157Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/javax-to-jakarta-migration/SKILL.md",
+      "aliases": [
+        "1000362065:skills/javax-to-jakarta-migration/SKILL.md",
+        "github/awesome-copilot:skills/javax-to-jakarta-migration/SKILL.md",
+        "lead:github/awesome-copilot:javax-to-jakarta-migration",
+        "lead:github/awesome-copilot:skills/javax-to-jakarta-migration/SKILL.md"
+      ]
+    },
+    {
+      "id": "9656c43c4592a514dc20218e5a3a94d74c351d5e5ea57567a15813bce4deb75f",
+      "kind": "new",
+      "key": "1000362065:skills/quarkus-application-development/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "quarkus-application-development",
+      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/quarkus-application-development/SKILL.md",
+      "observedAt": "2026-10-16T10:51:46.157Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/quarkus-application-development/SKILL.md",
+      "aliases": [
+        "1000362065:skills/quarkus-application-development/SKILL.md",
+        "github/awesome-copilot:skills/quarkus-application-development/SKILL.md",
+        "lead:github/awesome-copilot:quarkus-application-development",
+        "lead:github/awesome-copilot:skills/quarkus-application-development/SKILL.md"
+      ]
+    },
+    {
+      "id": "6262561a1916b587e9b4756c533e93c6c3a3897b6c1c00601d96536cffceca7b",
+      "kind": "new",
+      "key": "1000362065:skills/quarkus-dev-services-and-testing/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "quarkus-dev-services-and-testing",
+      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/quarkus-dev-services-and-testing/SKILL.md",
+      "observedAt": "2026-10-16T10:51:46.157Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/quarkus-dev-services-and-testing/SKILL.md",
+      "aliases": [
+        "1000362065:skills/quarkus-dev-services-and-testing/SKILL.md",
+        "github/awesome-copilot:skills/quarkus-dev-services-and-testing/SKILL.md",
+        "lead:github/awesome-copilot:quarkus-dev-services-and-testing",
+        "lead:github/awesome-copilot:skills/quarkus-dev-services-and-testing/SKILL.md"
+      ]
+    },
+    {
+      "id": "f6acf9909f82ca36b2e6dc3fd15cac862afc547df5caa3e9a2378ef3595d2721",
+      "kind": "new",
+      "key": "1000362065:skills/quarkus-native-and-container/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "quarkus-native-and-container",
+      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/quarkus-native-and-container/SKILL.md",
+      "observedAt": "2026-10-16T10:51:46.157Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/quarkus-native-and-container/SKILL.md",
+      "aliases": [
+        "1000362065:skills/quarkus-native-and-container/SKILL.md",
+        "github/awesome-copilot:skills/quarkus-native-and-container/SKILL.md",
+        "lead:github/awesome-copilot:quarkus-native-and-container",
+        "lead:github/awesome-copilot:skills/quarkus-native-and-container/SKILL.md"
+      ]
+    },
+    {
+      "id": "5cdce5d722fefaa8110d2ce580ed7c777806db2552685d083d1e50ac93273805",
+      "kind": "content-changed",
+      "key": "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:mattpocock/skills",
+      "name": "chief-of-staff",
+      "url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/in-progress/chief-of-staff/SKILL.md",
+      "observedAt": "2026-10-20T11:01:22.408Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "mattpocock/skills",
+      "path": "skills/in-progress/chief-of-staff/SKILL.md",
+      "aliases": [
+        "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
+        "mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md",
+        "lead:mattpocock/skills:chief-of-staff",
+        "lead:mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md"
+      ]
+    },
+    {
+      "id": "eb967d57abe2a33063dc35c5e05692ec886e12c9a779b1e3da43a1cc301f75e8",
+      "kind": "content-changed",
+      "key": "1073224795:skills/diagnosing-superpowers/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "diagnosing-superpowers",
+      "url": "https://github.com/obra/superpowers/blob/b739a8af570e10a95898f2bdf6cec97467fa6c12/skills/diagnosing-superpowers/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": "skills/diagnosing-superpowers/SKILL.md",
+      "aliases": [
+        "1073224795:skills/diagnosing-superpowers/SKILL.md",
+        "obra/superpowers:skills/diagnosing-superpowers/SKILL.md",
+        "lead:obra/superpowers:diagnosing-superpowers",
+        "lead:obra/superpowers:skills/diagnosing-superpowers/SKILL.md"
+      ]
+    },
+    {
+      "id": "101b0b9cd15a47cdbe018bed8ed93371a4db637b42f4d7097dfb7cec0d185f7d",
+      "kind": "new",
+      "key": "1134447175:plugins/patching-bugs/skills/implement-patch/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "implement-patch",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/implement-patch/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/patching-bugs/skills/implement-patch/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/patching-bugs/skills/implement-patch/SKILL.md",
+        "trailofbits/skills:plugins/patching-bugs/skills/implement-patch/SKILL.md",
+        "lead:trailofbits/skills:implement-patch",
+        "lead:trailofbits/skills:plugins/patching-bugs/skills/implement-patch/SKILL.md"
+      ]
+    },
+    {
+      "id": "df8200d7dcdcf1b46c4a3504c45b1f8daee96388fb47c7abd9aa45204c1891a6",
+      "kind": "new",
+      "key": "1134447175:plugins/patching-bugs/skills/patching-bugs/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "patching-bugs",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/patching-bugs/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/patching-bugs/skills/patching-bugs/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/patching-bugs/skills/patching-bugs/SKILL.md",
+        "trailofbits/skills:plugins/patching-bugs/skills/patching-bugs/SKILL.md",
+        "lead:trailofbits/skills:patching-bugs",
+        "lead:trailofbits/skills:plugins/patching-bugs/skills/patching-bugs/SKILL.md"
+      ]
+    },
+    {
+      "id": "18ee50160294f2d01a8edac0d07e922e2e0630cca40e76a6b7b3338cd24b87aa",
+      "kind": "new",
+      "key": "1134447175:plugins/patching-bugs/skills/prove-patch/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "prove-patch",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/prove-patch/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/patching-bugs/skills/prove-patch/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/patching-bugs/skills/prove-patch/SKILL.md",
+        "trailofbits/skills:plugins/patching-bugs/skills/prove-patch/SKILL.md",
+        "lead:trailofbits/skills:prove-patch",
+        "lead:trailofbits/skills:plugins/patching-bugs/skills/prove-patch/SKILL.md"
+      ]
+    },
+    {
+      "id": "08ecadf337197d36a819d4ee428001526b5d5f749588084970e20a888e694f88",
+      "kind": "new",
+      "key": "1134447175:plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "reproduce-bug",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
+        "trailofbits/skills:plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
+        "lead:trailofbits/skills:reproduce-bug",
+        "lead:trailofbits/skills:plugins/patching-bugs/skills/reproduce-bug/SKILL.md"
+      ]
+    },
+    {
+      "id": "2bc31a1a0937ec3a87967f35c9bc4ebcf6aec049cc930c28f92018e3aed35982",
+      "kind": "new",
+      "key": "1134447175:plugins/patching-bugs/skills/validate-bug/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "validate-bug",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/validate-bug/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/patching-bugs/skills/validate-bug/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/patching-bugs/skills/validate-bug/SKILL.md",
+        "trailofbits/skills:plugins/patching-bugs/skills/validate-bug/SKILL.md",
+        "lead:trailofbits/skills:validate-bug",
+        "lead:trailofbits/skills:plugins/patching-bugs/skills/validate-bug/SKILL.md"
+      ]
+    },
+    {
+      "id": "ba56166e8564ed21b07233929a30838676e3c5a16be4f58f0de68a113a3884c8",
+      "kind": "new",
+      "key": "1134447175:plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "adjudicate-regression",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
+        "trailofbits/skills:plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
+        "lead:trailofbits/skills:adjudicate-regression",
+        "lead:trailofbits/skills:plugins/regression-hunt/skills/adjudicate-regression/SKILL.md"
+      ]
+    },
+    {
+      "id": "0318b4c2d0984b365a30d51fcd3550e4b81ff19f5b6635a84213985ab0330022",
+      "kind": "new",
+      "key": "1134447175:plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "hunt-regressions",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
+        "trailofbits/skills:plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
+        "lead:trailofbits/skills:hunt-regressions",
+        "lead:trailofbits/skills:plugins/regression-hunt/skills/hunt-regressions/SKILL.md"
+      ]
+    },
+    {
+      "id": "df91fbddf72473af5d839c6d7267319e3e670c7f7242a39d5caa7a8f14ad7c39",
+      "kind": "new",
+      "key": "1134447175:plugins/regression-hunt/skills/prepare-regression/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "prepare-regression",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/prepare-regression/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/regression-hunt/skills/prepare-regression/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/regression-hunt/skills/prepare-regression/SKILL.md",
+        "trailofbits/skills:plugins/regression-hunt/skills/prepare-regression/SKILL.md",
+        "lead:trailofbits/skills:prepare-regression",
+        "lead:trailofbits/skills:plugins/regression-hunt/skills/prepare-regression/SKILL.md"
+      ]
+    },
+    {
+      "id": "c113c1c90ea1d8044eb431005e663edf04a192621628ca01795ce07019c5287e",
+      "kind": "new",
+      "key": "1134447175:plugins/regression-hunt/skills/regression-hunt/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "regression-hunt",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/regression-hunt/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/regression-hunt/skills/regression-hunt/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/regression-hunt/skills/regression-hunt/SKILL.md",
+        "trailofbits/skills:plugins/regression-hunt/skills/regression-hunt/SKILL.md",
+        "lead:trailofbits/skills:regression-hunt",
+        "lead:trailofbits/skills:plugins/regression-hunt/skills/regression-hunt/SKILL.md"
+      ]
+    },
+    {
+      "id": "e53627a0893c7d1926d958196cc9a2bb8312881943ae6cbd65b5314915e736d3",
+      "kind": "new",
+      "key": "1134447175:plugins/regression-hunt/skills/replay-regression/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "replay-regression",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/replay-regression/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/regression-hunt/skills/replay-regression/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/regression-hunt/skills/replay-regression/SKILL.md",
+        "trailofbits/skills:plugins/regression-hunt/skills/replay-regression/SKILL.md",
+        "lead:trailofbits/skills:replay-regression",
+        "lead:trailofbits/skills:plugins/regression-hunt/skills/replay-regression/SKILL.md"
+      ]
+    },
+    {
+      "id": "911133558f265b525345e90c61870e74e6443357e3262004c1ddd28cfc61dd39",
+      "kind": "new",
+      "key": "1134447175:plugins/regression-hunt/skills/report-regressions/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "plugins/regression-hunt/skills/report-regressions/SKILL.md",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/report-regressions/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/regression-hunt/skills/report-regressions/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/regression-hunt/skills/report-regressions/SKILL.md",
+        "trailofbits/skills:plugins/regression-hunt/skills/report-regressions/SKILL.md",
+        "lead:trailofbits/skills:plugins/regression-hunt/skills/report-regressions/SKILL.md"
+      ]
+    },
+    {
+      "id": "3ed0a7ee335a9c0e8636fcaa0756c77fbd0f6f769ae09dc9f9ff6290134638b6",
+      "kind": "new",
+      "key": "1134447175:plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
+      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
+      "observedAt": "2026-10-21T11:18:31.824Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
+        "trailofbits/skills:plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
+        "lead:trailofbits/skills:plugins/regression-hunt/skills/reproduce-regression/SKILL.md"
+      ]
+    },
+    {
+      "id": "248b32708fc390ab2466f51622c05265e8a8f0b76aa9af87fe379e9d2262b24a",
+      "kind": "content-changed",
+      "key": "1073224795:skills/brainstorming/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "brainstorming",
+      "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/brainstorming/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/SKILL.md",
+      "aliases": [
+        "1073224795:skills/brainstorming/SKILL.md",
+        "obra/superpowers:skills/brainstorming/SKILL.md",
+        "lead:obra/superpowers:brainstorming",
+        "lead:obra/superpowers:skills/brainstorming/SKILL.md"
+      ]
+    },
+    {
+      "id": "7f41c5eb24a3e86567f03c377d5c5b3692ce14222689057115aa9b7caa77fecd",
+      "kind": "content-changed",
+      "key": "1073224795:skills/executing-plans/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "executing-plans",
+      "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/executing-plans/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": "skills/executing-plans/SKILL.md",
+      "aliases": [
+        "1073224795:skills/executing-plans/SKILL.md",
+        "obra/superpowers:skills/executing-plans/SKILL.md",
+        "lead:obra/superpowers:executing-plans",
+        "lead:obra/superpowers:skills/executing-plans/SKILL.md"
+      ]
+    },
+    {
+      "id": "0a1844df5c310e6198926f2c80784142d4a4d766ff0940b3426c4abac326d756",
+      "kind": "content-changed",
+      "key": "1073224795:skills/subagent-driven-development/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "subagent-driven-development",
+      "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/subagent-driven-development/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "aliases": [
+        "1073224795:skills/subagent-driven-development/SKILL.md",
+        "obra/superpowers:skills/subagent-driven-development/SKILL.md",
+        "lead:obra/superpowers:subagent-driven-development",
+        "lead:obra/superpowers:skills/subagent-driven-development/SKILL.md"
+      ]
+    },
+    {
+      "id": "a367cb2b9fe24adb0471f1c7d34a1e7733baef767f350dfba7490a1f6775cf19",
+      "kind": "content-changed",
+      "key": "1073224795:skills/writing-skills/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "writing-skills",
+      "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/writing-skills/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": "skills/writing-skills/SKILL.md",
+      "aliases": [
+        "1073224795:skills/writing-skills/SKILL.md",
+        "obra/superpowers:skills/writing-skills/SKILL.md",
+        "lead:obra/superpowers:writing-skills",
+        "lead:obra/superpowers:skills/writing-skills/SKILL.md"
+      ]
+    },
+    {
+      "id": "37f27e2b69e3226b580a4de7b13fcf44bf07127bb38ab76a952ed0bbd9a6c579",
+      "kind": "release",
+      "key": "release:1073224795:420055538",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "obra/superpowers v7.0.1",
+      "url": "https://github.com/obra/superpowers/releases/tag/v7.0.1",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "\nThis release retunes brainstorming after its rebuild in v7.0.0. Many of you told us, rightly, that the new default questions got annoying fast and felt formulaic. Brainstorming now digs for context before it asks anything, and tries to ask better questions. We expect to keep tuning it, but we think it's better than it was.\n\nIt also trims three long skills so they better survive compaction on Claude Code, and changes the issue and PR templates to ask for a summary written by a human.\n\n### Brainstorming\n\n- **It digs for context first.** In an existing project, or when you point it at a spec, plan, or files, it reads them before its first message and doesn't ask what they already answer. (#2560)\n- **It tries to ask better questions.** v7.0.0 opened every session the same way: an offer to skip the questions, then a generic question about \"the moment you wished this existed.\" Now, when you've already said what you want, it plays your request back with what it found in the project and asks ",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": null,
+      "aliases": [
+        "release:1073224795:420055538",
+        "obra/superpowers:obra/superpowers v7.0.1",
+        "lead:obra/superpowers:obra/superpowers v7.0.1"
+      ]
+    },
+    {
+      "id": "7e5611f0d80ae6c9b8f3675964cb9ccaa607d2023b2297ddac60885f88131538",
+      "kind": "content-changed",
+      "key": "1000362065:skills/commit-message-storyteller/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "commit-message-storyteller",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/commit-message-storyteller/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/commit-message-storyteller/SKILL.md",
+      "aliases": [
+        "1000362065:skills/commit-message-storyteller/SKILL.md",
+        "github/awesome-copilot:skills/commit-message-storyteller/SKILL.md",
+        "lead:github/awesome-copilot:commit-message-storyteller",
+        "lead:github/awesome-copilot:skills/commit-message-storyteller/SKILL.md"
+      ]
+    },
+    {
+      "id": "02741e06205243b91f51dd39ccf572f5942f185420f2d8fe728ec1b4b8be68fa",
+      "kind": "content-changed",
+      "key": "1000362065:skills/conventional-branch/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "conventional-branch",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/conventional-branch/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/conventional-branch/SKILL.md",
+      "aliases": [
+        "1000362065:skills/conventional-branch/SKILL.md",
+        "github/awesome-copilot:skills/conventional-branch/SKILL.md",
+        "lead:github/awesome-copilot:conventional-branch",
+        "lead:github/awesome-copilot:skills/conventional-branch/SKILL.md"
+      ]
+    },
+    {
+      "id": "86ec3956bfb0de320f95f89715afd6d5d242f16a357d7a65e2a15d800db189a2",
+      "kind": "content-changed",
+      "key": "1000362065:skills/git-commit/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "git-commit",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/git-commit/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/git-commit/SKILL.md",
+      "aliases": [
+        "1000362065:skills/git-commit/SKILL.md",
+        "github/awesome-copilot:skills/git-commit/SKILL.md",
+        "lead:github/awesome-copilot:git-commit",
+        "lead:github/awesome-copilot:skills/git-commit/SKILL.md"
+      ]
+    },
+    {
+      "id": "ebc89e1cc241ae552f67e15647f2a525d193018cdb19e524c7c03e9c1def67c3",
+      "kind": "content-changed",
+      "key": "1000362065:skills/java-add-graalvm-native-image-support/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "java-add-graalvm-native-image-support",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-add-graalvm-native-image-support/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-add-graalvm-native-image-support/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-add-graalvm-native-image-support/SKILL.md",
+        "github/awesome-copilot:skills/java-add-graalvm-native-image-support/SKILL.md",
+        "lead:github/awesome-copilot:java-add-graalvm-native-image-support",
+        "lead:github/awesome-copilot:skills/java-add-graalvm-native-image-support/SKILL.md"
+      ]
+    },
+    {
+      "id": "a867d393c53f12298a64bcaf74e288b3514832cec367a64d201f6314319aef30",
+      "kind": "new",
+      "key": "1000362065:skills/java-debugging/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "java-debugging",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-debugging/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-debugging/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-debugging/SKILL.md",
+        "github/awesome-copilot:skills/java-debugging/SKILL.md",
+        "lead:github/awesome-copilot:java-debugging",
+        "lead:github/awesome-copilot:skills/java-debugging/SKILL.md"
+      ]
+    },
+    {
+      "id": "a5ae81f4f79393c4671b19ff086aede9baaf27c6b53360cfd77c8b97839093bd",
+      "kind": "new",
+      "key": "1000362065:skills/java-development/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "java-development",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-development/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-development/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-development/SKILL.md",
+        "github/awesome-copilot:skills/java-development/SKILL.md",
+        "lead:github/awesome-copilot:java-development",
+        "lead:github/awesome-copilot:skills/java-development/SKILL.md"
+      ]
+    },
+    {
+      "id": "4b9eac9984b9dba098ca8ef1c5a684e5997a467f0f3af532ab7850a0a363952c",
+      "kind": "new",
+      "key": "1000362065:skills/java-diagnostics/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "java-diagnostics",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-diagnostics/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-diagnostics/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-diagnostics/SKILL.md",
+        "github/awesome-copilot:skills/java-diagnostics/SKILL.md",
+        "lead:github/awesome-copilot:java-diagnostics",
+        "lead:github/awesome-copilot:skills/java-diagnostics/SKILL.md"
+      ]
+    },
+    {
+      "id": "31c20cd67b4e419240abc9a89fc118f9797f0d5b05df77ea9c69d91a8acae265",
+      "kind": "content-changed",
+      "key": "1000362065:skills/java-docs/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "java-docs",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-docs/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-docs/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-docs/SKILL.md",
+        "github/awesome-copilot:skills/java-docs/SKILL.md",
+        "lead:github/awesome-copilot:java-docs",
+        "lead:github/awesome-copilot:skills/java-docs/SKILL.md"
+      ]
+    },
+    {
+      "id": "ef2c2bb97897fd8c96dad6224e4b147d08226965e6304c6901a7998ad5abbfb3",
+      "kind": "new",
+      "key": "1000362065:skills/java-hibernate-jpa/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "java-hibernate-jpa",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-hibernate-jpa/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-hibernate-jpa/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-hibernate-jpa/SKILL.md",
+        "github/awesome-copilot:skills/java-hibernate-jpa/SKILL.md",
+        "lead:github/awesome-copilot:java-hibernate-jpa",
+        "lead:github/awesome-copilot:skills/java-hibernate-jpa/SKILL.md"
+      ]
+    },
+    {
+      "id": "45d613888e2fcf9a14e25c8811ad63dd81018454b3547f355994a0afe732633c",
+      "kind": "content-changed",
+      "key": "1000362065:skills/java-junit/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "java-junit",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-junit/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-junit/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-junit/SKILL.md",
+        "github/awesome-copilot:skills/java-junit/SKILL.md",
+        "lead:github/awesome-copilot:java-junit",
+        "lead:github/awesome-copilot:skills/java-junit/SKILL.md"
+      ]
+    },
+    {
+      "id": "907373f85efba320ddf15171df9671961972adcf031c68e8d7ef17c8040323ff",
+      "kind": "content-changed",
+      "key": "1000362065:skills/java-mcp-server-generator/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/java-mcp-server-generator/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-mcp-server-generator/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-mcp-server-generator/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-mcp-server-generator/SKILL.md",
+        "github/awesome-copilot:skills/java-mcp-server-generator/SKILL.md",
+        "lead:github/awesome-copilot:skills/java-mcp-server-generator/SKILL.md"
+      ]
+    },
+    {
+      "id": "d66fa5de71e3b12347f3d23d81d118bbd54ae7223d78912f28260c925415affc",
+      "kind": "content-changed",
+      "key": "1000362065:skills/java-refactoring-extract-method/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/java-refactoring-extract-method/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-refactoring-extract-method/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-refactoring-extract-method/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-refactoring-extract-method/SKILL.md",
+        "github/awesome-copilot:skills/java-refactoring-extract-method/SKILL.md",
+        "lead:github/awesome-copilot:skills/java-refactoring-extract-method/SKILL.md"
+      ]
+    },
+    {
+      "id": "f0b1a87a11ef547c0895b8a27e32f37f4678da11f167b2f44deea93cf312ce4e",
+      "kind": "content-changed",
+      "key": "1000362065:skills/java-refactoring-remove-parameter/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/java-refactoring-remove-parameter/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-refactoring-remove-parameter/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-refactoring-remove-parameter/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-refactoring-remove-parameter/SKILL.md",
+        "github/awesome-copilot:skills/java-refactoring-remove-parameter/SKILL.md",
+        "lead:github/awesome-copilot:skills/java-refactoring-remove-parameter/SKILL.md"
+      ]
+    },
+    {
+      "id": "eb6612719a7ad404dde84b7f666e4d906ca67faf1719b29bf426ef9f5be781dc",
+      "kind": "new",
+      "key": "1000362065:skills/java-testcontainers/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/java-testcontainers/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-testcontainers/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/java-testcontainers/SKILL.md",
+      "aliases": [
+        "1000362065:skills/java-testcontainers/SKILL.md",
+        "github/awesome-copilot:skills/java-testcontainers/SKILL.md",
+        "lead:github/awesome-copilot:skills/java-testcontainers/SKILL.md"
+      ]
+    },
+    {
+      "id": "68b620dc7980ac41d67c1a5d3ae8549238ffb7cf4c246a9bd5a3c6ecdc91bc36",
+      "kind": "content-changed",
+      "key": "1000362065:skills/lsp-setup/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/lsp-setup/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/lsp-setup/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/lsp-setup/SKILL.md",
+      "aliases": [
+        "1000362065:skills/lsp-setup/SKILL.md",
+        "github/awesome-copilot:skills/lsp-setup/SKILL.md",
+        "lead:github/awesome-copilot:skills/lsp-setup/SKILL.md"
+      ]
+    },
+    {
+      "id": "c01599bca50f19937343536ec3fced0b78e5f56b2ba6723484d0f2be2629176c",
+      "kind": "new",
+      "key": "1000362065:skills/pr-address-feedback/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/pr-address-feedback/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/pr-address-feedback/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/pr-address-feedback/SKILL.md",
+      "aliases": [
+        "1000362065:skills/pr-address-feedback/SKILL.md",
+        "github/awesome-copilot:skills/pr-address-feedback/SKILL.md",
+        "lead:github/awesome-copilot:skills/pr-address-feedback/SKILL.md"
+      ]
+    },
+    {
+      "id": "bfbb859f2d386f1a3db99b412737c1d0f69f06202fc7245c4aeb3971c8056fd5",
+      "kind": "content-changed",
+      "key": "1145569115:skills/courier/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:voltagent",
+      "name": "courier",
+      "url": "https://github.com/trycourier/courier-skills/blob/18c7bcbeee6d5deb58a0d9dfec9ded4f960b2132/skills/courier/SKILL.md",
+      "observedAt": "2026-10-22T11:17:16.842Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trycourier/courier-skills",
+      "path": "skills/courier/SKILL.md",
+      "aliases": [
+        "1145569115:skills/courier/SKILL.md",
+        "trycourier/courier-skills:skills/courier/SKILL.md",
+        "lead:trycourier/courier-skills:courier",
+        "lead:trycourier/courier-skills:skills/courier/SKILL.md"
+      ]
+    },
+    {
+      "id": "d65f14d8463f395832e7917287687ba51de5291a0200f2a40f8285246b1a9989",
+      "kind": "new",
+      "key": "1000362065:skills/npm-trusted-publishing/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "npm-trusted-publishing",
+      "url": "https://github.com/github/awesome-copilot/blob/d85f762d6e521abf5fe16703946e9b38adc42da7/skills/npm-trusted-publishing/SKILL.md",
+      "observedAt": "2026-10-23T11:08:01.686Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/npm-trusted-publishing/SKILL.md",
+      "aliases": [
+        "1000362065:skills/npm-trusted-publishing/SKILL.md",
+        "github/awesome-copilot:skills/npm-trusted-publishing/SKILL.md",
+        "lead:github/awesome-copilot:npm-trusted-publishing",
+        "lead:github/awesome-copilot:skills/npm-trusted-publishing/SKILL.md"
+      ]
+    },
+    {
+      "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
+      "kind": "new",
+      "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "slack-cli",
+      "url": "https://skills.sh/paymog/slack-cli/slack-cli",
+      "observedAt": "2026-10-12T14:37:38.814Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "paymog/slack-cli",
+      "path": null,
+      "aliases": [
+        "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
+        "paymog/slack-cli:slack-cli",
+        "lead:paymog/slack-cli:slack-cli"
       ]
     },
     {
@@ -10933,46 +12044,6 @@
         "lead:a74e162f5620fc2b1385022f6a05ed014a7506536a8a86ffb9717447458902e3",
         "elevenlabs/skills:speech-engine",
         "lead:elevenlabs/skills:speech-engine"
-      ]
-    },
-    {
-      "id": "15b20711b8071caf2bdffaa3e9949549180e72bbc295b108ffc7a85fb6cefd31",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "let-fate-decide",
-      "url": "https://github.com/trailofbits/skills/blob/8e54050ae63c2f62224c35b1616efe71865b4777/plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
-      "observedAt": "2026-10-14T11:20:54.886Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
-        "trailofbits/skills:plugins/let-fate-decide/skills/let-fate-decide/SKILL.md",
-        "lead:trailofbits/skills:let-fate-decide",
-        "lead:trailofbits/skills:plugins/let-fate-decide/skills/let-fate-decide/SKILL.md"
-      ]
-    },
-    {
-      "id": "72d3786e2df2658ad9092e9a8f500df8cc211da5c6f72975f79bf56cb3a7dfc1",
-      "kind": "content-changed",
-      "key": "1000362065:skills/java-mcp-server-generator/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "java-mcp-server-generator",
-      "url": "https://github.com/github/awesome-copilot/blob/f25421d3f1b8b3bb217f78a7c0567cf7ec117cd8/skills/java-mcp-server-generator/SKILL.md",
-      "observedAt": "2026-10-14T11:20:54.886Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-mcp-server-generator/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-mcp-server-generator/SKILL.md",
-        "github/awesome-copilot:skills/java-mcp-server-generator/SKILL.md",
-        "lead:github/awesome-copilot:java-mcp-server-generator",
-        "lead:github/awesome-copilot:skills/java-mcp-server-generator/SKILL.md"
       ]
     },
     {
@@ -12049,206 +13120,6 @@
       ]
     },
     {
-      "id": "c7ca635a595486be55829c39862d6c901d92909f909fb6014ff6c3621d609902",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "dimensional-analysis",
-      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
-        "trailofbits/skills:plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md",
-        "lead:trailofbits/skills:dimensional-analysis",
-        "lead:trailofbits/skills:plugins/dimensional-analysis/skills/dimensional-analysis/SKILL.md"
-      ]
-    },
-    {
-      "id": "c427e3ed0364343d9e27a31afed147d95028e42092e92d79d13e6852f6bfb36d",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "firebase-apk-scanner",
-      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
-        "trailofbits/skills:plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md",
-        "lead:trailofbits/skills:firebase-apk-scanner",
-        "lead:trailofbits/skills:plugins/firebase-apk-scanner/skills/firebase-apk-scanner/SKILL.md"
-      ]
-    },
-    {
-      "id": "e09c1a426ee73a10c34dab82b7a3ee57cd4faef1b401c463fbb3c58df0f328c5",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/trailmark/skills/diagramming-code/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "diagramming-code",
-      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/trailmark/skills/diagramming-code/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/trailmark/skills/diagramming-code/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/trailmark/skills/diagramming-code/SKILL.md",
-        "trailofbits/skills:plugins/trailmark/skills/diagramming-code/SKILL.md",
-        "lead:trailofbits/skills:diagramming-code",
-        "lead:trailofbits/skills:plugins/trailmark/skills/diagramming-code/SKILL.md"
-      ]
-    },
-    {
-      "id": "6b17d86a78489916a81cc320a79863b53124975bbfe8ba5d7a0b3174329bc0cb",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "mermaid-to-proverif",
-      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
-        "trailofbits/skills:plugins/trailmark/skills/mermaid-to-proverif/SKILL.md",
-        "lead:trailofbits/skills:mermaid-to-proverif",
-        "lead:trailofbits/skills:plugins/trailmark/skills/mermaid-to-proverif/SKILL.md"
-      ]
-    },
-    {
-      "id": "8331c72d1583415a1ed1c5f24fe4f3734365c95137256a4d6c76f9a0cc1902e2",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "trailmark-finding-triage",
-      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
-        "trailofbits/skills:plugins/trailmark/skills/trailmark-finding-triage/SKILL.md",
-        "lead:trailofbits/skills:trailmark-finding-triage",
-        "lead:trailofbits/skills:plugins/trailmark/skills/trailmark-finding-triage/SKILL.md"
-      ]
-    },
-    {
-      "id": "72949c0b01bcd6b6253170d14b166c6d18242ceec29da8bcc8c0706a6868ce51",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/trailmark/skills/trailmark/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "trailmark",
-      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/trailmark/skills/trailmark/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/trailmark/skills/trailmark/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/trailmark/skills/trailmark/SKILL.md",
-        "trailofbits/skills:plugins/trailmark/skills/trailmark/SKILL.md",
-        "lead:trailofbits/skills:trailmark",
-        "lead:trailofbits/skills:plugins/trailmark/skills/trailmark/SKILL.md"
-      ]
-    },
-    {
-      "id": "74a6a2f4f694b4e8dc9fb1bb03516b8a0af1c08e343d3fd1da41b38c33df815b",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "yara-rule-authoring",
-      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
-        "trailofbits/skills:plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md",
-        "lead:trailofbits/skills:yara-rule-authoring",
-        "lead:trailofbits/skills:plugins/yara-authoring/skills/yara-rule-authoring/SKILL.md"
-      ]
-    },
-    {
-      "id": "986b26090aefb0ae9d3834d8590b1c49fec08676d3285c7faf2757c2f5f60763",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "zeroize-audit",
-      "url": "https://github.com/trailofbits/skills/blob/e1f86a390d4caf28bf1c377a7d86707b2898669c/plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
-        "trailofbits/skills:plugins/zeroize-audit/skills/zeroize-audit/SKILL.md",
-        "lead:trailofbits/skills:zeroize-audit",
-        "lead:trailofbits/skills:plugins/zeroize-audit/skills/zeroize-audit/SKILL.md"
-      ]
-    },
-    {
-      "id": "019156b50f4e793ecc496bad0cd88cd149cfdb1ea7df279d77639e0457e774bf",
-      "kind": "content-changed",
-      "key": "1000362065:.github/skills/code-review/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "code-review",
-      "url": "https://github.com/github/awesome-copilot/blob/36e95dfda72140a68f577d5c894a551607606bd3/.github/skills/code-review/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": ".github/skills/code-review/SKILL.md",
-      "aliases": [
-        "1000362065:.github/skills/code-review/SKILL.md",
-        "github/awesome-copilot:.github/skills/code-review/SKILL.md",
-        "lead:github/awesome-copilot:code-review",
-        "lead:github/awesome-copilot:.github/skills/code-review/SKILL.md"
-      ]
-    },
-    {
-      "id": "ebbf6d62eaad457203af410c213bb059be0332a4ab9936e652342a61e47b25f0",
-      "kind": "new",
-      "key": "1000362065:skills/batch-script-progress/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "batch-script-progress",
-      "url": "https://github.com/github/awesome-copilot/blob/36e95dfda72140a68f577d5c894a551607606bd3/skills/batch-script-progress/SKILL.md",
-      "observedAt": "2026-10-15T10:58:01.952Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/batch-script-progress/SKILL.md",
-      "aliases": [
-        "1000362065:skills/batch-script-progress/SKILL.md",
-        "github/awesome-copilot:skills/batch-script-progress/SKILL.md",
-        "lead:github/awesome-copilot:batch-script-progress",
-        "lead:github/awesome-copilot:skills/batch-script-progress/SKILL.md"
-      ]
-    },
-    {
       "id": "97843ea4b074f3018667284960a48d286dbc3d37896cf4eedff86218bb702ef7",
       "kind": "new",
       "key": "937253475:plugins/frontend-design/skills/frontend-design/SKILL.md",
@@ -12630,146 +13501,6 @@
         "lead:a520e5e4deaf2f7b5e00dc0953fc7ec1095f947c33358701b52f885cc5454571",
         "heygen-com/hyperframes:music-to-video",
         "lead:heygen-com/hyperframes:music-to-video"
-      ]
-    },
-    {
-      "id": "d47604412db25e34ca9f1a765629e8492d4e70d4050e59862960da9b746dbd5d",
-      "kind": "content-changed",
-      "key": "1134447175:plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "entry-point-analyzer",
-      "url": "https://github.com/trailofbits/skills/blob/5c99c03fb8a9ea568432ecbcba5d86e9f4ac2bf0/plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
-      "observedAt": "2026-10-16T10:51:46.157Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
-        "trailofbits/skills:plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md",
-        "lead:trailofbits/skills:entry-point-analyzer",
-        "lead:trailofbits/skills:plugins/entry-point-analyzer/skills/entry-point-analyzer/SKILL.md"
-      ]
-    },
-    {
-      "id": "1ca8a395f40c0739f548c13afa534f03327bbc706215147fa5241581c3235a30",
-      "kind": "new",
-      "key": "1000362065:skills/create-quarkus-project/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "create-quarkus-project",
-      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/create-quarkus-project/SKILL.md",
-      "observedAt": "2026-10-16T10:51:46.157Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/create-quarkus-project/SKILL.md",
-      "aliases": [
-        "1000362065:skills/create-quarkus-project/SKILL.md",
-        "github/awesome-copilot:skills/create-quarkus-project/SKILL.md",
-        "lead:github/awesome-copilot:create-quarkus-project",
-        "lead:github/awesome-copilot:skills/create-quarkus-project/SKILL.md"
-      ]
-    },
-    {
-      "id": "1e8a2a6260c73182596524791218fdd20105dbef3e59d80dc269ee52d4d93404",
-      "kind": "new",
-      "key": "1000362065:skills/java-upgrade/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "java-upgrade",
-      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/java-upgrade/SKILL.md",
-      "observedAt": "2026-10-16T10:51:46.157Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-upgrade/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-upgrade/SKILL.md",
-        "github/awesome-copilot:skills/java-upgrade/SKILL.md",
-        "lead:github/awesome-copilot:java-upgrade",
-        "lead:github/awesome-copilot:skills/java-upgrade/SKILL.md"
-      ]
-    },
-    {
-      "id": "64fd6aac0d202df3432606b7c2a6367e11f7e6d4274217b241c3698c21379f9f",
-      "kind": "content-changed",
-      "key": "1000362065:skills/javax-to-jakarta-migration/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "javax-to-jakarta-migration",
-      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/javax-to-jakarta-migration/SKILL.md",
-      "observedAt": "2026-10-16T10:51:46.157Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/javax-to-jakarta-migration/SKILL.md",
-      "aliases": [
-        "1000362065:skills/javax-to-jakarta-migration/SKILL.md",
-        "github/awesome-copilot:skills/javax-to-jakarta-migration/SKILL.md",
-        "lead:github/awesome-copilot:javax-to-jakarta-migration",
-        "lead:github/awesome-copilot:skills/javax-to-jakarta-migration/SKILL.md"
-      ]
-    },
-    {
-      "id": "9656c43c4592a514dc20218e5a3a94d74c351d5e5ea57567a15813bce4deb75f",
-      "kind": "new",
-      "key": "1000362065:skills/quarkus-application-development/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "quarkus-application-development",
-      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/quarkus-application-development/SKILL.md",
-      "observedAt": "2026-10-16T10:51:46.157Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/quarkus-application-development/SKILL.md",
-      "aliases": [
-        "1000362065:skills/quarkus-application-development/SKILL.md",
-        "github/awesome-copilot:skills/quarkus-application-development/SKILL.md",
-        "lead:github/awesome-copilot:quarkus-application-development",
-        "lead:github/awesome-copilot:skills/quarkus-application-development/SKILL.md"
-      ]
-    },
-    {
-      "id": "6262561a1916b587e9b4756c533e93c6c3a3897b6c1c00601d96536cffceca7b",
-      "kind": "new",
-      "key": "1000362065:skills/quarkus-dev-services-and-testing/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "quarkus-dev-services-and-testing",
-      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/quarkus-dev-services-and-testing/SKILL.md",
-      "observedAt": "2026-10-16T10:51:46.157Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/quarkus-dev-services-and-testing/SKILL.md",
-      "aliases": [
-        "1000362065:skills/quarkus-dev-services-and-testing/SKILL.md",
-        "github/awesome-copilot:skills/quarkus-dev-services-and-testing/SKILL.md",
-        "lead:github/awesome-copilot:quarkus-dev-services-and-testing",
-        "lead:github/awesome-copilot:skills/quarkus-dev-services-and-testing/SKILL.md"
-      ]
-    },
-    {
-      "id": "f6acf9909f82ca36b2e6dc3fd15cac862afc547df5caa3e9a2378ef3595d2721",
-      "kind": "new",
-      "key": "1000362065:skills/quarkus-native-and-container/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "quarkus-native-and-container",
-      "url": "https://github.com/github/awesome-copilot/blob/cb64ad12e32737ae764becd6885462e9b4c7cb00/skills/quarkus-native-and-container/SKILL.md",
-      "observedAt": "2026-10-16T10:51:46.157Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/quarkus-native-and-container/SKILL.md",
-      "aliases": [
-        "1000362065:skills/quarkus-native-and-container/SKILL.md",
-        "github/awesome-copilot:skills/quarkus-native-and-container/SKILL.md",
-        "lead:github/awesome-copilot:quarkus-native-and-container",
-        "lead:github/awesome-copilot:skills/quarkus-native-and-container/SKILL.md"
       ]
     },
     {
@@ -14827,26 +15558,6 @@
       ]
     },
     {
-      "id": "5cdce5d722fefaa8110d2ce580ed7c777806db2552685d083d1e50ac93273805",
-      "kind": "content-changed",
-      "key": "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:mattpocock/skills",
-      "name": "chief-of-staff",
-      "url": "https://github.com/mattpocock/skills/blob/5beb35b040e3de97e54fa9e386d7e42d15c295c2/skills/in-progress/chief-of-staff/SKILL.md",
-      "observedAt": "2026-10-20T11:01:22.408Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "mattpocock/skills",
-      "path": "skills/in-progress/chief-of-staff/SKILL.md",
-      "aliases": [
-        "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
-        "mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md",
-        "lead:mattpocock/skills:chief-of-staff",
-        "lead:mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md"
-      ]
-    },
-    {
       "id": "dbfd1c004c94cac5be7bb8f1ff1ba74d8d4cfcb032dc7503ed6c71b8baa85fc3",
       "kind": "new",
       "key": "1219009070:plugins/aws-agents-for-devsecops/skills/threat-modeling-with-aws-security-agent/SKILL.md",
@@ -15270,264 +15981,6 @@
         "lead:1766e82d046435cbfee35e2250333233660bdfede306490f7374a8409da3ae56",
         "coreyhaines31/marketingskills:conversion-tracking",
         "lead:coreyhaines31/marketingskills:conversion-tracking"
-      ]
-    },
-    {
-      "id": "eb967d57abe2a33063dc35c5e05692ec886e12c9a779b1e3da43a1cc301f75e8",
-      "kind": "content-changed",
-      "key": "1073224795:skills/diagnosing-superpowers/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:obra/superpowers",
-      "name": "diagnosing-superpowers",
-      "url": "https://github.com/obra/superpowers/blob/b739a8af570e10a95898f2bdf6cec97467fa6c12/skills/diagnosing-superpowers/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "obra/superpowers",
-      "path": "skills/diagnosing-superpowers/SKILL.md",
-      "aliases": [
-        "1073224795:skills/diagnosing-superpowers/SKILL.md",
-        "obra/superpowers:skills/diagnosing-superpowers/SKILL.md",
-        "lead:obra/superpowers:diagnosing-superpowers",
-        "lead:obra/superpowers:skills/diagnosing-superpowers/SKILL.md"
-      ]
-    },
-    {
-      "id": "101b0b9cd15a47cdbe018bed8ed93371a4db637b42f4d7097dfb7cec0d185f7d",
-      "kind": "new",
-      "key": "1134447175:plugins/patching-bugs/skills/implement-patch/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "implement-patch",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/implement-patch/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/patching-bugs/skills/implement-patch/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/patching-bugs/skills/implement-patch/SKILL.md",
-        "trailofbits/skills:plugins/patching-bugs/skills/implement-patch/SKILL.md",
-        "lead:trailofbits/skills:implement-patch",
-        "lead:trailofbits/skills:plugins/patching-bugs/skills/implement-patch/SKILL.md"
-      ]
-    },
-    {
-      "id": "df8200d7dcdcf1b46c4a3504c45b1f8daee96388fb47c7abd9aa45204c1891a6",
-      "kind": "new",
-      "key": "1134447175:plugins/patching-bugs/skills/patching-bugs/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "patching-bugs",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/patching-bugs/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/patching-bugs/skills/patching-bugs/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/patching-bugs/skills/patching-bugs/SKILL.md",
-        "trailofbits/skills:plugins/patching-bugs/skills/patching-bugs/SKILL.md",
-        "lead:trailofbits/skills:patching-bugs",
-        "lead:trailofbits/skills:plugins/patching-bugs/skills/patching-bugs/SKILL.md"
-      ]
-    },
-    {
-      "id": "18ee50160294f2d01a8edac0d07e922e2e0630cca40e76a6b7b3338cd24b87aa",
-      "kind": "new",
-      "key": "1134447175:plugins/patching-bugs/skills/prove-patch/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "prove-patch",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/prove-patch/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/patching-bugs/skills/prove-patch/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/patching-bugs/skills/prove-patch/SKILL.md",
-        "trailofbits/skills:plugins/patching-bugs/skills/prove-patch/SKILL.md",
-        "lead:trailofbits/skills:prove-patch",
-        "lead:trailofbits/skills:plugins/patching-bugs/skills/prove-patch/SKILL.md"
-      ]
-    },
-    {
-      "id": "08ecadf337197d36a819d4ee428001526b5d5f749588084970e20a888e694f88",
-      "kind": "new",
-      "key": "1134447175:plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "reproduce-bug",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
-        "trailofbits/skills:plugins/patching-bugs/skills/reproduce-bug/SKILL.md",
-        "lead:trailofbits/skills:reproduce-bug",
-        "lead:trailofbits/skills:plugins/patching-bugs/skills/reproduce-bug/SKILL.md"
-      ]
-    },
-    {
-      "id": "2bc31a1a0937ec3a87967f35c9bc4ebcf6aec049cc930c28f92018e3aed35982",
-      "kind": "new",
-      "key": "1134447175:plugins/patching-bugs/skills/validate-bug/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "validate-bug",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/patching-bugs/skills/validate-bug/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/patching-bugs/skills/validate-bug/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/patching-bugs/skills/validate-bug/SKILL.md",
-        "trailofbits/skills:plugins/patching-bugs/skills/validate-bug/SKILL.md",
-        "lead:trailofbits/skills:validate-bug",
-        "lead:trailofbits/skills:plugins/patching-bugs/skills/validate-bug/SKILL.md"
-      ]
-    },
-    {
-      "id": "ba56166e8564ed21b07233929a30838676e3c5a16be4f58f0de68a113a3884c8",
-      "kind": "new",
-      "key": "1134447175:plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "adjudicate-regression",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
-        "trailofbits/skills:plugins/regression-hunt/skills/adjudicate-regression/SKILL.md",
-        "lead:trailofbits/skills:adjudicate-regression",
-        "lead:trailofbits/skills:plugins/regression-hunt/skills/adjudicate-regression/SKILL.md"
-      ]
-    },
-    {
-      "id": "0318b4c2d0984b365a30d51fcd3550e4b81ff19f5b6635a84213985ab0330022",
-      "kind": "new",
-      "key": "1134447175:plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "hunt-regressions",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
-        "trailofbits/skills:plugins/regression-hunt/skills/hunt-regressions/SKILL.md",
-        "lead:trailofbits/skills:hunt-regressions",
-        "lead:trailofbits/skills:plugins/regression-hunt/skills/hunt-regressions/SKILL.md"
-      ]
-    },
-    {
-      "id": "df91fbddf72473af5d839c6d7267319e3e670c7f7242a39d5caa7a8f14ad7c39",
-      "kind": "new",
-      "key": "1134447175:plugins/regression-hunt/skills/prepare-regression/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "prepare-regression",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/prepare-regression/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/regression-hunt/skills/prepare-regression/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/regression-hunt/skills/prepare-regression/SKILL.md",
-        "trailofbits/skills:plugins/regression-hunt/skills/prepare-regression/SKILL.md",
-        "lead:trailofbits/skills:prepare-regression",
-        "lead:trailofbits/skills:plugins/regression-hunt/skills/prepare-regression/SKILL.md"
-      ]
-    },
-    {
-      "id": "c113c1c90ea1d8044eb431005e663edf04a192621628ca01795ce07019c5287e",
-      "kind": "new",
-      "key": "1134447175:plugins/regression-hunt/skills/regression-hunt/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "regression-hunt",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/regression-hunt/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/regression-hunt/skills/regression-hunt/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/regression-hunt/skills/regression-hunt/SKILL.md",
-        "trailofbits/skills:plugins/regression-hunt/skills/regression-hunt/SKILL.md",
-        "lead:trailofbits/skills:regression-hunt",
-        "lead:trailofbits/skills:plugins/regression-hunt/skills/regression-hunt/SKILL.md"
-      ]
-    },
-    {
-      "id": "e53627a0893c7d1926d958196cc9a2bb8312881943ae6cbd65b5314915e736d3",
-      "kind": "new",
-      "key": "1134447175:plugins/regression-hunt/skills/replay-regression/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "replay-regression",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/replay-regression/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/regression-hunt/skills/replay-regression/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/regression-hunt/skills/replay-regression/SKILL.md",
-        "trailofbits/skills:plugins/regression-hunt/skills/replay-regression/SKILL.md",
-        "lead:trailofbits/skills:replay-regression",
-        "lead:trailofbits/skills:plugins/regression-hunt/skills/replay-regression/SKILL.md"
-      ]
-    },
-    {
-      "id": "911133558f265b525345e90c61870e74e6443357e3262004c1ddd28cfc61dd39",
-      "kind": "new",
-      "key": "1134447175:plugins/regression-hunt/skills/report-regressions/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "plugins/regression-hunt/skills/report-regressions/SKILL.md",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/report-regressions/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/regression-hunt/skills/report-regressions/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/regression-hunt/skills/report-regressions/SKILL.md",
-        "trailofbits/skills:plugins/regression-hunt/skills/report-regressions/SKILL.md",
-        "lead:trailofbits/skills:plugins/regression-hunt/skills/report-regressions/SKILL.md"
-      ]
-    },
-    {
-      "id": "3ed0a7ee335a9c0e8636fcaa0756c77fbd0f6f769ae09dc9f9ff6290134638b6",
-      "kind": "new",
-      "key": "1134447175:plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:trailofbits/skills",
-      "name": "plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
-      "url": "https://github.com/trailofbits/skills/blob/a3131740a39291e42fd15b9eac07e0b393ad71b1/plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
-      "observedAt": "2026-10-21T11:18:31.824Z",
-      "detail": "",
-      "approved": false,
-      "repo": "trailofbits/skills",
-      "path": "plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
-      "aliases": [
-        "1134447175:plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
-        "trailofbits/skills:plugins/regression-hunt/skills/reproduce-regression/SKILL.md",
-        "lead:trailofbits/skills:plugins/regression-hunt/skills/reproduce-regression/SKILL.md"
       ]
     },
     {
@@ -16471,419 +16924,6 @@
       ]
     },
     {
-      "id": "248b32708fc390ab2466f51622c05265e8a8f0b76aa9af87fe379e9d2262b24a",
-      "kind": "content-changed",
-      "key": "1073224795:skills/brainstorming/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:obra/superpowers",
-      "name": "brainstorming",
-      "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/brainstorming/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "obra/superpowers",
-      "path": "skills/brainstorming/SKILL.md",
-      "aliases": [
-        "1073224795:skills/brainstorming/SKILL.md",
-        "obra/superpowers:skills/brainstorming/SKILL.md",
-        "lead:obra/superpowers:brainstorming",
-        "lead:obra/superpowers:skills/brainstorming/SKILL.md"
-      ]
-    },
-    {
-      "id": "7f41c5eb24a3e86567f03c377d5c5b3692ce14222689057115aa9b7caa77fecd",
-      "kind": "content-changed",
-      "key": "1073224795:skills/executing-plans/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:obra/superpowers",
-      "name": "executing-plans",
-      "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/executing-plans/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "obra/superpowers",
-      "path": "skills/executing-plans/SKILL.md",
-      "aliases": [
-        "1073224795:skills/executing-plans/SKILL.md",
-        "obra/superpowers:skills/executing-plans/SKILL.md",
-        "lead:obra/superpowers:executing-plans",
-        "lead:obra/superpowers:skills/executing-plans/SKILL.md"
-      ]
-    },
-    {
-      "id": "0a1844df5c310e6198926f2c80784142d4a4d766ff0940b3426c4abac326d756",
-      "kind": "content-changed",
-      "key": "1073224795:skills/subagent-driven-development/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:obra/superpowers",
-      "name": "subagent-driven-development",
-      "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/subagent-driven-development/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "obra/superpowers",
-      "path": "skills/subagent-driven-development/SKILL.md",
-      "aliases": [
-        "1073224795:skills/subagent-driven-development/SKILL.md",
-        "obra/superpowers:skills/subagent-driven-development/SKILL.md",
-        "lead:obra/superpowers:subagent-driven-development",
-        "lead:obra/superpowers:skills/subagent-driven-development/SKILL.md"
-      ]
-    },
-    {
-      "id": "a367cb2b9fe24adb0471f1c7d34a1e7733baef767f350dfba7490a1f6775cf19",
-      "kind": "content-changed",
-      "key": "1073224795:skills/writing-skills/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:obra/superpowers",
-      "name": "writing-skills",
-      "url": "https://github.com/obra/superpowers/blob/2ce8aa15d05bd57213e6f746f953aafb7ded7a8b/skills/writing-skills/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "obra/superpowers",
-      "path": "skills/writing-skills/SKILL.md",
-      "aliases": [
-        "1073224795:skills/writing-skills/SKILL.md",
-        "obra/superpowers:skills/writing-skills/SKILL.md",
-        "lead:obra/superpowers:writing-skills",
-        "lead:obra/superpowers:skills/writing-skills/SKILL.md"
-      ]
-    },
-    {
-      "id": "37f27e2b69e3226b580a4de7b13fcf44bf07127bb38ab76a952ed0bbd9a6c579",
-      "kind": "release",
-      "key": "release:1073224795:420055538",
-      "priority": "medium",
-      "source": "upstream:obra/superpowers",
-      "name": "obra/superpowers v7.0.1",
-      "url": "https://github.com/obra/superpowers/releases/tag/v7.0.1",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "\nThis release retunes brainstorming after its rebuild in v7.0.0. Many of you told us, rightly, that the new default questions got annoying fast and felt formulaic. Brainstorming now digs for context before it asks anything, and tries to ask better questions. We expect to keep tuning it, but we think it's better than it was.\n\nIt also trims three long skills so they better survive compaction on Claude Code, and changes the issue and PR templates to ask for a summary written by a human.\n\n### Brainstorming\n\n- **It digs for context first.** In an existing project, or when you point it at a spec, plan, or files, it reads them before its first message and doesn't ask what they already answer. (#2560)\n- **It tries to ask better questions.** v7.0.0 opened every session the same way: an offer to skip the questions, then a generic question about \"the moment you wished this existed.\" Now, when you've already said what you want, it plays your request back with what it found in the project and asks ",
-      "approved": false,
-      "repo": "obra/superpowers",
-      "path": null,
-      "aliases": [
-        "release:1073224795:420055538",
-        "obra/superpowers:obra/superpowers v7.0.1",
-        "lead:obra/superpowers:obra/superpowers v7.0.1"
-      ]
-    },
-    {
-      "id": "7e5611f0d80ae6c9b8f3675964cb9ccaa607d2023b2297ddac60885f88131538",
-      "kind": "content-changed",
-      "key": "1000362065:skills/commit-message-storyteller/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "commit-message-storyteller",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/commit-message-storyteller/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/commit-message-storyteller/SKILL.md",
-      "aliases": [
-        "1000362065:skills/commit-message-storyteller/SKILL.md",
-        "github/awesome-copilot:skills/commit-message-storyteller/SKILL.md",
-        "lead:github/awesome-copilot:commit-message-storyteller",
-        "lead:github/awesome-copilot:skills/commit-message-storyteller/SKILL.md"
-      ]
-    },
-    {
-      "id": "02741e06205243b91f51dd39ccf572f5942f185420f2d8fe728ec1b4b8be68fa",
-      "kind": "content-changed",
-      "key": "1000362065:skills/conventional-branch/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "conventional-branch",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/conventional-branch/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/conventional-branch/SKILL.md",
-      "aliases": [
-        "1000362065:skills/conventional-branch/SKILL.md",
-        "github/awesome-copilot:skills/conventional-branch/SKILL.md",
-        "lead:github/awesome-copilot:conventional-branch",
-        "lead:github/awesome-copilot:skills/conventional-branch/SKILL.md"
-      ]
-    },
-    {
-      "id": "86ec3956bfb0de320f95f89715afd6d5d242f16a357d7a65e2a15d800db189a2",
-      "kind": "content-changed",
-      "key": "1000362065:skills/git-commit/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "git-commit",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/git-commit/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/git-commit/SKILL.md",
-      "aliases": [
-        "1000362065:skills/git-commit/SKILL.md",
-        "github/awesome-copilot:skills/git-commit/SKILL.md",
-        "lead:github/awesome-copilot:git-commit",
-        "lead:github/awesome-copilot:skills/git-commit/SKILL.md"
-      ]
-    },
-    {
-      "id": "ebc89e1cc241ae552f67e15647f2a525d193018cdb19e524c7c03e9c1def67c3",
-      "kind": "content-changed",
-      "key": "1000362065:skills/java-add-graalvm-native-image-support/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "java-add-graalvm-native-image-support",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-add-graalvm-native-image-support/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-add-graalvm-native-image-support/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-add-graalvm-native-image-support/SKILL.md",
-        "github/awesome-copilot:skills/java-add-graalvm-native-image-support/SKILL.md",
-        "lead:github/awesome-copilot:java-add-graalvm-native-image-support",
-        "lead:github/awesome-copilot:skills/java-add-graalvm-native-image-support/SKILL.md"
-      ]
-    },
-    {
-      "id": "a867d393c53f12298a64bcaf74e288b3514832cec367a64d201f6314319aef30",
-      "kind": "new",
-      "key": "1000362065:skills/java-debugging/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "java-debugging",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-debugging/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-debugging/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-debugging/SKILL.md",
-        "github/awesome-copilot:skills/java-debugging/SKILL.md",
-        "lead:github/awesome-copilot:java-debugging",
-        "lead:github/awesome-copilot:skills/java-debugging/SKILL.md"
-      ]
-    },
-    {
-      "id": "a5ae81f4f79393c4671b19ff086aede9baaf27c6b53360cfd77c8b97839093bd",
-      "kind": "new",
-      "key": "1000362065:skills/java-development/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "java-development",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-development/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-development/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-development/SKILL.md",
-        "github/awesome-copilot:skills/java-development/SKILL.md",
-        "lead:github/awesome-copilot:java-development",
-        "lead:github/awesome-copilot:skills/java-development/SKILL.md"
-      ]
-    },
-    {
-      "id": "4b9eac9984b9dba098ca8ef1c5a684e5997a467f0f3af532ab7850a0a363952c",
-      "kind": "new",
-      "key": "1000362065:skills/java-diagnostics/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "java-diagnostics",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-diagnostics/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-diagnostics/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-diagnostics/SKILL.md",
-        "github/awesome-copilot:skills/java-diagnostics/SKILL.md",
-        "lead:github/awesome-copilot:java-diagnostics",
-        "lead:github/awesome-copilot:skills/java-diagnostics/SKILL.md"
-      ]
-    },
-    {
-      "id": "31c20cd67b4e419240abc9a89fc118f9797f0d5b05df77ea9c69d91a8acae265",
-      "kind": "content-changed",
-      "key": "1000362065:skills/java-docs/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "java-docs",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-docs/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-docs/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-docs/SKILL.md",
-        "github/awesome-copilot:skills/java-docs/SKILL.md",
-        "lead:github/awesome-copilot:java-docs",
-        "lead:github/awesome-copilot:skills/java-docs/SKILL.md"
-      ]
-    },
-    {
-      "id": "ef2c2bb97897fd8c96dad6224e4b147d08226965e6304c6901a7998ad5abbfb3",
-      "kind": "new",
-      "key": "1000362065:skills/java-hibernate-jpa/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "java-hibernate-jpa",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-hibernate-jpa/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-hibernate-jpa/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-hibernate-jpa/SKILL.md",
-        "github/awesome-copilot:skills/java-hibernate-jpa/SKILL.md",
-        "lead:github/awesome-copilot:java-hibernate-jpa",
-        "lead:github/awesome-copilot:skills/java-hibernate-jpa/SKILL.md"
-      ]
-    },
-    {
-      "id": "45d613888e2fcf9a14e25c8811ad63dd81018454b3547f355994a0afe732633c",
-      "kind": "content-changed",
-      "key": "1000362065:skills/java-junit/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "java-junit",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-junit/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-junit/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-junit/SKILL.md",
-        "github/awesome-copilot:skills/java-junit/SKILL.md",
-        "lead:github/awesome-copilot:java-junit",
-        "lead:github/awesome-copilot:skills/java-junit/SKILL.md"
-      ]
-    },
-    {
-      "id": "907373f85efba320ddf15171df9671961972adcf031c68e8d7ef17c8040323ff",
-      "kind": "content-changed",
-      "key": "1000362065:skills/java-mcp-server-generator/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "skills/java-mcp-server-generator/SKILL.md",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-mcp-server-generator/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-mcp-server-generator/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-mcp-server-generator/SKILL.md",
-        "github/awesome-copilot:skills/java-mcp-server-generator/SKILL.md",
-        "lead:github/awesome-copilot:skills/java-mcp-server-generator/SKILL.md"
-      ]
-    },
-    {
-      "id": "d66fa5de71e3b12347f3d23d81d118bbd54ae7223d78912f28260c925415affc",
-      "kind": "content-changed",
-      "key": "1000362065:skills/java-refactoring-extract-method/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "skills/java-refactoring-extract-method/SKILL.md",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-refactoring-extract-method/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-refactoring-extract-method/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-refactoring-extract-method/SKILL.md",
-        "github/awesome-copilot:skills/java-refactoring-extract-method/SKILL.md",
-        "lead:github/awesome-copilot:skills/java-refactoring-extract-method/SKILL.md"
-      ]
-    },
-    {
-      "id": "f0b1a87a11ef547c0895b8a27e32f37f4678da11f167b2f44deea93cf312ce4e",
-      "kind": "content-changed",
-      "key": "1000362065:skills/java-refactoring-remove-parameter/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "skills/java-refactoring-remove-parameter/SKILL.md",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-refactoring-remove-parameter/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-refactoring-remove-parameter/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-refactoring-remove-parameter/SKILL.md",
-        "github/awesome-copilot:skills/java-refactoring-remove-parameter/SKILL.md",
-        "lead:github/awesome-copilot:skills/java-refactoring-remove-parameter/SKILL.md"
-      ]
-    },
-    {
-      "id": "eb6612719a7ad404dde84b7f666e4d906ca67faf1719b29bf426ef9f5be781dc",
-      "kind": "new",
-      "key": "1000362065:skills/java-testcontainers/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "skills/java-testcontainers/SKILL.md",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/java-testcontainers/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/java-testcontainers/SKILL.md",
-      "aliases": [
-        "1000362065:skills/java-testcontainers/SKILL.md",
-        "github/awesome-copilot:skills/java-testcontainers/SKILL.md",
-        "lead:github/awesome-copilot:skills/java-testcontainers/SKILL.md"
-      ]
-    },
-    {
-      "id": "68b620dc7980ac41d67c1a5d3ae8549238ffb7cf4c246a9bd5a3c6ecdc91bc36",
-      "kind": "content-changed",
-      "key": "1000362065:skills/lsp-setup/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "skills/lsp-setup/SKILL.md",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/lsp-setup/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/lsp-setup/SKILL.md",
-      "aliases": [
-        "1000362065:skills/lsp-setup/SKILL.md",
-        "github/awesome-copilot:skills/lsp-setup/SKILL.md",
-        "lead:github/awesome-copilot:skills/lsp-setup/SKILL.md"
-      ]
-    },
-    {
-      "id": "c01599bca50f19937343536ec3fced0b78e5f56b2ba6723484d0f2be2629176c",
-      "kind": "new",
-      "key": "1000362065:skills/pr-address-feedback/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "skills/pr-address-feedback/SKILL.md",
-      "url": "https://github.com/github/awesome-copilot/blob/2d4b998d2df28917074ee33db45c9601484c72ad/skills/pr-address-feedback/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/pr-address-feedback/SKILL.md",
-      "aliases": [
-        "1000362065:skills/pr-address-feedback/SKILL.md",
-        "github/awesome-copilot:skills/pr-address-feedback/SKILL.md",
-        "lead:github/awesome-copilot:skills/pr-address-feedback/SKILL.md"
-      ]
-    },
-    {
       "id": "2be7b4a192d03b36eaa624cd30a138aa03bc6f37948044c4b626336e10d08db7",
       "kind": "new",
       "key": "lead:cbaf8dd8ca5c25fe6e59ddfc50fd62cb0ef96471fd9c06ddd12820ae350152ca",
@@ -17188,46 +17228,6 @@
         "lead:449e667d76743d7eca62613e63051eaeafd14cbabc156acc603877695feface7",
         "software-mansion/argent:argent-create-e2e",
         "lead:software-mansion/argent:argent-create-e2e"
-      ]
-    },
-    {
-      "id": "bfbb859f2d386f1a3db99b412737c1d0f69f06202fc7245c4aeb3971c8056fd5",
-      "kind": "content-changed",
-      "key": "1145569115:skills/courier/SKILL.md",
-      "priority": "medium",
-      "source": "discovery:voltagent",
-      "name": "courier",
-      "url": "https://github.com/trycourier/courier-skills/blob/18c7bcbeee6d5deb58a0d9dfec9ded4f960b2132/skills/courier/SKILL.md",
-      "observedAt": "2026-10-22T11:17:16.842Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "trycourier/courier-skills",
-      "path": "skills/courier/SKILL.md",
-      "aliases": [
-        "1145569115:skills/courier/SKILL.md",
-        "trycourier/courier-skills:skills/courier/SKILL.md",
-        "lead:trycourier/courier-skills:courier",
-        "lead:trycourier/courier-skills:skills/courier/SKILL.md"
-      ]
-    },
-    {
-      "id": "d65f14d8463f395832e7917287687ba51de5291a0200f2a40f8285246b1a9989",
-      "kind": "new",
-      "key": "1000362065:skills/npm-trusted-publishing/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "npm-trusted-publishing",
-      "url": "https://github.com/github/awesome-copilot/blob/d85f762d6e521abf5fe16703946e9b38adc42da7/skills/npm-trusted-publishing/SKILL.md",
-      "observedAt": "2026-10-23T11:08:01.686Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/npm-trusted-publishing/SKILL.md",
-      "aliases": [
-        "1000362065:skills/npm-trusted-publishing/SKILL.md",
-        "github/awesome-copilot:skills/npm-trusted-publishing/SKILL.md",
-        "lead:github/awesome-copilot:npm-trusted-publishing",
-        "lead:github/awesome-copilot:skills/npm-trusted-publishing/SKILL.md"
       ]
     },
     {
@@ -19265,6 +19265,411 @@
         "planetscale/skills:planetscale-pscale-cli-automation",
         "lead:planetscale/skills:planetscale-pscale-cli-automation"
       ]
+    },
+    {
+      "id": "c5317ad929ba753bfa974bea3f48b18f13d0ba418c9105368dcf541829258de8",
+      "kind": "new",
+      "key": "1219009070:plugins/aws-agents-for-devsecops/skills/scanning-with-aws-security-agent/SKILL.md",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "scanning-with-aws-security-agent",
+      "url": "https://github.com/aws/agent-toolkit-for-aws/blob/e8c630949189f03b3dd77388c86b06a7f2f911a9/plugins/aws-agents-for-devsecops/skills/scanning-with-aws-security-agent/SKILL.md",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "",
+      "approved": false,
+      "repo": "aws/agent-toolkit-for-aws",
+      "path": "plugins/aws-agents-for-devsecops/skills/scanning-with-aws-security-agent/SKILL.md",
+      "aliases": [
+        "1219009070:plugins/aws-agents-for-devsecops/skills/scanning-with-aws-security-agent/SKILL.md",
+        "aws/agent-toolkit-for-aws:plugins/aws-agents-for-devsecops/skills/scanning-with-aws-security-agent/SKILL.md",
+        "lead:aws/agent-toolkit-for-aws:scanning-with-aws-security-agent",
+        "lead:aws/agent-toolkit-for-aws:plugins/aws-agents-for-devsecops/skills/scanning-with-aws-security-agent/SKILL.md"
+      ]
+    },
+    {
+      "id": "7650b578e87b9f7524e9041745ea7f77934eb185f8267540987b4151b2d43664",
+      "kind": "new",
+      "key": "1263065512:skills/project-architecture/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "project-architecture",
+      "url": "https://github.com/C3SC0-V4113/Scaffold/blob/820244878c22ff1fe418ef688afbeda679c0ff08/skills/project-architecture/SKILL.md",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "",
+      "approved": false,
+      "repo": "C3SC0-V4113/Scaffold",
+      "path": "skills/project-architecture/SKILL.md",
+      "aliases": [
+        "1263065512:skills/project-architecture/SKILL.md",
+        "c3sc0-v4113/scaffold:skills/project-architecture/SKILL.md",
+        "lead:c3sc0-v4113/scaffold:project-architecture",
+        "lead:c3sc0-v4113/scaffold:skills/project-architecture/SKILL.md"
+      ]
+    },
+    {
+      "id": "1f3c700abbea90693d673b9263f73c54db4c9e96a3aca0f4a9a709d55dc88d4d",
+      "kind": "rising",
+      "key": "1263065512:skills/project-architecture/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "project-architecture",
+      "url": "https://github.com/C3SC0-V4113/Scaffold/blob/820244878c22ff1fe418ef688afbeda679c0ff08/skills/project-architecture/SKILL.md",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "",
+      "approved": false,
+      "repo": "C3SC0-V4113/Scaffold",
+      "path": "skills/project-architecture/SKILL.md",
+      "aliases": [
+        "1263065512:skills/project-architecture/SKILL.md",
+        "c3sc0-v4113/scaffold:skills/project-architecture/SKILL.md",
+        "lead:c3sc0-v4113/scaffold:project-architecture",
+        "lead:c3sc0-v4113/scaffold:skills/project-architecture/SKILL.md"
+      ]
+    },
+    {
+      "id": "e506ad5861f294f6640877abf7f9262851bce699fe17be58dd248e3d19a9969c",
+      "kind": "new",
+      "key": "965615190:skills/bmad-code-review/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "bmad-code-review",
+      "url": "https://github.com/bmad-code-org/BMAD-METHOD/blob/61e01f82644c4bb533750cfa0d6d61ab61d2cc9b/skills/bmad-code-review/SKILL.md",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "",
+      "approved": false,
+      "repo": "bmad-code-org/BMAD-METHOD",
+      "path": "skills/bmad-code-review/SKILL.md",
+      "aliases": [
+        "965615190:skills/bmad-code-review/SKILL.md",
+        "bmad-code-org/bmad-method:skills/bmad-code-review/SKILL.md",
+        "lead:bmad-code-org/bmad-method:bmad-code-review",
+        "lead:bmad-code-org/bmad-method:skills/bmad-code-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "fbf6056bfe28356337f608ca09f632ab2c55d635fe88bb6c29f2b97c91fb4470",
+      "kind": "new",
+      "key": "1135212071:skills/customer-research/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "customer-research",
+      "url": "https://github.com/coreyhaines31/marketingskills/blob/e85f3cbc2e4a79bf33b2a12e9bdd9087d414735b/skills/customer-research/SKILL.md",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "",
+      "approved": false,
+      "repo": "coreyhaines31/marketingskills",
+      "path": "skills/customer-research/SKILL.md",
+      "aliases": [
+        "1135212071:skills/customer-research/SKILL.md",
+        "coreyhaines31/marketingskills:skills/customer-research/SKILL.md",
+        "lead:coreyhaines31/marketingskills:customer-research",
+        "lead:coreyhaines31/marketingskills:skills/customer-research/SKILL.md"
+      ]
+    },
+    {
+      "id": "a21c4a343ba2c00e5b194bdde04b21ceacea7851ec57ebff07ff4ab41a99e521",
+      "kind": "new",
+      "key": "1025856648:plugins/security-scanning/skills/security-requirement-extraction/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "security-requirement-extraction",
+      "url": "https://github.com/wshobson/agents/blob/0874a27b17a22e2b7c2e2bcd725768e0803cad06/plugins/security-scanning/skills/security-requirement-extraction/SKILL.md",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "",
+      "approved": false,
+      "repo": "wshobson/agents",
+      "path": "plugins/security-scanning/skills/security-requirement-extraction/SKILL.md",
+      "aliases": [
+        "1025856648:plugins/security-scanning/skills/security-requirement-extraction/SKILL.md",
+        "wshobson/agents:plugins/security-scanning/skills/security-requirement-extraction/SKILL.md",
+        "lead:wshobson/agents:security-requirement-extraction",
+        "lead:wshobson/agents:plugins/security-scanning/skills/security-requirement-extraction/SKILL.md"
+      ]
+    },
+    {
+      "id": "671db06c6bcde1de7e10a69e143d710a6e89a1eb55a1da2d2bdbe9ddbe3971a7",
+      "kind": "new",
+      "key": "lead:a7eaae1f2a1f3ab0df5757a5b7ed9ade747c50120a888211909d34fa5e6d7eae",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "agents-sdk",
+      "url": "https://skills.sh/cloudflare/skills/agents-sdk",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "cloudflare/skills",
+      "path": null,
+      "aliases": [
+        "lead:a7eaae1f2a1f3ab0df5757a5b7ed9ade747c50120a888211909d34fa5e6d7eae",
+        "cloudflare/skills:agents-sdk",
+        "lead:cloudflare/skills:agents-sdk"
+      ]
+    },
+    {
+      "id": "775b75cb2ca10388466fe6484ca604dc3570d002b953a9d1b7affa8e873fcd25",
+      "kind": "new",
+      "key": "lead:0d7f19aa5ee0a35766676041b28136c66c48a865f06154fe742042dfe44a806f",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "typescript-advanced-types",
+      "url": "https://skills.sh/wshobson/agents/typescript-advanced-types",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "wshobson/agents",
+      "path": null,
+      "aliases": [
+        "lead:0d7f19aa5ee0a35766676041b28136c66c48a865f06154fe742042dfe44a806f",
+        "wshobson/agents:typescript-advanced-types",
+        "lead:wshobson/agents:typescript-advanced-types"
+      ]
+    },
+    {
+      "id": "6a7c35bf2fe81bdd43e15c13e3dccdeb30b15b27ef66acc9d34d4917dcc9bedd",
+      "kind": "rising",
+      "key": "lead:0d7f19aa5ee0a35766676041b28136c66c48a865f06154fe742042dfe44a806f",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "typescript-advanced-types",
+      "url": "https://skills.sh/wshobson/agents/typescript-advanced-types",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "wshobson/agents",
+      "path": null,
+      "aliases": [
+        "lead:0d7f19aa5ee0a35766676041b28136c66c48a865f06154fe742042dfe44a806f",
+        "wshobson/agents:typescript-advanced-types",
+        "lead:wshobson/agents:typescript-advanced-types"
+      ]
+    },
+    {
+      "id": "1e7e27d3dcfaa55b274b441a58dd3d1d578969ed35e046171ee062b86fcdd816",
+      "kind": "new",
+      "key": "lead:3937fa5dcbd00abaac1397312d3bb6eb4c3e680e37c6a4d7820b2a0df4b537fb",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "react-doctor",
+      "url": "https://skills.sh/millionco/react-doctor/react-doctor",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "millionco/react-doctor",
+      "path": null,
+      "aliases": [
+        "lead:3937fa5dcbd00abaac1397312d3bb6eb4c3e680e37c6a4d7820b2a0df4b537fb",
+        "millionco/react-doctor:react-doctor",
+        "lead:millionco/react-doctor:react-doctor"
+      ]
+    },
+    {
+      "id": "a9e866227a414dd09118a44107b8eca203849599f481417f7dac085390340bbf",
+      "kind": "rising",
+      "key": "lead:3937fa5dcbd00abaac1397312d3bb6eb4c3e680e37c6a4d7820b2a0df4b537fb",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "react-doctor",
+      "url": "https://skills.sh/millionco/react-doctor/react-doctor",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "millionco/react-doctor",
+      "path": null,
+      "aliases": [
+        "lead:3937fa5dcbd00abaac1397312d3bb6eb4c3e680e37c6a4d7820b2a0df4b537fb",
+        "millionco/react-doctor:react-doctor",
+        "lead:millionco/react-doctor:react-doctor"
+      ]
+    },
+    {
+      "id": "694444c6ff9e80246bb38f137b256057b4327cbb69a12e1413e415c8a41d290f",
+      "kind": "new",
+      "key": "lead:794f0d82b570ac83fae4a34ba4b1c12fb01e40ecfe24aa6ed399bedaf46d4244",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "vitest",
+      "url": "https://skills.sh/pproenca/dot-skills/vitest",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "pproenca/dot-skills",
+      "path": null,
+      "aliases": [
+        "lead:794f0d82b570ac83fae4a34ba4b1c12fb01e40ecfe24aa6ed399bedaf46d4244",
+        "pproenca/dot-skills:vitest",
+        "lead:pproenca/dot-skills:vitest"
+      ]
+    },
+    {
+      "id": "20753e7e506e9737c11df9b863a265eb5993bcbf433d0df6841e09f3bc62d13d",
+      "kind": "rising",
+      "key": "lead:794f0d82b570ac83fae4a34ba4b1c12fb01e40ecfe24aa6ed399bedaf46d4244",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "vitest",
+      "url": "https://skills.sh/pproenca/dot-skills/vitest",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "pproenca/dot-skills",
+      "path": null,
+      "aliases": [
+        "lead:794f0d82b570ac83fae4a34ba4b1c12fb01e40ecfe24aa6ed399bedaf46d4244",
+        "pproenca/dot-skills:vitest",
+        "lead:pproenca/dot-skills:vitest"
+      ]
+    },
+    {
+      "id": "08a0cf8c0c6a78b388f6ee64446edceb6b30a5ac2d49ef7cd3543d1a59d5380a",
+      "kind": "new",
+      "key": "lead:71812fdc8392ee4c011909e0a3beb8fafd3eda1d32bd16a2bcba996c0a0bb3a7",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "ai-seo",
+      "url": "https://skills.sh/coreyhaines31/marketingskills/ai-seo",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "coreyhaines31/marketingskills",
+      "path": null,
+      "aliases": [
+        "lead:71812fdc8392ee4c011909e0a3beb8fafd3eda1d32bd16a2bcba996c0a0bb3a7",
+        "coreyhaines31/marketingskills:ai-seo",
+        "lead:coreyhaines31/marketingskills:ai-seo"
+      ]
+    },
+    {
+      "id": "8cf41f3fcb1d2d9cd1f7392fbbe6b449af5548f310af05cac77dfd057ac1ee74",
+      "kind": "rising",
+      "key": "lead:71812fdc8392ee4c011909e0a3beb8fafd3eda1d32bd16a2bcba996c0a0bb3a7",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "ai-seo",
+      "url": "https://skills.sh/coreyhaines31/marketingskills/ai-seo",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "coreyhaines31/marketingskills",
+      "path": null,
+      "aliases": [
+        "lead:71812fdc8392ee4c011909e0a3beb8fafd3eda1d32bd16a2bcba996c0a0bb3a7",
+        "coreyhaines31/marketingskills:ai-seo",
+        "lead:coreyhaines31/marketingskills:ai-seo"
+      ]
+    },
+    {
+      "id": "b968230518dd2ae02dfb1d9aa2ac781b522b638b08dbd3c5efe28a60bd13dd51",
+      "kind": "new",
+      "key": "lead:1e11ac1afd0c375850a179505cd299380e9aa73d7276052cb97635f348e2a7df",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "next-dev-loop",
+      "url": "https://skills.sh/vercel/next.js/next-dev-loop",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "vercel/next.js",
+      "path": null,
+      "aliases": [
+        "lead:1e11ac1afd0c375850a179505cd299380e9aa73d7276052cb97635f348e2a7df",
+        "vercel/next.js:next-dev-loop",
+        "lead:vercel/next.js:next-dev-loop"
+      ]
+    },
+    {
+      "id": "736eb03a53e0280742420ecd2a0b285d7efd762355ed34b19c4886f649db0c41",
+      "kind": "rising",
+      "key": "lead:1e11ac1afd0c375850a179505cd299380e9aa73d7276052cb97635f348e2a7df",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "next-dev-loop",
+      "url": "https://skills.sh/vercel/next.js/next-dev-loop",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "vercel/next.js",
+      "path": null,
+      "aliases": [
+        "lead:1e11ac1afd0c375850a179505cd299380e9aa73d7276052cb97635f348e2a7df",
+        "vercel/next.js:next-dev-loop",
+        "lead:vercel/next.js:next-dev-loop"
+      ]
+    },
+    {
+      "id": "675f19313880a0ea41142028802cdccdafcc6c1e22219dff1122e9fb97e0719a",
+      "kind": "new",
+      "key": "lead:074c131a0370cd600f73e0b97f97ddbf580a7dab0366fcf856a0a37cf0ab5252",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "brand-guidelines",
+      "url": "https://skills.sh/anthropics/skills/brand-guidelines",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "anthropics/skills",
+      "path": null,
+      "aliases": [
+        "lead:074c131a0370cd600f73e0b97f97ddbf580a7dab0366fcf856a0a37cf0ab5252",
+        "anthropics/skills:brand-guidelines",
+        "lead:anthropics/skills:brand-guidelines"
+      ]
+    },
+    {
+      "id": "f7ba8ac7cbafa54912ad76d96e3889dc842886f595585641399273cbc27e598c",
+      "kind": "rising",
+      "key": "lead:074c131a0370cd600f73e0b97f97ddbf580a7dab0366fcf856a0a37cf0ab5252",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "brand-guidelines",
+      "url": "https://skills.sh/anthropics/skills/brand-guidelines",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "anthropics/skills",
+      "path": null,
+      "aliases": [
+        "lead:074c131a0370cd600f73e0b97f97ddbf580a7dab0366fcf856a0a37cf0ab5252",
+        "anthropics/skills:brand-guidelines",
+        "lead:anthropics/skills:brand-guidelines"
+      ]
+    },
+    {
+      "id": "838855ca4d32659def7eae9a1eb1ccf2b5c6a8bf8ccc95ce69435d21dd83721c",
+      "kind": "new",
+      "key": "lead:a4dc449da7d70380677e4430954429f9954b967bc1af32ee6c6e32a170a424a1",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "lead-magnets",
+      "url": "https://skills.sh/coreyhaines31/marketingskills/lead-magnets",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "coreyhaines31/marketingskills",
+      "path": null,
+      "aliases": [
+        "lead:a4dc449da7d70380677e4430954429f9954b967bc1af32ee6c6e32a170a424a1",
+        "coreyhaines31/marketingskills:lead-magnets",
+        "lead:coreyhaines31/marketingskills:lead-magnets"
+      ]
+    },
+    {
+      "id": "e6888a6997fbcbac4674d65a935f54db87ccd776052bfefdd42cd0099c5d5998",
+      "kind": "rising",
+      "key": "lead:a4dc449da7d70380677e4430954429f9954b967bc1af32ee6c6e32a170a424a1",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "lead-magnets",
+      "url": "https://skills.sh/coreyhaines31/marketingskills/lead-magnets",
+      "observedAt": "2026-10-25T10:52:59.317Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "coreyhaines31/marketingskills",
+      "path": null,
+      "aliases": [
+        "lead:a4dc449da7d70380677e4430954429f9954b967bc1af32ee6c6e32a170a424a1",
+        "coreyhaines31/marketingskills:lead-magnets",
+        "lead:coreyhaines31/marketingskills:lead-magnets"
+      ]
     }
   ],
   "notified": [
@@ -20727,6 +21132,7 @@
     "105720c2bd20691b4df7af58b195f240da062ad3756c8c68625e5e67f3f985c3": "2026-10-12T08:10:11.347Z"
   },
   "historyLimit": 5000,
+  "baselinesHeld": true,
   "pins": [
     {
       "id": "research",
@@ -20954,13 +21360,13 @@
     }
   ],
   "httpCache": {
-    "https://www.skills.sh/robots.txt": {
-      "etag": "\"62699308568d3029fd19b6bc00791b65\"",
-      "body": "User-Agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /debug-security/\nDisallow: /search\nDisallow: /api/\n\nSitemap: https://www.skills.sh/sitemap.xml\n"
-    },
     "https://skillsmp.com/robots.txt": {
       "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
       "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
+    },
+    "https://www.skills.sh/robots.txt": {
+      "etag": "\"62699308568d3029fd19b6bc00791b65\"",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /debug-security/\nDisallow: /search\nDisallow: /api/\n\nSitemap: https://www.skills.sh/sitemap.xml\n"
     }
   },
   "issueNumber": 9
