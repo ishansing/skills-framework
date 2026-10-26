@@ -246,3 +246,29 @@ plan remains in progress: public-page recheck, first-time-user walkthrough, reco
 native demo, custom social preview and organic outreach are follow-ups. No remote CI,
 first-run user study or full marketing-launch completion is claimed.
 `recommended_next: none` for this implementation slice; delivery requires authorization.
+
+## ECC/I2P competitive research verification — 2026-10-26
+
+Scope: critical comparative analysis and core-preserving recommendations, not implementation
+or proof of comparative coding performance. Criteria/research fact-check verdict are in
+the matching section of `review.md`. `itp-verify` and its verification child were loaded.
+
+- ECC source snapshot verified as `25278e7d7b6cf6e6a4e7a6c8e10f14ff22f0eb5b`;
+  I2P public baseline `7d3aa9a` fetched. Inspected local runtime files match that baseline.
+- Parent source-path/range check: 55 ECC and 23 I2P immutable blob citations resolve to
+  files in the pinned Git trees; numeric line ranges valid; two local report links exist.
+  Snapshot/scope disclaimers and whitespace checks passed. This checks references, not
+  every interpretive conclusion; skeptical source fact-check and parent inspection supply that.
+- Fresh local script suite: 89 passed, zero failed. Fresh final contract check: 63 passed.
+  Logs: `/tmp/opencode/i2p-competitive-tests.log` and
+  `/tmp/opencode/i2p-competitive-contracts-final.log`. Not counted as native agent trials.
+- ECC code/installers/hooks/tests were not executed; remote CI status is observed evidence
+  only. Popularity counters are dated observations, not adoption or outcome measurements.
+- No head-to-head run, external user study, security exploit test or hosted-service audit.
+  Proposed evaluation and 12-week sequence are recommendations, not completed work.
+- Existing `TODO.md` remains unchanged/uncommitted; only report/evidence/index docs changed.
+
+Verdict: pass for scoped research documentation and factual evidence checks. Neither
+product is declared empirically superior at coding tasks. No runtime/dependency changes,
+commit, push or remote publication performed. Full product improvement requires separately
+approved work and the proposed native/user evaluation.

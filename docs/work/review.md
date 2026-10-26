@@ -91,6 +91,26 @@ escalated into blockers. Detailed security coverage: `docs/work/skill-watch-secu
 approval does not constitute a real GitHub publication proof or remote CI success.
 `recommended_next: itp-verify`.
 
+## ECC/I2P competitive analysis review — 2026-10-26
+
+Scope: user's requested detailed, critical competitive report, preserving I2P's core.
+Research criteria: inspect primary sources at named revisions; separate implemented
+mechanisms, tests, native behavior and unproved outcomes; explain ECC strengths and
+weaknesses; give specific I2P priorities, a fair evaluation design and marketing strategy.
+
+Artifacts: `ECC-COMPETITIVE-RESEARCH.md` and `ECC-I2P-COMPETITIVE-ANALYSIS.md` in this
+directory. ECC snapshot `25278e7`; I2P public snapshot `7d3aa9a`.
+Independent research/fact-check session `ses_e88d5ca53ffe9slaOPzqsU5UnS` found no factual
+blocker in the ECC comparison sections. Parent applied its three wording corrections:
+visibility is not measured mindshare; upstream's stable classification is not independent
+runtime proof; the legacy learning evaluator logs instructions rather than proving extraction.
+
+Parent inspected core ECC pipeline, profile/support matrix, permission handler and disabled
+eval gate, plus I2P contracts/installer/checker/evidence. No coding-task benchmark or security
+exploit was executed. This is a research fact-check, not a two-axis implementation-code
+review or comprehensive security audit. Proposed features are not current capabilities.
+Verdict: suitable for the scoped advisory report, with stated evidence limits.
+
 ## Curl installation review — 2026-10-12
 
 Scope: `docs/work/ISSUE-CURL-INSTALL.md`, AC-1–AC-6 and approved plan refinements.
