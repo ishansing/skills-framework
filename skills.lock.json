@@ -14,9 +14,9 @@
     {
       "id": "grilling",
       "repo": "mattpocock/skills",
-      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
+      "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
       "path": "skills/productivity/grilling",
-      "contentSha256": "0ca4cfe5105d79c6ef6755491492e056c43e88b82666376d8ecd7fac695d96e6",
+      "contentSha256": "04048111246542c9b3fee36aeae96af607255bf3d3310207e4f37e831619f1b3",
       "invocationClass": "model"
     },
     {
@@ -46,17 +46,17 @@
     {
       "id": "tdd",
       "repo": "mattpocock/skills",
-      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
+      "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
       "path": "skills/engineering/tdd",
-      "contentSha256": "dc17f0fd4eb735cef8810d1a9e025cb3cd291f8f6551cf0adec1c93b5ea1ebd2",
+      "contentSha256": "b86dc370fd2ff43ba9c21e54fba9b1f4927f838177ff314a9528fc7243eb624c",
       "invocationClass": "model"
     },
     {
       "id": "diagnosing-bugs",
       "repo": "mattpocock/skills",
-      "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
+      "commit": "5beb35b040e3de97e54fa9e386d7e42d15c295c2",
       "path": "skills/engineering/diagnosing-bugs",
-      "contentSha256": "797393d3767d1fcfa35472cf0d6c99b475e2e0726829f402a2e0a62f940d9ea4",
+      "contentSha256": "bccb1855753ec4d07a1c0df85476a383b5a89d33d7726e9bb5d8014121307874",
       "invocationClass": "model"
     },
     {

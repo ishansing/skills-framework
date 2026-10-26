@@ -349,3 +349,68 @@ no implementation acceptance or native skill integration pass is claimed.
 Commit scope: combined plan, tstack source research, both existing Skill Watch notes,
 agent-work index and this append-only evidence. No installation, execution, integration,
 repin, push, PR or remote operation is included. Runtime validation remains pending.
+
+## Skill Watch process refresh — fresh implementation verification, 2026-10-26
+
+Slice: `ISSUE-SKILL-WATCH-PROCESS-REFRESH.md`, AC 1–6. Base `59170e7`, uncommitted
+working tree on `integration/skill-watch-process-refresh`. User approved starting the
+plan and explicitly confirmed installer/hash and native-output test seams. This entry
+supersedes the prior planning-only runtime-pending status for these three updates only.
+
+`itp-implement`/`tdd`, independent two-axis `itp-review`/`code-review`, triggered
+`agentic-eval`, and `itp-verify`/`verification-before-completion` ran. Final review/evidence
+details: `review.md` and `tests/skills/results/2026-10-26-process-refresh.md`.
+
+Fresh post-review checks and observed results:
+
+- `TMPDIR=/tmp/opencode npm test`: 89 passed, zero failed.
+- `node tests/skills/check-contracts.mjs`: 63 passed.
+- Exact lock comparison against the retained base: only `grilling`, `tdd` and
+  `diagnosing-bugs` revision/hash pairs changed. Selected metadata and every other entry
+  unchanged. All three old/new source directories differ only in `SKILL.md`.
+- Regenerated `dependency.json`: no diff. Registry, adapter contracts, installer and
+  scripts unchanged. Ownership/invocation remain intact.
+- Proposed distribution built with all 26 upstream bundles hash-verified; strict fresh
+  repo-local/global installs exited 0. Post-review strict reruns succeeded. Final assertions
+  verified all 52 installed directory hashes across both scopes and confirmed selected
+  real user-global skill hashes are unchanged. No asset published or live installation refreshed.
+- Native OpenCode v2.1.3 / `openai/gpt-6.1-sol` paired baseline/updated probes observed:
+  yes-aligned provisional grilling questions; per-seam TDD catches/misses plus approval;
+  diagnosis mutation diff before real red, clean restoration and real green. Parent and
+  independent Spec reviewer inspected actual native tool calls, not emulated loading.
+- Updated grilling output shape check passed: three questions, no missing recommendation.
+- Native small golden session `ses_e87546754ffeU2ltdvIT8dTSZB` loaded installed updated
+  TDD, completed three actual red/green cycles, real parallel independent reviews and fresh
+  post-review verification. Five tests passed; parent independently reran them and diff
+  checks. Actual root/adapter chain, phase skips and inline-AC artifacts inspected.
+- Parent compared restored diagnosis source/pristine bytes and original untracked notes;
+  all preserved. Native denials/setup failure remain disclosed in the result record.
+- Local docs links/whitespace and `git diff --check` passed. Final source hash/installation
+  assertions ran after review. Native trace SHA-256 manifest retained in the fixture tree.
+
+Logs/artifacts: `/tmp/opencode/process-refresh-validation/`, including
+`final-script-tests.log`, `final-contracts.log`, `final-install-{repo,global}.log`, paired
+native traces, `golden.jsonl` and `trace-sha256.json`. Durable native session references,
+key excerpts and review timing are in the dated result record.
+
+Verdict: **pass for this first approved-process refresh slice**. Six acceptance criteria
+have scoped evidence; independent reviewers found no implementation blockers. Parent
+checked final evidence/status-only additions after the snapshot re-review. No framework
+commit, push, PR, release or real-global installation change occurred. All nine tstack
+skills remain pending adoption; next slice is `leaving-pr-comments` preparation/integration.
+
+Limits: single paired samples and one bounded golden observation, not repeatability or
+cross-host certification. Existing authentication/session storage reused; temporary HOME
+and permission rules are not an OS sandbox. Other issue #9 updates remain pinned. No
+security guarantee, unsupported runtime support or complete all-nine integration claimed.
+
+### Process-refresh commit gate
+
+User subsequently authorized the framework commit. Fresh `npm test`: 89 passed, zero
+failed; contract checker: 63 passed; exact comparison against HEAD confirms only the three
+reviewed lock entries changed. `git diff --check` passed. Logs:
+`/tmp/opencode/process-refresh-validation/commit-script-tests.log` and
+`commit-contracts.log`. Planning/slice status wording now reflects commit authorization;
+no runtime changes followed independent review. Native/installer evidence above remains
+the retained acceptance evidence; those trials were not rerun solely for the commit.
+Commit excludes pushes, publication, live installation changes and tstack adoption.

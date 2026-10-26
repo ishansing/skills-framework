@@ -1,8 +1,10 @@
 # tstack + Skill Watch integration plan
 
-Status: all-nine integration scope requested, 2026-10-26; implementation design pending.
-The user authorized committing this plan and permits justified skill replacements.
-This planning change does not install, repin, execute candidates or publish remotely.
+Status: implementation started, 2026-10-26. All-nine tstack scope and justified
+replacements remain required. First active slice:
+[approved-process refresh](../../docs/work/ISSUE-SKILL-WATCH-PROCESS-REFRESH.md).
+The user authorized starting the plan and confirmed isolated installer/native-output
+test boundaries. Real-global installation changes and remote publication are excluded.
 
 ## Outcome and boundaries
 
@@ -50,6 +52,12 @@ or safety findings.
   an upstream report or successful command cannot bypass lifecycle gates.
 
 ## Delivery sequence
+
+Progress: the first three process pins are updated in the working branch, paired native
+probes, strict isolated installs, native golden composition and independent review have
+run; final fresh verification passed for this slice. Publication and live installation remain pending.
+Next: `leaving-pr-comments` adoption. No tstack skill is integrated yet. Detailed outcomes belong
+in the [dated results](../../tests/skills/results/2026-10-26-process-refresh.md).
 
 ### Proposed tstack routing matrix — all nine skills
 

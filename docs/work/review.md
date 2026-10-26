@@ -199,3 +199,63 @@ they are not screenshots of the live GitHub repository page. New public docs/ima
 become available after merge. A live-page recheck, fresh newcomer task, recorded native
 demo and custom social-preview upload remain launch follow-ups.
 `recommended_next: itp-verify`.
+
+## Skill Watch process refresh review — 2026-10-26
+
+Scope: `ISSUE-SKILL-WATCH-PROCESS-REFRESH.md`; first slice only, not all-nine completion.
+Real framework base is `59170e7`, with uncommitted changes. To preserve the requested
+fixed-point review without committing the framework, exact changed/new source bytes were
+copied into an isolated Git snapshot at
+`/tmp/opencode/process-refresh-validation/review-snapshot`. Its real review range is
+`4690527...abca01f`; the former is an archive of the framework base, the latter overlays
+the proposed six-file change. The parent verified copied file bytes against the working
+tree. Subsequent append-only evidence/progress updates require final parent inspection.
+
+### Standards
+
+Independent reviewer `ses_e8750eb7fffeVnIj61Zg655u54`: approve; no findings or concrete
+blockers. Inspected the full diff, documented standards and six old/new source-directory
+hashes. Only the three intended skill wordings changed; ownership, invocation classes,
+references and unrelated entries remain unchanged. No actionable design smells.
+
+### Spec
+
+Independent reviewer `ses_e8750eb01ffeNkXc6JE9bCYBHQ`: no implementation defects or
+scope creep. Independently checked installed/probe directory hashes and paired native
+traces. All three targeted behaviors observed. The golden composition plus independent
+review/fresh verification remain an explicit acceptance gate, not a wrong implementation.
+
+Standards: zero findings. Spec: zero implementation defects; one remaining acceptance
+gate (composition/fresh verification), explicitly pending rather than falsely passed.
+
+### Agent behavior evaluation
+
+`agentic-eval` triggered by changed skill behavior; applied the agreed output rubric to
+actual paired traces, not source keywords or self-reported completion. Each updated trace
+loaded the intended bytes and exhibited its targeted behavior. Old outputs lacked the
+new per-seam, yes-alignment or pre-red diff requirement. One wrong-directory setup run
+and one denied broad-shell attempt are retained and excluded/not hidden. No repeated-run
+reliability, causal statistical effect or universal compliance claim is supported.
+
+No DB, UI, AI Actions or trust-boundary implementation changed; other specialists were
+considered, not triggered. Low-risk wording-only updates do not require differential
+security review. Documentation impact is covered by slice/cases/results/plan/index.
+
+Verdict: implementation review approved; final slice acceptance awaits the named golden
+composition gate and fresh `itp-verify`. No installation into real-global skills or remote
+publication is authorized by this review.
+
+### Final evidence re-review
+
+Same reviewers inspected `abca01f...ba51e52` in the isolated snapshot (full range
+`4690527...ba51e52`), including the original native golden trace and actual fixture
+artifacts. Standards: approve, zero findings. Spec: golden composition gate satisfied,
+zero implementation defects; flagged one premature sentence saying final framework
+verification was already recorded. That statement is satisfied only by the new actual
+post-review verification entry, not inferred from fixture verification.
+
+Both confirmed real overlapping Standards/Spec reviewers, three red/green cycles and
+fresh five-test verification after review. Final documentation/verification append is
+parent-inspected; no runtime/pin changes followed review. **Implementation review approved;
+recommended next: fresh `itp-verify` for the framework slice.** Historical pending verdicts
+above remain as evidence of the order, not a current golden-run failure.
