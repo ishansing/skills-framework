@@ -4,6 +4,8 @@ For implementation planning, read the relevant file under `plans/`:
 
 - `plans/SKILL-WATCH-PLAN.md`: discovery/monitoring implementation and rollout limits.
 - `plans/SKILL-INTEGRATION-PLAN.md`: adoption-preview milestone and later ITP integration.
+- `plans/TSTACK-SKILL-WATCH-INTEGRATION.md`: proposed tstack adoption and issue #9
+  upgrade sequence; read before selecting or implementing those maintenance slices.
 - `plans/CUSTOM-HARNESS.md`: harness design inputs, not an implemented enforcement layer.
 - `plans/UPGRADES.md`: ECC-sourced upgrade backlog and status.
 - `plans/INSTALL-PLAN.md`: curl distribution/menu design and rollout status; acceptance
@@ -19,7 +21,8 @@ Task-specific handoffs live under `context/` when recorded; reusable prompts bel
 `prompts/` when actually needed. Create them on first use. Generated adoption previews
 default to `previews/` (gitignored), not the approved dependency registry.
 
-Current task: `plans/MARKETING-PLAN.md`. Adoption handoff: `context/skill-adoption-preview.md`;
+Current task: `plans/TSTACK-SKILL-WATCH-INTEGRATION.md` (planning only).
+Marketing follow-ups: `plans/MARKETING-PLAN.md`. Adoption handoff: `context/skill-adoption-preview.md`;
 reusable preview request: `prompts/adoption-preview.md`.
 
 Root runtime instructions, normative framework specification, dependency registry, README,

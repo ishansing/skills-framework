@@ -272,3 +272,80 @@ Verdict: pass for scoped research documentation and factual evidence checks. Nei
 product is declared empirically superior at coding tasks. No runtime/dependency changes,
 commit, push or remote publication performed. Full product improvement requires separately
 approved work and the proposed native/user evaluation.
+
+## Skill Watch source triage — 2026-10-26
+
+Scope: inspect latest issue #9 for approved-skill updates and useful new candidates;
+user explicitly withheld permission to install or integrate. Outputs are
+`SKILL-WATCH-2026-10-26-UPDATES.md` and `SKILL-WATCH-2026-10-26-CANDIDATES.md`.
+
+`itp-verify` and its verification child loaded. Fresh contract check: 63 pass. Source
+triage uses exact snapshot links, directory comparisons for existing updates, and static
+entry-document/tree/prerequisite review for candidates. Parent spot-checked new review
+dispatch text and wizard file-writing code. Candidate-note source blob links use 40-char
+revisions; scope/prerequisite/license caveats and report whitespace checked.
+
+No candidate/upstream skill code was executed or loaded as instructions; no native
+compatibility or full candidate-license/security approval is claimed. Missing sandbox,
+packaging, permission and host prerequisites remain explicit. Registry, lock, adapters,
+installer and installation configuration have no diff. Only research notes and this
+evidence record changed. No installation, integration, repin, remote mutation or commit.
+Verdict: source-review recommendations only; any adoption/update requires user approval
+and separately scoped behavioral verification. This is not implementation acceptance.
+
+## tstack + issue #9 integration planning — 2026-10-26
+
+Scope: user requested a combined integration plan, not installation or implementation.
+Outputs: `agent-work/plans/TSTACK-SKILL-WATCH-INTEGRATION.md`, its index pointer, and
+`docs/work/TSTACK-INTEGRATION-RESEARCH.md`. Prior Skill Watch notes remain unchanged.
+
+Planning acceptance: account for all nine upstream skills; specify lifecycle ownership,
+dependencies, authority/host/packaging gates, issue #9 update/candidate sequence, acceptance
+cases and rollback. The plan has a disposition for all nine, including explicit blockers
+for unchanged full-workflow adoption rather than claiming all-nine compatibility.
+
+Fresh evidence:
+
+- Read-only GitHub API recheck: issue #9 unchanged at `2026-10-26T12:24:39Z`, three comments.
+- tstack source fixed at `7de017b3fc9d50c03cf3ecb98fb71e0ca65a78bd`. Research read the
+  complete source; parent independently checked its complete non-truncated tree: nine
+  skill entries, 16 regular blobs, no symlinks/submodules. All 16 immutable file citations
+  resolve to that tree; all nine skills appear in the research and plan matrices.
+- Parent spot-read upstream full-send authority and watcher query/check/readiness code;
+  confirmed broad testing grant and that helper readiness is not a complete merge gate.
+- Assertion checks passed for local Markdown links, whitespace, issue-upgrade coverage,
+  approval boundaries and rollback. `git diff --check` passed.
+- `node tests/skills/check-contracts.mjs`: 63 passed.
+- `node --test tests/scripts/content-assertions.test.mjs tests/scripts/check-contracts.test.mjs`:
+  18 passed, zero failed. Logs under `/tmp/opencode/tstack-plan-*.log`.
+- No diff in registry, lock, generated dependency JSON, adapters, installer or install config.
+
+`itp-verify` and its evidence child consulted. Evidence supports the scoped planning/source
+checks, not implementation acceptance: no implementation-slice tests or review verdict
+establish native adoption. Candidate code was not executed or loaded as instructions;
+no installations, integrations, pin changes, live PR operations, commits or remote writes.
+Native host/model routing, watcher behavior, permission adaptations and external service
+terms remain unverified; the plan names their approval/test gates. Full script suite and
+live native trials were not run for this documentation-only change.
+
+## All-nine scope clarification and planning commit — 2026-10-26
+
+User requested a commit and integration of every tstack skill, permitting replacements
+where needed. Updated the plan to require all nine as working integration targets;
+deferred/blocked/research-only entries cannot satisfy final acceptance. Added replacement
+decisions, including evaluating `file-pr` against Matt `pr`, whole-caller migration and
+rollback. Preserved permission, primary-review coverage and native-evidence gates.
+The earlier research recommendation remains historical; the plan explicitly supersedes
+its selective scope. This change commits planning/evidence, not candidate implementation.
+
+Fresh checks: all nine appear once in the routing matrix; required all-nine completion
+ledger and replacement/migration gates present; local links/whitespace valid. Contract
+checker: 63 passed. Targeted content/contract tests: 18 passed, zero failed. Logs:
+`/tmp/opencode/tstack-all-nine-contracts.log` and `tstack-all-nine-doc-tests.log`.
+Registry/lock/adapters/installer/generated dependency JSON remain unchanged;
+`git diff --check` passed. `itp-verify` and evidence child loaded for this commit gate;
+no implementation acceptance or native skill integration pass is claimed.
+
+Commit scope: combined plan, tstack source research, both existing Skill Watch notes,
+agent-work index and this append-only evidence. No installation, execution, integration,
+repin, push, PR or remote operation is included. Runtime validation remains pending.
