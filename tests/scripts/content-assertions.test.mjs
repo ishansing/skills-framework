@@ -144,6 +144,22 @@ test("bounded PR observation has a manual pin and conditional verification owner
   assert.match(skill, /Verification status and monitoring status are separate/);
 });
 
+test("stale PR modernization is a manually pinned user handoff, never an adapter child", () => {
+  const registry = JSON.parse(read("dependency.json"));
+  assert.deepEqual(registry.capabilities["stale PR reassessment"], ["modernize"]);
+  assert.equal(registry.skills.modernize.invocation_class, "user");
+  assert.ok(registry.user_entry.includes("modernize"));
+  const entry = JSON.parse(read("skills.lock.json")).skills.find(s => s.id === "modernize");
+  assert.equal(entry.invocationClass, "user");
+  assert.equal(entry.vendored, true);
+  assert.equal(entry.updateMode, "manual");
+  assert.match(read(".agents/skills/idea-to-production/references/lifecycle.md"), /recommended_user_skill: modernize/);
+  const skill = read(".agents/skills/modernize/SKILL.md");
+  assert.match(skill, /Invocation class: \*\*user entry\*\*/);
+  assert.match(skill, /--force-with-lease=<full-ref>:<observed-head>/);
+  assert.match(skill, /git range-diff/);
+});
+
 test("threat modeling is a conditional architecture specialist with a precise trigger", () => {
   const registry = JSON.parse(read("dependency.json"));
   const lock = JSON.parse(read("skills.lock.json"));

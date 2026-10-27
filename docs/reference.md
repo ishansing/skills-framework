@@ -64,13 +64,14 @@ per `SKILL-FRAMEWORK.md` sections 25 and 27).
 | `web-design-guidelines` | Pinned local adapter over a vendored guidelines snapshot |
 | `leaving-pr-comments` | Pinned tstack adaptation for explicitly authorized PR-comment hygiene |
 | `babysit-pr` | Pinned observe/report-only PR watcher with a finite budget and bound head/base; never merge approval |
+| `modernize` | Explicit user entry for stale-PR reassessment; local rebase and remote update need separate grants |
 
 Upstream skills (Matt Pocock core, Trail of Bits, Vercel, Anthropic, awesome-copilot) are
 listed with status and provenance in `dependency.md` and `skills.lock.json`. Install them
 machine-global in `~/.agents/skills/` (shared) or repo-local in `.agents/skills/`
 (self-contained); the framework itself is always installed per repo.
-The tstack comment specialist is a vendored adaptation: explicit repin refuses it and bulk
-repin skips it. The separate upstream checker still reports source updates for deliberate
+The tstack entries are manual vendored adaptations: explicit repin refuses them and bulk
+repin skips them. The separate upstream checker still reports source updates for deliberate
 reviewed adaptation; automatic updates must not erase its guards or MIT notice.
 
 ## Install
@@ -142,7 +143,7 @@ What it does:
 2. **Framework skills** — copies `.agents/skills/{idea-to-production,itp-*,verification-before-completion,web-design-guidelines}`
    into `<repo>/.agents/skills/`, plus `dependency.md` and `skills.lock.json` into the repo
    root.
-   The vendored `leaving-pr-comments` and `babysit-pr` specialists, original source and MIT
+   The vendored `leaving-pr-comments`, `babysit-pr` and user-entry `modernize`, original source and MIT
    notices are also copied per project in either upstream-install scope. The optional PR
    watcher requires existing authenticated `gh`, Python 3.10+ and POSIX; installation does
    not provision those tools or grant GitHub write authority.
@@ -184,7 +185,8 @@ cp -r "$FS/.agents/skills/idea-to-production" "$FS"/.agents/skills/itp-* \
       "$FS/.agents/skills/verification-before-completion" \
       "$FS/.agents/skills/web-design-guidelines" \
       "$FS/.agents/skills/leaving-pr-comments" \
-      "$FS/.agents/skills/babysit-pr" "$TARGET/.agents/skills/"
+      "$FS/.agents/skills/babysit-pr" \
+      "$FS/.agents/skills/modernize" "$TARGET/.agents/skills/"
 cp "$FS/dependency.md" "$FS/skills.lock.json" "$TARGET/"
 mkdir -p "$TARGET/.opencode/agents"
 cp "$FS/.opencode/agents/adversarial-modeler.md" "$TARGET/.opencode/agents/"

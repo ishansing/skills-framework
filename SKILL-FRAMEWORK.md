@@ -468,7 +468,7 @@ change intent, with checks before finishing the merge/rebase. No conflict skill 
 required. Domain vocabulary uses `GLOSSARY.md` / `GLOSSARY-MAP.md`; session handoffs
 remain separate artifacts.
 
-### 7.2 Matt user-entry workflows
+### 7.2 User-entry workflows
 
 The following should NOT be recursive dependencies of framework adapters:
 
@@ -485,6 +485,7 @@ improve-codebase-architecture
 setup-matt-pocock-skills
 ask-matt
 wayfinder
+modernize
 ```
 
 If one of these is preferable, the framework should tell the human:
@@ -495,6 +496,14 @@ recommended_user_skill: to-spec
 reason: "Use Matt's native interactive spec workflow for this decision-heavy request."
 resume_with: docs/product/spec.md
 ```
+
+`modernize` is the pinned tstack user entry for explicitly requested stale-PR
+reassessment. Return its user handoff, never a recursive adapter invocation or automatic
+behind-branch response. It recommends MODERNIZE/REWORK/CLOSE before rewriting, preserves
+dirty work and original intent, separates local-rewrite/test/publication grants and
+requires observed-SHA lease protection for any separately authorized remote update.
+Returned changes still pass `itp-review` and fresh `itp-verify`; assessment or a clean
+rebase is not verification, publication, closure or merge authorization.
 
 ### 7.3 Specialist layer
 

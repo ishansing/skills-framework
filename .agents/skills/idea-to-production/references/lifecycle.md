@@ -71,6 +71,15 @@ evidence pointers. It suggests environment improvements and is not a new lifecyc
 or prerequisite to completion. Recurring environment friction may justify suggesting it,
 but it is never loaded recursively.
 
+For explicitly requested stale-PR reassessment/rebase, return `needs-human` with
+`recommended_user_skill: modernize`, the target and known head/base/intent/context,
+granted actions and `resume_with`. Never load it recursively or suggest it solely because
+a branch is behind. Its default is assessment, not publication or merge authority.
+When the user returns changed work, inspect the actual original/current/base identities,
+range-diff and results, then route to `itp-review` and fresh `itp-verify` before separately
+authorized delivery. REWORK/CLOSE are evidence-backed recommendations, not automatic
+rewrite or closure actions. Missing skill/tool/context yields a named human handoff.
+
 ## Greenfield projects
 
 A repo with no application code yet is never `small`: greenfield work creates interfaces and

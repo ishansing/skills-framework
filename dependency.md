@@ -31,6 +31,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | authorized PR-body close-out | `pr` |
 | authorized PR-comment hygiene | `leaving-pr-comments` |
 | bounded PR observation | `babysit-pr` |
+| stale PR reassessment | `modernize` |
 | whole-spec parallel implementation (user handoff) | `implement-spec` |
 | session retrospective (user entry) | `retro` |
 
@@ -66,6 +67,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | security-threat-model | openai/skills | model | installed-global | itp-architecture |
 | leaving-pr-comments | t3dotgg/tstack (pinned local adaptation) | model | vendored-pinned | itp-verify |
 | babysit-pr | t3dotgg/tstack (pinned local adaptation) | model | vendored-pinned | itp-verify |
+| modernize | t3dotgg/tstack (pinned local adaptation) | user | vendored-pinned | user handoff only |
 
 Status values: `installed-global` (discovered from a global skill source), `installed-local`
 (installed into the project's own `.agents/skills/`; self-contained, location verified by
@@ -100,12 +102,16 @@ considered-not-triggered.
 
 `grill-with-docs`, `grill-me`, `to-spec`, `to-tickets`, `implement`, `triage`,
 `improve-codebase-architecture`, `setup-matt-pocock-skills`, `ask-matt`, `wayfinder`,
-`handoff`, `teach`, `to-questionnaire`, `wait-what`, `implement-spec`, `retro`.
+`handoff`, `teach`, `to-questionnaire`, `wait-what`, `implement-spec`, `retro`, `modernize`.
 
 The `implement-spec` workflow is an optional parallel alternative for an approved spec with a ticket
 dependency graph. Return a user handoff, not a child invocation. Its integration branch
 must return through `itp-review` and fresh `itp-verify` before framework completion.
 `retro` is optional post-session work on the agent environment, not a completion gate.
+`modernize` is an explicit stale-PR assessment/rebase user entry, never an adapter child
+or automatic behind-branch response. Establish separate local-rewrite/test/publication
+grants, preserve work and original intent, and return changed work through review/fresh
+verification. See the lifecycle user-handoff reference; assessment never grants merging.
 
 If a user-entry workflow is preferable, return `needs-human` with
 `recommended_user_skill`, a reason, and `resume_with` (artifact or next step).
@@ -143,4 +149,7 @@ If a user-entry workflow is preferable, return `needs-human` with
   - `babysit-pr` is likewise a manual vendored adaptation: its original guide/helper and
     MIT notice are archival, while the adapted helper enforces a finite observe-only watch,
     context binding and private local state. No ready/green or automatic-action authority.
+  - `modernize` is a manual vendored user-entry adaptation with original guide/UI metadata
+    and MIT notice retained. It separates assessment, local rewrite and remote-update
+    grants and keeps the existing review/verification/publication ownership boundaries.
 - Do not let a running skill modify `skills.lock.json` or this file.

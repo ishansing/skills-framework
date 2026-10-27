@@ -62,6 +62,9 @@
     "session retrospective (user entry)": [
       "retro"
     ],
+    "stale PR reassessment": [
+      "modernize"
+    ],
     "standards + spec review": [
       "code-review"
     ],
@@ -188,6 +191,14 @@
       "status": "vendored-pinned",
       "used_by": [
         "itp-verify"
+      ]
+    },
+    "modernize": {
+      "source": "t3dotgg/tstack (pinned local adaptation)",
+      "invocation_class": "user",
+      "status": "vendored-pinned",
+      "used_by": [
+        "user handoff only"
       ]
     },
     "playwright-generate-test": {
@@ -345,6 +356,7 @@
     "to-questionnaire",
     "wait-what",
     "implement-spec",
-    "retro"
+    "retro",
+    "modernize"
   ]
 }

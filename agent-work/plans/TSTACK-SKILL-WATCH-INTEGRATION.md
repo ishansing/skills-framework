@@ -2,7 +2,7 @@
 
 Status: implementation started, 2026-10-26. All-nine tstack scope and justified
 replacements remain required. Active slice:
-[babysit-pr adoption](../../docs/work/ISSUE-babysit-pr-adoption.md).
+[modernize adoption](../../docs/work/ISSUE-modernize-adoption.md).
 The user authorized starting the plan and confirmed isolated installer/native-output
 test boundaries. Real-global installation changes and remote publication are excluded.
 
@@ -59,14 +59,16 @@ review and fresh verification; [dated results](../../tests/skills/results/2026-1
 registry/routing, independent review, native evidence and golden verification; mainline
 merge/deployment pending. `babysit-pr` is independently reviewed and locally verified,
 with final strict installs, five native cases, affected golden and fresh `itp-verify`;
-commit authorized 2026-10-27. Two of nine tstack entries are locally verified, not a completed
-all-nine initiative. Next: `modernize`. No real-global refresh or publication occurred.
+committed as `a2fc0ad`. `modernize` is independently reviewed and locally verified with
+strict installs, local Git/native evidence, affected golden and fresh verification;
+commit authorized after verification. Three of nine entries are locally verified, not a completed
+all-nine initiative. Next: `takeover`. No real-global refresh or publication occurred.
 
 | tstack entry | Adoption state | Evidence / next gate |
 |---|---|---|
 | `leaving-pr-comments` | Locally verified; merge pending | [Proposal](../../docs/work/ISSUE-leaving-pr-comments-adoption.md), [native evidence](../../tests/skills/results/2026-10-26-leaving-pr-comments.md), `itp-verify` owner, lock source/hash, OpenCode/model and positive/non-trigger/blocked/review/verify evidence recorded |
 | `babysit-pr` | Locally verified; merge pending | [Proposal](../../docs/work/ISSUE-babysit-pr-adoption.md), [security review](../../docs/work/babysit-pr-security.md), [native/CLI/install/golden evidence](../../tests/skills/results/2026-10-27-babysit-pr.md); fresh verification passed |
-| `modernize` | Pending | User-entry and branch-safety adaptation |
+| `modernize` | Locally verified; merge pending | [Proposal](../../docs/work/ISSUE-modernize-adoption.md), [security review](../../docs/work/modernize-security.md), [local Git/native/install/golden evidence](../../tests/skills/results/2026-10-27-modernize.md); fresh verification passed |
 | `takeover` | Pending | Contributor credit and modernization/delivery composition |
 | `file-pr` | Pending | PR-writing replacement decision and authority migration |
 | `sol-loop` | Pending | Exact-model dispatch and bounded review protocol |

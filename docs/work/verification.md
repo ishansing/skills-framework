@@ -592,3 +592,89 @@ Logs: `/tmp/opencode/tstack-babysit-review/final-validation/commit-tests.log` an
 native/install/golden evidence is retained above, not relabeled as rerun for this commit.
 Only authorization/status wording changed. No push, publication, global refresh or
 completion of the other seven tstack skills is included.
+
+## tstack modernize — fresh local verification, 2026-10-27
+
+**Verdict: pass for bounded local adoption; slice uncommitted.** Invoked `itp-verify`
+and required `verification-before-completion` after independent Standards/Spec/security/
+agent-boundary implementation and test-design reviews approved. Base `a2fc0ad`; inputs:
+actual diff/new files, `ISSUE-modernize-adoption.md` REQ1–7/AC1–7, review report, complete
+bundle and confirmed public Git/install/native fixtures. This is not a live PR task.
+
+### Fresh proof
+
+- `TMPDIR=/tmp/opencode npm test`: **118 passed, zero failed**, including four public
+  modernization fixture tests; none skipped/cancelled.
+- `node tests/skills/check-contracts.mjs`: **74 passed**, 29 pinned entries consistent,
+  generated registry in sync and all vendored hashes verified. User entry is not an
+  adapter child; runtime/root/UI metadata and handoff docs agree.
+- Python AST syntax parsing for setup/fake scripts, JSON parsing for inputs/registry/lock,
+  and `git diff --check`: passed without generated files. No production Python dependency
+  or Python-version runtime proof is claimed by those fixture syntax checks.
+- Parent artifact assertions: original guide/UI/license exact; both isolated strict
+  install hashes match; all 28 prior pins unchanged; eight selected native cases use
+  local skill source and preserve original dirty/untracked bytes and local/remote refs.
+  No native push/PR mutation/reset/clean attempt; fake reads allowed only.
+- Corrected native local-work path actually fetched before rebasing; parent rechecked
+  original contributor, equivalent range-diff and base ancestry. Fresh public one-test
+  command passed in the owned rebased worktree, no publication.
+- Affected ordinary golden actually completed independent Standards/Spec review and
+  fresh verification, with no modernize load. Parent re-ran `npm test`: **5 passed**,
+  compared current root/lifecycle/modernize bytes and exact preserved/untracked note.
+
+Logs: `/tmp/opencode/modernize-validation/final-tests.log`, `final-contracts.log`,
+`artifact-proof.log`, `final-integrity.log`. Strict install root:
+`/tmp/opencode/modernize-install-9fy8u9`; completed assessment/negative native root:
+`/tmp/opencode/modernize-native-reviewed-xddqtkxx`; corrected local/root replay:
+`/tmp/opencode/modernize-native-final-local-_la4yfks`; affected golden:
+`/tmp/opencode/modernize-golden-Mgz1CI`. Exact sessions/prompts/config and raw-path
+references are retained in `tests/skills/results/2026-10-27-modernize.md` and its fixtures.
+
+### Acceptance mapping
+
+| AC | Result and scope of proof |
+|---|---|
+| 1 / REQ1 | Complete manual user-entry adaptation, unchanged guide/UI/license archives, registry/lock/hash and both strict install scopes; previous 28 pins unchanged |
+| 2 / REQ1,2 | Explicit local skill loading; root returns recommended_user_skill modernize without recursion; behind-branch context does not trigger; missing-context preflight blocks without guessed target or Git/gh |
+| 3 / REQ3 | Native MODERNIZE, REWORK and CLOSE from actual original/current code/base/history, not age/conflict-free Git; recommendation outcomes remain handoffs |
+| 4 / REQ4,5 | Public/native owned-worktree rebase preserves dirty/untracked bytes, original branches, author and equivalent patch; actual focused test passes; returns existing review/fresh-verification handoff, no claim those phases passed for this PR |
+| 5 / REQ5,6 | Real local Git explicit observed-SHA lease succeeds when supplied; independent writer then advances bare ref; stale lease rejects and collaborator commit remains. This is Git primitive proof, not native/live publication |
+| 6 / REQ2,6,7 | Native no-publication/rework/closure boundaries, actual malicious PR-body grant refusal, correct identities/results and next owners; all denials/deviations retained; no unauthorized action attempt in adversarial case |
+| 7 / all | Four independent reviews/rechecks, retained fixture inputs/results and deviations, affected ordinary golden, fresh full suite/contracts/integrity proof, declared docs updated |
+
+### Deviations, exclusions and disposition
+
+Initial six native trials encountered narrow read/adapter permissions and were not clean
+positive local-rebase evidence. An intermediate native trial proceeded after fetch denial
+using already-present objects matched by fresh local-origin reads; independent reviewers
+required excluding it from the freshly-fetched-base procedure. A fresh corrected trial
+actually fetched/rebased/range-diffed/tested; the earlier deviation remains recorded.
+Optional docs/package/ledger reads were absent; final root handoff's origin-URL read was
+denied and reported without recursive skill invocation. No hidden successful read claim.
+
+Golden's denied note-hash command and safe read fallback are retained. Reviewers were
+instructed read-only/denied edit/delegation, but had fixture Git staging/commit permissions:
+observed read-only behavior is not deterministic enforcement. All commits in that golden
+are fixture-only, not permission for a framework commit.
+
+No native publication grant or end-to-end review/verify/push for the synthetic PR is
+claimed. Rebase returns a pending phase handoff; ordinary phase behavior is separately
+exercised by the golden. No live GitHub/fork reliability, deterministic model permission/
+prompt resistance, atomic base/head transaction, production code or hard sandbox claim.
+No application build/typecheck/UI/browser/DB checks apply: only skills/routing/registry,
+documentation and test fixtures changed. Metadata UI files are skill descriptors, not
+an application UI. No PR/comment/monitor close-out trigger applies to this maintenance.
+
+Three of nine tstack entries are locally verified. Modernize remains uncommitted;
+no real PR operation, global refresh, push or publication occurred. Next planned slice:
+`takeover`, with its own authority and validation gates. Six integrations remain pending.
+
+### modernize commit gate — 2026-10-27
+
+User authorized commit only. Fresh `TMPDIR=/tmp/opencode npm test`: 118 passed, zero
+failed; `node tests/skills/check-contracts.mjs`: 74 passed; `git diff --check` passed.
+Logs: `/tmp/opencode/modernize-validation/commit-tests.log` and `commit-contracts.log`.
+Reviewed implementation/hash unchanged; only authorization/status wording changed for
+this gate. Earlier native/install/golden evidence remains retained observations, not
+relabeled as rerun. Commit excludes push, publication, live PR/global changes and work
+on the next slice.

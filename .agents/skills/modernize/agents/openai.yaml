@@ -1,0 +1,6 @@
+interface:
+  display_name: "Modernize PR"
+  short_description: "Reassess an aging PR before any separately authorized rewrite"
+  default_prompt: "Use $modernize to assess this PR against its current base and recommend MODERNIZE, REWORK or CLOSE. Establish separate grants before rebasing or publishing; preserve existing work."
+policy:
+  allow_implicit_invocation: false

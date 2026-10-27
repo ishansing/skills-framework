@@ -368,3 +368,55 @@ No database, UI or AI Actions workflow changed; those specialist triggers do not
 **Review verdict: implementation approved; recommended next: fresh `itp-verify`.**
 No framework commit, push, publication or completion of the remaining seven skills is
 implied. Final acceptance requires current full-suite/contracts and AC evidence checks.
+
+## tstack modernize — independent review, 2026-10-27
+
+Base `a2fc0adef418cb1177050df16f9a940a83110bcc`; current diff plus untracked modernize
+bundle, proposal, public/native Git fixtures and evidence. Spec: `ISSUE-modernize-adoption.md`
+REQ1–7 / AC1–7. Standards: repository rules, framework/user-entry/manual-vendor patterns
+and the code-review smell baseline. Native test seams explicitly confirmed by the user.
+
+### Standards
+
+`ses_e828850bdffetbgBw1ynIRxwWe`: approved, zero documented-standard violations or
+material heuristic findings. Archival duplication and generic registry/handoff updates
+are intentional existing ownership, not competing procedures.
+
+### Spec
+
+`ses_e828824e2ffeDvhdY5Oeejmvot` initially found missing author preservation assertion
+and missing real adversarial PR payload. Corrected tests now assert author, dirty and
+untracked bytes, unchanged original refs, equivalent range-diff and independent-writer
+stale-lease preservation; fake metadata and explicit native injection/non-trigger cases
+were added. Recheck: approved implementation/test design; no remaining concrete gap.
+
+### Differential/adversarial and agent boundary
+
+`ses_e8287f522ffe1RIVkc3METFn8x`: zero confirmed vulnerabilities, implementation/fixture
+changes approved, with native/fresh-verification gates remaining separate. Compared exact
+archives/license/hash, inspected history/blame and one-handoff/zero-adapter-child blast
+radius. `ses_e8287afb6ffeeEXl0N1tGbpUm3`: implementation/design approved after preservation
+and negative evidence gaps were corrected; independently inspected completed negative/
+disposition/golden traces. Scoped report: `modernize-security.md`.
+
+Both reviewers required excluding the native rebase that proceeded after denied fetch
+from clean fetched-base proof. That deviation is retained, and a fresh corrected native
+trial actually fetched, rebased, range-diffed, preserved attribution/work and ran its test.
+Native publication remains outside the grant; correctly supplied lease primitives do
+not prove model selection, live forks or atomic base freshness. No broad ASI compliance
+or deterministic permission/prompt-injection enforcement claim follows.
+
+### Behavior, documentation and disposition
+
+Retained inputs/cases/results document eight native outcomes, exact sessions, initial
+permission/setup denials, the rebase deviation and corrected replay, and an affected
+ordinary golden with independent reviews/fresh verification and no modernize invocation.
+The final root handoff honestly reports denied optional origin-URL inspection. Public
+Git assertions check actual history/refs/authors/work, not model success text alone.
+Guide/UI/originals/license, registry/generated JSON/manual pin, root/lifecycle handoff,
+framework/reference, cases/results and plan/index cover declared documentation impact.
+No UI application, DB or AI Actions workflow changed; those specialists do not trigger.
+
+**Review verdict: implementation/design approved; recommended next: fresh `itp-verify`.**
+Native recommendations/local-work handoffs are not passed lifecycle/delivery. No framework
+commit, push, publication/global refresh or acceptance of the remaining six skills implied.
