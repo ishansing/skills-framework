@@ -101,3 +101,12 @@ golden pass, not a repeated reliability or universal isolation claim.
 Independent framework-change review and fresh final verification are recorded in
 `docs/work/review.md` and `docs/work/verification.md`. No complete initiative or tstack
 integration claim follows from this first process slice.
+
+### Later permission-scope clarification
+
+Inspection while reusing the golden fixture configuration shows its general reviewers
+were denied edit/delegation tools but still inherited local `git add`/`git commit` shell
+permissions. The earlier “no mutation grant” wording was too broad. Their recorded behavior
+was read-only; that is not proof all mutation capabilities were disabled. No reviewer Git
+mutation was observed. This clarification preserves the original trace/outcome and does
+not claim the fixture is a production isolation mechanism.

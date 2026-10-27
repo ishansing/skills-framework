@@ -1,8 +1,8 @@
 # tstack + Skill Watch integration plan
 
 Status: implementation started, 2026-10-26. All-nine tstack scope and justified
-replacements remain required. First active slice:
-[approved-process refresh](../../docs/work/ISSUE-SKILL-WATCH-PROCESS-REFRESH.md).
+replacements remain required. Active slice:
+[leaving-pr-comments adoption](../../docs/work/ISSUE-leaving-pr-comments-adoption.md).
 The user authorized starting the plan and confirmed isolated installer/native-output
 test boundaries. Real-global installation changes and remote publication are excluded.
 
@@ -53,11 +53,25 @@ or safety findings.
 
 ## Delivery sequence
 
-Progress: the first three process pins are updated in the working branch, paired native
-probes, strict isolated installs, native golden composition and independent review have
-run; final fresh verification passed for this slice. Publication and live installation remain pending.
-Next: `leaving-pr-comments` adoption. No tstack skill is integrated yet. Detailed outcomes belong
-in the [dated results](../../tests/skills/results/2026-10-26-process-refresh.md).
+Progress: approved-process refresh committed as `cc49991`, with native probes/golden,
+review and fresh verification; [dated results](../../tests/skills/results/2026-10-26-process-refresh.md).
+`leaving-pr-comments` now has a pinned local adaptation, registry/routing and isolated
+native cases in the working branch; independent review, fresh verification and the updated
+small golden passed. One of nine entries is locally verified; commit authorized 2026-10-27,
+mainline merge/deployment pending.
+Next: `babysit-pr`. No real-global refresh or publication occurred.
+
+| tstack entry | Adoption state | Evidence / next gate |
+|---|---|---|
+| `leaving-pr-comments` | Locally verified; merge pending | [Proposal](../../docs/work/ISSUE-leaving-pr-comments-adoption.md), [native evidence](../../tests/skills/results/2026-10-26-leaving-pr-comments.md), `itp-verify` owner, lock source/hash, OpenCode/model and positive/non-trigger/blocked/review/verify evidence recorded |
+| `babysit-pr` | Pending | Next after comment hygiene; helper/readiness/ownership gates below |
+| `modernize` | Pending | User-entry and branch-safety adaptation |
+| `takeover` | Pending | Contributor credit and modernization/delivery composition |
+| `file-pr` | Pending | PR-writing replacement decision and authority migration |
+| `sol-loop` | Pending | Exact-model dispatch and bounded review protocol |
+| `council` | Pending | Provider/round/budget/data-sharing limits |
+| `full-stop` | Pending | Shared lifecycle and no-merge delivery recipe |
+| `full-send` | Pending | Shared lifecycle plus explicit live merge gate |
 
 ### Proposed tstack routing matrix — all nine skills
 

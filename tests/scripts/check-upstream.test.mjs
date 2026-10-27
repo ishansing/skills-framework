@@ -1,6 +1,9 @@
 import { test } from "node:test";
 import assert from "node:assert/strict";
-import { checkEntry, exitCode } from "../../scripts/check-upstream.mjs";
+import { checkAll, checkEntry, exitCode } from "../../scripts/check-upstream.mjs";
+import { mkdtempSync, rmSync, writeFileSync } from "node:fs";
+import { tmpdir } from "node:os";
+import { join } from "node:path";
 
 const PIN = "a".repeat(40);
 const NEW = "b".repeat(40);
@@ -35,6 +38,19 @@ const repoInfo = [/^\/repos\/acme\/skills$/, { default_branch: "main" }];
 test("current when the pinned commit is the latest path commit", async () => {
   const result = await checkEntry(entry(), api([repoInfo, ["/commits?path=", [{ sha: PIN }]]]));
   assert.equal(result.status, "current");
+});
+
+test("upstream monitoring still checks manual adaptations", async () => {
+  const root = mkdtempSync(join(tmpdir(), "itp-manual-watch-"));
+  try {
+    writeFileSync(join(root, "skills.lock.json"), JSON.stringify({ skills: [entry({ vendored: true, updateMode: "manual" })] }));
+    const seen = [];
+    const respond = api([repoInfo, ["/commits?path=", [{ sha: PIN }]]]);
+    const results = await checkAll(root, async path => { seen.push(path); return respond(path); });
+    assert.equal(results.length, 1);
+    assert.equal(results[0].status, "current");
+    assert.ok(seen.some(path => path.includes("/commits?path=")));
+  } finally { rmSync(root, { recursive: true, force: true }); }
 });
 
 test("branch caches do not leak between API clients or scan revisions", async () => {

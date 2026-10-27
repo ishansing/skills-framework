@@ -680,10 +680,18 @@ Review should use a fresh reading of the current diff/spec rather than simply ac
 
 ```text
 itp-verify
-  └── verification-before-completion
+  ├── verification-before-completion
+  ├── pr                              [authorized PR-body close-out]
+  └── leaving-pr-comments              [authorized PR-comment close-out]
 ```
 
 The verification adapter requires fresh evidence before the root skill claims completion.
+After verification passes, PR-comment delivery uses the pinned `leaving-pr-comments`
+specialist only when posting is explicitly authorized. It does not own descriptions,
+commit messages, draft-only requests or explicitly verbatim unattributed text. Publishing,
+resolving and dismissing require their own grants; verification is not such a grant.
+Record delivery separately: missing capability, unsafe content or failed/uncertain receipt
+requires a named handoff and cannot satisfy a requested delivery outcome.
 
 Evidence may include:
 

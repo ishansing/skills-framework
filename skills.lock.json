@@ -4,6 +4,16 @@
   "contentHashMethod": "sha256 over sorted (relative path + NUL + file bytes + NUL) for every file in the skill directory",
   "skills": [
     {
+      "id": "leaving-pr-comments",
+      "repo": "t3dotgg/tstack",
+      "commit": "7de017b3fc9d50c03cf3ecb98fb71e0ca65a78bd",
+      "path": "skills/leaving-pr-comments",
+      "contentSha256": "ab6028ba3939e3bdc2620a7c91ab92d45eb45cf8d4d8c4309a8c5ff9f10e2909",
+      "invocationClass": "model",
+      "vendored": true,
+      "updateMode": "manual"
+    },
+    {
       "id": "research",
       "repo": "mattpocock/skills",
       "commit": "984a2c023c9fb42bb6ea40c70a652284a109dc05",

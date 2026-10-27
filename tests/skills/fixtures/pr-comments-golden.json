@@ -1,0 +1,58 @@
+{
+  "config": {
+    "$schema": "https://opencode.ai/config.json",
+    "snapshots": false,
+    "agents": {
+      "process-golden": {
+        "description": "Bounded native lifecycle fixture",
+        "mode": "primary",
+        "permissions": [
+          {"action":"*","resource":"*","effect":"deny"},
+          {"action":"read","resource":"*","effect":"allow"},
+          {"action":"glob","resource":"*","effect":"allow"},
+          {"action":"grep","resource":"*","effect":"allow"},
+          {"action":"edit","resource":"*","effect":"allow"},
+          {"action":"skill","resource":"*","effect":"allow"},
+          {"action":"external_directory","resource":"*","effect":"deny"},
+          {"action":"subagent","resource":"general","effect":"allow"},
+          {"action":"shell","resource":"npm test *","effect":"allow"},
+          {"action":"shell","resource":"node --test *","effect":"allow"},
+          {"action":"shell","resource":"git diff *","effect":"allow"},
+          {"action":"shell","resource":"git status *","effect":"allow"},
+          {"action":"shell","resource":"git log *","effect":"allow"},
+          {"action":"shell","resource":"git rev-parse *","effect":"allow"},
+          {"action":"shell","resource":"git show *","effect":"allow"},
+          {"action":"shell","resource":"git add *","effect":"allow"},
+          {"action":"shell","resource":"git commit *","effect":"allow"},
+          {"action":"shell","resource":"git ls-files *","effect":"allow"}
+        ]
+      },
+      "general": {
+        "permissions": [
+          {"action":"*","resource":"*","effect":"deny"},
+          {"action":"read","resource":"*","effect":"allow"},
+          {"action":"glob","resource":"*","effect":"allow"},
+          {"action":"grep","resource":"*","effect":"allow"},
+          {"action":"skill","resource":"*","effect":"allow"},
+          {"action":"external_directory","resource":"*","effect":"deny"},
+          {"action":"shell","resource":"npm test *","effect":"allow"},
+          {"action":"shell","resource":"node --test *","effect":"allow"},
+          {"action":"shell","resource":"git diff *","effect":"allow"},
+          {"action":"shell","resource":"git status *","effect":"allow"},
+          {"action":"shell","resource":"git log *","effect":"allow"},
+          {"action":"shell","resource":"git rev-parse *","effect":"allow"},
+          {"action":"shell","resource":"git show *","effect":"allow"},
+          {"action":"shell","resource":"git add *","effect":"allow"},
+          {"action":"shell","resource":"git commit *","effect":"allow"},
+          {"action":"shell","resource":"git ls-files *","effect":"allow"}
+        ]
+      }
+    }
+  },
+  "files": {
+    "docs/agents/issue-tracker.md": "# Fixture tracker\nUse local spec/slice paths supplied by the caller. No remote issue reads or setup needed.\n",
+    "CONTRIBUTING.md": "# Fixture standards\nKeep ESM and node:test, only approved behavior. Preserve user notes. No remote operations.\n",
+    "user-notes.txt": "USER OWNED UNTRACKED NOTE: retain unchanged.\n"
+  },
+  "prompt": "Load idea-to-production explicitly and execute the existing small-localized-change golden case: normalize emails in src/members.js by trimming and lowercasing on add and lookup; reject non-string email input with TypeError. This is a local synthetic fixture, no user product or security policy decisions are open. The approved public test seams are createWorkspace().addMember(email) and .isMember(email), including their integration; they catch normalization/non-string/membership regressions and do not prove persistence, concurrency or production auth. Seams are confirmed. Preserve the untracked user-notes.txt exactly. Use the existing Node test runner, scale small, spec-lite and inline slice acceptance criteria. The documentation impact is none: synthetic API fixture only. For independent Standards/Spec review use the seed HEAD as fixed point and the local spec/slice as source; use docs/agents/issue-tracker.md for local tracker instructions. You may create commits inside this synthetic fixture only to make the review diff real; do not commit user-notes.txt or modify installed skills/config. Do not push, use GitHub, call network tools, install anything, change global files, or expand this goal. Complete implementation through itp-review with actual independent reviewers, then fresh itp-verify. Keep actual test outputs, skill calls and artifacts; stop with a named blocked/needs-human result if a required capability is unavailable.\n"
+}

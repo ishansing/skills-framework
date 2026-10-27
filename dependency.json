@@ -22,6 +22,9 @@
     "authorized PR-body close-out": [
       "pr"
     ],
+    "authorized PR-comment hygiene": [
+      "leaving-pr-comments"
+    ],
     "browser/end-to-end verification": [
       "webapp-testing",
       "playwright-generate-test"
@@ -168,6 +171,14 @@
         "user handoff only"
       ]
     },
+    "leaving-pr-comments": {
+      "source": "t3dotgg/tstack (pinned local adaptation)",
+      "invocation_class": "model",
+      "status": "vendored-pinned",
+      "used_by": [
+        "itp-verify"
+      ]
+    },
     "playwright-generate-test": {
       "source": "github/awesome-copilot",
       "invocation_class": "model",
@@ -296,6 +307,7 @@
     "agentic-eval": "agent/harness behavior changed; not for trust-boundary changes (that's agent-owasp-compliance)",
     "differential-review": "medium/high-risk or security-sensitive diff; security regression; do not trigger for low-risk diffs (typos, formatting, message text) with no security surface",
     "frontend-design": "new UI or visual redesign",
+    "leaving-pr-comments": "after verification passes, explicitly authorized PR-comment/review-reply delivery; not PR descriptions, commit messages, draft-only work or explicitly verbatim unattributed text; formatting/verification never grants posting or resolution authority",
     "playwright-generate-test": "a durable Playwright test is required",
     "poka-yoke": "high-consequence design where a mistake is costly; do not trigger for reversible, low-stakes choices",
     "postgresql-code-review": "PostgreSQL schema, query, or migration behavior changed",

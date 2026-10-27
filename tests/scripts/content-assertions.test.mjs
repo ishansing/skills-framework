@@ -116,6 +116,20 @@ test("PR formatting is gated on verification and does not authorize publication"
   assert.match(text, /Formatting a body does not authorize creating,[\s\S]*publishing, merging, or deploying/);
 });
 
+test("authorized PR-comment close-out uses the pinned conditional hygiene specialist", () => {
+  const registry = JSON.parse(read("dependency.json"));
+  const lock = JSON.parse(read("skills.lock.json"));
+  assert.deepEqual(registry.capabilities["authorized PR-comment hygiene"], ["leaving-pr-comments"]);
+  assert.equal(registry.skills["leaving-pr-comments"].invocation_class, "model");
+  const entry = lock.skills.find(s => s.id === "leaving-pr-comments");
+  assert.equal(entry.vendored, true);
+  assert.equal(entry.updateMode, "manual");
+  const verify = read(".agents/skills/itp-verify/SKILL.md");
+  assert.match(verify, /conditional_children: \[[^\]]*leaving-pr-comments/);
+  assert.match(verify, /After `pass`[\s\S]*`leaving-pr-comments`/);
+  assert.match(read(".agents/skills/leaving-pr-comments/SKILL.md"), /Verification status and delivery status are separate/);
+});
+
 test("threat modeling is a conditional architecture specialist with a precise trigger", () => {
   const registry = JSON.parse(read("dependency.json"));
   const lock = JSON.parse(read("skills.lock.json"));

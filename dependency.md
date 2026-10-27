@@ -29,6 +29,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | agent trust-boundary review | `agent-owasp-compliance`, `agentic-actions-auditor` |
 | completion evidence | `verification-before-completion` |
 | authorized PR-body close-out | `pr` |
+| authorized PR-comment hygiene | `leaving-pr-comments` |
 | whole-spec parallel implementation (user handoff) | `implement-spec` |
 | session retrospective (user entry) | `retro` |
 
@@ -62,6 +63,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | agent-owasp-compliance | github/awesome-copilot | model | installed-global | itp-review |
 | agentic-actions-auditor | trailofbits/skills | model | installed-global | itp-review, itp-incident |
 | security-threat-model | openai/skills | model | installed-global | itp-architecture |
+| leaving-pr-comments | t3dotgg/tstack (pinned local adaptation) | model | vendored-pinned | itp-verify |
 
 Status values: `installed-global` (discovered from a global skill source), `installed-local`
 (installed into the project's own `.agents/skills/`; self-contained, location verified by
@@ -86,6 +88,7 @@ must be pinned before Phase 5 validation; curation debt), `not-installed`.
 | agentic-actions-auditor | AI GitHub Actions workflow changed |
 | security-threat-model | architecture touches auth, credentials, PII, trust boundaries, or external exposure; not for general summaries, code review, or non-security design |
 | pr | after verification passes, when a PR body is requested or an explicitly authorized delivery workflow requires one; never create or publish a PR without authorization |
+| leaving-pr-comments | after verification passes, explicitly authorized PR-comment/review-reply delivery; not PR descriptions, commit messages, draft-only work or explicitly verbatim unattributed text; formatting/verification never grants posting or resolution authority |
 
 Trigger rows state positive conditions; when ambiguous, do not load - record as
 considered-not-triggered.
@@ -129,4 +132,9 @@ If a user-entry workflow is preferable, return `needs-human` with
     with `needs-human`; do not improvise the adversarial phase.
   - `web-design-guidelines` is a local pinned adapter (`.agents/skills/web-design-guidelines/`)
     over the vendored `command.md` snapshot; never fetch upstream `main`.
+  - `leaving-pr-comments` is a vendored local adaptation over unchanged `upstream.md`
+    and UI metadata, with the upstream MIT notice retained. It adds authorization,
+    untrusted-input, receipt and delivery-status guards. `updateMode: manual` refuses
+    explicit repin and is skipped by bulk repin; compare upstream deliberately and update the adapted bundle/hash
+    together. The source path/revision tracks upstream, the hash covers installed bytes.
 - Do not let a running skill modify `skills.lock.json` or this file.

@@ -22,7 +22,7 @@ adapter_contract:
   phase: verification
   consumes: [implementation-diff, validation-evidence, review-verdict, acceptance-criteria]
   required_children: [verification-before-completion]
-  conditional_children: [pr]
+  conditional_children: [pr, leaving-pr-comments]
   produces: [verification-evidence, completion-verdict]
   exits: [pass, fail, blocked, needs-human]
 ```
@@ -62,6 +62,13 @@ fresh verification evidence produced in this session.
    publishing, merging, or deploying a PR. Record close-out separately from the pass verdict.
    If `pr` is unavailable, hand off the requested close-out as `needs-human`, naming the
    missing skill and preserving the verification evidence; do not install or substitute it.
+8. After `pass`, call `leaving-pr-comments` only for explicitly authorized PR-comment or
+   review-reply delivery. Pass the target/action grant, verified identities and safe evidence
+   pointers; it does not own PR descriptions, commit messages, draft-only work or explicitly
+   verbatim unattributed text. Verification or formatting alone never authorizes posting,
+   resolution or dismissal. Missing skill/tool/authority returns `needs-human`; never install
+   or bypass the specialist. Record its receipt and delivery result separately: a failed or
+   uncertain delivery cannot complete a requested close-out even when verification passed.
 
 ## Output
 

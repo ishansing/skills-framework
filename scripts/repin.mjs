@@ -13,7 +13,7 @@
 import { cpSync, existsSync, mkdirSync, readFileSync, rmSync, writeFileSync } from "node:fs";
 import { basename, join } from "node:path";
 import { fileURLToPath, pathToFileURL } from "node:url";
-import { checkAll } from "./check-upstream.mjs";
+import { checkEntry } from "./check-upstream.mjs";
 import { fetchSkill } from "./fetch-skill.mjs";
 import { dirHash, readSkillName } from "./skill-hash.mjs";
 
@@ -109,7 +109,12 @@ async function main() {
 
   let targets;
   if (opts.all) {
-    const results = await checkAll(ROOT);
+    const results = [];
+    for (const entry of lock.skills) {
+      if (entry.updateMode === "manual") {
+        console.log(`skip ${entry.id}: manual adaptation; use reviewed maintenance`);
+      } else results.push(await checkEntry(entry));
+    }
     const blocking = results.filter((r) => ["drift", "unverifiable", "error"].includes(r.status));
     if (blocking.length) {
       console.error("Cannot re-pin; manual adaptation needed:");
@@ -120,7 +125,7 @@ async function main() {
       .filter((r) => r.status === "updated")
       .map((r) => ({ entry: byId.get(r.id), commit: r.latest }));
     if (targets.length === 0) {
-      console.log("All pinned skills are current; nothing to re-pin.");
+      console.log("All automatically repinnable skills are current; nothing to re-pin.");
       return;
     }
   } else {
@@ -134,6 +139,9 @@ async function main() {
 
   const changes = [];
   for (const { entry, commit } of targets) {
+    if (entry.updateMode === "manual") {
+      throw new Error(`${entry.id}: manual adaptation; review upstream and update the local bundle/hash explicitly`);
+    }
     const status = deps.get(entry.id);
     if (status !== "installed-global" && status !== "vendored-pinned") {
       console.error(`${entry.id}: dependency.md status is "${status ?? "missing"}", refusing to re-pin`);

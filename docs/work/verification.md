@@ -414,3 +414,101 @@ reviewed lock entries changed. `git diff --check` passed. Logs:
 no runtime changes followed independent review. Native/installer evidence above remains
 the retained acceptance evidence; those trials were not rerun solely for the commit.
 Commit excludes pushes, publication, live installation changes and tstack adoption.
+
+## tstack leaving-pr-comments — verification in progress, 2026-10-26
+
+Scope: `ISSUE-leaving-pr-comments-adoption.md`, AC 1–7; base `cc49991`, uncommitted
+working tree on `integration/tstack-pr-comments`. User authorized continuation and the
+bundle/install, manual-update and fake-GitHub native test boundaries. Standard scale:
+the external-write/trust-boundary routing needs specialist review, not a small wording pass.
+
+Independent Standards, Spec and differential/adversarial reviews now approve the bounded
+implementation, after their initial findings were fixed. Details and actual snapshot
+ranges are in `review.md`; all ten scoped ASI controls and limits are in
+`leaving-pr-comments-security.md`. `agentic-eval` distinguishes actual tool observations
+from declarations, retained deviations and universal claims. `itp-verify` and its required
+fresh-evidence child loaded; no PR body/comment delivery is requested for the real framework.
+
+Fresh post-review checks already observed:
+
+- Full script suite: 95 passed, zero failed (`final-tests.log`).
+- Contract checker: 67 passed (`final-contracts.log`). Registry JSON agrees with Markdown.
+- Only one new lock entry; every existing pin equals base `cc49991`. Adapted directory
+  hash matches all installed copies. Original entry, metadata and MIT notice were
+  byte-verified at the exact upstream commit; installed hash covers local guards as well.
+- Unpublished local distribution built successfully; strict fresh repo-local/global-scope
+  installs and post-review strict reruns exited 0. All 54 upstream/vendored hashes across
+  the two scopes match. Packaged `itp-verify` is byte-identical to the changed source;
+  actual user-global comment-skill state is unchanged.
+- Public repin CLI direct/bulk and separate monitor tests exercise reviewed maintenance
+  behavior with fake tools/no ambient token. Real red/green evidence covers direct guard,
+  bulk source selection, graph introduction and inherited Git-variable preservation in
+  the reproducible test constructor. No unreviewed installer/runtime service was added.
+- Parent checked actual native test-before-specialist ordering and selected skill body
+  bytes in authorized/error/receipt/replay traces, not manual procedure emulation.
+  Native primary host/model: OpenCode v2.1.3 / `openai/gpt-6.1-sol`.
+- Authorized routing posts one fake attributed body; separate receipt/status saved. A
+  denied delivery-record write resumed without repost. Non-triggers make no fake write;
+  missing skill, incomplete target/identity/tool/authority, unsafe direct preflight,
+  failed post and absent/mismatched receipt all hand off rather than invent success.
+- Exact twelve-case prompts/context/config/application inputs are retained under
+  `tests/skills/fixtures/`; parent compared them to the actual temporary fixture inputs.
+  Fresh native replay from the retained constructor/inputs passed. Constructor's foreign
+  Git paths and existing-destination protection have executable regression coverage.
+- `git diff --check`, local links and source/pin assertions passed. Trace fingerprints
+  retained at `/tmp/opencode/tstack-comments-validation/trace-sha256.json`.
+
+Native evidence/IDs, including failures and disclosure limits:
+`tests/skills/results/2026-10-26-leaving-pr-comments.md`. Logs and request ledgers:
+`/tmp/opencode/tstack-comments-validation/`, including `post-review-install-{repo,global}.log`.
+Fake receipts are not live GitHub proof. The opaque-original-author harness case is a
+synthetic context branch, not proof a host hid the current formatter's model. Unsafe
+lifecycle verification stopped before specialist loading; direct specialist preflight
+is separate. One unnecessary `pr` load and an ambiguous-body expansion remain disclosed.
+
+Remaining gate at this point: the existing small-localized-change golden regression with
+the changed adapter contract, followed by inspection/fresh close-out. Its input config,
+prompt and context are retained in `tests/skills/fixtures/pr-comments-golden.json` with
+setup instructions. No all-nine acceptance, live publication, real-global installation,
+commit or push is claimed. Final verdict remains pending until that gate is examined.
+
+### Final leaving-pr-comments closure
+
+The remaining small-golden gate passed natively, session
+`ses_e86dd586cffe5xp2NKSgb7GCLg`, against the changed installed verification adapter.
+Root recorded small/spec-lite/inline acceptance and three actual red/green cycles, then
+two independent reviewers overlapped and approved before fresh verification. Parent
+examined the real trace/ledger/artifacts and independently reran the four tests and diff
+check: all pass. Notes/config bytes are unchanged; notes remain untracked. No comment
+grant existed, so neither the new specialist nor a posting command ran.
+
+Retained golden config/prompt/context match launched inputs exactly. They expose the
+reviewer permission limitation (local Git mutation commands are allowed even though their
+observed behavior is read-only); the previous evidence's stronger claim is corrected by
+an append-only clarification. No host/runtime enforcement guarantee is inferred.
+
+Closure source suite `closure-tests.log`: **95 passed, zero failed**; contracts
+`closure-contracts.log`: **67 passed**. Fixture JSON, docs links/whitespace, source/pin
+checks and existing-pin preservation pass. Logs/native artifacts and trace fingerprints
+remain under `/tmp/opencode/tstack-comments-validation/`; durable input/setup and session
+evidence are under `tests/skills/fixtures/` and the dated result record.
+
+**Verdict: pass for this bounded first tstack adoption slice (AC 1–7).** Review findings
+were resolved; no blocking implementation finding remains. Parent inspected final
+golden/evidence/status-only additions after independent re-review. Live GitHub semantics,
+cryptographic identity, prompt-injection resistance, general exact-body/selection compliance,
+repeatability and host parity are not established. Retained deviations remain explicit.
+No real-global installation, framework commit, push, PR, release or live comment occurred.
+One of nine tstack skills is locally integrated/verified; eight remain, starting with
+`babysit-pr`. Mainline adoption and consuming-project refresh remain separate actions.
+
+### leaving-pr-comments commit gate — 2026-10-27
+
+User authorized commit and continuation. Fresh full suite: 95 passed, zero failed;
+contracts: 67 passed; `git diff --check` passed. Logs:
+`/tmp/opencode/tstack-comments-validation/commit-{tests,contracts}-2026-10-27.log`.
+Prior temporary raw traces/install fixtures had expired; native results above remain
+historical observations, with durable inputs, setup and session references retained.
+They were not rerun or relabeled fresh for this commit. No runtime code changed since
+independent review; status/evidence wording reflects authorization. No push, global
+refresh, live publication or acceptance of the other eight skills is included.

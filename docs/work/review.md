@@ -259,3 +259,62 @@ fresh five-test verification after review. Final documentation/verification appe
 parent-inspected; no runtime/pin changes followed review. **Implementation review approved;
 recommended next: fresh `itp-verify` for the framework slice.** Historical pending verdicts
 above remain as evidence of the order, not a current golden-run failure.
+
+## tstack leaving-pr-comments adoption review — 2026-10-26
+
+Scope/spec: `ISSUE-leaving-pr-comments-adoption.md`, AC 1–7, standard scale because the
+agent publication/trust-boundary contract changes. Actual base `cc49991`, uncommitted
+working tree on `integration/tstack-pr-comments`. Exact changed/new source bytes were
+copied into an isolated snapshot at `/tmp/opencode/tstack-comments-validation/review-snapshot`.
+Its base `6386b54` archives the framework base; reviewed proposal `aaf788f`, final reviewed
+range `6386b54...79b727b`. Parent verified copied file bytes; final evidence/status-only
+appendices are inspected by the parent rather than called independently reviewed code.
+
+### Standards
+
+Reviewer `ses_e86fb9a46ffesvpQWfuQ7kKOnR` initially requested retained native prompts,
+configs and inputs: temporary traces alone were not reproducible. Exact twelve-case
+inputs, safe constructor and invocation/resume guide now live under `tests/skills/fixtures/`.
+Actual native replay from those retained inputs passed, with one fake write and separate
+verification/delivery records. Final re-review approves; no remaining standard breach or
+actionable smell. Production updater and test-only fixture ownership remain coherent.
+
+### Spec
+
+Reviewer `ses_e86fb99dbffeIOCccqc3CIJAAd` initially required missing-target, missing-receipt
+and author-harness fallback observations, and flagged bulk repin querying manual sources.
+Added native cases cover the missing branches with explicit limits. Bulk repin now skips
+manual entries before their metadata/source requests while checking ordinary entries;
+direct targeting refuses manual adaptations. Separate monitoring still includes them.
+Hermetic CLI/monitor tests cover those behaviors; fixture Git redirection also has a real
+red/green regression preserving unrelated temporary work.
+
+Final re-review: approved for the bounded slice, pending fresh framework verification.
+No remaining implementation requirement or scope creep; AC7's parent verification remains
+the final gate. Standards: zero remaining findings. Spec: zero remaining implementation
+findings; fresh verification not inferred from prior outputs.
+
+### Differential/adversarial and ASI boundary review
+
+Triggered by new authorized external-write routing. Registered adversarial reviewer
+`ses_e870249f6ffenIhWQxUTmsr20M` inspected baseline/blame, calculated callers, attacker
+scenarios, updater and fixture safety, native traces and all ten registered ASI checks.
+Initial and follow-up verdicts: no demonstrated new blocker; approved within bounded
+security scope. Its one nonblocking hermetic-test observation was addressed with fake
+GitHub/Git tools and masked tokens; import-time production auth lookup is not claimed absent.
+Full report: `leaving-pr-comments-security.md`.
+
+### Agent behavior evaluation and documentation
+
+`agentic-eval` rubric uses actual calls/receipts for authorized routing, non-triggers,
+blocked capabilities, unsafe preflight, uncertain writes and continuation without repost.
+Retained failures: unsafe verifier stopped before specialist; initial author context expanded
+the body; one unnecessary `pr` load; delivery-record permission denial before safe resume.
+Successful direct preflights and delimited contrasts do not erase those observations or
+prove universal adherence. Fake CLI/runtime permissions are experimental bounds, not
+production authorization, crypto identity, exactly-once delivery or injection protection.
+
+Public reference/spec, registry, adapter, manual-update policy, cases, retained inputs,
+results and plan/index cover documentation impact. No DB/UI/AI Actions change triggers
+another specialist. **Review verdict: approve implementation scope; recommended next:
+fresh `itp-verify`.** All-nine adoption and live publication remain outside this verdict.
