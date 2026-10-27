@@ -63,6 +63,7 @@ per `SKILL-FRAMEWORK.md` sections 25 and 27).
 | `verification-before-completion` | Vendored (obra/superpowers, MIT) |
 | `web-design-guidelines` | Pinned local adapter over a vendored guidelines snapshot |
 | `leaving-pr-comments` | Pinned tstack adaptation for explicitly authorized PR-comment hygiene |
+| `babysit-pr` | Pinned observe/report-only PR watcher with a finite budget and bound head/base; never merge approval |
 
 Upstream skills (Matt Pocock core, Trail of Bits, Vercel, Anthropic, awesome-copilot) are
 listed with status and provenance in `dependency.md` and `skills.lock.json`. Install them
@@ -141,8 +142,10 @@ What it does:
 2. **Framework skills** — copies `.agents/skills/{idea-to-production,itp-*,verification-before-completion,web-design-guidelines}`
    into `<repo>/.agents/skills/`, plus `dependency.md` and `skills.lock.json` into the repo
    root.
-   The vendored `leaving-pr-comments` specialist, original source and MIT notice are also
-   copied per project in either upstream-install scope.
+   The vendored `leaving-pr-comments` and `babysit-pr` specialists, original source and MIT
+   notices are also copied per project in either upstream-install scope. The optional PR
+   watcher requires existing authenticated `gh`, Python 3.10+ and POSIX; installation does
+   not provision those tools or grant GitHub write authority.
 3. **Subagent** — copies `adversarial-modeler` into `<repo>/.opencode/agents/` (used by
    `differential-review` for high-risk changes).
 4. **AGENTS.md** — inserts the framework rules between
@@ -180,7 +183,8 @@ mkdir -p "$TARGET/.agents/skills"
 cp -r "$FS/.agents/skills/idea-to-production" "$FS"/.agents/skills/itp-* \
       "$FS/.agents/skills/verification-before-completion" \
       "$FS/.agents/skills/web-design-guidelines" \
-      "$FS/.agents/skills/leaving-pr-comments" "$TARGET/.agents/skills/"
+      "$FS/.agents/skills/leaving-pr-comments" \
+      "$FS/.agents/skills/babysit-pr" "$TARGET/.agents/skills/"
 cp "$FS/dependency.md" "$FS/skills.lock.json" "$TARGET/"
 mkdir -p "$TARGET/.opencode/agents"
 cp "$FS/.opencode/agents/adversarial-modeler.md" "$TARGET/.opencode/agents/"

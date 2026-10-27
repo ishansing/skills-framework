@@ -4,6 +4,16 @@
   "contentHashMethod": "sha256 over sorted (relative path + NUL + file bytes + NUL) for every file in the skill directory",
   "skills": [
     {
+      "id": "babysit-pr",
+      "repo": "t3dotgg/tstack",
+      "commit": "7de017b3fc9d50c03cf3ecb98fb71e0ca65a78bd",
+      "path": "skills/babysit-pr",
+      "contentSha256": "51d46c684b7bbae1dd753aaa048f0fd0769d56e099c6f613a84afcf57b40463b",
+      "invocationClass": "model",
+      "vendored": true,
+      "updateMode": "manual"
+    },
+    {
       "id": "leaving-pr-comments",
       "repo": "t3dotgg/tstack",
       "commit": "7de017b3fc9d50c03cf3ecb98fb71e0ca65a78bd",

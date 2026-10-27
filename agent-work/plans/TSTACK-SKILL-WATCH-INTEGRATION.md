@@ -2,7 +2,7 @@
 
 Status: implementation started, 2026-10-26. All-nine tstack scope and justified
 replacements remain required. Active slice:
-[leaving-pr-comments adoption](../../docs/work/ISSUE-leaving-pr-comments-adoption.md).
+[babysit-pr adoption](../../docs/work/ISSUE-babysit-pr-adoption.md).
 The user authorized starting the plan and confirmed isolated installer/native-output
 test boundaries. Real-global installation changes and remote publication are excluded.
 
@@ -55,16 +55,17 @@ or safety findings.
 
 Progress: approved-process refresh committed as `cc49991`, with native probes/golden,
 review and fresh verification; [dated results](../../tests/skills/results/2026-10-26-process-refresh.md).
-`leaving-pr-comments` now has a pinned local adaptation, registry/routing and isolated
-native cases in the working branch; independent review, fresh verification and the updated
-small golden passed. One of nine entries is locally verified; commit authorized 2026-10-27,
-mainline merge/deployment pending.
-Next: `babysit-pr`. No real-global refresh or publication occurred.
+`leaving-pr-comments` is locally verified and committed as `c5b1266`, with pinned adaptation,
+registry/routing, independent review, native evidence and golden verification; mainline
+merge/deployment pending. `babysit-pr` is independently reviewed and locally verified,
+with final strict installs, five native cases, affected golden and fresh `itp-verify`;
+commit authorized 2026-10-27. Two of nine tstack entries are locally verified, not a completed
+all-nine initiative. Next: `modernize`. No real-global refresh or publication occurred.
 
 | tstack entry | Adoption state | Evidence / next gate |
 |---|---|---|
 | `leaving-pr-comments` | Locally verified; merge pending | [Proposal](../../docs/work/ISSUE-leaving-pr-comments-adoption.md), [native evidence](../../tests/skills/results/2026-10-26-leaving-pr-comments.md), `itp-verify` owner, lock source/hash, OpenCode/model and positive/non-trigger/blocked/review/verify evidence recorded |
-| `babysit-pr` | Pending | Next after comment hygiene; helper/readiness/ownership gates below |
+| `babysit-pr` | Locally verified; merge pending | [Proposal](../../docs/work/ISSUE-babysit-pr-adoption.md), [security review](../../docs/work/babysit-pr-security.md), [native/CLI/install/golden evidence](../../tests/skills/results/2026-10-27-babysit-pr.md); fresh verification passed |
 | `modernize` | Pending | User-entry and branch-safety adaptation |
 | `takeover` | Pending | Contributor credit and modernization/delivery composition |
 | `file-pr` | Pending | PR-writing replacement decision and authority migration |
@@ -122,8 +123,9 @@ before retiring anything. Replacing a skill does not waive consent, review or ve
   provenance and hashes of the actual installed bytes, never unchanged-source hash claims.
 - Preflight authenticated Git/GitHub CLI, permitted repository access and actual host tools.
   The helper uses Python stdlib/POSIX locking; validate its Python floor (source suggests
-  3.9+) and reject unsupported platforms. No tool install or authentication expansion is
-  implicit. T3 tool names cannot be called on OpenCode merely because prose names them.
+  3.9+) and reject unsupported platforms. The adaptation declares Python 3.10+; no tool
+  install or authentication expansion is implicit. T3 tool names cannot be called on
+  OpenCode merely because prose names them.
 - `full-send`/`full-stop` testing grants must not override higher-priority instructions
   or local consent requirements. Any delivery mode spells out test/device/network,
   commit/push, comment/resolution, PR-setting and merge grants separately.

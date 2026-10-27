@@ -25,6 +25,9 @@
     "authorized PR-comment hygiene": [
       "leaving-pr-comments"
     ],
+    "bounded PR observation": [
+      "babysit-pr"
+    ],
     "browser/end-to-end verification": [
       "webapp-testing",
       "playwright-generate-test"
@@ -97,6 +100,14 @@
       "status": "installed-global",
       "used_by": [
         "itp-review"
+      ]
+    },
+    "babysit-pr": {
+      "source": "t3dotgg/tstack (pinned local adaptation)",
+      "invocation_class": "model",
+      "status": "vendored-pinned",
+      "used_by": [
+        "itp-verify"
       ]
     },
     "code-review": {
@@ -305,6 +316,7 @@
     "agent-owasp-compliance": "agent/tool/prompt trust boundary changed",
     "agentic-actions-auditor": "AI GitHub Actions workflow changed",
     "agentic-eval": "agent/harness behavior changed; not for trust-boundary changes (that's agent-owasp-compliance)",
+    "babysit-pr": "after verification passes, explicitly requested bounded PR observation with target, full head/base and finite budget; not automatic fixes, comments, resolution, rebase, push or merge; monitoring and verification outcomes stay separate",
     "differential-review": "medium/high-risk or security-sensitive diff; security regression; do not trigger for low-risk diffs (typos, formatting, message text) with no security surface",
     "frontend-design": "new UI or visual redesign",
     "leaving-pr-comments": "after verification passes, explicitly authorized PR-comment/review-reply delivery; not PR descriptions, commit messages, draft-only work or explicitly verbatim unattributed text; formatting/verification never grants posting or resolution authority",

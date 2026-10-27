@@ -512,3 +512,83 @@ historical observations, with durable inputs, setup and session references retai
 They were not rerun or relabeled fresh for this commit. No runtime code changed since
 independent review; status/evidence wording reflects authorization. No push, global
 refresh, live publication or acceptance of the other eight skills is included.
+
+## tstack babysit-pr — fresh local verification, 2026-10-27
+
+**Verdict: pass for bounded local adoption; slice uncommitted.** Invoked `itp-verify`
+and its required `verification-before-completion` child after independent Standards,
+Spec, differential/adversarial and agent-boundary implementation rechecks approved.
+Base `c5b1266`; inputs: actual working-tree/new-file diff, `ISSUE-babysit-pr-adoption.md`
+AC1–7, `review.md`, `babysit-pr-security.md`, public tests and retained native fixtures.
+
+### Fresh commands and observed output
+
+- `TMPDIR=/tmp/opencode npm test`: **113 passed, zero failed**, including **17 public
+  watcher CLI tests**; no skipped/cancelled tests.
+- `node tests/skills/check-contracts.mjs`: **71 passed**, registry/generated JSON and
+  28-entry lock consistent, all vendored content hashes verified.
+- Python `ast.parse(..., feature_version=(3,10))` for the adaptation and fake CLI;
+  JSON parsing for retained watcher inputs, registry and lock: passed, no generated
+  bytecode/cache artifacts. This checks syntax compatibility, not a Python 3.10 runtime.
+- `git diff --check`: passed.
+- Assert-based artifact checks: final helper hash, helper/archive modes, exact original
+  guide/helper/license against pinned Git cache, both strict isolated installation hashes,
+  all 27 prior pins unchanged, five final native traces/tool order/source selection/
+  receipts, no installed fixture modifications or failed/denied native tools, allowed
+  fake reads only, unchanged golden note bytes/untracked status and no monitor/comment
+  skill in the affected golden: passed.
+- Fresh `npm test` in the affected golden: **5 passed, zero failed**; independent
+  Standards/Spec reports and native fresh verification already captured after quota resume.
+
+Logs: `/tmp/opencode/tstack-babysit-review/final-validation/npm-test.log`,
+`contracts.log`, `artifact-proof.log`. Strict installation root:
+`/tmp/opencode/babysit-install-utthe3`; final native root:
+`/tmp/opencode/babysit-native-final-xrg1bup3`; golden root:
+`/tmp/opencode/babysit-golden-IwkaHJ`. Durable reproduction inputs, exact sessions,
+results and honest deviations: `tests/skills/results/2026-10-27-babysit-pr.md`.
+
+### Acceptance mapping
+
+| AC | Evidence and result |
+|---|---|
+| 1 bundle/registry/install | Complete adaptation plus unchanged archives/MIT license, executable mode, manual pin, generated registry and conditional owner; both strict scopes pass with exact hashes; prior pins preserved |
+| 2 bound target/response | Public invalid/nonfinite input, host/URL mismatch, head/base drift, during-check drift and malformed/denied API cases pass; unknown readiness in all receipts; native drift hands off |
+| 3 budget/ownership | Public hung descendant, cancellation/released ownership, uppercase duplicate owner and retry-backoff tests pass; pending sleeps expire; native deadline is one watch, no extension |
+| 4 private state | Mode0700 directory/mode0600 files, descriptor-relative no-follow reads, atomic unique writes; restart, unsafe links/modes, corruption, stale/oversized/context reset preserve unrelated bytes and disclose baseline |
+| 5 trust/privacy/unknown | Metadata-only comments/reviews/threads/bot summaries, no raw denied-response bodies, explicit unknown policy; truncated/non-atomic limits documented; event metadata remains untrusted |
+| 6 native lifecycle behavior | Final consistent locked fixtures: local pass precedes observation; non-trigger does not load/watch; missing budget blocks without watch; deadline stops once; changed head yields fresh review/verify handoff; no actions or merge approval |
+| 7 evidence/review/docs | Four independent implementation review approvals, retained fixtures/results/interruptions, affected ordinary golden plus fresh parent suite/contracts, spec/reference/plan/index updated |
+
+No application build/typecheck/UI/browser/DB checks apply: no such runtime was changed;
+Node/Python parsing, public CLI tests, graph/install integrity and native behavior are
+the relevant proof. No global installation, real PR operation, commit, push or publication.
+No post-pass PR/comment/monitor close-out is triggered: this task tests integration and
+does not grant live delivery/monitoring.
+
+### Limits and disposition
+
+Provider quota interrupted preliminary reruns/rechecks and the golden; successful
+retries occurred after its recorded reset. An old native fixture received new helper
+bytes without its new lock hash; that deviation is retained but excluded from accepted
+final evidence. Five fresh fixtures rebuilt from the final strict installation match
+both lock and helper. Golden used the preceding helper snapshot before exceptional
+context preservation; the routed skill/adapter bytes match current source and that helper
+was never invoked. Final CLI/native cases cover the helper delta. Golden's note-hash
+command was denied; its read fallback and the parent's exact-byte assertion confirmed
+preservation. Reviewer read-only behavior is observed, not deterministic Git restriction.
+
+Residual limits: no live GitHub reliability/complete history/host parity, deterministic
+prompt resistance/authorization, cross-host locking, hard CPU/memory sandbox or merge
+readiness proof. These are explicitly excluded claims, not hidden acceptance waivers.
+Two of nine tstack entries are locally verified; seven remain pending. Next planned
+slice: `modernize`; watcher commit/publication and real-global refresh remain separate.
+
+### babysit-pr commit gate — 2026-10-27
+
+User authorized commit and continuation. Fresh `TMPDIR=/tmp/opencode npm test`:
+113 passed, zero failed; contracts: 71 passed; `git diff --check` passed.
+Logs: `/tmp/opencode/tstack-babysit-review/final-validation/commit-tests.log` and
+`commit-contracts.log`. Implementation bytes and reviewed hash are unchanged. Prior
+native/install/golden evidence is retained above, not relabeled as rerun for this commit.
+Only authorization/status wording changed. No push, publication, global refresh or
+completion of the other seven tstack skills is included.

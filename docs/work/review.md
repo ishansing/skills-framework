@@ -318,3 +318,53 @@ Public reference/spec, registry, adapter, manual-update policy, cases, retained 
 results and plan/index cover documentation impact. No DB/UI/AI Actions change triggers
 another specialist. **Review verdict: approve implementation scope; recommended next:
 fresh `itp-verify`.** All-nine adoption and live publication remain outside this verdict.
+
+## tstack babysit-pr — independent review, 2026-10-27
+
+Base `c5b1266ec69cc4a8743e7f8fbf37ef5be4e6fdcf`; uncommitted working-tree diff plus
+new watcher bundle, public CLI/fake-GitHub tests and adoption/evidence documents. Spec:
+`ISSUE-babysit-pr-adoption.md` AC1–7. Standards: repository instructions, framework spec,
+registered adapter/installation/manual-vendor conventions and the code-review baseline.
+
+### Standards
+
+`ses_e83a793a0ffeIm31hfTQAv2UHs` initially found policy-denial output falsely describing
+known absence, plus obsolete snippet/verdict/reviewed and unreachable base-overlap code.
+These were corrected in the owning helper. Independent final recheck: **approved**, no
+remaining documented-standard violation or material heuristic smell. No test/install/
+native verdict was implied by that code-only approval.
+
+### Spec
+
+`ses_e83a76d22ffeCgjx5MdkJY1ZX7` initially required explicit GitHub.com binding,
+case-insensitive watch ownership and structured handling of malformed response shapes.
+Regressions demonstrated those failures before fixes. Final recheck: **implementation
+approved**, zero remaining concrete spec findings; final evidence remained a parent gate.
+Deadline/cancellation also retain established target/expected/current context now.
+
+### Differential/adversarial and agent trust boundary
+
+`ses_e83a7316cffe0Ig1rPesGWjB67` and `ses_e83a6fea7ffeuqMiJ8oNFDqjkU` independently
+reviewed remote input/host/target, subprocess groups, private state, caller blast radius,
+history/blame and observe-only routing. Both approved the final helper hash on recheck,
+with no remaining blocking findings; the security reviewer reran CLI/contracts. Full
+scoped report: `babysit-pr-security.md`. No universal ASI compliance, deterministic model
+permissions, prompt-injection enforcement or merge-policy correctness is claimed.
+
+### Behavior evaluation and documentation
+
+Retained cases and exact prompts/config: `tests/skills/isolation/babysit-pr.md` and
+`tests/skills/fixtures/PR-WAIT-README.md`. Dated results record positive/non-trigger/
+missing-budget/deadline/drift native calls, private/public-CLI tests, isolated install
+hash/modes, prior-pin preservation and the affected small golden. Provider quota failures,
+the stale-lock fixture rerun deviation and the golden shell denial remain disclosed.
+Final fresh native fixtures match both installed bytes and lock; these finite guided
+observations are not deterministic authorization or live-GitHub evidence. Golden reviewer
+Git permissions remain a disclosed enforcement limitation, not a hidden read-only claim.
+
+Public spec/reference, registry/generated JSON, adapter, upstream archives/license,
+manual update mode, cases/results and plan/index cover the declared documentation impact.
+No database, UI or AI Actions workflow changed; those specialist triggers do not apply.
+**Review verdict: implementation approved; recommended next: fresh `itp-verify`.**
+No framework commit, push, publication or completion of the remaining seven skills is
+implied. Final acceptance requires current full-suite/contracts and AC evidence checks.

@@ -682,7 +682,8 @@ Review should use a fresh reading of the current diff/spec rather than simply ac
 itp-verify
   ├── verification-before-completion
   ├── pr                              [authorized PR-body close-out]
-  └── leaving-pr-comments              [authorized PR-comment close-out]
+  ├── leaving-pr-comments              [authorized PR-comment close-out]
+  └── babysit-pr                       [explicit bounded observe/report close-out]
 ```
 
 The verification adapter requires fresh evidence before the root skill claims completion.
@@ -692,6 +693,12 @@ commit messages, draft-only requests or explicitly verbatim unattributed text. P
 resolving and dismissing require their own grants; verification is not such a grant.
 Record delivery separately: missing capability, unsafe content or failed/uncertain receipt
 requires a named handoff and cannot satisfy a requested delivery outcome.
+
+Explicitly requested PR monitoring uses `babysit-pr` after verification, with one target,
+current full head/base SHAs and a finite budget. Its result is observation, not refreshed
+verification or merge approval; monitoring status stays separate. Drift returns to fresh
+review/verification. Repairs, publication and merge remain separately granted work owned
+outside monitoring. Missing runtime/context yields a named handoff, not an ad hoc watcher.
 
 Evidence may include:
 

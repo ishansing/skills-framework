@@ -22,7 +22,7 @@ adapter_contract:
   phase: verification
   consumes: [implementation-diff, validation-evidence, review-verdict, acceptance-criteria]
   required_children: [verification-before-completion]
-  conditional_children: [pr, leaving-pr-comments]
+  conditional_children: [pr, leaving-pr-comments, babysit-pr]
   produces: [verification-evidence, completion-verdict]
   exits: [pass, fail, blocked, needs-human]
 ```
@@ -68,7 +68,14 @@ fresh verification evidence produced in this session.
    verbatim unattributed text. Verification or formatting alone never authorizes posting,
    resolution or dismissal. Missing skill/tool/authority returns `needs-human`; never install
    or bypass the specialist. Record its receipt and delivery result separately: a failed or
-   uncertain delivery cannot complete a requested close-out even when verification passed.
+    uncertain delivery cannot complete a requested close-out even when verification passed.
+9. After `pass`, call `babysit-pr` only for explicitly requested bounded PR observation.
+   Pass the target, current verified full head/base SHAs, finite remaining budget and
+   observe/report grant. Missing context/tool/skill yields `needs-human`; no installation
+   or replacement polling loop. Record monitoring separately from verification: expiry,
+   blockage or cancellation is not a refreshed pass or merge approval. Head/base drift
+   hands off to fresh review/verification; action findings require their own grant and
+   return to their existing owner, never automatic fixes, publication or merge.
 
 ## Output
 

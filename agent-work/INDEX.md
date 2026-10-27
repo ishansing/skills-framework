@@ -22,8 +22,10 @@ Task-specific handoffs live under `context/` when recorded; reusable prompts bel
 default to `previews/` (gitignored), not the approved dependency registry.
 
 Current task: `plans/TSTACK-SKILL-WATCH-INTEGRATION.md`; active tstack slice:
-`../docs/work/ISSUE-leaving-pr-comments-adoption.md` (implementation/validation).
-That slice is locally verified; next required adoption is `babysit-pr`. Publication remains separate.
+`../docs/work/ISSUE-babysit-pr-adoption.md` (locally verified; commit authorized).
+The preceding comment-hygiene slice is committed as `c5b1266`; the watcher slice remains
+commit-authorized; both slices passed local verification. Next planned integration: `modernize`.
+Publication remains separate.
 Marketing follow-ups: `plans/MARKETING-PLAN.md`. Adoption handoff: `context/skill-adoption-preview.md`;
 reusable preview request: `prompts/adoption-preview.md`.
 

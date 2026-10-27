@@ -130,6 +130,20 @@ test("authorized PR-comment close-out uses the pinned conditional hygiene specia
   assert.match(read(".agents/skills/leaving-pr-comments/SKILL.md"), /Verification status and delivery status are separate/);
 });
 
+test("bounded PR observation has a manual pin and conditional verification owner", () => {
+  const registry = JSON.parse(read("dependency.json"));
+  assert.deepEqual(registry.capabilities["bounded PR observation"], ["babysit-pr"]);
+  assert.deepEqual(registry.skills["babysit-pr"].used_by, ["itp-verify"]);
+  const entry = JSON.parse(read("skills.lock.json")).skills.find(s => s.id === "babysit-pr");
+  assert.equal(entry.vendored, true);
+  assert.equal(entry.updateMode, "manual");
+  assert.match(read(".agents/skills/itp-verify/SKILL.md"), /conditional_children: \[[^\]]*babysit-pr/);
+  const skill = read(".agents/skills/babysit-pr/SKILL.md");
+  assert.match(skill, /observe\/report/);
+  assert.match(skill, /merge readiness unknown/);
+  assert.match(skill, /Verification status and monitoring status are separate/);
+});
+
 test("threat modeling is a conditional architecture specialist with a precise trigger", () => {
   const registry = JSON.parse(read("dependency.json"));
   const lock = JSON.parse(read("skills.lock.json"));

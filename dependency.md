@@ -30,6 +30,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | completion evidence | `verification-before-completion` |
 | authorized PR-body close-out | `pr` |
 | authorized PR-comment hygiene | `leaving-pr-comments` |
+| bounded PR observation | `babysit-pr` |
 | whole-spec parallel implementation (user handoff) | `implement-spec` |
 | session retrospective (user entry) | `retro` |
 
@@ -64,6 +65,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | agentic-actions-auditor | trailofbits/skills | model | installed-global | itp-review, itp-incident |
 | security-threat-model | openai/skills | model | installed-global | itp-architecture |
 | leaving-pr-comments | t3dotgg/tstack (pinned local adaptation) | model | vendored-pinned | itp-verify |
+| babysit-pr | t3dotgg/tstack (pinned local adaptation) | model | vendored-pinned | itp-verify |
 
 Status values: `installed-global` (discovered from a global skill source), `installed-local`
 (installed into the project's own `.agents/skills/`; self-contained, location verified by
@@ -89,6 +91,7 @@ must be pinned before Phase 5 validation; curation debt), `not-installed`.
 | security-threat-model | architecture touches auth, credentials, PII, trust boundaries, or external exposure; not for general summaries, code review, or non-security design |
 | pr | after verification passes, when a PR body is requested or an explicitly authorized delivery workflow requires one; never create or publish a PR without authorization |
 | leaving-pr-comments | after verification passes, explicitly authorized PR-comment/review-reply delivery; not PR descriptions, commit messages, draft-only work or explicitly verbatim unattributed text; formatting/verification never grants posting or resolution authority |
+| babysit-pr | after verification passes, explicitly requested bounded PR observation with target, full head/base and finite budget; not automatic fixes, comments, resolution, rebase, push or merge; monitoring and verification outcomes stay separate |
 
 Trigger rows state positive conditions; when ambiguous, do not load - record as
 considered-not-triggered.
@@ -137,4 +140,7 @@ If a user-entry workflow is preferable, return `needs-human` with
     untrusted-input, receipt and delivery-status guards. `updateMode: manual` refuses
     explicit repin and is skipped by bulk repin; compare upstream deliberately and update the adapted bundle/hash
     together. The source path/revision tracks upstream, the hash covers installed bytes.
+  - `babysit-pr` is likewise a manual vendored adaptation: its original guide/helper and
+    MIT notice are archival, while the adapted helper enforces a finite observe-only watch,
+    context binding and private local state. No ready/green or automatic-action authority.
 - Do not let a running skill modify `skills.lock.json` or this file.
