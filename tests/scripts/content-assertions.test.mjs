@@ -160,6 +160,22 @@ test("stale PR modernization is a manually pinned user handoff, never an adapter
   assert.match(skill, /git range-diff/);
 });
 
+test("file-pr is a manual publication user entry while pr remains the body owner", () => {
+  const registry = JSON.parse(read("dependency.json"));
+  assert.deepEqual(registry.capabilities["authorized PR-body close-out"], ["pr"]);
+  assert.deepEqual(registry.capabilities["authorized PR publication (user handoff)"], ["file-pr"]);
+  assert.equal(registry.skills["file-pr"].invocation_class, "user");
+  assert.ok(registry.user_entry.includes("file-pr"));
+  const entry = JSON.parse(read("skills.lock.json")).skills.find(s => s.id === "file-pr");
+  assert.equal(entry.invocationClass, "user");
+  assert.equal(entry.vendored, true);
+  assert.equal(entry.updateMode, "manual");
+  const verify = read(".agents/skills/itp-verify/SKILL.md");
+  assert.match(verify, /recommended_user_skill: file-pr/);
+  assert.doesNotMatch(verify, /conditional_children: \[[^\]]*file-pr/);
+  assert.match(read(".agents/skills/file-pr/SKILL.md"), /Invocation class: \*\*user entry\*\*/);
+});
+
 test("threat modeling is a conditional architecture specialist with a precise trigger", () => {
   const registry = JSON.parse(read("dependency.json"));
   const lock = JSON.parse(read("skills.lock.json"));

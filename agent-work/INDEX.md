@@ -22,9 +22,11 @@ Task-specific handoffs live under `context/` when recorded; reusable prompts bel
 default to `previews/` (gitignored), not the approved dependency registry.
 
 Current task: `plans/TSTACK-SKILL-WATCH-INTEGRATION.md`; active tstack slice:
-`../docs/work/ISSUE-modernize-adoption.md` (locally verified; merge pending).
+`../docs/work/ISSUE-file-pr-adoption.md` (locally verified; commit authorized, merge pending).
 Comment hygiene is committed as `c5b1266`, bounded monitoring as `a2fc0ad`; both passed
-local verification. Modernization now passed local adoption checks; next is `takeover`.
+local verification. Modernization is committed as `26efe98`. File-pr is brought forward
+as takeover's delivery dependency and passed bounded local verification (four of nine).
+Takeover follows with the approved publication handoff; five integrations remain pending.
 Publication remains separate.
 Marketing follow-ups: `plans/MARKETING-PLAN.md`. Adoption handoff: `context/skill-adoption-preview.md`;
 reusable preview request: `prompts/adoption-preview.md`.

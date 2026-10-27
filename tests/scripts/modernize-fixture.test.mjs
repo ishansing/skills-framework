@@ -24,7 +24,12 @@ test("local modernize fixture preserves dirty work while exposing a stale branch
     assert.equal(git(["-C", join(root, "work"), "worktree", "add", "-b", "owned-modernization", rebased, context.head]).status, 0);
     assert.equal(git(["-C", rebased, "-c", "core.hooksPath=/dev/null", "rebase", context.base]).status, 0);
     assert.equal(git(["-C", rebased, "show", "-s", "--format=%an <%ae>", "HEAD"]).stdout.trim(), "Original Contributor <contributor@example.invalid>");
-    assert.equal(spawnSync("node", ["--test", "value.test.mjs"], { cwd: rebased, encoding: "utf8" }).status, 0);
+    const nodeEnv = { ...process.env };
+    // Run the app independently, not in node:test's inherited child IPC mode.
+    delete nodeEnv.NODE_TEST_CONTEXT;
+    const checked = spawnSync("node", ["--test", "value.test.mjs"], { cwd: rebased, env: nodeEnv, encoding: "utf8" });
+    assert.equal(checked.status, 0, checked.stdout + checked.stderr);
+    assert.match(checked.stdout, /tests 1[\s\S]*pass 1[\s\S]*fail 0/);
     const range = git(["-C", rebased, "range-diff", `${context.merge_base}..${context.head}`, `${context.base}..HEAD`]);
     assert.equal(range.status, 0);
     assert.match(range.stdout, /=\s+1:\s+[0-9a-f]+\s+Implement useful doubling behavior/);

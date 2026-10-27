@@ -80,6 +80,14 @@ range-diff and results, then route to `itp-review` and fresh `itp-verify` before
 authorized delivery. REWORK/CLOSE are evidence-backed recommendations, not automatic
 rewrite or closure actions. Missing skill/tool/context yields a named human handoff.
 
+After verification/body preparation, requested PR creation/update returns `needs-human`
+with `recommended_user_skill: file-pr`, current review/verification and prepared-body
+pointers, full target/head/base identities and the explicitly granted operation/status.
+The user invokes file-pr; never recursively load it or equate a body draft with publication.
+Existing `pr` remains the single formatter. On return, record actual publication separately;
+uncertain/blocked delivery is not complete. Comments/monitoring need separate grants and
+their existing `itp-verify` specialists; merge and branch push are never implied.
+
 ## Greenfield projects
 
 A repo with no application code yet is never `small`: greenfield work creates interfaces and

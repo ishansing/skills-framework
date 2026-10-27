@@ -420,3 +420,32 @@ No UI application, DB or AI Actions workflow changed; those specialists do not t
 **Review verdict: implementation/design approved; recommended next: fresh `itp-verify`.**
 Native recommendations/local-work handoffs are not passed lifecycle/delivery. No framework
 commit, push, publication/global refresh or acceptance of the remaining six skills implied.
+
+## file-pr implementation review — 2026-10-27
+
+Fixed point `26efe984b0d1729b8391df6ebc620626fa5e84bf`; working-tree diff plus all
+untracked slice files. Spec: `ISSUE-file-pr-adoption.md`, REQ1–7 / AC1–7. Independent
+Standards `ses_e819d63aeffeqX3f3FBtqXE4Cp` and Spec `ses_e819d424effeTez1zqSuQI5cv2`
+approved without blocking defects. Differential/adversarial
+`ses_e819d1d0cffekNd2o3enctKr0T` and agent-boundary/eval
+`ses_e819cfdbeffec8zxmwdiT0HVJu` approved scoped implementation and rechecked fixture
+hardening. Full threat assessment, fixes and coverage limits: `file-pr-security.md`.
+
+Retain Matt pr as sole body formatter and file-pr as explicit publication user entry;
+no automatic invocation or production transport is introduced. Review's unsupported
+write-flag evidence gap is closed by rejecting unknown/duplicate flags and payloads;
+actual captured argv replay identically. Native draft/fork/concurrency/missing-tool/
+multiple-match/follow-up coverage limits remain explicit. Logging is not universally
+value-free. The adjacent Node IPC-context correction strengthens actual test evidence.
+
+Fourteen initial native cases, two refreshed composition cases, both strict install
+scopes and affected golden are retained in `tests/skills/results/2026-10-27-file-pr.md`.
+Final composition cases both attempted absent local refs/heads/main, then used the
+trusted committed SHA (publication handoff additionally read fake remote refs); this
+is a retained fixture deviation, not proof that a local main ref existed.
+Golden's initial checksum denial/generalized blocker, narrow permission correction,
+single resume and recovered ledger patch error remain separate observations.
+
+**Review verdict: scoped implementation approved; fresh parent verification required.**
+No universal compliance, deterministic authorization, live GitHub correctness, atomic
+publication or approval of remaining integration slices follows. No commit authorized.

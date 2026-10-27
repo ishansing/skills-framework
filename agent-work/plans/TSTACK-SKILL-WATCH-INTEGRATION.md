@@ -2,7 +2,7 @@
 
 Status: implementation started, 2026-10-26. All-nine tstack scope and justified
 replacements remain required. Active slice:
-[modernize adoption](../../docs/work/ISSUE-modernize-adoption.md).
+[file-pr adoption](../../docs/work/ISSUE-file-pr-adoption.md).
 The user authorized starting the plan and confirmed isolated installer/native-output
 test boundaries. Real-global installation changes and remote publication are excluded.
 
@@ -61,16 +61,18 @@ merge/deployment pending. `babysit-pr` is independently reviewed and locally ver
 with final strict installs, five native cases, affected golden and fresh `itp-verify`;
 committed as `a2fc0ad`. `modernize` is independently reviewed and locally verified with
 strict installs, local Git/native evidence, affected golden and fresh verification;
-commit authorized after verification. Three of nine entries are locally verified, not a completed
-all-nine initiative. Next: `takeover`. No real-global refresh or publication occurred.
+committed as `26efe98`. File-pr passed bounded local adoption checks and remains
+commit authorized after fresh checks; [results](../../tests/skills/results/2026-10-27-file-pr.md). Four of nine
+entries are locally verified, not a completed all-nine initiative. Next: takeover,
+now with its publication dependency available. No real-global refresh or publication occurred.
 
 | tstack entry | Adoption state | Evidence / next gate |
 |---|---|---|
 | `leaving-pr-comments` | Locally verified; merge pending | [Proposal](../../docs/work/ISSUE-leaving-pr-comments-adoption.md), [native evidence](../../tests/skills/results/2026-10-26-leaving-pr-comments.md), `itp-verify` owner, lock source/hash, OpenCode/model and positive/non-trigger/blocked/review/verify evidence recorded |
 | `babysit-pr` | Locally verified; merge pending | [Proposal](../../docs/work/ISSUE-babysit-pr-adoption.md), [security review](../../docs/work/babysit-pr-security.md), [native/CLI/install/golden evidence](../../tests/skills/results/2026-10-27-babysit-pr.md); fresh verification passed |
 | `modernize` | Locally verified; merge pending | [Proposal](../../docs/work/ISSUE-modernize-adoption.md), [security review](../../docs/work/modernize-security.md), [local Git/native/install/golden evidence](../../tests/skills/results/2026-10-27-modernize.md); fresh verification passed |
-| `takeover` | Pending | Contributor credit and modernization/delivery composition |
-| `file-pr` | Pending | PR-writing replacement decision and authority migration |
+| `file-pr` | Locally verified; commit authorized, merge pending | [Spec](../../docs/work/ISSUE-file-pr-adoption.md), [results/limits](../../tests/skills/results/2026-10-27-file-pr.md), [security review](../../docs/work/file-pr-security.md); existing pr formatter retained |
+| `takeover` | Pending, after file-pr | Contributor credit and complete modernization/delivery handoffs |
 | `sol-loop` | Pending | Exact-model dispatch and bounded review protocol |
 | `council` | Pending | Provider/round/budget/data-sharing limits |
 | `full-stop` | Pending | Shared lifecycle and no-merge delivery recipe |
@@ -102,7 +104,7 @@ Unchanged bulk installation is not sufficient; broader workflows need reviewed a
 
 | Existing owner / candidate | Planned decision and migration proof |
 |---|---|
-| Matt `pr` versus tstack `file-pr` | Evaluate `file-pr` as the replacement PR owner. Retain a draft/body-only path when publication is not authorized. If replacement passes, migrate `itp-verify` close-out, capability/inventory/trigger rows, lock, generated registry, fixtures and docs together; retire the old active requirement without deleting unowned global copies. If replacement loses required behavior, adapt `file-pr` or retain a narrowly scoped formatting dependency with only one owner per operation. |
+| Matt `pr` versus tstack `file-pr` | Source comparison favors retaining Matt as the single body formatter: upstream file-pr lacks its visual Summary, explicit before/after Evidence and Merge Danger/door/blast-radius procedure. Adapt file-pr as explicit user-entry publication owner consuming that verified prepared body, with no second formatter. Preserve draft-only/verification gates, credit/privacy and separately granted writes. Proposal above; require native formatter/non-trigger/user-handoff and publication-boundary proof before acceptance. |
 | Matt `code-review` versus `sol-loop`/`council` | Do not equate model agreement with Standards + Spec coverage. Keep required review ownership unless an explicit replacement proposal demonstrates both axes, tracker/standards discovery, independent reports, blocked paths and specialist composition. Integrate both tstack review entries regardless of that decision. |
 | Issue #9 `pr-address-feedback` versus `babysit-pr` | Prefer the required tstack integration where it meets the need; add the new candidate only for a demonstrated approval-first triage gap with no duplicate resolution owner. |
 

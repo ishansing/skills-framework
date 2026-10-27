@@ -24,7 +24,8 @@
           {"action":"shell","resource":"git show *","effect":"allow"},
           {"action":"shell","resource":"git add *","effect":"allow"},
           {"action":"shell","resource":"git commit *","effect":"allow"},
-          {"action":"shell","resource":"git ls-files *","effect":"allow"}
+          {"action":"shell","resource":"git ls-files *","effect":"allow"},
+          {"action":"shell","resource":"sha256sum user-notes.txt","effect":"allow"}
         ]
       },
       "general": {

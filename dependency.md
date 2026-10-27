@@ -29,6 +29,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | agent trust-boundary review | `agent-owasp-compliance`, `agentic-actions-auditor` |
 | completion evidence | `verification-before-completion` |
 | authorized PR-body close-out | `pr` |
+| authorized PR publication (user handoff) | `file-pr` |
 | authorized PR-comment hygiene | `leaving-pr-comments` |
 | bounded PR observation | `babysit-pr` |
 | stale PR reassessment | `modernize` |
@@ -68,6 +69,7 @@ upstream skills, their invocation classes, and installation status; adapters and
 | leaving-pr-comments | t3dotgg/tstack (pinned local adaptation) | model | vendored-pinned | itp-verify |
 | babysit-pr | t3dotgg/tstack (pinned local adaptation) | model | vendored-pinned | itp-verify |
 | modernize | t3dotgg/tstack (pinned local adaptation) | user | vendored-pinned | user handoff only |
+| file-pr | t3dotgg/tstack (pinned local adaptation) | user | vendored-pinned | user handoff only |
 
 Status values: `installed-global` (discovered from a global skill source), `installed-local`
 (installed into the project's own `.agents/skills/`; self-contained, location verified by
@@ -102,7 +104,7 @@ considered-not-triggered.
 
 `grill-with-docs`, `grill-me`, `to-spec`, `to-tickets`, `implement`, `triage`,
 `improve-codebase-architecture`, `setup-matt-pocock-skills`, `ask-matt`, `wayfinder`,
-`handoff`, `teach`, `to-questionnaire`, `wait-what`, `implement-spec`, `retro`, `modernize`.
+`handoff`, `teach`, `to-questionnaire`, `wait-what`, `implement-spec`, `retro`, `modernize`, `file-pr`.
 
 The `implement-spec` workflow is an optional parallel alternative for an approved spec with a ticket
 dependency graph. Return a user handoff, not a child invocation. Its integration branch
@@ -112,6 +114,10 @@ must return through `itp-review` and fresh `itp-verify` before framework complet
 or automatic behind-branch response. Establish separate local-rewrite/test/publication
 grants, preserve work and original intent, and return changed work through review/fresh
 verification. See the lifecycle user-handoff reference; assessment never grants merging.
+`file-pr` consumes current verification, the prepared `pr` body and a scoped publication
+grant as an explicit user entry. It does not replace the formatter or become an adapter
+child; body-only requests never grant creation/update. Publication/verification and later
+comments/monitoring have separate outcomes. See the lifecycle publication handoff.
 
 If a user-entry workflow is preferable, return `needs-human` with
 `recommended_user_skill`, a reason, and `resume_with` (artifact or next step).
@@ -152,4 +158,7 @@ If a user-entry workflow is preferable, return `needs-human` with
   - `modernize` is a manual vendored user-entry adaptation with original guide/UI metadata
     and MIT notice retained. It separates assessment, local rewrite and remote-update
     grants and keeps the existing review/verification/publication ownership boundaries.
+  - `file-pr` is a manual vendored user-entry publication adaptation, with original guide
+    and MIT notice retained. Existing `pr` owns body formatting; create/update, draft state,
+    fallback authority, target receipt and follow-up grants are explicit delivery concerns.
 - Do not let a running skill modify `skills.lock.json` or this file.

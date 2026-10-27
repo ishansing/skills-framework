@@ -19,6 +19,9 @@
     "ambiguity discovery": [
       "grilling"
     ],
+    "authorized PR publication (user handoff)": [
+      "file-pr"
+    ],
     "authorized PR-body close-out": [
       "pr"
     ],
@@ -158,6 +161,14 @@
         "itp-align",
         "itp-spec",
         "itp-architecture"
+      ]
+    },
+    "file-pr": {
+      "source": "t3dotgg/tstack (pinned local adaptation)",
+      "invocation_class": "user",
+      "status": "vendored-pinned",
+      "used_by": [
+        "user handoff only"
       ]
     },
     "frontend-design": {
@@ -357,6 +368,7 @@
     "wait-what",
     "implement-spec",
     "retro",
-    "modernize"
+    "modernize",
+    "file-pr"
   ]
 }

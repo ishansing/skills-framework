@@ -4,6 +4,16 @@
   "contentHashMethod": "sha256 over sorted (relative path + NUL + file bytes + NUL) for every file in the skill directory",
   "skills": [
     {
+      "id": "file-pr",
+      "repo": "t3dotgg/tstack",
+      "commit": "7de017b3fc9d50c03cf3ecb98fb71e0ca65a78bd",
+      "path": "skills/file-pr",
+      "contentSha256": "69c81e9d3ef7182bed7ea6e136db522abe499a52d61b08f2b967078d4316ad80",
+      "invocationClass": "user",
+      "vendored": true,
+      "updateMode": "manual"
+    },
+    {
       "id": "modernize",
       "repo": "t3dotgg/tstack",
       "commit": "7de017b3fc9d50c03cf3ecb98fb71e0ca65a78bd",

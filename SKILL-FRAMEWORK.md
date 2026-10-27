@@ -486,6 +486,7 @@ setup-matt-pocock-skills
 ask-matt
 wayfinder
 modernize
+file-pr
 ```
 
 If one of these is preferable, the framework should tell the human:
@@ -504,6 +505,13 @@ dirty work and original intent, separates local-rewrite/test/publication grants 
 requires observed-SHA lease protection for any separately authorized remote update.
 Returned changes still pass `itp-review` and fresh `itp-verify`; assessment or a clean
 rebase is not verification, publication, closure or merge authorization.
+
+`file-pr` is explicit PR publication, not a replacement body-writing process. Existing
+`pr` owns the verified body template. After verification/body preparation, the adapter
+returns the file-pr user handoff with current target/head/base, prepared artifacts and
+scoped operation/status grants; it never recursively invokes this user entry. Publication,
+verification and separately requested comments/monitoring retain distinct outcomes.
+Uncertain writes or mismatched receipts require reconciliation/handoff, not blind retry.
 
 ### 7.3 Specialist layer
 

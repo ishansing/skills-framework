@@ -678,3 +678,67 @@ Reviewed implementation/hash unchanged; only authorization/status wording change
 this gate. Earlier native/install/golden evidence remains retained observations, not
 relabeled as rerun. Commit excludes push, publication, live PR/global changes and work
 on the next slice.
+
+## file-pr local adoption verification — 2026-10-27
+
+Scope: uncommitted slice from `26efe98`, `ISSUE-file-pr-adoption.md` REQ1–7 / AC1–7.
+Current itp-verify and required verification-before-completion loaded. Independent review
+verdicts above/in `review.md` and `file-pr-security.md` approve scoped implementation.
+
+### Fresh checks
+
+- `TMPDIR=/tmp/opencode npm test`: **125 passed, 0 failed**, exit 0.
+- `node tests/skills/check-contracts.mjs`: **77 passed**, exit 0.
+- Both owned isolated targets refreshed with `install.sh --strict --skills-scope repo`
+  and `global`: exit 0; file-pr hash/current routing guides match source exactly.
+- Archive/license exact; all 29 previous pins unchanged, 30 total entries.
+- Python AST parsing for both new fixtures and JSON parsing for registry/lock/inputs/
+  golden configuration: pass. `git diff --check`: pass.
+- Final two native composition runs: actual one-test/one-pass output, unchanged pr owner,
+  no recursive file-pr load or writes; handoff preserves current identities/operation.
+- Parent golden rerun: six tests passed; original untracked user notes byte-exact against
+  fixture JSON. Initial Git-blob lookup was invalid because notes were never seed-tracked;
+  retained corrected check does not claim that failed lookup succeeded.
+- Original fourteen native heads/committed app bytes preserved; exact command replay
+  under hardened fixture matches observed write counts/content. Prior native runs/review
+  observations are retained evidence, not relabeled as fresh model execution.
+
+Logs: `/tmp/opencode/file-pr-validation/{final-tests,final-contracts,final-syntax,final-provenance,final-preservation,final-golden-preservation}.log`;
+strict-install logs and replay log reside alongside. Detailed results and exact raw
+roots: `tests/skills/results/2026-10-27-file-pr.md`.
+
+### Acceptance mapping and bounded verdict
+
+1. Packaging/manual pin/registry/user metadata/provenance and both install scopes verified.
+2. Fresh body-only and publication-handoff compositions retain pr; golden is non-trigger.
+3. Actual Git/evidence-bound preflight, missing grant, stale head, private body and hostile
+   metadata cases stop safely. Physical missing-tool behavior remains source-reviewed,
+   not natively exercised; no tool-absence runtime coverage is claimed.
+4. Public CLI/native create, exact existing reuse and separately granted title/body update
+   observed. Native non-draft only; draft-true is public fake-CLI proof, not model proof.
+5. Definite rejection, uncertain write, separately granted fallback, wrong receipt and
+   pre/post-drift outcomes retain actual state with no blind repeat/rollback.
+6. Distinct verification/publication/user-handoff results and no unauthorized follow-up
+   observed; positive comment/monitor follow-ups are not exercised.
+7. Exact fixtures/results/deviations, independent reviews, affected golden and fresh checks
+   retained. All declared documentation paths updated; prior records remain append-only.
+
+**Pass for bounded local adoption**, not exhaustive coverage of every conditional branch
+or live publication readiness. Native fork collisions/concurrent-body/multiple-match/
+missing-tool/draft-true and positive follow-ups remain explicit coverage gaps. No atomic
+or exactly-once write, deterministic authorization/prompt resistance, hard sandbox or
+live GitHub reliability claim follows. No app build/typecheck/browser/DB check applies.
+
+Four of nine entries are locally verified; file-pr remains uncommitted. No PR body,
+comment or monitoring close-out was requested for this maintenance, so none is invoked.
+No commit, push, real PR operation or personal-global refresh occurred. Next: takeover
+with its own spec, authority and validation gates; five integrations remain pending.
+
+### file-pr commit gate — 2026-10-27
+
+User authorized commit only. Fresh `TMPDIR=/tmp/opencode npm test`: 125 passed,
+zero failed; `node tests/skills/check-contracts.mjs`: 77 passed; `git diff --check`
+passed. Logs: `/tmp/opencode/file-pr-validation/commit-tests.log` and
+`commit-contracts.log`. Runtime guide/pin unchanged; retained native/install/golden
+observations are not relabeled as rerun. Commit excludes push, real PR operations,
+publication, personal-global refresh and work on the next slice.
