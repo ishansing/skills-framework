@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-10-27T11:42:35.351Z",
+  "scannedAt": "2026-10-28T12:15:04.194Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10605,6 +10605,224 @@
       ]
     },
     {
+      "id": "dfdaa9ebff71e95bdcf34a858b0fec742bdedc50aff17fcdf46d7ec7359ab1ed",
+      "kind": "content-changed",
+      "key": "1148788086:skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:mattpocock/skills",
+      "name": "setup-matt-pocock-skills",
+      "url": "https://github.com/mattpocock/skills/blob/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "observedAt": "2026-10-27T11:42:35.351Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "mattpocock/skills",
+      "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
+      "aliases": [
+        "1148788086:skills/engineering/setup-matt-pocock-skills/SKILL.md",
+        "mattpocock/skills:skills/engineering/setup-matt-pocock-skills/SKILL.md",
+        "lead:mattpocock/skills:setup-matt-pocock-skills",
+        "lead:mattpocock/skills:skills/engineering/setup-matt-pocock-skills/SKILL.md"
+      ]
+    },
+    {
+      "id": "50001501ae94b1c05125f7ec54467f99616314ef08fbf5eb1616458ba8f2133f",
+      "kind": "content-changed",
+      "key": "1112540808:skills/react-view-transitions/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:vercel-labs/agent-skills",
+      "name": "vercel-react-view-transitions",
+      "url": "https://github.com/vercel-labs/agent-skills/blob/6ec269328bc400712ee225a173a14b6b29128df7/skills/react-view-transitions/SKILL.md",
+      "observedAt": "2026-10-27T11:42:35.351Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "vercel-labs/agent-skills",
+      "path": "skills/react-view-transitions/SKILL.md",
+      "aliases": [
+        "1112540808:skills/react-view-transitions/SKILL.md",
+        "vercel-labs/agent-skills:skills/react-view-transitions/SKILL.md",
+        "lead:vercel-labs/agent-skills:vercel-react-view-transitions",
+        "lead:vercel-labs/agent-skills:skills/react-view-transitions/SKILL.md"
+      ]
+    },
+    {
+      "id": "cbccc3f0a898f902d65f1efbd9e905fd4f58ed420ee655e87d3012bd66aa3f0a",
+      "kind": "release",
+      "key": "release:1112540808:425028971",
+      "priority": "medium",
+      "source": "upstream:vercel-labs/agent-skills",
+      "name": "vercel-labs/agent-skills agent-skills-6ec269328bc400712ee225a173a14b6b29128df7",
+      "url": "https://github.com/vercel-labs/agent-skills/releases/tag/agent-skills-6ec269328bc400712ee225a173a14b6b29128df7",
+      "observedAt": "2026-10-27T11:42:35.351Z",
+      "detail": "Automated Agent Skills discovery release for 6ec269328bc400712ee225a173a14b6b29128df7.",
+      "approved": false,
+      "repo": "vercel-labs/agent-skills",
+      "path": null,
+      "aliases": [
+        "release:1112540808:425028971",
+        "vercel-labs/agent-skills:vercel-labs/agent-skills agent-skills-6ec269328bc400712ee225a173a14b6b29128df7",
+        "lead:vercel-labs/agent-skills:vercel-labs/agent-skills agent-skills-6ec269328bc400712ee225a173a14b6b29128df7"
+      ]
+    },
+    {
+      "id": "3bab16d463339bbc82e15c06955e751f02e36c3af16bfcf81e87fcdb7280c2c6",
+      "kind": "new",
+      "key": "1000362065:skills/caption-qa/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "caption-qa",
+      "url": "https://github.com/github/awesome-copilot/blob/d75b41863510272ed217a3074c7045202b96e93f/skills/caption-qa/SKILL.md",
+      "observedAt": "2026-10-27T11:42:35.351Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/caption-qa/SKILL.md",
+      "aliases": [
+        "1000362065:skills/caption-qa/SKILL.md",
+        "github/awesome-copilot:skills/caption-qa/SKILL.md",
+        "lead:github/awesome-copilot:caption-qa",
+        "lead:github/awesome-copilot:skills/caption-qa/SKILL.md"
+      ]
+    },
+    {
+      "id": "0dfa45055e0162f905b036ac69a3a5c36c8cedf5c0c42dc13f94ce671c7df509",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/c-review/skills/c-review/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "c-review",
+      "url": "https://github.com/trailofbits/skills/blob/bf23bfb21f10a2a4b0406086d690dc8cb1b3ccf3/plugins/c-review/skills/c-review/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/c-review/skills/c-review/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/c-review/skills/c-review/SKILL.md",
+        "trailofbits/skills:plugins/c-review/skills/c-review/SKILL.md",
+        "lead:trailofbits/skills:c-review",
+        "lead:trailofbits/skills:plugins/c-review/skills/c-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "322c62d9b09d7d3b3bcc9584b75f29fd55b407ca877943f77cbf4da8348c6fef",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/code-improver/skills/code-improver/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "code-improver",
+      "url": "https://github.com/trailofbits/skills/blob/bf23bfb21f10a2a4b0406086d690dc8cb1b3ccf3/plugins/code-improver/skills/code-improver/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/code-improver/skills/code-improver/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/code-improver/skills/code-improver/SKILL.md",
+        "trailofbits/skills:plugins/code-improver/skills/code-improver/SKILL.md",
+        "lead:trailofbits/skills:code-improver",
+        "lead:trailofbits/skills:plugins/code-improver/skills/code-improver/SKILL.md"
+      ]
+    },
+    {
+      "id": "e3ca6b8432d4c713eb5cbfeb20af8c92514cef5b9c92390a401e9e5b951979a0",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/code-improver/skills/pr-improver/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "pr-improver",
+      "url": "https://github.com/trailofbits/skills/blob/bf23bfb21f10a2a4b0406086d690dc8cb1b3ccf3/plugins/code-improver/skills/pr-improver/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/code-improver/skills/pr-improver/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/code-improver/skills/pr-improver/SKILL.md",
+        "trailofbits/skills:plugins/code-improver/skills/pr-improver/SKILL.md",
+        "lead:trailofbits/skills:pr-improver",
+        "lead:trailofbits/skills:plugins/code-improver/skills/pr-improver/SKILL.md"
+      ]
+    },
+    {
+      "id": "10b55daf0ec39b7b23d29e11481b2cb0a37f16769b94c0e14130db78cff76ef3",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/code-improver/skills/skill-improver/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "skill-improver",
+      "url": "https://github.com/trailofbits/skills/blob/bf23bfb21f10a2a4b0406086d690dc8cb1b3ccf3/plugins/code-improver/skills/skill-improver/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/code-improver/skills/skill-improver/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/code-improver/skills/skill-improver/SKILL.md",
+        "trailofbits/skills:plugins/code-improver/skills/skill-improver/SKILL.md",
+        "lead:trailofbits/skills:skill-improver",
+        "lead:trailofbits/skills:plugins/code-improver/skills/skill-improver/SKILL.md"
+      ]
+    },
+    {
+      "id": "dbd0f7e06aec0da59942fe49ed4613b5d47fab42839ba61c6494df3810f1ed99",
+      "kind": "content-changed",
+      "key": "1134447175:plugins/semgrep-rule-variant-creator/skills/semgrep-rule-variant-creator/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "semgrep-rule-variant-creator",
+      "url": "https://github.com/trailofbits/skills/blob/bf23bfb21f10a2a4b0406086d690dc8cb1b3ccf3/plugins/semgrep-rule-variant-creator/skills/semgrep-rule-variant-creator/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/semgrep-rule-variant-creator/skills/semgrep-rule-variant-creator/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/semgrep-rule-variant-creator/skills/semgrep-rule-variant-creator/SKILL.md",
+        "trailofbits/skills:plugins/semgrep-rule-variant-creator/skills/semgrep-rule-variant-creator/SKILL.md",
+        "lead:trailofbits/skills:semgrep-rule-variant-creator",
+        "lead:trailofbits/skills:plugins/semgrep-rule-variant-creator/skills/semgrep-rule-variant-creator/SKILL.md"
+      ]
+    },
+    {
+      "id": "1ccbfe2b924dc6f2d9d6c761a9ad2570780c424447692e5a7000f80294f7d140",
+      "kind": "content-changed",
+      "key": "1112540808:skills/deploy-to-vercel/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:vercel-labs/agent-skills",
+      "name": "deploy-to-vercel",
+      "url": "https://github.com/vercel-labs/agent-skills/blob/1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62/skills/deploy-to-vercel/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "vercel-labs/agent-skills",
+      "path": "skills/deploy-to-vercel/SKILL.md",
+      "aliases": [
+        "1112540808:skills/deploy-to-vercel/SKILL.md",
+        "vercel-labs/agent-skills:skills/deploy-to-vercel/SKILL.md",
+        "lead:vercel-labs/agent-skills:deploy-to-vercel",
+        "lead:vercel-labs/agent-skills:skills/deploy-to-vercel/SKILL.md"
+      ]
+    },
+    {
+      "id": "d9d9b7e648a26cf926e742f49bc6b44265dbfc05492884b332a66d3eff46f664",
+      "kind": "release",
+      "key": "release:1112540808:426014333",
+      "priority": "medium",
+      "source": "upstream:vercel-labs/agent-skills",
+      "name": "vercel-labs/agent-skills agent-skills-1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "url": "https://github.com/vercel-labs/agent-skills/releases/tag/agent-skills-1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Automated Agent Skills discovery release for 1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62.",
+      "approved": false,
+      "repo": "vercel-labs/agent-skills",
+      "path": null,
+      "aliases": [
+        "release:1112540808:426014333",
+        "vercel-labs/agent-skills:vercel-labs/agent-skills agent-skills-1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62",
+        "lead:vercel-labs/agent-skills:vercel-labs/agent-skills agent-skills-1a2c79d4e6c4a2283dc2c614b6538cbe1ed5ca62"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -18939,85 +19157,6 @@
       ]
     },
     {
-      "id": "dfdaa9ebff71e95bdcf34a858b0fec742bdedc50aff17fcdf46d7ec7359ab1ed",
-      "kind": "content-changed",
-      "key": "1148788086:skills/engineering/setup-matt-pocock-skills/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:mattpocock/skills",
-      "name": "setup-matt-pocock-skills",
-      "url": "https://github.com/mattpocock/skills/blob/59db609eb1e18aaf59b63284d0e52255aff0c63c/skills/engineering/setup-matt-pocock-skills/SKILL.md",
-      "observedAt": "2026-10-27T11:42:35.351Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "mattpocock/skills",
-      "path": "skills/engineering/setup-matt-pocock-skills/SKILL.md",
-      "aliases": [
-        "1148788086:skills/engineering/setup-matt-pocock-skills/SKILL.md",
-        "mattpocock/skills:skills/engineering/setup-matt-pocock-skills/SKILL.md",
-        "lead:mattpocock/skills:setup-matt-pocock-skills",
-        "lead:mattpocock/skills:skills/engineering/setup-matt-pocock-skills/SKILL.md"
-      ]
-    },
-    {
-      "id": "50001501ae94b1c05125f7ec54467f99616314ef08fbf5eb1616458ba8f2133f",
-      "kind": "content-changed",
-      "key": "1112540808:skills/react-view-transitions/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:vercel-labs/agent-skills",
-      "name": "vercel-react-view-transitions",
-      "url": "https://github.com/vercel-labs/agent-skills/blob/6ec269328bc400712ee225a173a14b6b29128df7/skills/react-view-transitions/SKILL.md",
-      "observedAt": "2026-10-27T11:42:35.351Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "vercel-labs/agent-skills",
-      "path": "skills/react-view-transitions/SKILL.md",
-      "aliases": [
-        "1112540808:skills/react-view-transitions/SKILL.md",
-        "vercel-labs/agent-skills:skills/react-view-transitions/SKILL.md",
-        "lead:vercel-labs/agent-skills:vercel-react-view-transitions",
-        "lead:vercel-labs/agent-skills:skills/react-view-transitions/SKILL.md"
-      ]
-    },
-    {
-      "id": "cbccc3f0a898f902d65f1efbd9e905fd4f58ed420ee655e87d3012bd66aa3f0a",
-      "kind": "release",
-      "key": "release:1112540808:425028971",
-      "priority": "medium",
-      "source": "upstream:vercel-labs/agent-skills",
-      "name": "vercel-labs/agent-skills agent-skills-6ec269328bc400712ee225a173a14b6b29128df7",
-      "url": "https://github.com/vercel-labs/agent-skills/releases/tag/agent-skills-6ec269328bc400712ee225a173a14b6b29128df7",
-      "observedAt": "2026-10-27T11:42:35.351Z",
-      "detail": "Automated Agent Skills discovery release for 6ec269328bc400712ee225a173a14b6b29128df7.",
-      "approved": false,
-      "repo": "vercel-labs/agent-skills",
-      "path": null,
-      "aliases": [
-        "release:1112540808:425028971",
-        "vercel-labs/agent-skills:vercel-labs/agent-skills agent-skills-6ec269328bc400712ee225a173a14b6b29128df7",
-        "lead:vercel-labs/agent-skills:vercel-labs/agent-skills agent-skills-6ec269328bc400712ee225a173a14b6b29128df7"
-      ]
-    },
-    {
-      "id": "3bab16d463339bbc82e15c06955e751f02e36c3af16bfcf81e87fcdb7280c2c6",
-      "kind": "new",
-      "key": "1000362065:skills/caption-qa/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:github/awesome-copilot",
-      "name": "caption-qa",
-      "url": "https://github.com/github/awesome-copilot/blob/d75b41863510272ed217a3074c7045202b96e93f/skills/caption-qa/SKILL.md",
-      "observedAt": "2026-10-27T11:42:35.351Z",
-      "detail": "",
-      "approved": false,
-      "repo": "github/awesome-copilot",
-      "path": "skills/caption-qa/SKILL.md",
-      "aliases": [
-        "1000362065:skills/caption-qa/SKILL.md",
-        "github/awesome-copilot:skills/caption-qa/SKILL.md",
-        "lead:github/awesome-copilot:caption-qa",
-        "lead:github/awesome-copilot:skills/caption-qa/SKILL.md"
-      ]
-    },
-    {
       "id": "f34eddfab5247e7f4d388af0552b7e65eae638585b880bf60e0382e92f1724ae",
       "kind": "new",
       "key": "lead:15f5493a203bcf63c9c9a6377b3047669993d54e4331407a1d73a8e5a75422d5",
@@ -19325,6 +19464,260 @@
         "lead:27ea5c5174a892d0a07d3fdaa4bb0de6158826a32b75ca8f6b4468010aa70ff1",
         "volcengine/volcengine-agent-toolkit:volcengine-cli",
         "lead:volcengine/volcengine-agent-toolkit:volcengine-cli"
+      ]
+    },
+    {
+      "id": "1a3e92a893256658be46ababf5d90a47be62ff6eb4522cf11c08aa5aa61a7bb2",
+      "kind": "new",
+      "key": "1332434831:win-loss-review/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "win-loss-review",
+      "url": "https://github.com/getcargohq/gtm-skills/blob/21821088494dca128b002b1e1a7af1373851f382/win-loss-review/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "",
+      "approved": false,
+      "repo": "getcargohq/gtm-skills",
+      "path": "win-loss-review/SKILL.md",
+      "aliases": [
+        "1332434831:win-loss-review/SKILL.md",
+        "getcargohq/gtm-skills:win-loss-review/SKILL.md",
+        "lead:getcargohq/gtm-skills:win-loss-review",
+        "lead:getcargohq/gtm-skills:win-loss-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "fe7599128b44dd267d4a9d17d24006a2bdb8fd155722abb5537f43b3df495e81",
+      "kind": "new",
+      "key": "1332434831:research-account/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "research-account",
+      "url": "https://github.com/getcargohq/gtm-skills/blob/21821088494dca128b002b1e1a7af1373851f382/research-account/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "",
+      "approved": false,
+      "repo": "getcargohq/gtm-skills",
+      "path": "research-account/SKILL.md",
+      "aliases": [
+        "1332434831:research-account/SKILL.md",
+        "getcargohq/gtm-skills:research-account/SKILL.md",
+        "lead:getcargohq/gtm-skills:research-account",
+        "lead:getcargohq/gtm-skills:research-account/SKILL.md"
+      ]
+    },
+    {
+      "id": "b04f71061d92a02440482f74c08819451ed5afc6e56bc06eaccfd9b78247fa8f",
+      "kind": "new",
+      "key": "1254842258:skills/buy-side-equity-research-memo/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "buy-side-equity-research-memo",
+      "url": "https://github.com/haskaomni/serenity-skill/blob/dedcf8f9ca8bd48f21239456ede50a9eb9f7ecb0/skills/buy-side-equity-research-memo/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "",
+      "approved": false,
+      "repo": "haskaomni/serenity-skill",
+      "path": "skills/buy-side-equity-research-memo/SKILL.md",
+      "aliases": [
+        "1254842258:skills/buy-side-equity-research-memo/SKILL.md",
+        "haskaomni/serenity-skill:skills/buy-side-equity-research-memo/SKILL.md",
+        "lead:haskaomni/serenity-skill:buy-side-equity-research-memo",
+        "lead:haskaomni/serenity-skill:skills/buy-side-equity-research-memo/SKILL.md"
+      ]
+    },
+    {
+      "id": "bc701dd575f1e25eb499f2cbdb5f1dc4244297fe503f5039236d2f662064f55c",
+      "kind": "new",
+      "key": "1079619168:skills/n8n-agents/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "n8n-agents",
+      "url": "https://github.com/czlonkowski/n8n-skills/blob/e037563e101749e630e6688d121d04529fe6ee7b/skills/n8n-agents/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "",
+      "approved": false,
+      "repo": "czlonkowski/n8n-skills",
+      "path": "skills/n8n-agents/SKILL.md",
+      "aliases": [
+        "1079619168:skills/n8n-agents/SKILL.md",
+        "czlonkowski/n8n-skills:skills/n8n-agents/SKILL.md",
+        "lead:czlonkowski/n8n-skills:n8n-agents",
+        "lead:czlonkowski/n8n-skills:skills/n8n-agents/SKILL.md"
+      ]
+    },
+    {
+      "id": "3ed9f089501b128ce72220de916f8094d5d5d8de16300920f5d683d3d93a7d94",
+      "kind": "new",
+      "key": "1262400737:skills/review-all/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "review-all",
+      "url": "https://github.com/gjkim42/kanon-repo/blob/b30d6f4d14ed47eebe6c7a96bc1ed7e67372db3b/skills/review-all/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "",
+      "approved": false,
+      "repo": "gjkim42/kanon-repo",
+      "path": "skills/review-all/SKILL.md",
+      "aliases": [
+        "1262400737:skills/review-all/SKILL.md",
+        "gjkim42/kanon-repo:skills/review-all/SKILL.md",
+        "lead:gjkim42/kanon-repo:review-all",
+        "lead:gjkim42/kanon-repo:skills/review-all/SKILL.md"
+      ]
+    },
+    {
+      "id": "b8d703140250696e63d83bfec10c0d258bef96d099c7134134b7cfe7abd0907e",
+      "kind": "new",
+      "key": "1262400737:skills/api-review/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "api-review",
+      "url": "https://github.com/gjkim42/kanon-repo/blob/b30d6f4d14ed47eebe6c7a96bc1ed7e67372db3b/skills/api-review/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "",
+      "approved": false,
+      "repo": "gjkim42/kanon-repo",
+      "path": "skills/api-review/SKILL.md",
+      "aliases": [
+        "1262400737:skills/api-review/SKILL.md",
+        "gjkim42/kanon-repo:skills/api-review/SKILL.md",
+        "lead:gjkim42/kanon-repo:api-review",
+        "lead:gjkim42/kanon-repo:skills/api-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "0616f6145306c6ff6408344c044de54b5780f11ee6b82c90a4a4dbb13cf6cd6f",
+      "kind": "new",
+      "key": "1262400737:skills/address-pr-review/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "address-pr-review",
+      "url": "https://github.com/gjkim42/kanon-repo/blob/b30d6f4d14ed47eebe6c7a96bc1ed7e67372db3b/skills/address-pr-review/SKILL.md",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "",
+      "approved": false,
+      "repo": "gjkim42/kanon-repo",
+      "path": "skills/address-pr-review/SKILL.md",
+      "aliases": [
+        "1262400737:skills/address-pr-review/SKILL.md",
+        "gjkim42/kanon-repo:skills/address-pr-review/SKILL.md",
+        "lead:gjkim42/kanon-repo:address-pr-review",
+        "lead:gjkim42/kanon-repo:skills/address-pr-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "3e11c4e29c16383d1371a997c7b6ca7574b3d81610db1cf3262a8cd26af63870",
+      "kind": "new",
+      "key": "lead:fd405b9e30d735b06de89d250a5ced5c5b2b3787fd36e358f52c4bf173727dee",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "deep-research",
+      "url": "https://skills.sh/affaan-m/ecc/deep-research",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "affaan-m/ecc",
+      "path": null,
+      "aliases": [
+        "lead:fd405b9e30d735b06de89d250a5ced5c5b2b3787fd36e358f52c4bf173727dee",
+        "affaan-m/ecc:deep-research",
+        "lead:affaan-m/ecc:deep-research"
+      ]
+    },
+    {
+      "id": "a8a6e5cb07b2bb6249678abc12444a3fcd35d6d60e1e29712ece89d4b91212e0",
+      "kind": "new",
+      "key": "lead:153cb49fc806ba94cb7dd7e5dc1ebcb8232401838abe8cd35e29a18bdcf3e79e",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "teach",
+      "url": "https://skills.sh/windyd/skills/teach",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "windyd/skills",
+      "path": null,
+      "aliases": [
+        "lead:153cb49fc806ba94cb7dd7e5dc1ebcb8232401838abe8cd35e29a18bdcf3e79e",
+        "windyd/skills:teach",
+        "lead:windyd/skills:teach"
+      ]
+    },
+    {
+      "id": "be5191e2424c3d0e7622ce544050b45e9bcee27e6a75c654294bd21cc5c8a02c",
+      "kind": "rising",
+      "key": "lead:153cb49fc806ba94cb7dd7e5dc1ebcb8232401838abe8cd35e29a18bdcf3e79e",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "teach",
+      "url": "https://skills.sh/windyd/skills/teach",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "windyd/skills",
+      "path": null,
+      "aliases": [
+        "lead:153cb49fc806ba94cb7dd7e5dc1ebcb8232401838abe8cd35e29a18bdcf3e79e",
+        "windyd/skills:teach",
+        "lead:windyd/skills:teach"
+      ]
+    },
+    {
+      "id": "2ab6442cfe6586927c9646802952d17bc099711f4190fc6e71744880bc575476",
+      "kind": "new",
+      "key": "lead:a44147c1056834a7c13123c74130f847941b336a5a9da0ae6edc941a38b7ded5",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "goal-coverage",
+      "url": "https://skills.sh/getcargohq/gtm-skills/goal-coverage",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "getcargohq/gtm-skills",
+      "path": null,
+      "aliases": [
+        "lead:a44147c1056834a7c13123c74130f847941b336a5a9da0ae6edc941a38b7ded5",
+        "getcargohq/gtm-skills:goal-coverage",
+        "lead:getcargohq/gtm-skills:goal-coverage"
+      ]
+    },
+    {
+      "id": "e1d8e7d91ac5bd020d9a60775c918a693749fc11fa024a090b939d6234081a10",
+      "kind": "new",
+      "key": "lead:c15c6b8c3b2b6dbd372b9fbd008d201217876f4c1414106b7ed65b86b4365b32",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "interrogate",
+      "url": "https://skills.sh/michael-denyer/pstack-claude/interrogate",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "michael-denyer/pstack-claude",
+      "path": null,
+      "aliases": [
+        "lead:c15c6b8c3b2b6dbd372b9fbd008d201217876f4c1414106b7ed65b86b4365b32",
+        "michael-denyer/pstack-claude:interrogate",
+        "lead:michael-denyer/pstack-claude:interrogate"
+      ]
+    },
+    {
+      "id": "cf8b3c69827d32c46b361b7ac5b04c886c20a1d3249946cc882b4933d27e59a9",
+      "kind": "new",
+      "key": "lead:137abe655f2476c5ed39a0e7c70283f2847413d124ddade27d47c9efdb14e585",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "crm-deduplication",
+      "url": "https://skills.sh/getcargohq/gtm-skills/crm-deduplication",
+      "observedAt": "2026-10-28T12:15:04.194Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "getcargohq/gtm-skills",
+      "path": null,
+      "aliases": [
+        "lead:137abe655f2476c5ed39a0e7c70283f2847413d124ddade27d47c9efdb14e585",
+        "getcargohq/gtm-skills:crm-deduplication",
+        "lead:getcargohq/gtm-skills:crm-deduplication"
       ]
     }
   ],
@@ -20855,6 +21248,7 @@
     "1ae1ab105ad1365ade766676f0f6b2c26400469297b67f6c3783158dfe2aec98": "2026-10-12T08:10:11.347Z"
   },
   "historyLimit": 5000,
+  "baselinesHeld": true,
   "pins": [
     {
       "id": "research",
@@ -21082,13 +21476,13 @@
     }
   ],
   "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    },
     "https://www.skills.sh/robots.txt": {
       "etag": "\"62699308568d3029fd19b6bc00791b65\"",
       "body": "User-Agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /debug-security/\nDisallow: /search\nDisallow: /api/\n\nSitemap: https://www.skills.sh/sitemap.xml\n"
+    },
+    "https://skillsmp.com/robots.txt": {
+      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
+      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
     }
   },
   "issueNumber": 9
