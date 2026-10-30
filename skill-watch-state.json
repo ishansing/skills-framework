@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-10-29T12:25:20.001Z",
+  "scannedAt": "2026-10-30T12:16:50.027Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -11082,6 +11082,26 @@
       "detail": "implement-spec: a fresh implementer subagent per ticket (#1342)"
     },
     {
+      "id": "a041ce9a4bac839f57e9cb72168075c994bf7d13539d61ddd6bf3f648389e7c5",
+      "kind": "content-changed",
+      "key": "1183263320:security/android-permissions-security/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:skills-sh",
+      "name": "android-permissions-security",
+      "url": "https://github.com/android/skills/blob/6daa53ef27fa2aa87827d183a85c06cedceca833/security/android-permissions-security/SKILL.md",
+      "observedAt": "2026-10-30T12:16:50.027Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "android/skills",
+      "path": "security/android-permissions-security/SKILL.md",
+      "aliases": [
+        "1183263320:security/android-permissions-security/SKILL.md",
+        "android/skills:security/android-permissions-security/SKILL.md",
+        "lead:android/skills:android-permissions-security",
+        "lead:android/skills:security/android-permissions-security/SKILL.md"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -19667,25 +19687,6 @@
         "magentosh/superpowers:twitter-automation",
         "lead:magentosh/superpowers:twitter-automation"
       ]
-    },
-    {
-      "id": "4a6509006b2dc387787a7af3a561c65a4b0b35cc0af001ab59b15f2fcbb12bda",
-      "kind": "new",
-      "key": "lead:5d97f290043f5376263ad46711ef1d1fcf78d2e49a3b472f7aed7ebe02860222",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "ai-avatar-video",
-      "url": "https://skills.sh/magentosh/superpowers/ai-avatar-video",
-      "observedAt": "2026-10-27T11:42:35.351Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "magentosh/superpowers",
-      "path": null,
-      "aliases": [
-        "lead:5d97f290043f5376263ad46711ef1d1fcf78d2e49a3b472f7aed7ebe02860222",
-        "magentosh/superpowers:ai-avatar-video",
-        "lead:magentosh/superpowers:ai-avatar-video"
-      ]
     }
   ],
   "notified": [
@@ -21449,13 +21450,13 @@
     }
   ],
   "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    },
     "https://www.skills.sh/robots.txt": {
       "etag": "\"62699308568d3029fd19b6bc00791b65\"",
       "body": "User-Agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /debug-security/\nDisallow: /search\nDisallow: /api/\n\nSitemap: https://www.skills.sh/sitemap.xml\n"
+    },
+    "https://skillsmp.com/robots.txt": {
+      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
+      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
     }
   },
   "issueNumber": 9
