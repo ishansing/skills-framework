@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-02T14:56:48.633Z",
+  "scannedAt": "2026-11-03T13:44:14.187Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10587,6 +10587,26 @@
       ]
     },
     {
+      "id": "dc800d762ce8ce9e8aad361b5d496d710b69a9c65b8311acbbcbc19dc899f9d0",
+      "kind": "content-changed",
+      "key": "1000362065:skills/gem-devops-guidelines/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "gem-devops-guidelines",
+      "url": "https://github.com/github/awesome-copilot/blob/8178d1939a203f691067073dcab2a3f1e14072d3/skills/gem-devops-guidelines/SKILL.md",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/gem-devops-guidelines/SKILL.md",
+      "aliases": [
+        "1000362065:skills/gem-devops-guidelines/SKILL.md",
+        "github/awesome-copilot:skills/gem-devops-guidelines/SKILL.md",
+        "lead:github/awesome-copilot:gem-devops-guidelines",
+        "lead:github/awesome-copilot:skills/gem-devops-guidelines/SKILL.md"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -18900,6 +18920,755 @@
         "coreyhaines31/marketingskills:ai-seo",
         "lead:coreyhaines31/marketingskills:ai-seo"
       ]
+    },
+    {
+      "id": "a6519c93a164129b807b64db5fe40d11130d54a986216d2bb38bd40ba9b8d442",
+      "kind": "new",
+      "key": "lead:0afe78673e67bc8c85ddffb14a8dd70d26a21b1ca33fddd02d210fb4370a5ee5",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "agent-security-hardening",
+      "url": null,
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "affaan-m/ecc",
+      "path": null,
+      "aliases": [
+        "lead:0afe78673e67bc8c85ddffb14a8dd70d26a21b1ca33fddd02d210fb4370a5ee5",
+        "affaan-m/ecc:agent-security-hardening",
+        "lead:affaan-m/ecc:agent-security-hardening"
+      ]
+    },
+    {
+      "id": "6838ff35d4d6a03134f0f01625870925cadcfccd6014a08631981d676ecfc275",
+      "kind": "new",
+      "key": "1138027710:skills/rstest-best-practices/SKILL.md",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "rstest-best-practices",
+      "url": "https://github.com/rstackjs/agent-skills/blob/2ee8100ab8efb6d6c3c4c6d901fcb665b10163fc/skills/rstest-best-practices/SKILL.md",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "",
+      "approved": false,
+      "repo": "rstackjs/agent-skills",
+      "path": "skills/rstest-best-practices/SKILL.md",
+      "aliases": [
+        "1138027710:skills/rstest-best-practices/SKILL.md",
+        "rstackjs/agent-skills:skills/rstest-best-practices/SKILL.md",
+        "lead:rstackjs/agent-skills:rstest-best-practices",
+        "lead:rstackjs/agent-skills:skills/rstest-best-practices/SKILL.md"
+      ]
+    },
+    {
+      "id": "d6d94720d75f44ab9d0feea0fd133b70e88ed1a626478735b56bb9a320563c38",
+      "kind": "new",
+      "key": "1189740753:skills/test-data-management/SKILL.md",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "test-data-management",
+      "url": "https://github.com/petrkindlmann/qa-skills/blob/62434253c2592f27b494609c27f224939c86346d/skills/test-data-management/SKILL.md",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "",
+      "approved": false,
+      "repo": "petrkindlmann/qa-skills",
+      "path": "skills/test-data-management/SKILL.md",
+      "aliases": [
+        "1189740753:skills/test-data-management/SKILL.md",
+        "petrkindlmann/qa-skills:skills/test-data-management/SKILL.md",
+        "lead:petrkindlmann/qa-skills:test-data-management",
+        "lead:petrkindlmann/qa-skills:skills/test-data-management/SKILL.md"
+      ]
+    },
+    {
+      "id": "4cee4362026f267c61a70b6deb7210bb5cabc6f1456d9217d73c989746c89723",
+      "kind": "new",
+      "key": "1134942413:plugins/medusa-cloud/skills/using-medusa-cloud/SKILL.md",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "using-medusa-cloud",
+      "url": "https://github.com/medusajs/medusa-agent-skills/blob/42b9afd28b22ee6077d3c0ea8b5444a8c9bee1bc/plugins/medusa-cloud/skills/using-medusa-cloud/SKILL.md",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "",
+      "approved": false,
+      "repo": "medusajs/medusa-agent-skills",
+      "path": "plugins/medusa-cloud/skills/using-medusa-cloud/SKILL.md",
+      "aliases": [
+        "1134942413:plugins/medusa-cloud/skills/using-medusa-cloud/SKILL.md",
+        "medusajs/medusa-agent-skills:plugins/medusa-cloud/skills/using-medusa-cloud/SKILL.md",
+        "lead:medusajs/medusa-agent-skills:using-medusa-cloud",
+        "lead:medusajs/medusa-agent-skills:plugins/medusa-cloud/skills/using-medusa-cloud/SKILL.md"
+      ]
+    },
+    {
+      "id": "16b0e4d9d171e925cd67dddb68dd4838b9bb4fc5caa55794b8e563fc05760236",
+      "kind": "new",
+      "key": "1204154625:skills/limrun-maestro-testing/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "limrun-maestro-testing",
+      "url": "https://github.com/limrun-inc/skills/blob/873a6d9c3f72bc21ebe7cf60e0b471ff65ea56eb/skills/limrun-maestro-testing/SKILL.md",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "",
+      "approved": false,
+      "repo": "limrun-inc/skills",
+      "path": "skills/limrun-maestro-testing/SKILL.md",
+      "aliases": [
+        "1204154625:skills/limrun-maestro-testing/SKILL.md",
+        "limrun-inc/skills:skills/limrun-maestro-testing/SKILL.md",
+        "lead:limrun-inc/skills:limrun-maestro-testing",
+        "lead:limrun-inc/skills:skills/limrun-maestro-testing/SKILL.md"
+      ]
+    },
+    {
+      "id": "ae3c9d35f7d377bd868156d1cbfd4590f0acb3ff4744280fa084d9d5e3df9298",
+      "kind": "rising",
+      "key": "1204154625:skills/limrun-maestro-testing/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "limrun-maestro-testing",
+      "url": "https://github.com/limrun-inc/skills/blob/873a6d9c3f72bc21ebe7cf60e0b471ff65ea56eb/skills/limrun-maestro-testing/SKILL.md",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "",
+      "approved": false,
+      "repo": "limrun-inc/skills",
+      "path": "skills/limrun-maestro-testing/SKILL.md",
+      "aliases": [
+        "1204154625:skills/limrun-maestro-testing/SKILL.md",
+        "limrun-inc/skills:skills/limrun-maestro-testing/SKILL.md",
+        "lead:limrun-inc/skills:limrun-maestro-testing",
+        "lead:limrun-inc/skills:skills/limrun-maestro-testing/SKILL.md"
+      ]
+    },
+    {
+      "id": "ae060a2dc760468cb1007c7e6cc6bd8f4aa29daf77a9d66b55c369e4354758e2",
+      "kind": "new",
+      "key": "lead:4a31090cf733bb1f717409c38159604b94da48ac08e2b1a520276c7596c6fc52",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "thermo-nuclear-code-quality-review",
+      "url": "https://skills.sh/cursor/plugins/thermo-nuclear-code-quality-review",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "cursor/plugins",
+      "path": null,
+      "aliases": [
+        "lead:4a31090cf733bb1f717409c38159604b94da48ac08e2b1a520276c7596c6fc52",
+        "cursor/plugins:thermo-nuclear-code-quality-review",
+        "lead:cursor/plugins:thermo-nuclear-code-quality-review"
+      ]
+    },
+    {
+      "id": "36b8cb06832249927e2f10906a2696482f789f449c68c8a537a93d83a87ba714",
+      "kind": "new",
+      "key": "1137320217:skills/base44-platform-agents/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "base44-platform-agents",
+      "url": "https://github.com/base44/skills/blob/b46cf8494211d1c7264e67555a5e1a9715862809/skills/base44-platform-agents/SKILL.md",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "",
+      "approved": false,
+      "repo": "base44/skills",
+      "path": "skills/base44-platform-agents/SKILL.md",
+      "aliases": [
+        "1137320217:skills/base44-platform-agents/SKILL.md",
+        "base44/skills:skills/base44-platform-agents/SKILL.md",
+        "lead:base44/skills:base44-platform-agents",
+        "lead:base44/skills:skills/base44-platform-agents/SKILL.md"
+      ]
+    },
+    {
+      "id": "1824a2c106d6da9cedae970960ab383247b7d6d343704151969da421a209bdf8",
+      "kind": "new",
+      "key": "1163725218:.agents/skills/testing/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "testing",
+      "url": "https://github.com/poteto/noodle/blob/82d2921c52370f23f29086de81ccfb600939c037/.agents/skills/testing/SKILL.md",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "",
+      "approved": false,
+      "repo": "poteto/noodle",
+      "path": ".agents/skills/testing/SKILL.md",
+      "aliases": [
+        "1163725218:.agents/skills/testing/SKILL.md",
+        "poteto/noodle:.agents/skills/testing/SKILL.md",
+        "lead:poteto/noodle:testing",
+        "lead:poteto/noodle:.agents/skills/testing/SKILL.md"
+      ]
+    },
+    {
+      "id": "2859d891f3abb1648be4656ea32e78cb08b58d9d0514c35841a4fab6d6599daf",
+      "kind": "new",
+      "key": "lead:74ab4d38d80bf6103bd182a8e2829ba756d81a48be5a5bbcc88e9568b54595c4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "assess-security-ticket",
+      "url": "https://skills.sh/site/skills.sh/assess-security-ticket",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "repository unavailable",
+      "approved": false,
+      "repo": "site/skills.sh",
+      "path": null,
+      "aliases": [
+        "lead:74ab4d38d80bf6103bd182a8e2829ba756d81a48be5a5bbcc88e9568b54595c4",
+        "site/skills.sh:assess-security-ticket",
+        "lead:site/skills.sh:assess-security-ticket"
+      ]
+    },
+    {
+      "id": "ec43742ae5a9af245368a1eac17def8578d7bb0d2d07d08b8b5e1a5e6d088032",
+      "kind": "new",
+      "key": "1163725218:.agents/skills/adversarial-review/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "adversarial-review",
+      "url": "https://github.com/poteto/noodle/blob/82d2921c52370f23f29086de81ccfb600939c037/.agents/skills/adversarial-review/SKILL.md",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "",
+      "approved": false,
+      "repo": "poteto/noodle",
+      "path": ".agents/skills/adversarial-review/SKILL.md",
+      "aliases": [
+        "1163725218:.agents/skills/adversarial-review/SKILL.md",
+        "poteto/noodle:.agents/skills/adversarial-review/SKILL.md",
+        "lead:poteto/noodle:adversarial-review",
+        "lead:poteto/noodle:.agents/skills/adversarial-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "501f2e90673e1fe3df38f3be8e5f484684b8d8148894b5840f08fbd11089791d",
+      "kind": "new",
+      "key": "lead:3d3370b808d31b7dc4f63417df43597523df8922bdda411367dde7d1c46d5160",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "code-review",
+      "url": "https://skills.sh/site/skills.sh/code-review",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "site/skills.sh",
+      "path": null,
+      "aliases": [
+        "lead:3d3370b808d31b7dc4f63417df43597523df8922bdda411367dde7d1c46d5160",
+        "site/skills.sh:code-review",
+        "lead:site/skills.sh:code-review"
+      ]
+    },
+    {
+      "id": "8eaf978f26b50f7dfb00bc6c7d1eb037890074d66a33c96bfb39e6df645a4057",
+      "kind": "new",
+      "key": "lead:44e4f5ebe795f9823f24829a71ee600b0eb3dbc72a898e97e442b88fc040a660",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "frontend-design-deslop",
+      "url": "https://skills.sh/samber/cc-skills/frontend-design-deslop",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "samber/cc-skills",
+      "path": null,
+      "aliases": [
+        "lead:44e4f5ebe795f9823f24829a71ee600b0eb3dbc72a898e97e442b88fc040a660",
+        "samber/cc-skills:frontend-design-deslop",
+        "lead:samber/cc-skills:frontend-design-deslop"
+      ]
+    },
+    {
+      "id": "498eaaa9ac73c5c5e45aa59f1ca598f64bc1fa66586794fa63b0834a828b7438",
+      "kind": "new",
+      "key": "lead:e5be6c20b42b154f0df260b309e29e3e67fd68ca19926f21b3b05e8b36ee59e6",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "content-research-writer",
+      "url": "https://skills.sh/composiohq/awesome-claude-skills/content-research-writer",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "composiohq/awesome-claude-skills",
+      "path": null,
+      "aliases": [
+        "lead:e5be6c20b42b154f0df260b309e29e3e67fd68ca19926f21b3b05e8b36ee59e6",
+        "composiohq/awesome-claude-skills:content-research-writer",
+        "lead:composiohq/awesome-claude-skills:content-research-writer"
+      ]
+    },
+    {
+      "id": "fe6cdd8b69660dbdda9a3e53e2fd39d95cec54142b68d5459422b5f074a4f614",
+      "kind": "new",
+      "key": "lead:dce4341b6a6b07ab39f803d786e8d876d7642b4c3d4be6465f9d83e0a605a52f",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "research",
+      "url": "https://skills.sh/pwguler/skills/research",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "pwguler/skills",
+      "path": null,
+      "aliases": [
+        "lead:dce4341b6a6b07ab39f803d786e8d876d7642b4c3d4be6465f9d83e0a605a52f",
+        "pwguler/skills:research",
+        "lead:pwguler/skills:research"
+      ]
+    },
+    {
+      "id": "3b8b6dc353ba80e61713a4a040f28507161ab75e58a33d4005f5f27f56f7c407",
+      "kind": "new",
+      "key": "lead:ffb263d61aa6f70fd43048514f622911da38b351e218082fcb8307cd4d00f419",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "printing-press-output-review",
+      "url": "https://skills.sh/mvanhorn/cli-printing-press/printing-press-output-review",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "mvanhorn/cli-printing-press",
+      "path": null,
+      "aliases": [
+        "lead:ffb263d61aa6f70fd43048514f622911da38b351e218082fcb8307cd4d00f419",
+        "mvanhorn/cli-printing-press:printing-press-output-review",
+        "lead:mvanhorn/cli-printing-press:printing-press-output-review"
+      ]
+    },
+    {
+      "id": "58433f5ea1437f2a9814055b5deab022bdb7b9349b8229af6c7e7811ce0bf0af",
+      "kind": "new",
+      "key": "lead:0e5124a4fc189833d76b939d037a0551d22fbbe249f217f72ad0871b32e535a4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "style-sampling",
+      "url": "https://skills.sh/heygen-com/hyperframes/style-sampling",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "heygen-com/hyperframes",
+      "path": null,
+      "aliases": [
+        "lead:0e5124a4fc189833d76b939d037a0551d22fbbe249f217f72ad0871b32e535a4",
+        "heygen-com/hyperframes:style-sampling",
+        "lead:heygen-com/hyperframes:style-sampling"
+      ]
+    },
+    {
+      "id": "40809e4394374a7ed5477acc37c5f2db1d2a09da71672a5cb68076b2a80e275b",
+      "kind": "rising",
+      "key": "lead:0e5124a4fc189833d76b939d037a0551d22fbbe249f217f72ad0871b32e535a4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "style-sampling",
+      "url": "https://skills.sh/heygen-com/hyperframes/style-sampling",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "heygen-com/hyperframes",
+      "path": null,
+      "aliases": [
+        "lead:0e5124a4fc189833d76b939d037a0551d22fbbe249f217f72ad0871b32e535a4",
+        "heygen-com/hyperframes:style-sampling",
+        "lead:heygen-com/hyperframes:style-sampling"
+      ]
+    },
+    {
+      "id": "ab2014d57f8a6fac0681cacb2a9e08a392624e8e087c52e2400242b078ee640f",
+      "kind": "new",
+      "key": "lead:f96a90d25c4d2ff22f57124e3f12a182b99f29a0afbafb41952590396136e153",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "insforge-cli",
+      "url": "https://skills.sh/insforge/insforge-skills/insforge-cli",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "insforge/insforge-skills",
+      "path": null,
+      "aliases": [
+        "lead:f96a90d25c4d2ff22f57124e3f12a182b99f29a0afbafb41952590396136e153",
+        "insforge/insforge-skills:insforge-cli",
+        "lead:insforge/insforge-skills:insforge-cli"
+      ]
+    },
+    {
+      "id": "a08b983b46253096143b58064832ae6a432338f2d2f8be21ce8684dfacdf1b0a",
+      "kind": "rising",
+      "key": "lead:f96a90d25c4d2ff22f57124e3f12a182b99f29a0afbafb41952590396136e153",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "insforge-cli",
+      "url": "https://skills.sh/insforge/insforge-skills/insforge-cli",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "insforge/insforge-skills",
+      "path": null,
+      "aliases": [
+        "lead:f96a90d25c4d2ff22f57124e3f12a182b99f29a0afbafb41952590396136e153",
+        "insforge/insforge-skills:insforge-cli",
+        "lead:insforge/insforge-skills:insforge-cli"
+      ]
+    },
+    {
+      "id": "c3c543d159d3965036039cce11343ae2293203a8ebedc4ae33e67e5c42996204",
+      "kind": "new",
+      "key": "lead:d64d844a9253fa6da4cc50e31c86d7ca4d2e3ce7676f575fcc3ff7f32886bb3d",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "azure-diagnostics",
+      "url": "https://skills.sh/microsoft/azure-skills/azure-diagnostics",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "microsoft/azure-skills",
+      "path": null,
+      "aliases": [
+        "lead:d64d844a9253fa6da4cc50e31c86d7ca4d2e3ce7676f575fcc3ff7f32886bb3d",
+        "microsoft/azure-skills:azure-diagnostics",
+        "lead:microsoft/azure-skills:azure-diagnostics"
+      ]
+    },
+    {
+      "id": "bf06229afd91777ecf9da37adcdb8f02763cba459220aa4ed86d07c4924f45aa",
+      "kind": "rising",
+      "key": "lead:d64d844a9253fa6da4cc50e31c86d7ca4d2e3ce7676f575fcc3ff7f32886bb3d",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "azure-diagnostics",
+      "url": "https://skills.sh/microsoft/azure-skills/azure-diagnostics",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "microsoft/azure-skills",
+      "path": null,
+      "aliases": [
+        "lead:d64d844a9253fa6da4cc50e31c86d7ca4d2e3ce7676f575fcc3ff7f32886bb3d",
+        "microsoft/azure-skills:azure-diagnostics",
+        "lead:microsoft/azure-skills:azure-diagnostics"
+      ]
+    },
+    {
+      "id": "1a5073e3b2ad6764357af806b31c053672eaef8c5af74df1431213a866dcfc1b",
+      "kind": "new",
+      "key": "lead:9a241bea1af2d1e42dcb24b77f26a725660fbc86ff1912829dcdc5e177743ece",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "firebase-analytics",
+      "url": "https://skills.sh/firebase/agent-skills/firebase-analytics",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "firebase/agent-skills",
+      "path": null,
+      "aliases": [
+        "lead:9a241bea1af2d1e42dcb24b77f26a725660fbc86ff1912829dcdc5e177743ece",
+        "firebase/agent-skills:firebase-analytics",
+        "lead:firebase/agent-skills:firebase-analytics"
+      ]
+    },
+    {
+      "id": "fe4e75d88e22b2d811e2214d005a2f335561dabe4ffbbd7a8b3ff005f5c62305",
+      "kind": "rising",
+      "key": "lead:9a241bea1af2d1e42dcb24b77f26a725660fbc86ff1912829dcdc5e177743ece",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "firebase-analytics",
+      "url": "https://skills.sh/firebase/agent-skills/firebase-analytics",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "firebase/agent-skills",
+      "path": null,
+      "aliases": [
+        "lead:9a241bea1af2d1e42dcb24b77f26a725660fbc86ff1912829dcdc5e177743ece",
+        "firebase/agent-skills:firebase-analytics",
+        "lead:firebase/agent-skills:firebase-analytics"
+      ]
+    },
+    {
+      "id": "c6a0c76131dfbe21046dfcb72d4db5857b272922a8b12e459021a3c58227d3e0",
+      "kind": "new",
+      "key": "lead:ca328557ecf02980bb4f9d0873f0962df8971d8e884e9d88c571ddd76c4d8551",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "bmad-shard-pro",
+      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-shard-pro",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "bmad-code-org/bmad-method",
+      "path": null,
+      "aliases": [
+        "lead:ca328557ecf02980bb4f9d0873f0962df8971d8e884e9d88c571ddd76c4d8551",
+        "bmad-code-org/bmad-method:bmad-shard-pro",
+        "lead:bmad-code-org/bmad-method:bmad-shard-pro"
+      ]
+    },
+    {
+      "id": "3989635c1822cf2319f3a8f9ce09004fe469661f6acdef9e5289801dc9da20af",
+      "kind": "rising",
+      "key": "lead:ca328557ecf02980bb4f9d0873f0962df8971d8e884e9d88c571ddd76c4d8551",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "bmad-shard-pro",
+      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-shard-pro",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "bmad-code-org/bmad-method",
+      "path": null,
+      "aliases": [
+        "lead:ca328557ecf02980bb4f9d0873f0962df8971d8e884e9d88c571ddd76c4d8551",
+        "bmad-code-org/bmad-method:bmad-shard-pro",
+        "lead:bmad-code-org/bmad-method:bmad-shard-pro"
+      ]
+    },
+    {
+      "id": "238f613dc4e9d50d275eb5e90c5db8c5e36b9b6eb95b209bf796ba72dbf9c9c6",
+      "kind": "new",
+      "key": "lead:e6fe67f2b3795370a7bb26b5db5af1a18f247ef40f9107b8c45a3c50ef0b8aa4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "bmad-ingest",
+      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-ingest",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "bmad-code-org/bmad-method",
+      "path": null,
+      "aliases": [
+        "lead:e6fe67f2b3795370a7bb26b5db5af1a18f247ef40f9107b8c45a3c50ef0b8aa4",
+        "bmad-code-org/bmad-method:bmad-ingest",
+        "lead:bmad-code-org/bmad-method:bmad-ingest"
+      ]
+    },
+    {
+      "id": "e934446f0d6264a179865706235ac1ee3cc7dd3b8bf207583388278315c6e7e4",
+      "kind": "rising",
+      "key": "lead:e6fe67f2b3795370a7bb26b5db5af1a18f247ef40f9107b8c45a3c50ef0b8aa4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "bmad-ingest",
+      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-ingest",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "bmad-code-org/bmad-method",
+      "path": null,
+      "aliases": [
+        "lead:e6fe67f2b3795370a7bb26b5db5af1a18f247ef40f9107b8c45a3c50ef0b8aa4",
+        "bmad-code-org/bmad-method:bmad-ingest",
+        "lead:bmad-code-org/bmad-method:bmad-ingest"
+      ]
+    },
+    {
+      "id": "8348fe645d23e8fbee99c5abd280956690f67129a6cafe934e95c299765f3f1d",
+      "kind": "new",
+      "key": "lead:9aa5fa709c36128b2add1bae040a10ef7537941f7eaccb6ddcfb7519db7180b0",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "bmad",
+      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "bmad-code-org/bmad-method",
+      "path": null,
+      "aliases": [
+        "lead:9aa5fa709c36128b2add1bae040a10ef7537941f7eaccb6ddcfb7519db7180b0",
+        "bmad-code-org/bmad-method:bmad",
+        "lead:bmad-code-org/bmad-method:bmad"
+      ]
+    },
+    {
+      "id": "922da6a70088400e9470c312cffee65d4b785e4a06f3d6ec4c6cb97aebfc47dd",
+      "kind": "rising",
+      "key": "lead:9aa5fa709c36128b2add1bae040a10ef7537941f7eaccb6ddcfb7519db7180b0",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "bmad",
+      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "bmad-code-org/bmad-method",
+      "path": null,
+      "aliases": [
+        "lead:9aa5fa709c36128b2add1bae040a10ef7537941f7eaccb6ddcfb7519db7180b0",
+        "bmad-code-org/bmad-method:bmad",
+        "lead:bmad-code-org/bmad-method:bmad"
+      ]
+    },
+    {
+      "id": "e370e40fddd6d7baa3a0d77ded349c5fe98f5975bb9fd30ec41c5e0b90555898",
+      "kind": "new",
+      "key": "lead:ddb9bad055ffa401fb7467642784336226955d200b8a476ffc3a6a61362c6847",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "launch",
+      "url": "https://skills.sh/coreyhaines31/marketingskills/launch",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "coreyhaines31/marketingskills",
+      "path": null,
+      "aliases": [
+        "lead:ddb9bad055ffa401fb7467642784336226955d200b8a476ffc3a6a61362c6847",
+        "coreyhaines31/marketingskills:launch",
+        "lead:coreyhaines31/marketingskills:launch"
+      ]
+    },
+    {
+      "id": "3c281bc0f8d30edd9e504df538d7cf3bee91c388cf0b1ff885da2f6be652b2a3",
+      "kind": "new",
+      "key": "lead:04c9f1f595e9bc83c6231e3ca1b5cd1946cec57d4e7ba387f767fa40d548b9e4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "next-cache-components-adoption",
+      "url": "https://skills.sh/vercel/next.js/next-cache-components-adoption",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "vercel/next.js",
+      "path": null,
+      "aliases": [
+        "lead:04c9f1f595e9bc83c6231e3ca1b5cd1946cec57d4e7ba387f767fa40d548b9e4",
+        "vercel/next.js:next-cache-components-adoption",
+        "lead:vercel/next.js:next-cache-components-adoption"
+      ]
+    },
+    {
+      "id": "69da7d2e9117ca6ebd74b6d783c7b796472ab9d9017fe841959cafe02bf0808f",
+      "kind": "new",
+      "key": "lead:51ee11219bcb1cdce1317b021fcbf9044242351188d75fee3c4f27209a1c1e7f",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "notion-api",
+      "url": "https://skills.sh/intellectronica/agent-skills/notion-api",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "intellectronica/agent-skills",
+      "path": null,
+      "aliases": [
+        "lead:51ee11219bcb1cdce1317b021fcbf9044242351188d75fee3c4f27209a1c1e7f",
+        "intellectronica/agent-skills:notion-api",
+        "lead:intellectronica/agent-skills:notion-api"
+      ]
+    },
+    {
+      "id": "b0554e45f935713e44fe0d9a6d671f7a80453d61e67a13393065ca7f4a817ec3",
+      "kind": "new",
+      "key": "lead:cbbcd376fe4342a98b176c58bf2298e8ce3deade309fdb0f0a935cfa424278ab",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "bmad-advanced-elicitation",
+      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-advanced-elicitation",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "bmad-code-org/bmad-method",
+      "path": null,
+      "aliases": [
+        "lead:cbbcd376fe4342a98b176c58bf2298e8ce3deade309fdb0f0a935cfa424278ab",
+        "bmad-code-org/bmad-method:bmad-advanced-elicitation",
+        "lead:bmad-code-org/bmad-method:bmad-advanced-elicitation"
+      ]
+    },
+    {
+      "id": "842cc3e9b5a7a51364ca024ddaf082986f9165e0063e728744d31c1d4e332cfc",
+      "kind": "new",
+      "key": "lead:acee792af9712bef99794d698069103a235f316835e584eee8b506a80e821434",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "python-performance-optimization",
+      "url": "https://skills.sh/wshobson/agents/python-performance-optimization",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "wshobson/agents",
+      "path": null,
+      "aliases": [
+        "lead:acee792af9712bef99794d698069103a235f316835e584eee8b506a80e821434",
+        "wshobson/agents:python-performance-optimization",
+        "lead:wshobson/agents:python-performance-optimization"
+      ]
+    },
+    {
+      "id": "4caf4e41a932a5b9c9c6d35d87648f4df3aafd0127fc410e86343b43a363c58c",
+      "kind": "new",
+      "key": "lead:baa3604ac9c93f73d89644593d63e5ed9e672e29799aa8a194febbbeabcc5e4c",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "limrun-ios-simulator",
+      "url": "https://skills.sh/limrun-inc/skills/limrun-ios-simulator",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "limrun-inc/skills",
+      "path": null,
+      "aliases": [
+        "lead:baa3604ac9c93f73d89644593d63e5ed9e672e29799aa8a194febbbeabcc5e4c",
+        "limrun-inc/skills:limrun-ios-simulator",
+        "lead:limrun-inc/skills:limrun-ios-simulator"
+      ]
+    },
+    {
+      "id": "e612c72f65230bb4da0eb0d15f460d957d35866a6797ea52cd990b082ff9e9eb",
+      "kind": "new",
+      "key": "lead:1012f210f136e51c5033901ecb004841294d3eccadbf8933153deba51edb63cd",
+      "priority": "low",
+      "source": "discovery:voltagent",
+      "name": "firecrawl/cli",
+      "url": "https://github.com/firecrawl/cli/tree/main/skills/firecrawl-alexandria",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "firecrawl/cli",
+      "path": null,
+      "aliases": [
+        "lead:1012f210f136e51c5033901ecb004841294d3eccadbf8933153deba51edb63cd",
+        "firecrawl/cli:firecrawl/cli",
+        "lead:firecrawl/cli:firecrawl/cli"
+      ]
+    },
+    {
+      "id": "7bfd91fc4e18e114a934d348cd47b88a81ff85ea71ce018bcadfd10a4e61226a",
+      "kind": "new",
+      "key": "lead:cb70fddbb2fcd6313a384a1f00f08063f2256b841172e998852a288855bce0b2",
+      "priority": "low",
+      "source": "discovery:voltagent",
+      "name": "vercel-labs/agent-skills",
+      "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "vercel-labs/agent-skills",
+      "path": null,
+      "aliases": [
+        "lead:cb70fddbb2fcd6313a384a1f00f08063f2256b841172e998852a288855bce0b2",
+        "vercel-labs/agent-skills:vercel-labs/agent-skills",
+        "lead:vercel-labs/agent-skills:vercel-labs/agent-skills"
+      ]
+    },
+    {
+      "id": "38c617bc56f48524c58ddd775da4371bf4747f29f07677eb0e2318ed8b3fc7dc",
+      "kind": "new",
+      "key": "lead:4ddf11cf301250d3eca605ca9840577ab6fae720c4d47780559ecdacfc5ec9fe",
+      "priority": "low",
+      "source": "discovery:voltagent",
+      "name": "zilliztech/milvus-skill",
+      "url": "https://github.com/zilliztech/milvus-skill",
+      "observedAt": "2026-11-03T13:44:14.187Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "zilliztech/milvus-skill",
+      "path": null,
+      "aliases": [
+        "lead:4ddf11cf301250d3eca605ca9840577ab6fae720c4d47780559ecdacfc5ec9fe",
+        "zilliztech/milvus-skill:zilliztech/milvus-skill",
+        "lead:zilliztech/milvus-skill:zilliztech/milvus-skill"
+      ]
     }
   ],
   "notified": [
@@ -20703,13 +21472,13 @@
     }
   ],
   "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    },
     "https://www.skills.sh/robots.txt": {
       "etag": "\"62699308568d3029fd19b6bc00791b65\"",
       "body": "User-Agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /debug-security/\nDisallow: /search\nDisallow: /api/\n\nSitemap: https://www.skills.sh/sitemap.xml\n"
+    },
+    "https://skillsmp.com/robots.txt": {
+      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
+      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
     }
   },
   "issueNumber": 9
