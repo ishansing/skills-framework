@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-03T13:44:14.187Z",
+  "scannedAt": "2026-11-04T13:53:05.598Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10607,6 +10607,125 @@
       ]
     },
     {
+      "id": "8dd5b82b3a4c276a4c8db9d3792d7a54478fb05662f2620a176ce2bf9b2edfcf",
+      "kind": "content-changed",
+      "key": "1073224795:skills/brainstorming/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "brainstorming",
+      "url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/brainstorming/SKILL.md",
+      "observedAt": "2026-11-04T13:53:05.598Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": "skills/brainstorming/SKILL.md",
+      "aliases": [
+        "1073224795:skills/brainstorming/SKILL.md",
+        "obra/superpowers:skills/brainstorming/SKILL.md",
+        "lead:obra/superpowers:brainstorming",
+        "lead:obra/superpowers:skills/brainstorming/SKILL.md"
+      ]
+    },
+    {
+      "id": "8a55b49e3c948679875e0538cd38c8be2f4a8d63925549273678e0feb91d2b2c",
+      "kind": "content-changed",
+      "key": "1073224795:skills/executing-plans/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "executing-plans",
+      "url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/executing-plans/SKILL.md",
+      "observedAt": "2026-11-04T13:53:05.598Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": "skills/executing-plans/SKILL.md",
+      "aliases": [
+        "1073224795:skills/executing-plans/SKILL.md",
+        "obra/superpowers:skills/executing-plans/SKILL.md",
+        "lead:obra/superpowers:executing-plans",
+        "lead:obra/superpowers:skills/executing-plans/SKILL.md"
+      ]
+    },
+    {
+      "id": "c56e77bcb26d070df6648f7880eab480e6db972c0f6ebecc501e3b6da0506f47",
+      "kind": "content-changed",
+      "key": "1073224795:skills/subagent-driven-development/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "subagent-driven-development",
+      "url": "https://github.com/obra/superpowers/blob/22f0b463e7a5e579904dd6211a520321035526f7/skills/subagent-driven-development/SKILL.md",
+      "observedAt": "2026-11-04T13:53:05.598Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": "skills/subagent-driven-development/SKILL.md",
+      "aliases": [
+        "1073224795:skills/subagent-driven-development/SKILL.md",
+        "obra/superpowers:skills/subagent-driven-development/SKILL.md",
+        "lead:obra/superpowers:subagent-driven-development",
+        "lead:obra/superpowers:skills/subagent-driven-development/SKILL.md"
+      ]
+    },
+    {
+      "id": "0c14175dfacb0dab40759a189f1e97daa05df147f4c92762d32d7f9fb8b082c0",
+      "kind": "release",
+      "key": "release:1073224795:433277732",
+      "priority": "medium",
+      "source": "upstream:obra/superpowers",
+      "name": "obra/superpowers v7.0.2",
+      "url": "https://github.com/obra/superpowers/releases/tag/v7.0.2",
+      "observedAt": "2026-11-04T13:53:05.598Z",
+      "detail": "\nThis release further tunes brainstorming's questions. It asks fewer of them, starts by asking why, and when there's a choice to make it gives you options to pick from. It also fixes bootstrap problems on six harnesses, and makes the SDD and executing-plans helper scripts much harder to point at the wrong repository or the wrong task.\n\n### Brainstorming\n\n- **It asks a question only when the answer would change what gets built and nothing already answers it.** Otherwise it states its call as a proposal you can correct. It also stops asking about process: writing things up, where files go, whether to look further, and how to show you something are its own calls, and it tells you what it decided. (#2644)\n- **When you haven't said why you want something, that's the first thing it asks.** It asks openly, with no example answers to pick from. (#2644)\n- **When there's a choice it can name, it shows you the options with a recommendation.** In one of our test scenarios, where a spec gives Ctrl+",
+      "approved": false,
+      "repo": "obra/superpowers",
+      "path": null,
+      "aliases": [
+        "release:1073224795:433277732",
+        "obra/superpowers:obra/superpowers v7.0.2",
+        "lead:obra/superpowers:obra/superpowers v7.0.2"
+      ]
+    },
+    {
+      "id": "005f76927fb98a5234ba99549e178cefa33ec8f6dbd6bdddbb8927c76646b44b",
+      "kind": "new",
+      "key": "1000362065:skills/adobe-illustrator-integrations/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "adobe-illustrator-integrations",
+      "url": "https://github.com/github/awesome-copilot/blob/7e408815ddcb64889a3683799a85399331cfd4ef/skills/adobe-illustrator-integrations/SKILL.md",
+      "observedAt": "2026-11-04T13:53:05.598Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/adobe-illustrator-integrations/SKILL.md",
+      "aliases": [
+        "1000362065:skills/adobe-illustrator-integrations/SKILL.md",
+        "github/awesome-copilot:skills/adobe-illustrator-integrations/SKILL.md",
+        "lead:github/awesome-copilot:adobe-illustrator-integrations",
+        "lead:github/awesome-copilot:skills/adobe-illustrator-integrations/SKILL.md"
+      ]
+    },
+    {
+      "id": "876b14274c451d42193590f008a45aaac0c8375561d06a6094772ed2cd8cf0b9",
+      "kind": "new",
+      "key": "1000362065:skills/diagnose-ci-gate/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "diagnose-ci-gate",
+      "url": "https://github.com/github/awesome-copilot/blob/7e408815ddcb64889a3683799a85399331cfd4ef/skills/diagnose-ci-gate/SKILL.md",
+      "observedAt": "2026-11-04T13:53:05.598Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/diagnose-ci-gate/SKILL.md",
+      "aliases": [
+        "1000362065:skills/diagnose-ci-gate/SKILL.md",
+        "github/awesome-copilot:skills/diagnose-ci-gate/SKILL.md",
+        "lead:github/awesome-copilot:diagnose-ci-gate",
+        "lead:github/awesome-copilot:skills/diagnose-ci-gate/SKILL.md"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -19555,120 +19674,6 @@
         "intellectronica/agent-skills:notion-api",
         "lead:intellectronica/agent-skills:notion-api"
       ]
-    },
-    {
-      "id": "b0554e45f935713e44fe0d9a6d671f7a80453d61e67a13393065ca7f4a817ec3",
-      "kind": "new",
-      "key": "lead:cbbcd376fe4342a98b176c58bf2298e8ce3deade309fdb0f0a935cfa424278ab",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "bmad-advanced-elicitation",
-      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-advanced-elicitation",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "bmad-code-org/bmad-method",
-      "path": null,
-      "aliases": [
-        "lead:cbbcd376fe4342a98b176c58bf2298e8ce3deade309fdb0f0a935cfa424278ab",
-        "bmad-code-org/bmad-method:bmad-advanced-elicitation",
-        "lead:bmad-code-org/bmad-method:bmad-advanced-elicitation"
-      ]
-    },
-    {
-      "id": "842cc3e9b5a7a51364ca024ddaf082986f9165e0063e728744d31c1d4e332cfc",
-      "kind": "new",
-      "key": "lead:acee792af9712bef99794d698069103a235f316835e584eee8b506a80e821434",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "python-performance-optimization",
-      "url": "https://skills.sh/wshobson/agents/python-performance-optimization",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "wshobson/agents",
-      "path": null,
-      "aliases": [
-        "lead:acee792af9712bef99794d698069103a235f316835e584eee8b506a80e821434",
-        "wshobson/agents:python-performance-optimization",
-        "lead:wshobson/agents:python-performance-optimization"
-      ]
-    },
-    {
-      "id": "4caf4e41a932a5b9c9c6d35d87648f4df3aafd0127fc410e86343b43a363c58c",
-      "kind": "new",
-      "key": "lead:baa3604ac9c93f73d89644593d63e5ed9e672e29799aa8a194febbbeabcc5e4c",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "limrun-ios-simulator",
-      "url": "https://skills.sh/limrun-inc/skills/limrun-ios-simulator",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "limrun-inc/skills",
-      "path": null,
-      "aliases": [
-        "lead:baa3604ac9c93f73d89644593d63e5ed9e672e29799aa8a194febbbeabcc5e4c",
-        "limrun-inc/skills:limrun-ios-simulator",
-        "lead:limrun-inc/skills:limrun-ios-simulator"
-      ]
-    },
-    {
-      "id": "e612c72f65230bb4da0eb0d15f460d957d35866a6797ea52cd990b082ff9e9eb",
-      "kind": "new",
-      "key": "lead:1012f210f136e51c5033901ecb004841294d3eccadbf8933153deba51edb63cd",
-      "priority": "low",
-      "source": "discovery:voltagent",
-      "name": "firecrawl/cli",
-      "url": "https://github.com/firecrawl/cli/tree/main/skills/firecrawl-alexandria",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "ambiguous skill path; exact resolution required",
-      "approved": false,
-      "repo": "firecrawl/cli",
-      "path": null,
-      "aliases": [
-        "lead:1012f210f136e51c5033901ecb004841294d3eccadbf8933153deba51edb63cd",
-        "firecrawl/cli:firecrawl/cli",
-        "lead:firecrawl/cli:firecrawl/cli"
-      ]
-    },
-    {
-      "id": "7bfd91fc4e18e114a934d348cd47b88a81ff85ea71ce018bcadfd10a4e61226a",
-      "kind": "new",
-      "key": "lead:cb70fddbb2fcd6313a384a1f00f08063f2256b841172e998852a288855bce0b2",
-      "priority": "low",
-      "source": "discovery:voltagent",
-      "name": "vercel-labs/agent-skills",
-      "url": "https://github.com/vercel-labs/agent-skills/tree/main/skills/composition-patterns",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "vercel-labs/agent-skills",
-      "path": null,
-      "aliases": [
-        "lead:cb70fddbb2fcd6313a384a1f00f08063f2256b841172e998852a288855bce0b2",
-        "vercel-labs/agent-skills:vercel-labs/agent-skills",
-        "lead:vercel-labs/agent-skills:vercel-labs/agent-skills"
-      ]
-    },
-    {
-      "id": "38c617bc56f48524c58ddd775da4371bf4747f29f07677eb0e2318ed8b3fc7dc",
-      "kind": "new",
-      "key": "lead:4ddf11cf301250d3eca605ca9840577ab6fae720c4d47780559ecdacfc5ec9fe",
-      "priority": "low",
-      "source": "discovery:voltagent",
-      "name": "zilliztech/milvus-skill",
-      "url": "https://github.com/zilliztech/milvus-skill",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "zilliztech/milvus-skill",
-      "path": null,
-      "aliases": [
-        "lead:4ddf11cf301250d3eca605ca9840577ab6fae720c4d47780559ecdacfc5ec9fe",
-        "zilliztech/milvus-skill:zilliztech/milvus-skill",
-        "lead:zilliztech/milvus-skill:zilliztech/milvus-skill"
-      ]
     }
   ],
   "notified": [
@@ -21472,13 +21477,13 @@
     }
   ],
   "httpCache": {
-    "https://www.skills.sh/robots.txt": {
-      "etag": "\"62699308568d3029fd19b6bc00791b65\"",
-      "body": "User-Agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /debug-security/\nDisallow: /search\nDisallow: /api/\n\nSitemap: https://www.skills.sh/sitemap.xml\n"
-    },
     "https://skillsmp.com/robots.txt": {
       "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
       "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
+    },
+    "https://www.skills.sh/robots.txt": {
+      "etag": "\"62699308568d3029fd19b6bc00791b65\"",
+      "body": "User-Agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /debug-security/\nDisallow: /search\nDisallow: /api/\n\nSitemap: https://www.skills.sh/sitemap.xml\n"
     }
   },
   "issueNumber": 9
