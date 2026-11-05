@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-04T13:53:05.598Z",
+  "scannedAt": "2026-11-05T14:08:01.331Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10726,6 +10726,46 @@
       ]
     },
     {
+      "id": "e932dfb6e2125766aabb4346d2d61033aae7cc3229b52db104e0ada2e0768c1f",
+      "kind": "content-changed",
+      "key": "1000362065:skills/dependabot/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "dependabot",
+      "url": "https://github.com/github/awesome-copilot/blob/96543145e9cb97711020b57b9d88f968062c4fc7/skills/dependabot/SKILL.md",
+      "observedAt": "2026-11-05T14:08:01.331Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/dependabot/SKILL.md",
+      "aliases": [
+        "1000362065:skills/dependabot/SKILL.md",
+        "github/awesome-copilot:skills/dependabot/SKILL.md",
+        "lead:github/awesome-copilot:dependabot",
+        "lead:github/awesome-copilot:skills/dependabot/SKILL.md"
+      ]
+    },
+    {
+      "id": "dc155220f3ee802421e5f93d28a5e7198d2ac5751c38427ab61710a70ea4f46c",
+      "kind": "content-changed",
+      "key": "1145569115:skills/courier/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:voltagent",
+      "name": "courier",
+      "url": "https://github.com/trycourier/courier-skills/blob/1be5f04b17f3678f4c9563d74e9a3b927b66afed/skills/courier/SKILL.md",
+      "observedAt": "2026-11-05T14:08:01.331Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trycourier/courier-skills",
+      "path": "skills/courier/SKILL.md",
+      "aliases": [
+        "1145569115:skills/courier/SKILL.md",
+        "trycourier/courier-skills:skills/courier/SKILL.md",
+        "lead:trycourier/courier-skills:courier",
+        "lead:trycourier/courier-skills:skills/courier/SKILL.md"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -19636,44 +19676,6 @@
         "coreyhaines31/marketingskills:launch",
         "lead:coreyhaines31/marketingskills:launch"
       ]
-    },
-    {
-      "id": "3c281bc0f8d30edd9e504df538d7cf3bee91c388cf0b1ff885da2f6be652b2a3",
-      "kind": "new",
-      "key": "lead:04c9f1f595e9bc83c6231e3ca1b5cd1946cec57d4e7ba387f767fa40d548b9e4",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "next-cache-components-adoption",
-      "url": "https://skills.sh/vercel/next.js/next-cache-components-adoption",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "vercel/next.js",
-      "path": null,
-      "aliases": [
-        "lead:04c9f1f595e9bc83c6231e3ca1b5cd1946cec57d4e7ba387f767fa40d548b9e4",
-        "vercel/next.js:next-cache-components-adoption",
-        "lead:vercel/next.js:next-cache-components-adoption"
-      ]
-    },
-    {
-      "id": "69da7d2e9117ca6ebd74b6d783c7b796472ab9d9017fe841959cafe02bf0808f",
-      "kind": "new",
-      "key": "lead:51ee11219bcb1cdce1317b021fcbf9044242351188d75fee3c4f27209a1c1e7f",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "notion-api",
-      "url": "https://skills.sh/intellectronica/agent-skills/notion-api",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "intellectronica/agent-skills",
-      "path": null,
-      "aliases": [
-        "lead:51ee11219bcb1cdce1317b021fcbf9044242351188d75fee3c4f27209a1c1e7f",
-        "intellectronica/agent-skills:notion-api",
-        "lead:intellectronica/agent-skills:notion-api"
-      ]
     }
   ],
   "notified": [
@@ -21477,13 +21479,13 @@
     }
   ],
   "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    },
     "https://www.skills.sh/robots.txt": {
       "etag": "\"62699308568d3029fd19b6bc00791b65\"",
       "body": "User-Agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /debug-security/\nDisallow: /search\nDisallow: /api/\n\nSitemap: https://www.skills.sh/sitemap.xml\n"
+    },
+    "https://skillsmp.com/robots.txt": {
+      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
+      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
     }
   },
   "issueNumber": 9
