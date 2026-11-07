@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-06T13:50:42.689Z",
+  "scannedAt": "2026-11-07T12:35:02.612Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10806,6 +10806,126 @@
       ]
     },
     {
+      "id": "1cd97f036ec2d19f81bf1879c59eaeee5e4dbd07182ef12bb8ac44a4534f2163",
+      "kind": "content-changed",
+      "key": "1061953414:skills/docx/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:anthropics/skills",
+      "name": "docx",
+      "url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/docx/SKILL.md",
+      "observedAt": "2026-11-07T12:35:02.612Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "anthropics/skills",
+      "path": "skills/docx/SKILL.md",
+      "aliases": [
+        "1061953414:skills/docx/SKILL.md",
+        "anthropics/skills:skills/docx/SKILL.md",
+        "lead:anthropics/skills:docx",
+        "lead:anthropics/skills:skills/docx/SKILL.md"
+      ]
+    },
+    {
+      "id": "67557d66fc48662fa32526af28cdc698d77bd84bded2fd86eed5dbec0a4fed71",
+      "kind": "content-changed",
+      "key": "1061953414:skills/pdf/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:anthropics/skills",
+      "name": "pdf",
+      "url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pdf/SKILL.md",
+      "observedAt": "2026-11-07T12:35:02.612Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "anthropics/skills",
+      "path": "skills/pdf/SKILL.md",
+      "aliases": [
+        "1061953414:skills/pdf/SKILL.md",
+        "anthropics/skills:skills/pdf/SKILL.md",
+        "lead:anthropics/skills:pdf",
+        "lead:anthropics/skills:skills/pdf/SKILL.md"
+      ]
+    },
+    {
+      "id": "b41bd52f0553290d273e16de530941ca6040632607e300f63b4e3f50fdc86e58",
+      "kind": "content-changed",
+      "key": "1061953414:skills/pptx/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:anthropics/skills",
+      "name": "pptx",
+      "url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/pptx/SKILL.md",
+      "observedAt": "2026-11-07T12:35:02.612Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "anthropics/skills",
+      "path": "skills/pptx/SKILL.md",
+      "aliases": [
+        "1061953414:skills/pptx/SKILL.md",
+        "anthropics/skills:skills/pptx/SKILL.md",
+        "lead:anthropics/skills:pptx",
+        "lead:anthropics/skills:skills/pptx/SKILL.md"
+      ]
+    },
+    {
+      "id": "c9a0e7108861a37089bf6c891011a421c2ff929e7563f186fad3a94a444059f5",
+      "kind": "content-changed",
+      "key": "1061953414:skills/xlsx/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:anthropics/skills",
+      "name": "xlsx",
+      "url": "https://github.com/anthropics/skills/blob/2c5958ecac7cee2b583967a2c4981d0f4a75c579/skills/xlsx/SKILL.md",
+      "observedAt": "2026-11-07T12:35:02.612Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "anthropics/skills",
+      "path": "skills/xlsx/SKILL.md",
+      "aliases": [
+        "1061953414:skills/xlsx/SKILL.md",
+        "anthropics/skills:skills/xlsx/SKILL.md",
+        "lead:anthropics/skills:xlsx",
+        "lead:anthropics/skills:skills/xlsx/SKILL.md"
+      ]
+    },
+    {
+      "id": "de7d1c4b3602e5e9d8bf747630ee58da4a897af4554ca98cd4248efdb725a465",
+      "kind": "new",
+      "key": "1134447175:plugins/cvss-scoring/skills/cvss-scoring/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "cvss-scoring",
+      "url": "https://github.com/trailofbits/skills/blob/e4dd0bb5b15535f7c5a0834187dffba6ac37e4ff/plugins/cvss-scoring/skills/cvss-scoring/SKILL.md",
+      "observedAt": "2026-11-07T12:35:02.612Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/cvss-scoring/skills/cvss-scoring/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/cvss-scoring/skills/cvss-scoring/SKILL.md",
+        "trailofbits/skills:plugins/cvss-scoring/skills/cvss-scoring/SKILL.md",
+        "lead:trailofbits/skills:cvss-scoring",
+        "lead:trailofbits/skills:plugins/cvss-scoring/skills/cvss-scoring/SKILL.md"
+      ]
+    },
+    {
+      "id": "8727bee1a1db73f5483241e9a55d80b7097b05c4d343d29222693ba725f54bc2",
+      "kind": "content-changed",
+      "key": "1145569115:skills/courier/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:voltagent",
+      "name": "courier",
+      "url": "https://github.com/trycourier/courier-skills/blob/09b9323add0f5807128846a1ea5e60e3e9dce14a/skills/courier/SKILL.md",
+      "observedAt": "2026-11-07T12:35:02.612Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trycourier/courier-skills",
+      "path": "skills/courier/SKILL.md",
+      "aliases": [
+        "1145569115:skills/courier/SKILL.md",
+        "trycourier/courier-skills:skills/courier/SKILL.md",
+        "lead:trycourier/courier-skills:courier",
+        "lead:trycourier/courier-skills:skills/courier/SKILL.md"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -19564,120 +19684,6 @@
         "firebase/agent-skills:firebase-analytics",
         "lead:firebase/agent-skills:firebase-analytics"
       ]
-    },
-    {
-      "id": "fe4e75d88e22b2d811e2214d005a2f335561dabe4ffbbd7a8b3ff005f5c62305",
-      "kind": "rising",
-      "key": "lead:9a241bea1af2d1e42dcb24b77f26a725660fbc86ff1912829dcdc5e177743ece",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "firebase-analytics",
-      "url": "https://skills.sh/firebase/agent-skills/firebase-analytics",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "firebase/agent-skills",
-      "path": null,
-      "aliases": [
-        "lead:9a241bea1af2d1e42dcb24b77f26a725660fbc86ff1912829dcdc5e177743ece",
-        "firebase/agent-skills:firebase-analytics",
-        "lead:firebase/agent-skills:firebase-analytics"
-      ]
-    },
-    {
-      "id": "c6a0c76131dfbe21046dfcb72d4db5857b272922a8b12e459021a3c58227d3e0",
-      "kind": "new",
-      "key": "lead:ca328557ecf02980bb4f9d0873f0962df8971d8e884e9d88c571ddd76c4d8551",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "bmad-shard-pro",
-      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-shard-pro",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "bmad-code-org/bmad-method",
-      "path": null,
-      "aliases": [
-        "lead:ca328557ecf02980bb4f9d0873f0962df8971d8e884e9d88c571ddd76c4d8551",
-        "bmad-code-org/bmad-method:bmad-shard-pro",
-        "lead:bmad-code-org/bmad-method:bmad-shard-pro"
-      ]
-    },
-    {
-      "id": "3989635c1822cf2319f3a8f9ce09004fe469661f6acdef9e5289801dc9da20af",
-      "kind": "rising",
-      "key": "lead:ca328557ecf02980bb4f9d0873f0962df8971d8e884e9d88c571ddd76c4d8551",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "bmad-shard-pro",
-      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-shard-pro",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "bmad-code-org/bmad-method",
-      "path": null,
-      "aliases": [
-        "lead:ca328557ecf02980bb4f9d0873f0962df8971d8e884e9d88c571ddd76c4d8551",
-        "bmad-code-org/bmad-method:bmad-shard-pro",
-        "lead:bmad-code-org/bmad-method:bmad-shard-pro"
-      ]
-    },
-    {
-      "id": "238f613dc4e9d50d275eb5e90c5db8c5e36b9b6eb95b209bf796ba72dbf9c9c6",
-      "kind": "new",
-      "key": "lead:e6fe67f2b3795370a7bb26b5db5af1a18f247ef40f9107b8c45a3c50ef0b8aa4",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "bmad-ingest",
-      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-ingest",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "bmad-code-org/bmad-method",
-      "path": null,
-      "aliases": [
-        "lead:e6fe67f2b3795370a7bb26b5db5af1a18f247ef40f9107b8c45a3c50ef0b8aa4",
-        "bmad-code-org/bmad-method:bmad-ingest",
-        "lead:bmad-code-org/bmad-method:bmad-ingest"
-      ]
-    },
-    {
-      "id": "e934446f0d6264a179865706235ac1ee3cc7dd3b8bf207583388278315c6e7e4",
-      "kind": "rising",
-      "key": "lead:e6fe67f2b3795370a7bb26b5db5af1a18f247ef40f9107b8c45a3c50ef0b8aa4",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "bmad-ingest",
-      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad-ingest",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "bmad-code-org/bmad-method",
-      "path": null,
-      "aliases": [
-        "lead:e6fe67f2b3795370a7bb26b5db5af1a18f247ef40f9107b8c45a3c50ef0b8aa4",
-        "bmad-code-org/bmad-method:bmad-ingest",
-        "lead:bmad-code-org/bmad-method:bmad-ingest"
-      ]
-    },
-    {
-      "id": "8348fe645d23e8fbee99c5abd280956690f67129a6cafe934e95c299765f3f1d",
-      "kind": "new",
-      "key": "lead:9aa5fa709c36128b2add1bae040a10ef7537941f7eaccb6ddcfb7519db7180b0",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "bmad",
-      "url": "https://skills.sh/bmad-code-org/bmad-method/bmad",
-      "observedAt": "2026-11-03T13:44:14.187Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "bmad-code-org/bmad-method",
-      "path": null,
-      "aliases": [
-        "lead:9aa5fa709c36128b2add1bae040a10ef7537941f7eaccb6ddcfb7519db7180b0",
-        "bmad-code-org/bmad-method:bmad",
-        "lead:bmad-code-org/bmad-method:bmad"
-      ]
     }
   ],
   "notified": [
@@ -21480,15 +21486,6 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    },
-    "https://www.skills.sh/robots.txt": {
-      "etag": "\"62699308568d3029fd19b6bc00791b65\"",
-      "body": "User-Agent: *\nAllow: /\nDisallow: /internal/\nDisallow: /debug-security/\nDisallow: /search\nDisallow: /api/\n\nSitemap: https://www.skills.sh/sitemap.xml\n"
-    }
-  },
+  "httpCache": {},
   "issueNumber": 9
 }
