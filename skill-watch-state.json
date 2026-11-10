@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-09T15:25:16.954Z",
+  "scannedAt": "2026-11-10T14:27:32.863Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -18933,6 +18933,775 @@
         "composiohq/awesome-claude-skills:content-research-writer",
         "lead:composiohq/awesome-claude-skills:content-research-writer"
       ]
+    },
+    {
+      "id": "aff58cbedbaf7303fc2d2b0a93a7680b92e02cd43412783466b36d48f590159d",
+      "kind": "new",
+      "key": "lead:2bba4185e3cc6c421641e72225ff25f109e84fe12c81869caf93e90e11586332",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "axiom-testing",
+      "url": null,
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "charleswiltgen/axiom",
+      "path": null,
+      "aliases": [
+        "lead:2bba4185e3cc6c421641e72225ff25f109e84fe12c81869caf93e90e11586332",
+        "charleswiltgen/axiom:axiom-testing",
+        "lead:charleswiltgen/axiom:axiom-testing"
+      ]
+    },
+    {
+      "id": "db2a642be4c9835f932365acf6359da02b7b68d7a09580813b38ad9aeee296ef",
+      "kind": "new",
+      "key": "1189740753:skills/visual-testing/SKILL.md",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "visual-testing",
+      "url": "https://github.com/petrkindlmann/qa-skills/blob/62434253c2592f27b494609c27f224939c86346d/skills/visual-testing/SKILL.md",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "",
+      "approved": false,
+      "repo": "petrkindlmann/qa-skills",
+      "path": "skills/visual-testing/SKILL.md",
+      "aliases": [
+        "1189740753:skills/visual-testing/SKILL.md",
+        "petrkindlmann/qa-skills:skills/visual-testing/SKILL.md",
+        "lead:petrkindlmann/qa-skills:visual-testing",
+        "lead:petrkindlmann/qa-skills:skills/visual-testing/SKILL.md"
+      ]
+    },
+    {
+      "id": "6d5435ddbe9b9d50bdb7cf8ce7b263f4c735e8f458d75f3e8bfb30a8636895e1",
+      "kind": "new",
+      "key": "1189740753:skills/ai-qa-review/SKILL.md",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "ai-qa-review",
+      "url": "https://github.com/petrkindlmann/qa-skills/blob/62434253c2592f27b494609c27f224939c86346d/skills/ai-qa-review/SKILL.md",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "",
+      "approved": false,
+      "repo": "petrkindlmann/qa-skills",
+      "path": "skills/ai-qa-review/SKILL.md",
+      "aliases": [
+        "1189740753:skills/ai-qa-review/SKILL.md",
+        "petrkindlmann/qa-skills:skills/ai-qa-review/SKILL.md",
+        "lead:petrkindlmann/qa-skills:ai-qa-review",
+        "lead:petrkindlmann/qa-skills:skills/ai-qa-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "74200521e785dcccaa4538ff52f38bdf0ad776d6463a175940dd3473b6c7a54e",
+      "kind": "new",
+      "key": "lead:cc118dc927baedc00913fe6097932367b62fd08fc9581cebfb63181ab6e8ad2e",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "show-frontend-change",
+      "url": "https://skills.sh/site/skills.sh/show-frontend-change",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "repository unavailable",
+      "approved": false,
+      "repo": "site/skills.sh",
+      "path": null,
+      "aliases": [
+        "lead:cc118dc927baedc00913fe6097932367b62fd08fc9581cebfb63181ab6e8ad2e",
+        "site/skills.sh:show-frontend-change",
+        "lead:site/skills.sh:show-frontend-change"
+      ]
+    },
+    {
+      "id": "3f49baa546e0a6709c3d32f32127df377a16032a2c7f6b7872be83e1850d11c0",
+      "kind": "new",
+      "key": "lead:afb07f9092f041d38c06b12f239ebf5510857aa2c9386eb988a385645926a06c",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "building-pydantic-ai-agents",
+      "url": "https://skills.sh/pydantic/skills/building-pydantic-ai-agents",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "pydantic/skills",
+      "path": null,
+      "aliases": [
+        "lead:afb07f9092f041d38c06b12f239ebf5510857aa2c9386eb988a385645926a06c",
+        "pydantic/skills:building-pydantic-ai-agents",
+        "lead:pydantic/skills:building-pydantic-ai-agents"
+      ]
+    },
+    {
+      "id": "34f43a849e78b75f0fb74f04625683818fe0dfa470148624399ebb29674bb000",
+      "kind": "new",
+      "key": "1345139321:secure-code-review/secure-code-review/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "secure-code-review",
+      "url": "https://github.com/securityskills/skills/blob/b2b6b5200ee91a249816df209a0b89ff01ae450a/secure-code-review/secure-code-review/SKILL.md",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "",
+      "approved": false,
+      "repo": "securityskills/skills",
+      "path": "secure-code-review/secure-code-review/SKILL.md",
+      "aliases": [
+        "1345139321:secure-code-review/secure-code-review/SKILL.md",
+        "securityskills/skills:secure-code-review/secure-code-review/SKILL.md",
+        "lead:securityskills/skills:secure-code-review",
+        "lead:securityskills/skills:secure-code-review/secure-code-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "d819dd607822203247ff81bfb28e7184e8c59598159e74f34d5ed4ba7ddf3e0a",
+      "kind": "new",
+      "key": "1128612043:skills/triage-frontend-issues/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "triage-frontend-issues",
+      "url": "https://github.com/getsentry/skills/blob/e94f22214528d69899d09c627b3315ddc3544816/skills/triage-frontend-issues/SKILL.md",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "",
+      "approved": false,
+      "repo": "getsentry/skills",
+      "path": "skills/triage-frontend-issues/SKILL.md",
+      "aliases": [
+        "1128612043:skills/triage-frontend-issues/SKILL.md",
+        "getsentry/skills:skills/triage-frontend-issues/SKILL.md",
+        "lead:getsentry/skills:triage-frontend-issues",
+        "lead:getsentry/skills:skills/triage-frontend-issues/SKILL.md"
+      ]
+    },
+    {
+      "id": "7d905f37be4c10ace89c044e8120ba122183b1ea2235c278c39ead534e017342",
+      "kind": "new",
+      "key": "1178500499:skills/aws-architecture-diagram/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "aws-architecture-diagram",
+      "url": "https://github.com/oharu121/skills/blob/960aa24b9b829526fb980daba8f28726de0d5f9b/skills/aws-architecture-diagram/SKILL.md",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "",
+      "approved": false,
+      "repo": "oharu121/skills",
+      "path": "skills/aws-architecture-diagram/SKILL.md",
+      "aliases": [
+        "1178500499:skills/aws-architecture-diagram/SKILL.md",
+        "oharu121/skills:skills/aws-architecture-diagram/SKILL.md",
+        "lead:oharu121/skills:aws-architecture-diagram",
+        "lead:oharu121/skills:skills/aws-architecture-diagram/SKILL.md"
+      ]
+    },
+    {
+      "id": "67edb1f426e9a9f7c2098611af99ba4251910598c634b7c770312e024dbb462a",
+      "kind": "new",
+      "key": "1452342945:skills/flyingnobita-deliver-review/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "flyingnobita-deliver-review",
+      "url": "https://github.com/flyingnobita/flyingnobita-deliver/blob/70a59bcdbffa340db10624f294b15a651b8db769/skills/flyingnobita-deliver-review/SKILL.md",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "",
+      "approved": false,
+      "repo": "flyingnobita/flyingnobita-deliver",
+      "path": "skills/flyingnobita-deliver-review/SKILL.md",
+      "aliases": [
+        "1452342945:skills/flyingnobita-deliver-review/SKILL.md",
+        "flyingnobita/flyingnobita-deliver:skills/flyingnobita-deliver-review/SKILL.md",
+        "lead:flyingnobita/flyingnobita-deliver:flyingnobita-deliver-review",
+        "lead:flyingnobita/flyingnobita-deliver:skills/flyingnobita-deliver-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "cdad8842c15b6b155bffd21d7cea9bc0f0d7f178aed910b4cbce0caa49f39347",
+      "kind": "new",
+      "key": "1091890109:plugins/builder/salesforce-code-quality/skills/platform-architecture-analyze/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "platform-architecture-analyze",
+      "url": "https://github.com/forcedotcom/sf-skills/blob/0c7cb9304a071266264628a84bc498b23cde9c13/plugins/builder/salesforce-code-quality/skills/platform-architecture-analyze/SKILL.md",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "",
+      "approved": false,
+      "repo": "forcedotcom/sf-skills",
+      "path": "plugins/builder/salesforce-code-quality/skills/platform-architecture-analyze/SKILL.md",
+      "aliases": [
+        "1091890109:plugins/builder/salesforce-code-quality/skills/platform-architecture-analyze/SKILL.md",
+        "forcedotcom/sf-skills:plugins/builder/salesforce-code-quality/skills/platform-architecture-analyze/SKILL.md",
+        "lead:forcedotcom/sf-skills:platform-architecture-analyze",
+        "lead:forcedotcom/sf-skills:plugins/builder/salesforce-code-quality/skills/platform-architecture-analyze/SKILL.md"
+      ]
+    },
+    {
+      "id": "01b79683bf6fc81b7d3853ba168766285df04f78254444e4d0133937698542ee",
+      "kind": "new",
+      "key": "lead:093cbc919a47751f9cf3c0a5aac1536d9407eb9b4de420d13d51f1b9966a1a5f",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "aws-architecture-diagram",
+      "url": "https://skills.sh/vidanov/aws-architecture-diagram-skill/aws-architecture-diagram",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "vidanov/aws-architecture-diagram-skill",
+      "path": null,
+      "aliases": [
+        "lead:093cbc919a47751f9cf3c0a5aac1536d9407eb9b4de420d13d51f1b9966a1a5f",
+        "vidanov/aws-architecture-diagram-skill:aws-architecture-diagram",
+        "lead:vidanov/aws-architecture-diagram-skill:aws-architecture-diagram"
+      ]
+    },
+    {
+      "id": "37dffed884a74a0b49fbb08dc1554824faf2eb16ea95125cee36fc123ea072f8",
+      "kind": "new",
+      "key": "1156623863:skills/research/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "research",
+      "url": "https://github.com/danjdewhurst/story-skills/blob/3c0e0346ee09ded32546d9481ac18ec5324f02c3/skills/research/SKILL.md",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "",
+      "approved": false,
+      "repo": "danjdewhurst/story-skills",
+      "path": "skills/research/SKILL.md",
+      "aliases": [
+        "1156623863:skills/research/SKILL.md",
+        "danjdewhurst/story-skills:skills/research/SKILL.md",
+        "lead:danjdewhurst/story-skills:research",
+        "lead:danjdewhurst/story-skills:skills/research/SKILL.md"
+      ]
+    },
+    {
+      "id": "130d2225f1a30bd28de233ef6e54a1b58edcaf27021aeda9a4f617c0a7a10afe",
+      "kind": "new",
+      "key": "1156623863:skills/editorial-review/SKILL.md",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "editorial-review",
+      "url": "https://github.com/danjdewhurst/story-skills/blob/3c0e0346ee09ded32546d9481ac18ec5324f02c3/skills/editorial-review/SKILL.md",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "",
+      "approved": false,
+      "repo": "danjdewhurst/story-skills",
+      "path": "skills/editorial-review/SKILL.md",
+      "aliases": [
+        "1156623863:skills/editorial-review/SKILL.md",
+        "danjdewhurst/story-skills:skills/editorial-review/SKILL.md",
+        "lead:danjdewhurst/story-skills:editorial-review",
+        "lead:danjdewhurst/story-skills:skills/editorial-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "751887f00146d3b03059f6cbf330688fd4e6f01f36e10b3f00aa17e4cb78040a",
+      "kind": "new",
+      "key": "lead:009902903a74c22c82c11f0cbabf16c68b248dede2fce9af5f52293f806d2dff",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "weekly-review",
+      "url": "https://skills.sh/cursor/plugins/weekly-review",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "cursor/plugins",
+      "path": null,
+      "aliases": [
+        "lead:009902903a74c22c82c11f0cbabf16c68b248dede2fce9af5f52293f806d2dff",
+        "cursor/plugins:weekly-review",
+        "lead:cursor/plugins:weekly-review"
+      ]
+    },
+    {
+      "id": "8c75f947fbdf3b4b8df741613c3957438100088c43f9c08c35113a83239af505",
+      "kind": "new",
+      "key": "lead:0f799338d8b2c0a48245b3c00078408da7e0e31098a26784a66059fcea7175d5",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "n8n-agents",
+      "url": "https://skills.sh/czlonkowski/n8n-skills/n8n-agents",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "czlonkowski/n8n-skills",
+      "path": null,
+      "aliases": [
+        "lead:0f799338d8b2c0a48245b3c00078408da7e0e31098a26784a66059fcea7175d5",
+        "czlonkowski/n8n-skills:n8n-agents",
+        "lead:czlonkowski/n8n-skills:n8n-agents"
+      ]
+    },
+    {
+      "id": "8fdc88aa1647da3f47c444873bd358b5dbfb1535209f5aa294c2b7ce686e2431",
+      "kind": "new",
+      "key": "lead:5c0f45b422781227a81f674a434c01c315bc47d385a60f4b5e090970d5f06272",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "engineering-judgment",
+      "url": "https://skills.sh/dimitriskl/engineering-judgment-skill/engineering-judgment",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "dimitriskl/engineering-judgment-skill",
+      "path": null,
+      "aliases": [
+        "lead:5c0f45b422781227a81f674a434c01c315bc47d385a60f4b5e090970d5f06272",
+        "dimitriskl/engineering-judgment-skill:engineering-judgment",
+        "lead:dimitriskl/engineering-judgment-skill:engineering-judgment"
+      ]
+    },
+    {
+      "id": "b28e1e0cb440466be0908a5c19c2aa408e782569fb40b71cc63002b1c94758b6",
+      "kind": "rising",
+      "key": "lead:5c0f45b422781227a81f674a434c01c315bc47d385a60f4b5e090970d5f06272",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "engineering-judgment",
+      "url": "https://skills.sh/dimitriskl/engineering-judgment-skill/engineering-judgment",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "dimitriskl/engineering-judgment-skill",
+      "path": null,
+      "aliases": [
+        "lead:5c0f45b422781227a81f674a434c01c315bc47d385a60f4b5e090970d5f06272",
+        "dimitriskl/engineering-judgment-skill:engineering-judgment",
+        "lead:dimitriskl/engineering-judgment-skill:engineering-judgment"
+      ]
+    },
+    {
+      "id": "1afff0eaa412398e21771b2d20c86ea5a1df9e902b770e01e21c094a064e3340",
+      "kind": "new",
+      "key": "lead:668e0f1a40762dacb6f654ec2751a6f6938a74b57551284ff0230986b9c8cced",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "higgsfield-marketplace-cards",
+      "url": "https://skills.sh/higgsfield-ai/skills/higgsfield-marketplace-cards",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "higgsfield-ai/skills",
+      "path": null,
+      "aliases": [
+        "lead:668e0f1a40762dacb6f654ec2751a6f6938a74b57551284ff0230986b9c8cced",
+        "higgsfield-ai/skills:higgsfield-marketplace-cards",
+        "lead:higgsfield-ai/skills:higgsfield-marketplace-cards"
+      ]
+    },
+    {
+      "id": "74d603de863d86199af59c272bb71505ca9403de9e1c4caf6f1e5d24951081af",
+      "kind": "rising",
+      "key": "lead:668e0f1a40762dacb6f654ec2751a6f6938a74b57551284ff0230986b9c8cced",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "higgsfield-marketplace-cards",
+      "url": "https://skills.sh/higgsfield-ai/skills/higgsfield-marketplace-cards",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "higgsfield-ai/skills",
+      "path": null,
+      "aliases": [
+        "lead:668e0f1a40762dacb6f654ec2751a6f6938a74b57551284ff0230986b9c8cced",
+        "higgsfield-ai/skills:higgsfield-marketplace-cards",
+        "lead:higgsfield-ai/skills:higgsfield-marketplace-cards"
+      ]
+    },
+    {
+      "id": "2edfee10a57aa6712a2c417125a6caba97a614aae7ada6183d2f14afdea29acb",
+      "kind": "new",
+      "key": "lead:cb9132b5a4b0cf70a7b06a4d5dbef364bc32ea63ed0ffda340d25a2308f67b9c",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "microsoft-foundry",
+      "url": "https://skills.sh/microsoft/azure-skills/microsoft-foundry",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "microsoft/azure-skills",
+      "path": null,
+      "aliases": [
+        "lead:cb9132b5a4b0cf70a7b06a4d5dbef364bc32ea63ed0ffda340d25a2308f67b9c",
+        "microsoft/azure-skills:microsoft-foundry",
+        "lead:microsoft/azure-skills:microsoft-foundry"
+      ]
+    },
+    {
+      "id": "4ba6fb8d78e8999dd433985b1b6559665aa20de98f327d66dad41295126ce97e",
+      "kind": "rising",
+      "key": "lead:cb9132b5a4b0cf70a7b06a4d5dbef364bc32ea63ed0ffda340d25a2308f67b9c",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "microsoft-foundry",
+      "url": "https://skills.sh/microsoft/azure-skills/microsoft-foundry",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "microsoft/azure-skills",
+      "path": null,
+      "aliases": [
+        "lead:cb9132b5a4b0cf70a7b06a4d5dbef364bc32ea63ed0ffda340d25a2308f67b9c",
+        "microsoft/azure-skills:microsoft-foundry",
+        "lead:microsoft/azure-skills:microsoft-foundry"
+      ]
+    },
+    {
+      "id": "5eaab8082340945523a06b172f03a2b7e977792da5169005539d01a5ad3343c4",
+      "kind": "new",
+      "key": "lead:df0d018851cada7ce4dceb29cb49ee1feba02d761a907d33a1f4e65d190bb586",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "modern-web-guidance",
+      "url": "https://skills.sh/googlechrome/modern-web-guidance/modern-web-guidance",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "googlechrome/modern-web-guidance",
+      "path": null,
+      "aliases": [
+        "lead:df0d018851cada7ce4dceb29cb49ee1feba02d761a907d33a1f4e65d190bb586",
+        "googlechrome/modern-web-guidance:modern-web-guidance",
+        "lead:googlechrome/modern-web-guidance:modern-web-guidance"
+      ]
+    },
+    {
+      "id": "56920c8c0d257d09261e6ceee9aec579405abf7ada69e9a1445a72bec16ab013",
+      "kind": "rising",
+      "key": "lead:df0d018851cada7ce4dceb29cb49ee1feba02d761a907d33a1f4e65d190bb586",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "modern-web-guidance",
+      "url": "https://skills.sh/googlechrome/modern-web-guidance/modern-web-guidance",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "googlechrome/modern-web-guidance",
+      "path": null,
+      "aliases": [
+        "lead:df0d018851cada7ce4dceb29cb49ee1feba02d761a907d33a1f4e65d190bb586",
+        "googlechrome/modern-web-guidance:modern-web-guidance",
+        "lead:googlechrome/modern-web-guidance:modern-web-guidance"
+      ]
+    },
+    {
+      "id": "cd54f13ef6c4e18241c983aa3fffd3c12b207ecf04f0eaef05fa95f6b8db3df1",
+      "kind": "new",
+      "key": "lead:4aa8593af7f0a256bae6a0d15d79b3aa8dff641c39a6051b508c045782266d2e",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "tailwind-design-system",
+      "url": "https://skills.sh/wshobson/agents/tailwind-design-system",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "wshobson/agents",
+      "path": null,
+      "aliases": [
+        "lead:4aa8593af7f0a256bae6a0d15d79b3aa8dff641c39a6051b508c045782266d2e",
+        "wshobson/agents:tailwind-design-system",
+        "lead:wshobson/agents:tailwind-design-system"
+      ]
+    },
+    {
+      "id": "42c48f67d57124b02a929120606d7cc1be5075ed3be843fdb315fcd380ca633d",
+      "kind": "rising",
+      "key": "lead:4aa8593af7f0a256bae6a0d15d79b3aa8dff641c39a6051b508c045782266d2e",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "tailwind-design-system",
+      "url": "https://skills.sh/wshobson/agents/tailwind-design-system",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "wshobson/agents",
+      "path": null,
+      "aliases": [
+        "lead:4aa8593af7f0a256bae6a0d15d79b3aa8dff641c39a6051b508c045782266d2e",
+        "wshobson/agents:tailwind-design-system",
+        "lead:wshobson/agents:tailwind-design-system"
+      ]
+    },
+    {
+      "id": "0b8012e4f72ef7fdbcdd9cd9c3cf486557f4ecbdd7b3b478ade6e78b7d1db443",
+      "kind": "new",
+      "key": "lead:aa8d23b660dd397b830bf91e259c5538915cff874c224745af095904a6ecc4f4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "ste80-humanizer",
+      "url": "https://skills.sh/dodaios/ste80-humanizer/ste80-humanizer",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "dodaios/ste80-humanizer",
+      "path": null,
+      "aliases": [
+        "lead:aa8d23b660dd397b830bf91e259c5538915cff874c224745af095904a6ecc4f4",
+        "dodaios/ste80-humanizer:ste80-humanizer",
+        "lead:dodaios/ste80-humanizer:ste80-humanizer"
+      ]
+    },
+    {
+      "id": "fb934b36ac687ccb44a018bd241d1475b12b357743304a4227c8bf92a379a689",
+      "kind": "rising",
+      "key": "lead:aa8d23b660dd397b830bf91e259c5538915cff874c224745af095904a6ecc4f4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "ste80-humanizer",
+      "url": "https://skills.sh/dodaios/ste80-humanizer/ste80-humanizer",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "dodaios/ste80-humanizer",
+      "path": null,
+      "aliases": [
+        "lead:aa8d23b660dd397b830bf91e259c5538915cff874c224745af095904a6ecc4f4",
+        "dodaios/ste80-humanizer:ste80-humanizer",
+        "lead:dodaios/ste80-humanizer:ste80-humanizer"
+      ]
+    },
+    {
+      "id": "1cde8ca110ef9732f015aa2a84dfcea5363ccf82cfeb301baeda5fea70fa2b79",
+      "kind": "new",
+      "key": "lead:7f393122bffc35802d9009c57e2de11d3502b0de65e922be1e50906771534ed7",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "dimensional-drawing",
+      "url": "https://skills.sh/enesozturk/dimensional-drawing/dimensional-drawing",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "enesozturk/dimensional-drawing",
+      "path": null,
+      "aliases": [
+        "lead:7f393122bffc35802d9009c57e2de11d3502b0de65e922be1e50906771534ed7",
+        "enesozturk/dimensional-drawing:dimensional-drawing",
+        "lead:enesozturk/dimensional-drawing:dimensional-drawing"
+      ]
+    },
+    {
+      "id": "22ba9813dcae0692551d553cfae55d5d164cbd78a991daf4c9dc4644a9c84ef6",
+      "kind": "rising",
+      "key": "lead:7f393122bffc35802d9009c57e2de11d3502b0de65e922be1e50906771534ed7",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "dimensional-drawing",
+      "url": "https://skills.sh/enesozturk/dimensional-drawing/dimensional-drawing",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "enesozturk/dimensional-drawing",
+      "path": null,
+      "aliases": [
+        "lead:7f393122bffc35802d9009c57e2de11d3502b0de65e922be1e50906771534ed7",
+        "enesozturk/dimensional-drawing:dimensional-drawing",
+        "lead:enesozturk/dimensional-drawing:dimensional-drawing"
+      ]
+    },
+    {
+      "id": "a094c9bb0861feaca70c6fb39bd6719b987a3288c6eee136633c4976c6501402",
+      "kind": "new",
+      "key": "lead:d42448960f7f3b1541711d8bcfc80334518f2eb8ccd9f0b3af4dc5890260dd88",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "dimensional-drawing-motion",
+      "url": "https://skills.sh/enesozturk/dimensional-drawing/dimensional-drawing-motion",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "enesozturk/dimensional-drawing",
+      "path": null,
+      "aliases": [
+        "lead:d42448960f7f3b1541711d8bcfc80334518f2eb8ccd9f0b3af4dc5890260dd88",
+        "enesozturk/dimensional-drawing:dimensional-drawing-motion",
+        "lead:enesozturk/dimensional-drawing:dimensional-drawing-motion"
+      ]
+    },
+    {
+      "id": "9b4795af71371675946f8297346dedc01a79f32326531430aababe199082770e",
+      "kind": "rising",
+      "key": "lead:d42448960f7f3b1541711d8bcfc80334518f2eb8ccd9f0b3af4dc5890260dd88",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "dimensional-drawing-motion",
+      "url": "https://skills.sh/enesozturk/dimensional-drawing/dimensional-drawing-motion",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "enesozturk/dimensional-drawing",
+      "path": null,
+      "aliases": [
+        "lead:d42448960f7f3b1541711d8bcfc80334518f2eb8ccd9f0b3af4dc5890260dd88",
+        "enesozturk/dimensional-drawing:dimensional-drawing-motion",
+        "lead:enesozturk/dimensional-drawing:dimensional-drawing-motion"
+      ]
+    },
+    {
+      "id": "209e97ddd48f01d6a963110961e3501e4e42e1fb6ac282c970f2e09417c132cc",
+      "kind": "new",
+      "key": "lead:0956266246bfb7ed134f925d0017375f91a085b78e92eaa53159ef05c02ba233",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "ui-skills-root",
+      "url": "https://skills.sh/ibelick/ui-skills/ui-skills-root",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "ibelick/ui-skills",
+      "path": null,
+      "aliases": [
+        "lead:0956266246bfb7ed134f925d0017375f91a085b78e92eaa53159ef05c02ba233",
+        "ibelick/ui-skills:ui-skills-root",
+        "lead:ibelick/ui-skills:ui-skills-root"
+      ]
+    },
+    {
+      "id": "8b5994dfbcb69c3b9f7aa79eb205f174d44513874d712ace7216649e1c7be63e",
+      "kind": "rising",
+      "key": "lead:0956266246bfb7ed134f925d0017375f91a085b78e92eaa53159ef05c02ba233",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "ui-skills-root",
+      "url": "https://skills.sh/ibelick/ui-skills/ui-skills-root",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "ibelick/ui-skills",
+      "path": null,
+      "aliases": [
+        "lead:0956266246bfb7ed134f925d0017375f91a085b78e92eaa53159ef05c02ba233",
+        "ibelick/ui-skills:ui-skills-root",
+        "lead:ibelick/ui-skills:ui-skills-root"
+      ]
+    },
+    {
+      "id": "e3f6940c0fa60b525478c0984dd314cca049f878098954a2b81ae0391114285a",
+      "kind": "new",
+      "key": "lead:6e076f8bc53accc8737ab6ff15450a9b2f043972f3b7fe9e1841c786dc7f5268",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "torob-access-log-query",
+      "url": "https://skills.sh/site/skills.torob.dev/torob-access-log-query",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "site/skills.torob.dev",
+      "path": null,
+      "aliases": [
+        "lead:6e076f8bc53accc8737ab6ff15450a9b2f043972f3b7fe9e1841c786dc7f5268",
+        "site/skills.torob.dev:torob-access-log-query",
+        "lead:site/skills.torob.dev:torob-access-log-query"
+      ]
+    },
+    {
+      "id": "d698e2ee3051f6e9adec4d10752e3e33232f32035bca5faea3db14d165218777",
+      "kind": "rising",
+      "key": "lead:6e076f8bc53accc8737ab6ff15450a9b2f043972f3b7fe9e1841c786dc7f5268",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "torob-access-log-query",
+      "url": "https://skills.sh/site/skills.torob.dev/torob-access-log-query",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "site/skills.torob.dev",
+      "path": null,
+      "aliases": [
+        "lead:6e076f8bc53accc8737ab6ff15450a9b2f043972f3b7fe9e1841c786dc7f5268",
+        "site/skills.torob.dev:torob-access-log-query",
+        "lead:site/skills.torob.dev:torob-access-log-query"
+      ]
+    },
+    {
+      "id": "9e81cbf5e397e5ed0a9871103c4c3161957dd2500a6e17afc89e08b857ab578e",
+      "kind": "new",
+      "key": "lead:91443fa147f161c4b30fdf7c566aeb09ad48eae161d0ac092cd0f7e57e4b0130",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "dbs-speak-human",
+      "url": "https://skills.sh/dontbesilent2025/dbskill/dbs-speak-human",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "dontbesilent2025/dbskill",
+      "path": null,
+      "aliases": [
+        "lead:91443fa147f161c4b30fdf7c566aeb09ad48eae161d0ac092cd0f7e57e4b0130",
+        "dontbesilent2025/dbskill:dbs-speak-human",
+        "lead:dontbesilent2025/dbskill:dbs-speak-human"
+      ]
+    },
+    {
+      "id": "6ba19ce0dc70f00df235c2fedfb95e2e45b13cf15748a180bac6becaa3d2a0bf",
+      "kind": "new",
+      "key": "lead:a6234417d839bfeba2a24a35e19c8e29e2f653479da94dc647089a844641767a",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "torob-agent-browser-policy",
+      "url": "https://skills.sh/site/skills.torob.dev/torob-agent-browser-policy",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "site/skills.torob.dev",
+      "path": null,
+      "aliases": [
+        "lead:a6234417d839bfeba2a24a35e19c8e29e2f653479da94dc647089a844641767a",
+        "site/skills.torob.dev:torob-agent-browser-policy",
+        "lead:site/skills.torob.dev:torob-agent-browser-policy"
+      ]
+    },
+    {
+      "id": "c294354fde9e0d0032ead7b13af40b5644f8320935ee54b38fc0a4e20dc7c3cf",
+      "kind": "new",
+      "key": "lead:0efa8b81727126e084f1788751a20704bc598c2ca577141c464e26adf48e1070",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "torob-metabase",
+      "url": "https://skills.sh/site/skills.torob.dev/torob-metabase",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "site/skills.torob.dev",
+      "path": null,
+      "aliases": [
+        "lead:0efa8b81727126e084f1788751a20704bc598c2ca577141c464e26adf48e1070",
+        "site/skills.torob.dev:torob-metabase",
+        "lead:site/skills.torob.dev:torob-metabase"
+      ]
+    },
+    {
+      "id": "48325ca0d4540775fd567e17ba3728ed0a43d6f38bf2b5d59195b6011a19dc47",
+      "kind": "new",
+      "key": "lead:00efacd081d2397d19117292ea0035e58f0ca4f225e5e262f7cd22994cc84fc6",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "cadenya",
+      "url": "https://skills.sh/site/cadenya.com/cadenya",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "site/cadenya.com",
+      "path": null,
+      "aliases": [
+        "lead:00efacd081d2397d19117292ea0035e58f0ca4f225e5e262f7cd22994cc84fc6",
+        "site/cadenya.com:cadenya",
+        "lead:site/cadenya.com:cadenya"
+      ]
+    },
+    {
+      "id": "c5d1f39838c2e9d08a0433216a6b4dc0647e7959bdbe4e9641c313d2305ed3d0",
+      "kind": "new",
+      "key": "lead:8778acd382df6cacd8e16758867836185119a7a447363ba30c32bec133eef2b3",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "torob-affine",
+      "url": "https://skills.sh/site/skills.torob.dev/torob-affine",
+      "observedAt": "2026-11-10T14:27:32.863Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "site/skills.torob.dev",
+      "path": null,
+      "aliases": [
+        "lead:8778acd382df6cacd8e16758867836185119a7a447363ba30c32bec133eef2b3",
+        "site/skills.torob.dev:torob-affine",
+        "lead:site/skills.torob.dev:torob-affine"
+      ]
     }
   ],
   "notified": [
@@ -20775,6 +21544,11 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {},
+  "httpCache": {
+    "https://skillsmp.com/robots.txt": {
+      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
+      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
+    }
+  },
   "issueNumber": 9
 }
