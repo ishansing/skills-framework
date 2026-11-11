@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-10T14:27:32.863Z",
+  "scannedAt": "2026-11-11T13:41:27.116Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10346,6 +10346,44 @@
       ]
     },
     {
+      "id": "1390a0f1fc89297c201a5b131323edc2055a4d6e6fa618d889141de7a4a9c5e2",
+      "kind": "content-changed",
+      "key": "1000362065:skills/gdpr-compliant/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/gdpr-compliant/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/eaaffd5d020b756a2777a4b1b161d2bdc126d9a0/skills/gdpr-compliant/SKILL.md",
+      "observedAt": "2026-11-11T13:41:27.116Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/gdpr-compliant/SKILL.md",
+      "aliases": [
+        "1000362065:skills/gdpr-compliant/SKILL.md",
+        "github/awesome-copilot:skills/gdpr-compliant/SKILL.md",
+        "lead:github/awesome-copilot:skills/gdpr-compliant/SKILL.md"
+      ]
+    },
+    {
+      "id": "d5b75651b0703b20d91c8d143a869f0529b7ee7481e2304a38da8f17601c76c4",
+      "kind": "new",
+      "key": "1000362065:skills/scout-issue/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/scout-issue/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/eaaffd5d020b756a2777a4b1b161d2bdc126d9a0/skills/scout-issue/SKILL.md",
+      "observedAt": "2026-11-11T13:41:27.116Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/scout-issue/SKILL.md",
+      "aliases": [
+        "1000362065:skills/scout-issue/SKILL.md",
+        "github/awesome-copilot:skills/scout-issue/SKILL.md",
+        "lead:github/awesome-copilot:skills/scout-issue/SKILL.md"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -19664,44 +19702,6 @@
         "site/skills.torob.dev:torob-metabase",
         "lead:site/skills.torob.dev:torob-metabase"
       ]
-    },
-    {
-      "id": "48325ca0d4540775fd567e17ba3728ed0a43d6f38bf2b5d59195b6011a19dc47",
-      "kind": "new",
-      "key": "lead:00efacd081d2397d19117292ea0035e58f0ca4f225e5e262f7cd22994cc84fc6",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "cadenya",
-      "url": "https://skills.sh/site/cadenya.com/cadenya",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "site/cadenya.com",
-      "path": null,
-      "aliases": [
-        "lead:00efacd081d2397d19117292ea0035e58f0ca4f225e5e262f7cd22994cc84fc6",
-        "site/cadenya.com:cadenya",
-        "lead:site/cadenya.com:cadenya"
-      ]
-    },
-    {
-      "id": "c5d1f39838c2e9d08a0433216a6b4dc0647e7959bdbe4e9641c313d2305ed3d0",
-      "kind": "new",
-      "key": "lead:8778acd382df6cacd8e16758867836185119a7a447363ba30c32bec133eef2b3",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "torob-affine",
-      "url": "https://skills.sh/site/skills.torob.dev/torob-affine",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "site/skills.torob.dev",
-      "path": null,
-      "aliases": [
-        "lead:8778acd382df6cacd8e16758867836185119a7a447363ba30c32bec133eef2b3",
-        "site/skills.torob.dev:torob-affine",
-        "lead:site/skills.torob.dev:torob-affine"
-      ]
     }
   ],
   "notified": [
@@ -21544,11 +21544,6 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    }
-  },
+  "httpCache": {},
   "issueNumber": 9
 }
