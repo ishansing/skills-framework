@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-11T13:41:27.116Z",
+  "scannedAt": "2026-11-12T14:44:30.126Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10384,6 +10384,26 @@
       ]
     },
     {
+      "id": "88690590622fece7b28f4194a384715f1b4e1913c2aae8ec516cf2d880bbfea2",
+      "kind": "content-changed",
+      "key": "1263133834:plugins/zero/skills/zero/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:voltagent",
+      "name": "zero",
+      "url": "https://github.com/officialzeroxyz/zero-plugins/blob/e4d60ce06c2669b92295b71263c58b7020d14640/plugins/zero/skills/zero/SKILL.md",
+      "observedAt": "2026-11-12T14:44:30.126Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "officialzeroxyz/zero-plugins",
+      "path": "plugins/zero/skills/zero/SKILL.md",
+      "aliases": [
+        "1263133834:plugins/zero/skills/zero/SKILL.md",
+        "officialzeroxyz/zero-plugins:plugins/zero/skills/zero/SKILL.md",
+        "lead:officialzeroxyz/zero-plugins:zero",
+        "lead:officialzeroxyz/zero-plugins:plugins/zero/skills/zero/SKILL.md"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -19683,25 +19703,6 @@
         "site/skills.torob.dev:torob-agent-browser-policy",
         "lead:site/skills.torob.dev:torob-agent-browser-policy"
       ]
-    },
-    {
-      "id": "c294354fde9e0d0032ead7b13af40b5644f8320935ee54b38fc0a4e20dc7c3cf",
-      "kind": "new",
-      "key": "lead:0efa8b81727126e084f1788751a20704bc598c2ca577141c464e26adf48e1070",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "torob-metabase",
-      "url": "https://skills.sh/site/skills.torob.dev/torob-metabase",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "site/skills.torob.dev",
-      "path": null,
-      "aliases": [
-        "lead:0efa8b81727126e084f1788751a20704bc598c2ca577141c464e26adf48e1070",
-        "site/skills.torob.dev:torob-metabase",
-        "lead:site/skills.torob.dev:torob-metabase"
-      ]
     }
   ],
   "notified": [
@@ -21544,6 +21545,11 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {},
+  "httpCache": {
+    "https://skillsmp.com/robots.txt": {
+      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
+      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
+    }
+  },
   "issueNumber": 9
 }
