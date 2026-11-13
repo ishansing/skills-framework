@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-12T14:44:30.126Z",
+  "scannedAt": "2026-11-13T14:02:16.913Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10404,6 +10404,104 @@
       ]
     },
     {
+      "id": "399b30568510d3b7e1cb3aac49d4f05a44e984bd78bdbd5138d940f319a948a0",
+      "kind": "new",
+      "key": "1134447175:plugins/trailmark/skills/taint-trace/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:trailofbits/skills",
+      "name": "taint-trace",
+      "url": "https://github.com/trailofbits/skills/blob/149d7b21f4067765b82e67029730b42d228ef4b4/plugins/trailmark/skills/taint-trace/SKILL.md",
+      "observedAt": "2026-11-13T14:02:16.913Z",
+      "detail": "",
+      "approved": false,
+      "repo": "trailofbits/skills",
+      "path": "plugins/trailmark/skills/taint-trace/SKILL.md",
+      "aliases": [
+        "1134447175:plugins/trailmark/skills/taint-trace/SKILL.md",
+        "trailofbits/skills:plugins/trailmark/skills/taint-trace/SKILL.md",
+        "lead:trailofbits/skills:taint-trace",
+        "lead:trailofbits/skills:plugins/trailmark/skills/taint-trace/SKILL.md"
+      ]
+    },
+    {
+      "id": "50667e6d79c507df901ccc5c2f0b0ee197b6850c447f2dfc909a29b02e01cc02",
+      "kind": "new",
+      "key": "1000362065:skills/on-device-delegate/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/on-device-delegate/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/222eba62d518c27317e917c92e3ec1a7e6729455/skills/on-device-delegate/SKILL.md",
+      "observedAt": "2026-11-13T14:02:16.913Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/on-device-delegate/SKILL.md",
+      "aliases": [
+        "1000362065:skills/on-device-delegate/SKILL.md",
+        "github/awesome-copilot:skills/on-device-delegate/SKILL.md",
+        "lead:github/awesome-copilot:skills/on-device-delegate/SKILL.md"
+      ]
+    },
+    {
+      "id": "852b0c6fecf0945264259b3b4bb94e701733b1a2ea686a9b373d5550422b33c6",
+      "kind": "new",
+      "key": "1000362065:skills/sap-cloud-integration/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/sap-cloud-integration/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/222eba62d518c27317e917c92e3ec1a7e6729455/skills/sap-cloud-integration/SKILL.md",
+      "observedAt": "2026-11-13T14:02:16.913Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/sap-cloud-integration/SKILL.md",
+      "aliases": [
+        "1000362065:skills/sap-cloud-integration/SKILL.md",
+        "github/awesome-copilot:skills/sap-cloud-integration/SKILL.md",
+        "lead:github/awesome-copilot:skills/sap-cloud-integration/SKILL.md"
+      ]
+    },
+    {
+      "id": "70767c116e7cc84615d35de4599752cb00127be1ad8b3eb49bcf5bca42fb34f4",
+      "kind": "content-changed",
+      "key": "1183263320:testing/testing-setup/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:skills-sh",
+      "name": "testing-setup",
+      "url": "https://github.com/android/skills/blob/5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d/testing/testing-setup/SKILL.md",
+      "observedAt": "2026-11-13T14:02:16.913Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "android/skills",
+      "path": "testing/testing-setup/SKILL.md",
+      "aliases": [
+        "1183263320:testing/testing-setup/SKILL.md",
+        "android/skills:testing/testing-setup/SKILL.md",
+        "lead:android/skills:testing-setup",
+        "lead:android/skills:testing/testing-setup/SKILL.md"
+      ]
+    },
+    {
+      "id": "bf9514c4b40e0222b3b92332defc141cc233a9969c710ebef9db9f2083e6bac8",
+      "kind": "content-changed",
+      "key": "1183263320:security/android-permissions-security/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:skills-sh",
+      "name": "android-permissions-security",
+      "url": "https://github.com/android/skills/blob/5815d27fda564aa9f07ebdcb5e57ed3e8d904e0d/security/android-permissions-security/SKILL.md",
+      "observedAt": "2026-11-13T14:02:16.913Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "android/skills",
+      "path": "security/android-permissions-security/SKILL.md",
+      "aliases": [
+        "1183263320:security/android-permissions-security/SKILL.md",
+        "android/skills:security/android-permissions-security/SKILL.md",
+        "lead:android/skills:android-permissions-security",
+        "lead:android/skills:security/android-permissions-security/SKILL.md"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -19608,101 +19706,6 @@
         "ibelick/ui-skills:ui-skills-root",
         "lead:ibelick/ui-skills:ui-skills-root"
       ]
-    },
-    {
-      "id": "8b5994dfbcb69c3b9f7aa79eb205f174d44513874d712ace7216649e1c7be63e",
-      "kind": "rising",
-      "key": "lead:0956266246bfb7ed134f925d0017375f91a085b78e92eaa53159ef05c02ba233",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "ui-skills-root",
-      "url": "https://skills.sh/ibelick/ui-skills/ui-skills-root",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "ibelick/ui-skills",
-      "path": null,
-      "aliases": [
-        "lead:0956266246bfb7ed134f925d0017375f91a085b78e92eaa53159ef05c02ba233",
-        "ibelick/ui-skills:ui-skills-root",
-        "lead:ibelick/ui-skills:ui-skills-root"
-      ]
-    },
-    {
-      "id": "e3f6940c0fa60b525478c0984dd314cca049f878098954a2b81ae0391114285a",
-      "kind": "new",
-      "key": "lead:6e076f8bc53accc8737ab6ff15450a9b2f043972f3b7fe9e1841c786dc7f5268",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "torob-access-log-query",
-      "url": "https://skills.sh/site/skills.torob.dev/torob-access-log-query",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "site/skills.torob.dev",
-      "path": null,
-      "aliases": [
-        "lead:6e076f8bc53accc8737ab6ff15450a9b2f043972f3b7fe9e1841c786dc7f5268",
-        "site/skills.torob.dev:torob-access-log-query",
-        "lead:site/skills.torob.dev:torob-access-log-query"
-      ]
-    },
-    {
-      "id": "d698e2ee3051f6e9adec4d10752e3e33232f32035bca5faea3db14d165218777",
-      "kind": "rising",
-      "key": "lead:6e076f8bc53accc8737ab6ff15450a9b2f043972f3b7fe9e1841c786dc7f5268",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "torob-access-log-query",
-      "url": "https://skills.sh/site/skills.torob.dev/torob-access-log-query",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "site/skills.torob.dev",
-      "path": null,
-      "aliases": [
-        "lead:6e076f8bc53accc8737ab6ff15450a9b2f043972f3b7fe9e1841c786dc7f5268",
-        "site/skills.torob.dev:torob-access-log-query",
-        "lead:site/skills.torob.dev:torob-access-log-query"
-      ]
-    },
-    {
-      "id": "9e81cbf5e397e5ed0a9871103c4c3161957dd2500a6e17afc89e08b857ab578e",
-      "kind": "new",
-      "key": "lead:91443fa147f161c4b30fdf7c566aeb09ad48eae161d0ac092cd0f7e57e4b0130",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "dbs-speak-human",
-      "url": "https://skills.sh/dontbesilent2025/dbskill/dbs-speak-human",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "dontbesilent2025/dbskill",
-      "path": null,
-      "aliases": [
-        "lead:91443fa147f161c4b30fdf7c566aeb09ad48eae161d0ac092cd0f7e57e4b0130",
-        "dontbesilent2025/dbskill:dbs-speak-human",
-        "lead:dontbesilent2025/dbskill:dbs-speak-human"
-      ]
-    },
-    {
-      "id": "6ba19ce0dc70f00df235c2fedfb95e2e45b13cf15748a180bac6becaa3d2a0bf",
-      "kind": "new",
-      "key": "lead:a6234417d839bfeba2a24a35e19c8e29e2f653479da94dc647089a844641767a",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "torob-agent-browser-policy",
-      "url": "https://skills.sh/site/skills.torob.dev/torob-agent-browser-policy",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "site/skills.torob.dev",
-      "path": null,
-      "aliases": [
-        "lead:a6234417d839bfeba2a24a35e19c8e29e2f653479da94dc647089a844641767a",
-        "site/skills.torob.dev:torob-agent-browser-policy",
-        "lead:site/skills.torob.dev:torob-agent-browser-policy"
-      ]
     }
   ],
   "notified": [
@@ -21545,11 +21548,6 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    }
-  },
+  "httpCache": {},
   "issueNumber": 9
 }
