@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-14T13:04:05.616Z",
+  "scannedAt": "2026-11-15T13:32:52.147Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10522,6 +10522,66 @@
       ]
     },
     {
+      "id": "6a42f74bfc4c0df4683107ad00f6c23528e57840f5d522bb79381aaa6562c3fa",
+      "kind": "content-changed",
+      "key": "1061953414:skills/docx/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:anthropics/skills",
+      "name": "docx",
+      "url": "https://github.com/anthropics/skills/blob/1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064/skills/docx/SKILL.md",
+      "observedAt": "2026-11-15T13:32:52.147Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "anthropics/skills",
+      "path": "skills/docx/SKILL.md",
+      "aliases": [
+        "1061953414:skills/docx/SKILL.md",
+        "anthropics/skills:skills/docx/SKILL.md",
+        "lead:anthropics/skills:docx",
+        "lead:anthropics/skills:skills/docx/SKILL.md"
+      ]
+    },
+    {
+      "id": "059a393df84f05609fd99f79300f38763914ad42656ad2be5a50847b623e30c8",
+      "kind": "content-changed",
+      "key": "1061953414:skills/pptx/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:anthropics/skills",
+      "name": "pptx",
+      "url": "https://github.com/anthropics/skills/blob/1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064/skills/pptx/SKILL.md",
+      "observedAt": "2026-11-15T13:32:52.147Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "anthropics/skills",
+      "path": "skills/pptx/SKILL.md",
+      "aliases": [
+        "1061953414:skills/pptx/SKILL.md",
+        "anthropics/skills:skills/pptx/SKILL.md",
+        "lead:anthropics/skills:pptx",
+        "lead:anthropics/skills:skills/pptx/SKILL.md"
+      ]
+    },
+    {
+      "id": "ab6d2c1ae70735cc8a522e3f9b786df2e7ea30ba6b3099618507333d6af1fcaa",
+      "kind": "content-changed",
+      "key": "1061953414:skills/xlsx/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:anthropics/skills",
+      "name": "xlsx",
+      "url": "https://github.com/anthropics/skills/blob/1780c5e5a552fd4d1c9d6a7b0cab26b0c2bef064/skills/xlsx/SKILL.md",
+      "observedAt": "2026-11-15T13:32:52.147Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "anthropics/skills",
+      "path": "skills/xlsx/SKILL.md",
+      "aliases": [
+        "1061953414:skills/xlsx/SKILL.md",
+        "anthropics/skills:skills/xlsx/SKILL.md",
+        "lead:anthropics/skills:xlsx",
+        "lead:anthropics/skills:skills/xlsx/SKILL.md"
+      ]
+    },
+    {
       "id": "59e1ddf9437acbbee9d79f9429af9ecd22982f56d4b0fa02ea2c7a732a170303",
       "kind": "new",
       "key": "lead:5e76e349b53f2cded14458f310fdbdfc8a8fbb48226d6f6bbc04499ef9abcf08",
@@ -19650,63 +19710,6 @@
         "enesozturk/dimensional-drawing:dimensional-drawing",
         "lead:enesozturk/dimensional-drawing:dimensional-drawing"
       ]
-    },
-    {
-      "id": "22ba9813dcae0692551d553cfae55d5d164cbd78a991daf4c9dc4644a9c84ef6",
-      "kind": "rising",
-      "key": "lead:7f393122bffc35802d9009c57e2de11d3502b0de65e922be1e50906771534ed7",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "dimensional-drawing",
-      "url": "https://skills.sh/enesozturk/dimensional-drawing/dimensional-drawing",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "enesozturk/dimensional-drawing",
-      "path": null,
-      "aliases": [
-        "lead:7f393122bffc35802d9009c57e2de11d3502b0de65e922be1e50906771534ed7",
-        "enesozturk/dimensional-drawing:dimensional-drawing",
-        "lead:enesozturk/dimensional-drawing:dimensional-drawing"
-      ]
-    },
-    {
-      "id": "a094c9bb0861feaca70c6fb39bd6719b987a3288c6eee136633c4976c6501402",
-      "kind": "new",
-      "key": "lead:d42448960f7f3b1541711d8bcfc80334518f2eb8ccd9f0b3af4dc5890260dd88",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "dimensional-drawing-motion",
-      "url": "https://skills.sh/enesozturk/dimensional-drawing/dimensional-drawing-motion",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "enesozturk/dimensional-drawing",
-      "path": null,
-      "aliases": [
-        "lead:d42448960f7f3b1541711d8bcfc80334518f2eb8ccd9f0b3af4dc5890260dd88",
-        "enesozturk/dimensional-drawing:dimensional-drawing-motion",
-        "lead:enesozturk/dimensional-drawing:dimensional-drawing-motion"
-      ]
-    },
-    {
-      "id": "9b4795af71371675946f8297346dedc01a79f32326531430aababe199082770e",
-      "kind": "rising",
-      "key": "lead:d42448960f7f3b1541711d8bcfc80334518f2eb8ccd9f0b3af4dc5890260dd88",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "dimensional-drawing-motion",
-      "url": "https://skills.sh/enesozturk/dimensional-drawing/dimensional-drawing-motion",
-      "observedAt": "2026-11-10T14:27:32.863Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "enesozturk/dimensional-drawing",
-      "path": null,
-      "aliases": [
-        "lead:d42448960f7f3b1541711d8bcfc80334518f2eb8ccd9f0b3af4dc5890260dd88",
-        "enesozturk/dimensional-drawing:dimensional-drawing-motion",
-        "lead:enesozturk/dimensional-drawing:dimensional-drawing-motion"
-      ]
     }
   ],
   "notified": [
@@ -21549,11 +21552,6 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    }
-  },
+  "httpCache": {},
   "issueNumber": 9
 }
