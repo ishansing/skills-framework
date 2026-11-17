@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-16T14:59:50.961Z",
+  "scannedAt": "2026-11-17T15:36:30.255Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -18929,6 +18929,768 @@
         "wshobson/agents:tailwind-design-system",
         "lead:wshobson/agents:tailwind-design-system"
       ]
+    },
+    {
+      "id": "85f285b504cf4471718194361bff7e12f6363f41f5a205611311398ecf4e8cf7",
+      "kind": "new",
+      "key": "1166980011:debug-model/SKILL.md",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "debug-model",
+      "url": "https://github.com/modular/skills/blob/88286be635f7f3528f29467d8c288f3f695b0a6c/debug-model/SKILL.md",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "",
+      "approved": false,
+      "repo": "modular/skills",
+      "path": "debug-model/SKILL.md",
+      "aliases": [
+        "1166980011:debug-model/SKILL.md",
+        "modular/skills:debug-model/SKILL.md",
+        "lead:modular/skills:debug-model",
+        "lead:modular/skills:debug-model/SKILL.md"
+      ]
+    },
+    {
+      "id": "6feccc00dea482d1d742f20fce3489bf1ef1563cff4771af8eb4e1c59a798300",
+      "kind": "new",
+      "key": "1236375183:skills/shepherd/SKILL.md",
+      "priority": "low",
+      "source": "discovery:awesomeskill",
+      "name": "shepherd",
+      "url": "https://github.com/chrisbanes/skills/blob/57694896e6617dacc5c191561eac5759efd7d8ff/skills/shepherd/SKILL.md",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "",
+      "approved": false,
+      "repo": "chrisbanes/skills",
+      "path": "skills/shepherd/SKILL.md",
+      "aliases": [
+        "1236375183:skills/shepherd/SKILL.md",
+        "chrisbanes/skills:skills/shepherd/SKILL.md",
+        "lead:chrisbanes/skills:shepherd",
+        "lead:chrisbanes/skills:skills/shepherd/SKILL.md"
+      ]
+    },
+    {
+      "id": "b35ba65ab08cc1ffa51fd8702e7c865f6e68ce7ede98420bb3f6ae8603869f69",
+      "kind": "new",
+      "key": "lead:81a31ae5839eb41bfb8284b3c65e09be72236dc327eef7141149763be07cf24d",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "yoruba-localization-testing",
+      "url": "https://skills.sh/affaan-m/ecc/yoruba-localization-testing",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "affaan-m/ecc",
+      "path": null,
+      "aliases": [
+        "lead:81a31ae5839eb41bfb8284b3c65e09be72236dc327eef7141149763be07cf24d",
+        "affaan-m/ecc:yoruba-localization-testing",
+        "lead:affaan-m/ecc:yoruba-localization-testing"
+      ]
+    },
+    {
+      "id": "92f79f2d47db4b96d3b9af53de6ca9cb6667cb588e605dd8cf8809926c1a38b1",
+      "kind": "new",
+      "key": "lead:ea8046329bd3345ae5150c846de6cc589d128378ed1927978cbb6a38cce2159b",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "ai-regression-testing",
+      "url": "https://skills.sh/affaan-m/ecc/ai-regression-testing",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "affaan-m/ecc",
+      "path": null,
+      "aliases": [
+        "lead:ea8046329bd3345ae5150c846de6cc589d128378ed1927978cbb6a38cce2159b",
+        "affaan-m/ecc:ai-regression-testing",
+        "lead:affaan-m/ecc:ai-regression-testing"
+      ]
+    },
+    {
+      "id": "7a00f6e4b0bbbaaa3b7073e445f03bf4bea4025c18ac2e0da73ea8703a86aa2c",
+      "kind": "new",
+      "key": "lead:67855683120fe796a25c7170984ea7db14fff024bc6acd08f45656b72a0033b2",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "kotlin-testing",
+      "url": "https://skills.sh/affaan-m/ecc/kotlin-testing",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "ambiguous skill path; exact resolution required",
+      "approved": false,
+      "repo": "affaan-m/ecc",
+      "path": null,
+      "aliases": [
+        "lead:67855683120fe796a25c7170984ea7db14fff024bc6acd08f45656b72a0033b2",
+        "affaan-m/ecc:kotlin-testing",
+        "lead:affaan-m/ecc:kotlin-testing"
+      ]
+    },
+    {
+      "id": "512124428738f1daf14f5ab3aaa5d954a47a36cd84f9cda7be2d2d464d18b95e",
+      "kind": "new",
+      "key": "lead:5c19a52b9f760270d30841c49f106dff7e4856bdf403eff3a00d3dcde4f435f5",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "frontend-patterns",
+      "url": "https://skills.sh/affaan-m/ecc/frontend-patterns",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "affaan-m/ecc",
+      "path": null,
+      "aliases": [
+        "lead:5c19a52b9f760270d30841c49f106dff7e4856bdf403eff3a00d3dcde4f435f5",
+        "affaan-m/ecc:frontend-patterns",
+        "lead:affaan-m/ecc:frontend-patterns"
+      ]
+    },
+    {
+      "id": "c75f731ba6373953c4ff05f1ee856eda001ad1b0defc94fc3b4fa87bf9f461c4",
+      "kind": "new",
+      "key": "lead:a4bbc57f76c4ef28e4c0c2e9331512e543104a6fc63531f23aa1fcb2f53a1551",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "frontend-a11y",
+      "url": "https://skills.sh/affaan-m/ecc/frontend-a11y",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "affaan-m/ecc",
+      "path": null,
+      "aliases": [
+        "lead:a4bbc57f76c4ef28e4c0c2e9331512e543104a6fc63531f23aa1fcb2f53a1551",
+        "affaan-m/ecc:frontend-a11y",
+        "lead:affaan-m/ecc:frontend-a11y"
+      ]
+    },
+    {
+      "id": "34c136b6be1bc7b6a0f67555255ef65f26e349bbdd9a00a82de4cb508e609d7c",
+      "kind": "new",
+      "key": "lead:8fad2849e70ec4160529346e1d87b9b2a72fe803761682b86fdae532a1d0199d",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "android-clean-architecture",
+      "url": "https://skills.sh/affaan-m/ecc/android-clean-architecture",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "affaan-m/ecc",
+      "path": null,
+      "aliases": [
+        "lead:8fad2849e70ec4160529346e1d87b9b2a72fe803761682b86fdae532a1d0199d",
+        "affaan-m/ecc:android-clean-architecture",
+        "lead:affaan-m/ecc:android-clean-architecture"
+      ]
+    },
+    {
+      "id": "bc973671d129a5ca113de096886ce8a94069c7a312aa51694f369e05d049a8e5",
+      "kind": "new",
+      "key": "lead:4f1c7605fbbdd8dec6a73ea7e912aadd158bd00d06defbce88d9fc78fb4a78ef",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "rea-ci-tests-audit",
+      "url": "https://skills.sh/morluto/rea/rea-ci-tests-audit",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "morluto/rea",
+      "path": null,
+      "aliases": [
+        "lead:4f1c7605fbbdd8dec6a73ea7e912aadd158bd00d06defbce88d9fc78fb4a78ef",
+        "morluto/rea:rea-ci-tests-audit",
+        "lead:morluto/rea:rea-ci-tests-audit"
+      ]
+    },
+    {
+      "id": "8d1f90a144d64b46bc27c08c240f0ab6b454426c9a92c0f29410266bbef28577",
+      "kind": "new",
+      "key": "lead:80ac6a77ba9ae6b7106041289a9bacaaa56c6dc0aa6eee8bfdccfc8a357f6dbf",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "hexagonal-architecture",
+      "url": "https://skills.sh/affaan-m/ecc/hexagonal-architecture",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "affaan-m/ecc",
+      "path": null,
+      "aliases": [
+        "lead:80ac6a77ba9ae6b7106041289a9bacaaa56c6dc0aa6eee8bfdccfc8a357f6dbf",
+        "affaan-m/ecc:hexagonal-architecture",
+        "lead:affaan-m/ecc:hexagonal-architecture"
+      ]
+    },
+    {
+      "id": "d685bb5a265d500cb2876466ad9777f23b4caf88ca76aa0ef2397f37b697a321",
+      "kind": "new",
+      "key": "lead:1b317c72f0b50ba316e73371104b7ed3df44007f7d4e40ad5461930d767f64da",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "ex-ussr-kinship-research",
+      "url": "https://skills.sh/denissergeevitch/ex-ussr-kinship-research/ex-ussr-kinship-research",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "denissergeevitch/ex-ussr-kinship-research",
+      "path": null,
+      "aliases": [
+        "lead:1b317c72f0b50ba316e73371104b7ed3df44007f7d4e40ad5461930d767f64da",
+        "denissergeevitch/ex-ussr-kinship-research:ex-ussr-kinship-research",
+        "lead:denissergeevitch/ex-ussr-kinship-research:ex-ussr-kinship-research"
+      ]
+    },
+    {
+      "id": "3c281bc0f8d30edd9e504df538d7cf3bee91c388cf0b1ff885da2f6be652b2a3",
+      "kind": "new",
+      "key": "lead:04c9f1f595e9bc83c6231e3ca1b5cd1946cec57d4e7ba387f767fa40d548b9e4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "next-cache-components-adoption",
+      "url": "https://skills.sh/vercel/next.js/next-cache-components-adoption",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "vercel/next.js",
+      "path": null,
+      "aliases": [
+        "lead:04c9f1f595e9bc83c6231e3ca1b5cd1946cec57d4e7ba387f767fa40d548b9e4",
+        "vercel/next.js:next-cache-components-adoption",
+        "lead:vercel/next.js:next-cache-components-adoption"
+      ]
+    },
+    {
+      "id": "d9ab63bb1e513949ee76ed3b29066b2879e93e235fa4f16af177e638bd7d33e6",
+      "kind": "rising",
+      "key": "lead:04c9f1f595e9bc83c6231e3ca1b5cd1946cec57d4e7ba387f767fa40d548b9e4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "next-cache-components-adoption",
+      "url": "https://skills.sh/vercel/next.js/next-cache-components-adoption",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "vercel/next.js",
+      "path": null,
+      "aliases": [
+        "lead:04c9f1f595e9bc83c6231e3ca1b5cd1946cec57d4e7ba387f767fa40d548b9e4",
+        "vercel/next.js:next-cache-components-adoption",
+        "lead:vercel/next.js:next-cache-components-adoption"
+      ]
+    },
+    {
+      "id": "ee53d69b8a49bb71baec8774d2b635f858e4a36555f522a69820ac8045044587",
+      "kind": "new",
+      "key": "lead:250822b504a1c7298e19eea767f73eaacf3d176c6adc3a9fd481e23063c490aa",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "twitter-automation",
+      "url": "https://skills.sh/beltsh/superpowers/twitter-automation",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "beltsh/superpowers",
+      "path": null,
+      "aliases": [
+        "lead:250822b504a1c7298e19eea767f73eaacf3d176c6adc3a9fd481e23063c490aa",
+        "beltsh/superpowers:twitter-automation",
+        "lead:beltsh/superpowers:twitter-automation"
+      ]
+    },
+    {
+      "id": "8984ba2924322107018978b05b0096268cd1fe7707e049a8bfe8dfcd09c435b0",
+      "kind": "rising",
+      "key": "lead:250822b504a1c7298e19eea767f73eaacf3d176c6adc3a9fd481e23063c490aa",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "twitter-automation",
+      "url": "https://skills.sh/beltsh/superpowers/twitter-automation",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "beltsh/superpowers",
+      "path": null,
+      "aliases": [
+        "lead:250822b504a1c7298e19eea767f73eaacf3d176c6adc3a9fd481e23063c490aa",
+        "beltsh/superpowers:twitter-automation",
+        "lead:beltsh/superpowers:twitter-automation"
+      ]
+    },
+    {
+      "id": "240c6fdc7047866519fc7ab993df6b36d828d525c61cb98839e7c2bfc139797a",
+      "kind": "new",
+      "key": "lead:516ea11e7e6df054c5d2a2bf9724a33fb67edc2e03a50d958dd104c9d5adc28a",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "website-builder",
+      "url": "https://skills.sh/flowkit-labs/skills/website-builder",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "flowkit-labs/skills",
+      "path": null,
+      "aliases": [
+        "lead:516ea11e7e6df054c5d2a2bf9724a33fb67edc2e03a50d958dd104c9d5adc28a",
+        "flowkit-labs/skills:website-builder",
+        "lead:flowkit-labs/skills:website-builder"
+      ]
+    },
+    {
+      "id": "2def7876573348be608a05453aec5395e1a3f94ff8a799befb8671f5d250f9a1",
+      "kind": "rising",
+      "key": "lead:516ea11e7e6df054c5d2a2bf9724a33fb67edc2e03a50d958dd104c9d5adc28a",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "website-builder",
+      "url": "https://skills.sh/flowkit-labs/skills/website-builder",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "flowkit-labs/skills",
+      "path": null,
+      "aliases": [
+        "lead:516ea11e7e6df054c5d2a2bf9724a33fb67edc2e03a50d958dd104c9d5adc28a",
+        "flowkit-labs/skills:website-builder",
+        "lead:flowkit-labs/skills:website-builder"
+      ]
+    },
+    {
+      "id": "19c8ffb467b40eb5aa843ed6623322190bb297bfb5c6818eb73cd979f47bc640",
+      "kind": "new",
+      "key": "lead:5126663c5a14528a6d7136e95d1da0ec061f18e6b82fada24dd9b89f57669ece",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "walden",
+      "url": "https://skills.sh/andrearaponi/walden/walden",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "andrearaponi/walden",
+      "path": null,
+      "aliases": [
+        "lead:5126663c5a14528a6d7136e95d1da0ec061f18e6b82fada24dd9b89f57669ece",
+        "andrearaponi/walden:walden",
+        "lead:andrearaponi/walden:walden"
+      ]
+    },
+    {
+      "id": "196559a2c5d383093ceefcca9f5e1ea2e4d15b3b4e5f0eaead27b1148705da5a",
+      "kind": "rising",
+      "key": "lead:5126663c5a14528a6d7136e95d1da0ec061f18e6b82fada24dd9b89f57669ece",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "walden",
+      "url": "https://skills.sh/andrearaponi/walden/walden",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "andrearaponi/walden",
+      "path": null,
+      "aliases": [
+        "lead:5126663c5a14528a6d7136e95d1da0ec061f18e6b82fada24dd9b89f57669ece",
+        "andrearaponi/walden:walden",
+        "lead:andrearaponi/walden:walden"
+      ]
+    },
+    {
+      "id": "2adae176cc6cf2b628662a29f20cbfd9bacf7b7fa5360e8e65e496c67080674e",
+      "kind": "new",
+      "key": "lead:0d8ad477460dc35d63995e13df870d5b73eca87717c3da0809f2f7f06eb8c3d2",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "chakra-ui-refactor",
+      "url": "https://skills.sh/chakra-ui/chakra-ui/chakra-ui-refactor",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "chakra-ui/chakra-ui",
+      "path": null,
+      "aliases": [
+        "lead:0d8ad477460dc35d63995e13df870d5b73eca87717c3da0809f2f7f06eb8c3d2",
+        "chakra-ui/chakra-ui:chakra-ui-refactor",
+        "lead:chakra-ui/chakra-ui:chakra-ui-refactor"
+      ]
+    },
+    {
+      "id": "8fb29ddfbb98d7ce34d464bbb2d6e1ec5dde1d695f1c571ec7c8d19fe1033ade",
+      "kind": "rising",
+      "key": "lead:0d8ad477460dc35d63995e13df870d5b73eca87717c3da0809f2f7f06eb8c3d2",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "chakra-ui-refactor",
+      "url": "https://skills.sh/chakra-ui/chakra-ui/chakra-ui-refactor",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "chakra-ui/chakra-ui",
+      "path": null,
+      "aliases": [
+        "lead:0d8ad477460dc35d63995e13df870d5b73eca87717c3da0809f2f7f06eb8c3d2",
+        "chakra-ui/chakra-ui:chakra-ui-refactor",
+        "lead:chakra-ui/chakra-ui:chakra-ui-refactor"
+      ]
+    },
+    {
+      "id": "a509d1313bd3e0d105281f4a8fe297381418bfae55f411ece950fa5ab256cbc7",
+      "kind": "new",
+      "key": "lead:49aaf19fb51f7710a69b9a9720a5ee61bb86e231c811a779e340365906e6546c",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "chakra-ui-migrate",
+      "url": "https://skills.sh/chakra-ui/chakra-ui/chakra-ui-migrate",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "chakra-ui/chakra-ui",
+      "path": null,
+      "aliases": [
+        "lead:49aaf19fb51f7710a69b9a9720a5ee61bb86e231c811a779e340365906e6546c",
+        "chakra-ui/chakra-ui:chakra-ui-migrate",
+        "lead:chakra-ui/chakra-ui:chakra-ui-migrate"
+      ]
+    },
+    {
+      "id": "d26b54fa049961d4fb9b193574c9b646240df43692e86552af6fc4aa28e0d708",
+      "kind": "rising",
+      "key": "lead:49aaf19fb51f7710a69b9a9720a5ee61bb86e231c811a779e340365906e6546c",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "chakra-ui-migrate",
+      "url": "https://skills.sh/chakra-ui/chakra-ui/chakra-ui-migrate",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "chakra-ui/chakra-ui",
+      "path": null,
+      "aliases": [
+        "lead:49aaf19fb51f7710a69b9a9720a5ee61bb86e231c811a779e340365906e6546c",
+        "chakra-ui/chakra-ui:chakra-ui-migrate",
+        "lead:chakra-ui/chakra-ui:chakra-ui-migrate"
+      ]
+    },
+    {
+      "id": "84ec162e41e1879862b95da8a652496f610547774a76b9b90424ae176adbb7f7",
+      "kind": "new",
+      "key": "lead:456e26ff839d53948e33542f0229a72979ad4a21667fc66c75deda340e248d1f",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "chakra-ui-builder",
+      "url": "https://skills.sh/chakra-ui/chakra-ui/chakra-ui-builder",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "chakra-ui/chakra-ui",
+      "path": null,
+      "aliases": [
+        "lead:456e26ff839d53948e33542f0229a72979ad4a21667fc66c75deda340e248d1f",
+        "chakra-ui/chakra-ui:chakra-ui-builder",
+        "lead:chakra-ui/chakra-ui:chakra-ui-builder"
+      ]
+    },
+    {
+      "id": "f64eba8a3e9ca958f4013157f74d98bea4d1c53a0de57d955871eeefb4dc29d6",
+      "kind": "rising",
+      "key": "lead:456e26ff839d53948e33542f0229a72979ad4a21667fc66c75deda340e248d1f",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "chakra-ui-builder",
+      "url": "https://skills.sh/chakra-ui/chakra-ui/chakra-ui-builder",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "chakra-ui/chakra-ui",
+      "path": null,
+      "aliases": [
+        "lead:456e26ff839d53948e33542f0229a72979ad4a21667fc66c75deda340e248d1f",
+        "chakra-ui/chakra-ui:chakra-ui-builder",
+        "lead:chakra-ui/chakra-ui:chakra-ui-builder"
+      ]
+    },
+    {
+      "id": "58433f5ea1437f2a9814055b5deab022bdb7b9349b8229af6c7e7811ce0bf0af",
+      "kind": "new",
+      "key": "lead:0e5124a4fc189833d76b939d037a0551d22fbbe249f217f72ad0871b32e535a4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "style-sampling",
+      "url": "https://skills.sh/heygen-com/hyperframes/style-sampling",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "heygen-com/hyperframes",
+      "path": null,
+      "aliases": [
+        "lead:0e5124a4fc189833d76b939d037a0551d22fbbe249f217f72ad0871b32e535a4",
+        "heygen-com/hyperframes:style-sampling",
+        "lead:heygen-com/hyperframes:style-sampling"
+      ]
+    },
+    {
+      "id": "c27d5890f6525a4017a7e5c8c8a276b11484f371a385f4745be2587781487832",
+      "kind": "rising",
+      "key": "lead:0e5124a4fc189833d76b939d037a0551d22fbbe249f217f72ad0871b32e535a4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "style-sampling",
+      "url": "https://skills.sh/heygen-com/hyperframes/style-sampling",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "heygen-com/hyperframes",
+      "path": null,
+      "aliases": [
+        "lead:0e5124a4fc189833d76b939d037a0551d22fbbe249f217f72ad0871b32e535a4",
+        "heygen-com/hyperframes:style-sampling",
+        "lead:heygen-com/hyperframes:style-sampling"
+      ]
+    },
+    {
+      "id": "001cf2f44b39e060a085b408d8c0e108373470ae2d6b89e88a23ef193d3112c9",
+      "kind": "new",
+      "key": "lead:56e082a9db3e6e0dc0c5e54a5c1326f0cdf40ab518bbe36498e8ee7acd0aede4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "nihongo",
+      "url": "https://skills.sh/anit012/nihongo/nihongo",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "anit012/nihongo",
+      "path": null,
+      "aliases": [
+        "lead:56e082a9db3e6e0dc0c5e54a5c1326f0cdf40ab518bbe36498e8ee7acd0aede4",
+        "anit012/nihongo:nihongo",
+        "lead:anit012/nihongo:nihongo"
+      ]
+    },
+    {
+      "id": "240ccc8708e4af1aa2f1fd4ce7dfe624830a39115169b82cd609589725402bb2",
+      "kind": "rising",
+      "key": "lead:56e082a9db3e6e0dc0c5e54a5c1326f0cdf40ab518bbe36498e8ee7acd0aede4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "nihongo",
+      "url": "https://skills.sh/anit012/nihongo/nihongo",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "anit012/nihongo",
+      "path": null,
+      "aliases": [
+        "lead:56e082a9db3e6e0dc0c5e54a5c1326f0cdf40ab518bbe36498e8ee7acd0aede4",
+        "anit012/nihongo:nihongo",
+        "lead:anit012/nihongo:nihongo"
+      ]
+    },
+    {
+      "id": "bd6083a6242da339611a0f21ed00704b66cd19f2b2249c6fc01db8f1cb9fb6f2",
+      "kind": "new",
+      "key": "lead:510b45adbd4eee0e8fe41343b018190fecc97da454820ea84115a23c49fb5eff",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "reverse-any-video",
+      "url": "https://skills.sh/heygen-com/hyperframes/reverse-any-video",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "heygen-com/hyperframes",
+      "path": null,
+      "aliases": [
+        "lead:510b45adbd4eee0e8fe41343b018190fecc97da454820ea84115a23c49fb5eff",
+        "heygen-com/hyperframes:reverse-any-video",
+        "lead:heygen-com/hyperframes:reverse-any-video"
+      ]
+    },
+    {
+      "id": "4e2abf5b4ce9e97989e72b514497c7f5096f8d7102023ff61bfce901583e073b",
+      "kind": "rising",
+      "key": "lead:510b45adbd4eee0e8fe41343b018190fecc97da454820ea84115a23c49fb5eff",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "reverse-any-video",
+      "url": "https://skills.sh/heygen-com/hyperframes/reverse-any-video",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "heygen-com/hyperframes",
+      "path": null,
+      "aliases": [
+        "lead:510b45adbd4eee0e8fe41343b018190fecc97da454820ea84115a23c49fb5eff",
+        "heygen-com/hyperframes:reverse-any-video",
+        "lead:heygen-com/hyperframes:reverse-any-video"
+      ]
+    },
+    {
+      "id": "5d84b817065d996fb12564bd257f66619c95c0d7d93859280bca8a5da13a1c8a",
+      "kind": "new",
+      "key": "lead:dfb4bfdf425dd88f6cb096691c6472a92d13c4364ccabce315d8728f6b6287af",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "azure-ai",
+      "url": "https://skills.sh/microsoft/azure-skills/azure-ai",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "microsoft/azure-skills",
+      "path": null,
+      "aliases": [
+        "lead:dfb4bfdf425dd88f6cb096691c6472a92d13c4364ccabce315d8728f6b6287af",
+        "microsoft/azure-skills:azure-ai",
+        "lead:microsoft/azure-skills:azure-ai"
+      ]
+    },
+    {
+      "id": "06045ab1f9a4d1304dfac148539077a3562eec2060b9f79dc715e87c2856a7cd",
+      "kind": "rising",
+      "key": "lead:dfb4bfdf425dd88f6cb096691c6472a92d13c4364ccabce315d8728f6b6287af",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "azure-ai",
+      "url": "https://skills.sh/microsoft/azure-skills/azure-ai",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "microsoft/azure-skills",
+      "path": null,
+      "aliases": [
+        "lead:dfb4bfdf425dd88f6cb096691c6472a92d13c4364ccabce315d8728f6b6287af",
+        "microsoft/azure-skills:azure-ai",
+        "lead:microsoft/azure-skills:azure-ai"
+      ]
+    },
+    {
+      "id": "9ce40c88144dae6cb27bbb6d4fccff08897f8776fd84ec9aed524cd4887a5a5c",
+      "kind": "new",
+      "key": "lead:eec437b56843ff00fb8090f468281326c429f61760527a95af50c56385e6d5e1",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "base44-sdk",
+      "url": "https://skills.sh/base44/skills/base44-sdk",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "base44/skills",
+      "path": null,
+      "aliases": [
+        "lead:eec437b56843ff00fb8090f468281326c429f61760527a95af50c56385e6d5e1",
+        "base44/skills:base44-sdk",
+        "lead:base44/skills:base44-sdk"
+      ]
+    },
+    {
+      "id": "ff1877187f2dfc49e007c186bd9be9f6413e247ea045758ad787cb8fb5a8651c",
+      "kind": "rising",
+      "key": "lead:eec437b56843ff00fb8090f468281326c429f61760527a95af50c56385e6d5e1",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "base44-sdk",
+      "url": "https://skills.sh/base44/skills/base44-sdk",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "base44/skills",
+      "path": null,
+      "aliases": [
+        "lead:eec437b56843ff00fb8090f468281326c429f61760527a95af50c56385e6d5e1",
+        "base44/skills:base44-sdk",
+        "lead:base44/skills:base44-sdk"
+      ]
+    },
+    {
+      "id": "990e14d8c3f05954691262b2c16aaee1314083fbc0481f9f6a2f2a1d0f888bae",
+      "kind": "new",
+      "key": "lead:ccdb4aa36b31acb8f2f29d9902e48137954ff132bfe256fafde65fb0072d29d7",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "base44-platform-integrations-sdk",
+      "url": "https://skills.sh/base44/skills/base44-platform-integrations-sdk",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "base44/skills",
+      "path": null,
+      "aliases": [
+        "lead:ccdb4aa36b31acb8f2f29d9902e48137954ff132bfe256fafde65fb0072d29d7",
+        "base44/skills:base44-platform-integrations-sdk",
+        "lead:base44/skills:base44-platform-integrations-sdk"
+      ]
+    },
+    {
+      "id": "43617d3cc6bfd1c1acc5579940f29181b981228e2b72980d46ea26340ddcfcb7",
+      "kind": "rising",
+      "key": "lead:ccdb4aa36b31acb8f2f29d9902e48137954ff132bfe256fafde65fb0072d29d7",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "base44-platform-integrations-sdk",
+      "url": "https://skills.sh/base44/skills/base44-platform-integrations-sdk",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "base44/skills",
+      "path": null,
+      "aliases": [
+        "lead:ccdb4aa36b31acb8f2f29d9902e48137954ff132bfe256fafde65fb0072d29d7",
+        "base44/skills:base44-platform-integrations-sdk",
+        "lead:base44/skills:base44-platform-integrations-sdk"
+      ]
+    },
+    {
+      "id": "6cd9c68f6d5fb093a61c90fc42e164dd116090787528b9827c29f24a3e9abf81",
+      "kind": "new",
+      "key": "lead:ee9dfc0972ea4d88d206c07fc82a832e5cc7b56d570b7580d5f867122490efb4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "plannotator-setup-goal",
+      "url": "https://skills.sh/backnotprop/plannotator/plannotator-setup-goal",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "backnotprop/plannotator",
+      "path": null,
+      "aliases": [
+        "lead:ee9dfc0972ea4d88d206c07fc82a832e5cc7b56d570b7580d5f867122490efb4",
+        "backnotprop/plannotator:plannotator-setup-goal",
+        "lead:backnotprop/plannotator:plannotator-setup-goal"
+      ]
+    },
+    {
+      "id": "9f8ce267a4c6ddd6f1f1e812ff0859adfe08ecd9b0b873506b7b2684c6bc9ed5",
+      "kind": "rising",
+      "key": "lead:ee9dfc0972ea4d88d206c07fc82a832e5cc7b56d570b7580d5f867122490efb4",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "plannotator-setup-goal",
+      "url": "https://skills.sh/backnotprop/plannotator/plannotator-setup-goal",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "backnotprop/plannotator",
+      "path": null,
+      "aliases": [
+        "lead:ee9dfc0972ea4d88d206c07fc82a832e5cc7b56d570b7580d5f867122490efb4",
+        "backnotprop/plannotator:plannotator-setup-goal",
+        "lead:backnotprop/plannotator:plannotator-setup-goal"
+      ]
+    },
+    {
+      "id": "b02227b69f1fde3ed9109fc1b85b193059457d7c35f95020b5f6d46dc0f28b39",
+      "kind": "new",
+      "key": "lead:3a93fc8712ae9bec2858e91edcab660c130c0820f480cb651efe1c64584d37f5",
+      "priority": "low",
+      "source": "discovery:skills-sh",
+      "name": "korean-slang-writing",
+      "url": "https://skills.sh/nomadamas/k-skill/korean-slang-writing",
+      "observedAt": "2026-11-17T15:36:30.255Z",
+      "detail": "Primary verification budget exhausted or unsupported source.",
+      "approved": false,
+      "repo": "nomadamas/k-skill",
+      "path": null,
+      "aliases": [
+        "lead:3a93fc8712ae9bec2858e91edcab660c130c0820f480cb651efe1c64584d37f5",
+        "nomadamas/k-skill:korean-slang-writing",
+        "lead:nomadamas/k-skill:korean-slang-writing"
+      ]
     }
   ],
   "notified": [
@@ -20811,11 +21573,6 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    }
-  },
+  "httpCache": {},
   "issueNumber": 9
 }
