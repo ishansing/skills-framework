@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-18T15:14:04.752Z",
+  "scannedAt": "2026-11-19T15:21:44.306Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10131,6 +10131,86 @@
       ]
     },
     {
+      "id": "739e310e5a650d2f15a488ce570ff7ff49d44466ff66043b9c56c9b71919d6be",
+      "kind": "content-changed",
+      "key": "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:mattpocock/skills",
+      "name": "chief-of-staff",
+      "url": "https://github.com/mattpocock/skills/blob/abeeaf95660ba9e8b7c753eb38f441ca707a8823/skills/in-progress/chief-of-staff/SKILL.md",
+      "observedAt": "2026-11-19T15:21:44.306Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "mattpocock/skills",
+      "path": "skills/in-progress/chief-of-staff/SKILL.md",
+      "aliases": [
+        "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
+        "mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md",
+        "lead:mattpocock/skills:chief-of-staff",
+        "lead:mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md"
+      ]
+    },
+    {
+      "id": "235db95838c565f5c179b879cf6e3545fe6cf0e3292301f68de576fe7e0d0095",
+      "kind": "new",
+      "key": "1148788086:skills/in-progress/software-factory/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:mattpocock/skills",
+      "name": "software-factory",
+      "url": "https://github.com/mattpocock/skills/blob/abeeaf95660ba9e8b7c753eb38f441ca707a8823/skills/in-progress/software-factory/SKILL.md",
+      "observedAt": "2026-11-19T15:21:44.306Z",
+      "detail": "",
+      "approved": false,
+      "repo": "mattpocock/skills",
+      "path": "skills/in-progress/software-factory/SKILL.md",
+      "aliases": [
+        "1148788086:skills/in-progress/software-factory/SKILL.md",
+        "mattpocock/skills:skills/in-progress/software-factory/SKILL.md",
+        "lead:mattpocock/skills:software-factory",
+        "lead:mattpocock/skills:skills/in-progress/software-factory/SKILL.md"
+      ]
+    },
+    {
+      "id": "937340cc1542f1a88cdfb2d49b7c128ede0ad49b002805ad8a925a301261bd2d",
+      "kind": "content-changed",
+      "key": "1281320664:skills/om-code-review/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:skills-sh",
+      "name": "om-code-review",
+      "url": "https://github.com/open-mercato/skills/blob/a90b091d27141a6cd12f363e94ebd0f5f84ba615/skills/om-code-review/SKILL.md",
+      "observedAt": "2026-11-19T15:21:44.306Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "open-mercato/skills",
+      "path": "skills/om-code-review/SKILL.md",
+      "aliases": [
+        "1281320664:skills/om-code-review/SKILL.md",
+        "open-mercato/skills:skills/om-code-review/SKILL.md",
+        "lead:open-mercato/skills:om-code-review",
+        "lead:open-mercato/skills:skills/om-code-review/SKILL.md"
+      ]
+    },
+    {
+      "id": "1349fc827666b7c3a9507f46aea89325bbf9bc2bbbe609b9068d26483ccdde14",
+      "kind": "content-changed",
+      "key": "1281320664:skills/om-review-prs/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:skills-sh",
+      "name": "om-review-prs",
+      "url": "https://github.com/open-mercato/skills/blob/a90b091d27141a6cd12f363e94ebd0f5f84ba615/skills/om-review-prs/SKILL.md",
+      "observedAt": "2026-11-19T15:21:44.306Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "open-mercato/skills",
+      "path": "skills/om-review-prs/SKILL.md",
+      "aliases": [
+        "1281320664:skills/om-review-prs/SKILL.md",
+        "open-mercato/skills:skills/om-review-prs/SKILL.md",
+        "lead:open-mercato/skills:om-review-prs",
+        "lead:open-mercato/skills:skills/om-review-prs/SKILL.md"
+      ]
+    },
+    {
       "id": "9b2e12353d80ea3874c18a7ef047faf1969287e6b0deb38b814dc4930910f3cd",
       "kind": "new",
       "key": "lead:60b1fb86ee8a8c360fa2aeeffd31a8a51bca21f7139b76876f429f1f22c09731",
@@ -19616,82 +19696,6 @@
         "base44/skills:base44-sdk",
         "lead:base44/skills:base44-sdk"
       ]
-    },
-    {
-      "id": "ff1877187f2dfc49e007c186bd9be9f6413e247ea045758ad787cb8fb5a8651c",
-      "kind": "rising",
-      "key": "lead:eec437b56843ff00fb8090f468281326c429f61760527a95af50c56385e6d5e1",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "base44-sdk",
-      "url": "https://skills.sh/base44/skills/base44-sdk",
-      "observedAt": "2026-11-17T15:36:30.255Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "base44/skills",
-      "path": null,
-      "aliases": [
-        "lead:eec437b56843ff00fb8090f468281326c429f61760527a95af50c56385e6d5e1",
-        "base44/skills:base44-sdk",
-        "lead:base44/skills:base44-sdk"
-      ]
-    },
-    {
-      "id": "990e14d8c3f05954691262b2c16aaee1314083fbc0481f9f6a2f2a1d0f888bae",
-      "kind": "new",
-      "key": "lead:ccdb4aa36b31acb8f2f29d9902e48137954ff132bfe256fafde65fb0072d29d7",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "base44-platform-integrations-sdk",
-      "url": "https://skills.sh/base44/skills/base44-platform-integrations-sdk",
-      "observedAt": "2026-11-17T15:36:30.255Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "base44/skills",
-      "path": null,
-      "aliases": [
-        "lead:ccdb4aa36b31acb8f2f29d9902e48137954ff132bfe256fafde65fb0072d29d7",
-        "base44/skills:base44-platform-integrations-sdk",
-        "lead:base44/skills:base44-platform-integrations-sdk"
-      ]
-    },
-    {
-      "id": "43617d3cc6bfd1c1acc5579940f29181b981228e2b72980d46ea26340ddcfcb7",
-      "kind": "rising",
-      "key": "lead:ccdb4aa36b31acb8f2f29d9902e48137954ff132bfe256fafde65fb0072d29d7",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "base44-platform-integrations-sdk",
-      "url": "https://skills.sh/base44/skills/base44-platform-integrations-sdk",
-      "observedAt": "2026-11-17T15:36:30.255Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "base44/skills",
-      "path": null,
-      "aliases": [
-        "lead:ccdb4aa36b31acb8f2f29d9902e48137954ff132bfe256fafde65fb0072d29d7",
-        "base44/skills:base44-platform-integrations-sdk",
-        "lead:base44/skills:base44-platform-integrations-sdk"
-      ]
-    },
-    {
-      "id": "6cd9c68f6d5fb093a61c90fc42e164dd116090787528b9827c29f24a3e9abf81",
-      "kind": "new",
-      "key": "lead:ee9dfc0972ea4d88d206c07fc82a832e5cc7b56d570b7580d5f867122490efb4",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "plannotator-setup-goal",
-      "url": "https://skills.sh/backnotprop/plannotator/plannotator-setup-goal",
-      "observedAt": "2026-11-17T15:36:30.255Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "backnotprop/plannotator",
-      "path": null,
-      "aliases": [
-        "lead:ee9dfc0972ea4d88d206c07fc82a832e5cc7b56d570b7580d5f867122490efb4",
-        "backnotprop/plannotator:plannotator-setup-goal",
-        "lead:backnotprop/plannotator:plannotator-setup-goal"
-      ]
     }
   ],
   "notified": [
@@ -21574,11 +21578,6 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    }
-  },
+  "httpCache": {},
   "issueNumber": 9
 }
