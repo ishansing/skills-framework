@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-19T15:21:44.306Z",
+  "scannedAt": "2026-11-20T14:59:13.736Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10211,6 +10211,26 @@
       ]
     },
     {
+      "id": "790d3c0a15fc75434aba74afcd30680ca595e15b9b5ae36ea1805ad9f72b1f11",
+      "kind": "content-changed",
+      "key": "1145569115:skills/courier/SKILL.md",
+      "priority": "medium",
+      "source": "discovery:voltagent",
+      "name": "courier",
+      "url": "https://github.com/trycourier/courier-skills/blob/75d488863e9961a9a2a7ff2115a28837521cfce4/skills/courier/SKILL.md",
+      "observedAt": "2026-11-20T14:59:13.736Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "trycourier/courier-skills",
+      "path": "skills/courier/SKILL.md",
+      "aliases": [
+        "1145569115:skills/courier/SKILL.md",
+        "trycourier/courier-skills:skills/courier/SKILL.md",
+        "lead:trycourier/courier-skills:courier",
+        "lead:trycourier/courier-skills:skills/courier/SKILL.md"
+      ]
+    },
+    {
       "id": "9b2e12353d80ea3874c18a7ef047faf1969287e6b0deb38b814dc4930910f3cd",
       "kind": "new",
       "key": "lead:60b1fb86ee8a8c360fa2aeeffd31a8a51bca21f7139b76876f429f1f22c09731",
@@ -19677,25 +19697,6 @@
         "microsoft/azure-skills:azure-ai",
         "lead:microsoft/azure-skills:azure-ai"
       ]
-    },
-    {
-      "id": "9ce40c88144dae6cb27bbb6d4fccff08897f8776fd84ec9aed524cd4887a5a5c",
-      "kind": "new",
-      "key": "lead:eec437b56843ff00fb8090f468281326c429f61760527a95af50c56385e6d5e1",
-      "priority": "low",
-      "source": "discovery:skills-sh",
-      "name": "base44-sdk",
-      "url": "https://skills.sh/base44/skills/base44-sdk",
-      "observedAt": "2026-11-17T15:36:30.255Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "base44/skills",
-      "path": null,
-      "aliases": [
-        "lead:eec437b56843ff00fb8090f468281326c429f61760527a95af50c56385e6d5e1",
-        "base44/skills:base44-sdk",
-        "lead:base44/skills:base44-sdk"
-      ]
     }
   ],
   "notified": [
@@ -21578,6 +21579,11 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {},
+  "httpCache": {
+    "https://skillsmp.com/robots.txt": {
+      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
+      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
+    }
+  },
   "issueNumber": 9
 }
