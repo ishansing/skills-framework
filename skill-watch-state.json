@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "scannedAt": "2026-11-24T17:04:08.573Z",
+  "scannedAt": "2026-11-25T16:53:34.950Z",
   "sources": {
     "upstream:mattpocock/skills": {
       "repository": "mattpocock/skills",
@@ -10454,6 +10454,57 @@
   },
   "pending": [
     {
+      "id": "49bdfcd4d027e6bb1620f7a5bdff47c5d36ba7ad3ad4eb51ad22e548fb2e5e08",
+      "kind": "content-changed",
+      "key": "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:mattpocock/skills",
+      "name": "chief-of-staff",
+      "url": "https://github.com/mattpocock/skills/blob/d65391149dbb5fe76478e76fa8d5122b2aa5a70e/skills/in-progress/chief-of-staff/SKILL.md",
+      "observedAt": "2026-11-24T17:04:08.573Z",
+      "detail": "Content changed; semantic significance requires review.",
+      "approved": false,
+      "repo": "mattpocock/skills",
+      "path": "skills/in-progress/chief-of-staff/SKILL.md",
+      "aliases": [
+        "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
+        "mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md",
+        "lead:mattpocock/skills:chief-of-staff",
+        "lead:mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md"
+      ]
+    },
+    {
+      "id": "5c4e0aaf9aaa8fbbd86f41960df09460bc5466f9832b415646f611efc31c3652",
+      "kind": "removed",
+      "key": "1000362065:skills/ai-team-orchestration/SKILL.md",
+      "priority": "medium",
+      "source": "upstream:github/awesome-copilot",
+      "name": "skills/ai-team-orchestration/SKILL.md",
+      "url": "https://github.com/github/awesome-copilot/blob/f10fdb8b2660ce85c98f220b2f1ca24653768a5c/skills/ai-team-orchestration/SKILL.md",
+      "observedAt": "2026-11-25T16:53:34.950Z",
+      "detail": "",
+      "approved": false,
+      "repo": "github/awesome-copilot",
+      "path": "skills/ai-team-orchestration/SKILL.md",
+      "aliases": [
+        "1000362065:skills/ai-team-orchestration/SKILL.md",
+        "github/awesome-copilot:skills/ai-team-orchestration/SKILL.md",
+        "lead:github/awesome-copilot:skills/ai-team-orchestration/SKILL.md"
+      ]
+    },
+    {
+      "id": "ca981bb8317da46b06b262931cf028bb4fc7c6fc583b7b707a4d0d30c727fcd2",
+      "kind": "pin-updated",
+      "key": "pin:domain-modeling",
+      "name": "domain-modeling",
+      "priority": "medium",
+      "approved": true,
+      "observedAt": "2026-11-25T16:53:34.950Z",
+      "source": "mattpocock/skills",
+      "url": "https://github.com/mattpocock/skills",
+      "detail": "domain-modeling: express term relationships inside definitions"
+    },
+    {
       "id": "5e09764a955937cb47974619cbc1857c7f38f5307c921cd202ec73901b0b224a",
       "kind": "new",
       "key": "lead:da587a09f4a75e4033ba442741d8fa6db82ec904048a4dbff0d34ad9647ff37c",
@@ -19295,26 +19346,6 @@
       ]
     },
     {
-      "id": "49bdfcd4d027e6bb1620f7a5bdff47c5d36ba7ad3ad4eb51ad22e548fb2e5e08",
-      "kind": "content-changed",
-      "key": "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
-      "priority": "medium",
-      "source": "upstream:mattpocock/skills",
-      "name": "chief-of-staff",
-      "url": "https://github.com/mattpocock/skills/blob/d65391149dbb5fe76478e76fa8d5122b2aa5a70e/skills/in-progress/chief-of-staff/SKILL.md",
-      "observedAt": "2026-11-24T17:04:08.573Z",
-      "detail": "Content changed; semantic significance requires review.",
-      "approved": false,
-      "repo": "mattpocock/skills",
-      "path": "skills/in-progress/chief-of-staff/SKILL.md",
-      "aliases": [
-        "1148788086:skills/in-progress/chief-of-staff/SKILL.md",
-        "mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md",
-        "lead:mattpocock/skills:chief-of-staff",
-        "lead:mattpocock/skills:skills/in-progress/chief-of-staff/SKILL.md"
-      ]
-    },
-    {
       "id": "08be37c955fc4455970638aa07896ce624bf0ccc8cb41e7158d104c13e70f819",
       "kind": "new",
       "key": "1143658499:skills/go-linting/SKILL.md",
@@ -20024,25 +20055,6 @@
         "lead:b6955c5967601b801db981679009e08735afe2c7195e8b42342c1bca3e5a5818",
         "appeeky/aso-skills:appeeky/aso-skills",
         "lead:appeeky/aso-skills:appeeky/aso-skills"
-      ]
-    },
-    {
-      "id": "2ab81b7594b0c0c823502dbbc31db2a60dca6a9cb86331c7f64dd1f850dd0743",
-      "kind": "new",
-      "key": "lead:22d732b525796f37ebaccb5575cf3c5a8ba68b5155a243b6fec8372f1c178dfb",
-      "priority": "low",
-      "source": "discovery:voltagent",
-      "name": "heygen-com/hyperframes",
-      "url": "https://github.com/heygen-com/hyperframes",
-      "observedAt": "2026-11-24T17:04:08.573Z",
-      "detail": "Primary verification budget exhausted or unsupported source.",
-      "approved": false,
-      "repo": "heygen-com/hyperframes",
-      "path": null,
-      "aliases": [
-        "lead:22d732b525796f37ebaccb5575cf3c5a8ba68b5155a243b6fec8372f1c178dfb",
-        "heygen-com/hyperframes:heygen-com/hyperframes",
-        "lead:heygen-com/hyperframes:heygen-com/hyperframes"
       ]
     }
   ],
@@ -21802,6 +21814,7 @@
     "105720c2bd20691b4df7af58b195f240da062ad3756c8c68625e5e67f3f985c3": "2026-10-12T08:10:11.347Z"
   },
   "historyLimit": 5000,
+  "baselinesHeld": true,
   "pins": [
     {
       "id": "research",
@@ -21827,9 +21840,11 @@
       "id": "domain-modeling",
       "repo": "mattpocock/skills",
       "pinned": "984a2c023c9fb42bb6ea40c70a652284a109dc05",
-      "latest": "d80fa0f4ebe0c5714af0adf8670336065233ecc6",
-      "status": "current",
-      "note": "pin already contains the latest path change"
+      "latest": "2b7ab8c9471fad3fca0a9c0c9e1f52153408172b",
+      "status": "updated",
+      "aheadBy": 71,
+      "changedFiles": 90,
+      "note": "domain-modeling: express term relationships inside definitions"
     },
     {
       "id": "codebase-design",
@@ -22034,11 +22049,6 @@
       "note": "pin already contains the latest path change"
     }
   ],
-  "httpCache": {
-    "https://skillsmp.com/robots.txt": {
-      "etag": "W/\"bf00714b2dcf67aae4c5fe49334b178b\"",
-      "body": "# SkillsMP - AI Agent Friendly Robots.txt\n\n# Advertising crawlers - full access\nUser-Agent: Mediapartners-Google\nUser-Agent: AdsBot-Google\nUser-Agent: GoogleAdSenseInfeed\nUser-Agent: Google-Display-Ads-Bot\nAllow: /\n\n# Slow ClaudeBot training crawls while preserving access to public pages.\nUser-Agent: ClaudeBot\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 5\n\n# AI and answer-engine crawlers - allowed for public pages and blocked from API endpoints\nUser-Agent: GPTBot\nUser-Agent: ChatGPT-User\nUser-Agent: Claude-User\nUser-Agent: Claude-SearchBot\nUser-Agent: Google-Extended\nUser-Agent: PerplexityBot\nUser-Agent: Perplexity-User\nUser-Agent: DeepSeekBot\nUser-Agent: Applebot-Extended\nUser-Agent: OAI-SearchBot\nUser-Agent: cohere-ai\nUser-Agent: CCBot\nUser-Agent: ByteSpider\nUser-Agent: Bytespider\nUser-Agent: anthropic-ai\nUser-Agent: Diffbot\nUser-Agent: Meta-ExternalAgent\nUser-Agent: Meta-ExternalFetcher\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\n\n# General crawlers\nUser-Agent: *\nAllow: /\nAllow: /api/llms.txt\nDisallow: /api/github-contents\nDisallow: /api/\nDisallow: /auth/\nCrawl-delay: 1\n\nContent-Signal: ai-train=yes, search=yes, ai-input=yes\n\nAgentmap: https://skillsmp.com/.well-known/ai-catalog.json\nSchemamap: https://skillsmp.com/schemamap.xml\nSitemap: https://skillsmp.com/sitemap.xml\n"
-    }
-  },
+  "httpCache": {},
   "issueNumber": 9
 }
